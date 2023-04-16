@@ -9,7 +9,6 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 
 ## TODO 
 - [ ] create a PC wireframe ([#2](i2))
-- [ ] [dev] create a header component ([#5](i5))
 - [ ] [dev] create a footer component ([#6](i6))
 - [ ] [dev] display markdown files as a list ([#7](i7))
 - [ ] [dev] fetch | parse markdown contents into a blog post ([#8](i8))
@@ -17,6 +16,7 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [ ] [feature] toggle korean and english and display posts in selected language ([#10](i10))
 
 ## Complete
+- [x] [dev] create a header component ([#5](i5))
 - [x] [mobile | dev] Implement the main page ([#3][i3])
 - [x] [dev] display different main home image based on the screen width ([#4][i4])
 
