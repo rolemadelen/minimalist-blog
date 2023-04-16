@@ -14,9 +14,6 @@ import {
 } from "../components/custom-tw-components";
 
 export default function Home() {
-  const [imagePath, setImagePath] = useState('');
-  const [imageWidth, setImageWidth] = useState(315);
-  const [imageHeight, setImageHeight] = useState(317);
   const [staticImage, setStaticImage] = useState(iphoneMainImage);
 
   useEffect(() => {
