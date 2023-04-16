@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import iphoneMainImage from '/public/images/iphone-315x317.png';
 import tabletMainImage from '/public/images/tablet-608x317.png';
@@ -49,8 +50,8 @@ export default function Home() {
             about
             </MainMenuAbout>
           <MainMenuBlog>
-            blog
-            </MainMenuBlog>
+            <Link href="/blog-ko">blog</Link>
+          </MainMenuBlog>
         </MainMenu>
     </Main>
   )

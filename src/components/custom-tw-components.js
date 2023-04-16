@@ -36,7 +36,22 @@ export const MainMenuAbout = tw.button`
     text-[1.125rem]
 `
     
-    export const MainMenuBlog = tw.button`
+export const MainMenuBlog = tw.button`
     btn-blog
     text-[1.125rem]
+`
+
+export const HeaderWrapper = tw.div`
+    header-wrapper
+    flex
+    justify-between
+    content-center
+    m-[1.875rem]
+`
+
+export const Logo = tw.button`
+    logo 
+    font-['AmazonEmberDisplayMedium']
+    font-medium	
+    text-[1.25rem]
 `
