@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: AmazonEmberDisplay;
+  src: url(/font/AmazonEmberDisplay.otf);
+}
+@font-face {
+  font-family: AmazonEmberDisplayMedium;
+  src: url(/font/AmazonEmberDisplayMedium.ttf);
+}
+
+@function px2rem($px) {
+  @return #{$px / 16}rem;
+}
+
+:root {
+  min-width: 375px;
+  max-width: 1920px;
+  font-size: 16px;
+}
+
+.main-menu {
+  .btn-about, 
+  .btn-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: #7494E4;
+    }
+  }
+  .btn-about {
+    &::before {
+      content: '';
+      background: url('/icons/menu-left.svg');
+      display: block;
+      width: 0.625rem;
+      height: 0.5rem;
+      margin-top: px2rem(2);
+      margin-right: px2rem(5);
+    }
+
+    &:hover {
+      transform: translateX(-10%);
+    }
+  }
+  
+  .btn-blog {
+    &::after {  
+      content: '';
+      background: url('/icons/menu-right.svg');
+      display: block;
+      width: 0.625rem;
+      height: 0.5rem;
+      margin-top: px2rem(2);
+      margin-left: px2rem(5);
+    }
+
+    &:hover {
+      transform: translateX(10%);
+    }
+  }
+}
+
+.profile-image {
+  z-index: 0;
+  position: absolute;
+  min-width: 315px;
+  opacity: 0.4;
+
+  @media (min-width: 375px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
