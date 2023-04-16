@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import iphoneMainImage from '/public/images/iphone-315x317.png';
+import tabletMainImage from '/public/images/tablet-608x317.png';
+import dt1440MainImage from '/public/images/desktop1440-987x317.png';
+import dt1920MainImage from '/public/images/desktop1920-1199x385.png';
 
 import {
   Main, 
@@ -13,22 +17,19 @@ export default function Home() {
   const [imagePath, setImagePath] = useState('');
   const [imageWidth, setImageWidth] = useState(315);
   const [imageHeight, setImageHeight] = useState(317);
+  const [staticImage, setStaticImage] = useState(iphoneMainImage);
 
   useEffect(() => {
       function handleResize() {
         const screenWidth = window.innerWidth;
         if (screenWidth >= 1920) {
-          setImagePath('/images/desktop1920-1199x385.png');
-          setImageWidth(1199);
-          setImageHeight(385);
+          setStaticImage(dt1920MainImage);
         } else if(screenWidth >= 1440) {
-          setImagePath('/images/desktop1440-987x317.png')
-          setImageWidth(987);
+          setStaticImage(dt1440MainImage);
         } else if(screenWidth >= 768) {
-          setImagePath('/images/tablet-608x317.png');
-          setImageWidth(608);
+          setStaticImage(tabletMainImage);
         } else {
-          setImagePath('/images/iphone-315x317.png')
+          setStaticImage(iphoneMainImage);
         }
       }
       window.addEventListener('resize', handleResize);
@@ -41,10 +42,8 @@ export default function Home() {
   return (
     <Main>
           <Image
-          src={imagePath || '/images/iphone-315x317.png'}
+          src={staticImage}
           alt="Main Picture"
-          width={imageWidth}
-          height={imageHeight}
           className='profile-image'
         />
         <MainTitle>rolemadelen</MainTitle>
