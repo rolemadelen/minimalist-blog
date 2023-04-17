@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { 
     HeaderWrapper,
     Logo
-} from '../components/custom-tw-components';
+} from './custom-tw-components';
 
 const Header = () => {
     return (

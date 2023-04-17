@@ -6,22 +6,23 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 
 ## Progress
 
-- [ ] create a mobile wireframe ([#1][i1]) - in progress
+- [ ] create a mobile wireframe ([#1][i1])
 
 ## TODO
 
 - [ ] create a PC wireframe ([#2][i2])
-- [ ] [dev] create a footer component ([#6][i6])
 - [ ] [dev] display markdown files as a list ([#7][i7])
 - [ ] [dev] fetch | parse markdown contents into a blog post ([#8][i8])
 - [ ] [feature] integrate giscus comment ([#9][i9])
-- [ ] [feature] toggle korean and english and display posts in selected language ([#10](i10))
+- [ ] [feature] toggle korean and english and display posts in selected language ([#10][i10])
+- [ ] [bug] Vertical scrolling on the main menu shouldn't be allowed ([#11][i11])
 
 ## Complete
 
-- [x] [dev] create a header component ([#5][i5])
 - [x] [mobile | dev] Implement the main page ([#3][i3])
 - [x] [dev] display different main home image based on the screen width ([#4][i4])
+- [x] [dev] create a header component ([#5][i5])
+- [x] [dev] create a footer component ([#6][i6])
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2
@@ -32,3 +33,5 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 [i7]: https://github.com/rolemadelen/blogv2/issues/7
 [i8]: https://github.com/rolemadelen/blogv2/issues/8
 [i9]: https://github.com/rolemadelen/blogv2/issues/9
+[i10]: https://github.com/rolemadelen/blogv2/issues/10
+[i11]: https://github.com/rolemadelen/blogv2/issues/11
