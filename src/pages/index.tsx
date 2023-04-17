@@ -50,7 +50,7 @@ export default function Home() {
             about
             </MainMenuAbout>
           <MainMenuBlog>
-            <Link href="/blog-ko">blog</Link>
+            <Link href="/blog">blog</Link>
           </MainMenuBlog>
         </MainMenu>
     </Main>

@@ -12,7 +12,7 @@ const Header = () => {
             <div>
                 <button className='btn'>한</button>
                 <button className='btn btn-ghost'>
-                    <Link href={'/blog-en'}>A</Link>
+                    <Link href={'/blog'}>A</Link>
                 </button>
             </div>
         </HeaderWrapper>
