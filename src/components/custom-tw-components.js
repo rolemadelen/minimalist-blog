@@ -54,3 +54,14 @@ export const Logo = tw.button`
     font-medium	
     text-[1.25rem]
 `
+
+export const SNS = tw.div`
+    sns
+    flex
+    justify-evenly
+    content-center
+    w-[10rem]
+    mx-auto
+    mt-[2.1875rem]
+    mb-[1.125rem]
+`

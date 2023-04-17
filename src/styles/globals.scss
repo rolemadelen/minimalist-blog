@@ -38,7 +38,9 @@
   .btn-about {
     &::before {
       content: '';
-      background: url('/icons/menu-left.svg');
+      background: url('/icons/menu-left.svg') no-repeat center;
+      background-size: contain;
+      fill: currentColor;
       display: block;
       width: 0.625rem;
       height: 0.5rem;
@@ -54,7 +56,9 @@
   .btn-blog {
     &::after {  
       content: '';
-      background: url('/icons/menu-right.svg');
+      background: url('/icons/menu-right.svg') no-repeat center;
+      background-size: contain;
+      fill: currentColor;
       display: block;
       width: 0.625rem;
       height: 0.5rem;
@@ -79,4 +83,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.sns button {
+  width: px2rem(24);
+  height: px2rem(24);
 }
