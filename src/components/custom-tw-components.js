@@ -13,7 +13,6 @@ export const Main = tw.div`
 
     ml-[1.875rem]
     mr-[1.875rem]
-    bg-white
 `;
 
 export const MainTitle = tw.h1`
