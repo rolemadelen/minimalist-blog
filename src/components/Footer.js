@@ -32,7 +32,7 @@ const Footer = () => {
                     </Link>
                 </button>
             </SNS>
-            <p className='text-center text-xs'>Copyright © 2023 Jii Eu | rolemadelen</p>
+            <p className='text-center text-xs mb-[1.875rem]'>Copyright © 2023 Jii Eu | rolemadelen</p>
         </>
     );
 };

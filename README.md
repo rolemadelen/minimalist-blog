@@ -7,7 +7,6 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 ## Progress
 
 - [ ] create a mobile wireframe ([#1][i1])
-- [ ] [dev] display markdown files as a list ([#7][i7])
 
 ## TODO
 
@@ -20,10 +19,11 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 
 ## Complete
 
-- [x] [mobile | dev] Implement the main page ([#3][i3])
+- [x] [mobile | dev] Implement the main page ([#3][i3]) - _2023.04.16_
 - [x] [dev] display different main home image based on the screen width ([#4][i4])
 - [x] [dev] create a header component ([#5][i5])
-- [x] [dev] create a footer component ([#6][i6])
+- [x] [dev] create a footer component ([#6][i6]) - _2023.04.17_
+- [x] [dev] display markdown files as a list ([#7][i7]) - _2023.04.18_
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2

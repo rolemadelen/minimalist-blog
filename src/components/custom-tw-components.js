@@ -65,3 +65,28 @@ export const SNS = tw.div`
     mt-[2.1875rem]
     mb-[1.125rem]
 `
+
+export const PostsWrapper = tw.div`
+    posts-wrapper
+    ml-[1.875rem]
+    mr-[1.875rem]
+`
+
+export const PostList = tw.span`
+    post-list
+    block
+    mx-auto
+`
+
+export const PostUID = tw.span`
+    post-uid
+    block
+    text-[#ccc]
+    text-[0.8125rem]
+    h-[13px]
+    mb-[1px]
+`
+export const PostTitle = tw.p`
+    post-title
+    mb-[1.75rem]
+`
