@@ -32,7 +32,7 @@ body {
 
 MDN은 `unicode-range`를 아래와 같이 설명하고 있다.
 
-> The unicode-range CSS descriptor sets the specific range of characters to be used from a font defined by @font-face and made available for use on the current page. If the page doesn't use any character in this range, the font is not downloaded; if it uses at least one, the whole font is downloaded.
+> "The unicode-range CSS descriptor sets the specific range of characters to be used from a font defined by @font-face and made available for use on the current page. If the page doesn't use any character in this range, the font is not downloaded; if it uses at least one, the whole font is downloaded."
 
 `@font-face`로 폰트를 정의할 때, 해당 폰트를 적용할 문자의 범위를 설정할 수 있다. 범위안에 문자를 찾을 수 없으면 해당 폰트는 로드되지 않지만, 페이지 내 단 하나의 문자라도 범위안에 속하면 폰트 전체가 로드된다고 한다.
 
@@ -71,4 +71,4 @@ h1 {
 
 ## ![unicode-range example](/images/e/unicode-range.webp)
 
-[^a]: macOS Sierra에서 처음부터 설치되어 있는 일본어 폰트 - https://wakufactory.jp/densho/font/osx_sierra.html
+[^a]: macOS Sierra에서 기본으로 제공하는 일본어 폰트 [리스트](https://wakufactory.jp/densho/font/osx_sierra.html)

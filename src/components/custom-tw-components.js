@@ -11,8 +11,7 @@ export const Main = tw.div`
     justify-center
     content-center
 
-    ml-[1.875rem]
-    mr-[1.875rem]
+    mx-[1.875rem]
 `;
 
 export const MainTitle = tw.h1`
@@ -89,4 +88,30 @@ export const PostUID = tw.span`
 export const PostTitle = tw.p`
     post-title
     mb-[1.75rem]
+    mt-0
+`
+
+export const Article = tw.div`
+    article
+    mx-[1.875rem]
+    break-all
+`
+
+export const ArticleHeader = tw.div`
+    mx-[1.875rem]
+    mt-[1.875rem]
+`
+
+export const ArticleDate = tw.div`
+    text-[0.875rem]
+    text-[#757575]
+    mb-[1.25rem]
+    
+`
+
+export const ArticleTitle = tw.h1`
+    article-title
+    text-[2rem]
+    leading-10
+    mb-2
 `
