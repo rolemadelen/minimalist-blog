@@ -1,10 +1,11 @@
 import { PostsWrapper, PostList, PostUID, PostTitle } from '@/components/custom-tw-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import { getAllPosts } from '../../lib/blog';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { getAllPosts } from '../../../../lib/blog';
 import Link from 'next/link';
 
 interface Post {
+    lang: string,
     slug: string,
     title: string,
     posttitle: string,
@@ -21,13 +22,13 @@ const Blog: React.FC<Posts> = ({posts}) => {
 // export default function Blog( { posts }) {
     return (
         <>
-            <Header />
+            <Header lang='ko'/>
             <PostsWrapper>
-                <p>*글은 관련성에 따라 의도한 순서로 나열되어 있습니다. 작성 시간순이 아님을 유념해주세요.</p>
+                <p>* 글은 관련성에 따라 의도한 순서로 나열되어 있습니다. 작성 시간순이 아님을 유념해주세요.</p>
                 {posts.map((post) => (
                     <Link
-                        key={`${post.slug}`}
-                        href={`/blog/${post.slug}`}
+                        key={`${post.lang}-${post.slug}`}
+                        href={`/blog/${post.lang}/${post.slug}`}
                         passHref>
                             <PostList>
                                 <PostUID>{post.uid}</PostUID>
@@ -36,13 +37,13 @@ const Blog: React.FC<Posts> = ({posts}) => {
                     </Link>
                 ))}
             </PostsWrapper>
-            <Footer />
+            <Footer lang='ko'/>
         </>
     )
 }
 
 export async function getStaticProps() {
-    const posts: {slug: string}[] = getAllPosts();
+    const posts: {lang: string, slug: string}[] = getAllPosts('ko');
 
     return {
         props: {
