@@ -14,6 +14,7 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [ ] [feature] integrate giscus comment ([#9][i9])
 - [ ] [bug] Vertical scrolling on the main menu shouldn't be allowed ([#11][i11])
 - [ ] create and add a favicon to the web ([#13][i13])
+- [ ] language toggle button clickable area is too narrow ([#16][i16])
 
 ## Complete
 
@@ -37,3 +38,4 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 [i10]: https://github.com/rolemadelen/blogv2/issues/10
 [i11]: https://github.com/rolemadelen/blogv2/issues/11
 [i13]: https://github.com/rolemadelen/blogv2/issues/13
+[i16]: https://github.com/rolemadelen/blogv2/issues/16
