@@ -12,7 +12,7 @@ import {
   MainMenu,
   MainMenuAbout,
   MainMenuBlog
-} from "../components/custom-tw-components";
+} from "@/components/custom-tw-components";
 
 export default function Home() {
   const [staticImage, setStaticImage] = useState(iphoneMainImage);
@@ -50,7 +50,7 @@ export default function Home() {
             about
             </MainMenuAbout>
           <MainMenuBlog>
-            <Link href="/blog">blog</Link>
+            <Link href="/blog/ko">blog</Link>
           </MainMenuBlog>
         </MainMenu>
     </Main>

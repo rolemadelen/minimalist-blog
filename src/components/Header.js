@@ -5,14 +5,16 @@ import {
     Logo
 } from './custom-tw-components';
 
-const Header = () => {
+const Header = ({lang}) => {
     return (
         <HeaderWrapper>
             <Logo>rolemadelen</Logo>
             <div>
-                <button className='btn'>한</button>
-                <button className='btn btn-ghost'>
-                    <Link href={'/blog'}>A</Link>
+                <button className={`btn ${lang === 'en' ? 'btn-ghost' : ''}`}>
+                    <Link href="/blog/ko">한</Link>
+                </button>
+                <button className={`btn ${lang === 'ko' ? 'btn-ghost' : ''}`}>
+                    <Link href="/blog/en">A</Link>
                 </button>
             </div>
         </HeaderWrapper>

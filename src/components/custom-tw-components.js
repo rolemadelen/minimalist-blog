@@ -61,7 +61,7 @@ export const SNS = tw.div`
     content-center
     w-[10rem]
     mx-auto
-    mt-[2.1875rem]
+    mt-[5rem]
     mb-[1.125rem]
 `
 
