@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Article, ArticleTitle, ArticleHeader, ArticleDate } from '../../components/custom-tw-components';
-import { getAllPostIds, getPostData } from '../../../lib/blog';
-import Preview from '../../../lib/codeblock';
-import Footer from '../../components/Footer'
+import { Article, ArticleTitle, ArticleHeader, ArticleDate } from '@/components/custom-tw-components';
+import { getAllPostIds, getPostData } from '../../../../lib/blog';
+import Preview from '../../../../lib/codeblock';
+import Footer from '@/components/Footer'
 import IconArrowLeft from '/public/icons/icon-arrow-left.svg';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,7 +20,7 @@ export default function Post({ post }) {
             <ArticleTitle>{post.title}</ArticleTitle>
             <div className={'flex justify-between'}>
                 <ArticleDate>{new Date(post.date).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' })}</ArticleDate>
-                <Link href='/blog' className={'w-[1.875rem] h-[1.5625rem] flex justify-center content-center rounded mb-[1.25rem] border-[1px] border-solid border-[#eee] hover:bg-[#e7e7e7] duration-75'}>
+                <Link href='/blog/ko' className={'w-[2rem] h-[1.5625rem] flex justify-center content-center rounded mb-[1.25rem] border-[1px] border-solid border-[#eee] hover:bg-[#e7e7e7] duration-75'}>
                     <Image src={IconArrowLeft} alt="←" />
                 </Link>
             </div>
@@ -34,7 +34,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds();
+    const paths = getAllPostIds('ko');
     return {
         paths,
         fallback: false,
@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const post = await getPostData(params.id);
+    const post = await getPostData('ko', params.id);
     return {
         props: {
             post,
