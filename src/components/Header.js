@@ -10,12 +10,8 @@ const Header = ({lang}) => {
         <HeaderWrapper>
             <Logo>rolemadelen</Logo>
             <div>
-                <button className={`btn ${lang === 'en' ? 'btn-ghost' : ''}`}>
-                    <Link href="/blog/ko">한</Link>
-                </button>
-                <button className={`btn ${lang === 'ko' ? 'btn-ghost' : ''}`}>
-                    <Link href="/blog/en">A</Link>
-                </button>
+                <Link className={`btn ${lang === 'en' ? 'btn-ghost' : ''}`} href="/blog/ko">한</Link>
+                <Link className={`btn ${lang === 'ko' ? 'btn-ghost' : ''}`} href="/blog/en">A</Link>
             </div>
         </HeaderWrapper>
     );
