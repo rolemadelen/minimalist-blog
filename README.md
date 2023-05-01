@@ -7,11 +7,11 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 ## Progress
 
 - [ ] create a mobile wireframe ([#1][i1])
+- [ ] [feature] integrate giscus comment ([#9][i9])
 
 ## TODO
 
 - [ ] create a PC wireframe ([#2][i2])
-- [ ] [feature] integrate giscus comment ([#9][i9])
 - [ ] [bug] Vertical scrolling on the main menu shouldn't be allowed ([#11][i11])
 - [ ] create and add a favicon to the web ([#13][i13])
 
