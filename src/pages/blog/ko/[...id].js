@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 import IconArrowLeft from '/public/icons/icon-arrow-left.svg';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Comments from '@/components/Comments';
 
 Post.propTypes = {
     post: PropTypes.object.isRequired,
@@ -27,6 +27,7 @@ export default function Post({ post }) {
         </ArticleHeader>
         <Article>
             <Preview markdown={post.markdown} />
+            <Comments />
         </Article>
         <Footer />
         </>
