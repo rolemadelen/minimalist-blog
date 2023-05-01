@@ -14,7 +14,6 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [ ] [feature] integrate giscus comment ([#9][i9])
 - [ ] [bug] Vertical scrolling on the main menu shouldn't be allowed ([#11][i11])
 - [ ] create and add a favicon to the web ([#13][i13])
-- [ ] language toggle button clickable area is too narrow ([#16][i16])
 
 ## Complete
 
@@ -25,6 +24,7 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [x] [dev] display markdown files as a list ([#7][i7]) - _2023.04.18_
 - [x] [dev] fetch | parse markdown contents into a blog post ([#8][i8]) - _2023.04.30_
 - [x] [feature] toggle korean and english and display posts in selected language ([#10][i10]) - _2023.04.30_
+- [x] language toggle button clickable area is too narrow ([#16][i16]) - _2023.05.01_
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2
