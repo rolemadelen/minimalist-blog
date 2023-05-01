@@ -16,7 +16,7 @@ Post.propTypes = {
 
 export default function Post({ post }) {
     return (
-        <>
+        <div className={'wrapper'}>
         <ArticleHeader>
             <ArticleTitle>{post.title}</ArticleTitle>
             <div className={'flex justify-between content-center'}>
@@ -31,7 +31,7 @@ export default function Post({ post }) {
         </Article>
         <Comments />
         <Footer />
-        </>
+        </div>
     )
 }
 

@@ -21,7 +21,7 @@ interface Posts {
 const Blog: React.FC<Posts> = ({posts}) => {
 // export default function Blog( { posts }) {
     return (
-        <>
+        <div className={'wrapper'}>
             <Header lang='en'/>
             <PostsWrapper>
                 <p>* Posts are ordered by relevance, not by time of writing.</p>
@@ -38,7 +38,7 @@ const Blog: React.FC<Posts> = ({posts}) => {
                 ))}
             </PostsWrapper>
             <Footer lang='en'/>
-        </>
+        </div>
     )
 }
 

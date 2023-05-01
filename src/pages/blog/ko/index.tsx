@@ -21,7 +21,7 @@ interface Posts {
 const Blog: React.FC<Posts> = ({posts}) => {
 // export default function Blog( { posts }) {
     return (
-        <>
+        <div className={'wrapper'}>
             <Header lang='ko'/>
             <PostsWrapper>
                 <p>* 글은 관련성에 따라 의도한 순서로 나열되어 있습니다. 작성 시간순이 아님을 유념해주세요.</p>
@@ -38,7 +38,7 @@ const Blog: React.FC<Posts> = ({posts}) => {
                 ))}
             </PostsWrapper>
             <Footer lang='ko'/>
-        </>
+        </div>
     )
 }
 
