@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const Giscus = (params) => {
-    const { url, theme, mapping, repo, repoId, category, categoryId, lang, loading, ref } = params;
+    const { url, repo, repoId, category, categoryId, lang, theme, mapping, crossorigin, loading, inputPosition, ref} = params;
 
     const [status, setStatus] = useState(url ? 'loading' : 'idle');
 
@@ -14,19 +14,19 @@ const Giscus = (params) => {
 
         let script = document.createElement('script');
         script.src = url;
-        script.async = true;
-        script.crossOrigin = 'anonymous';
-        script.reactionsEnabled = true;
-        script.emitMetadata = false;
-        script.lang = 'en';
-        script.setAttribute('data-theme', theme);
-        script.setAttribute('data-mapping', mapping);
         script.setAttribute('data-repo', repo);
         script.setAttribute('data-repo-id', repoId);
         script.setAttribute('data-category', category);
         script.setAttribute('data-category-id', categoryId);
-        script.setAttribute('data-loading', loading);
+        script.setAttribute('data-mapping', mapping);
+        script.setAttribute('data-strict', '0');
+        script.setAttribute('data-reactions-enabled', '1');
+        script.setAttribute('data-emit-metadata', '0');
+        script.setAttribute('data-input-position', inputPosition);
+        script.setAttribute('data-theme', theme);
         script.setAttribute('data-lang', lang);
+        script.setAttribute('data-loading', loading);
+        script.setAttribute('crossorigin', crossorigin);
 
         // Add script to document body
         ref.current.appendChild(script);
@@ -44,7 +44,7 @@ const Giscus = (params) => {
             }
         };
 
-    }, [url]);
+    }, [category, categoryId, crossorigin, inputPosition, lang, loading, mapping, ref, repo, repoId, theme, url]);
     return status;
 };
 

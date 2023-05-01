@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import giscus from '../../lib/giscus';
+import giscus from '../lib/giscus';
 
 const Comments = () => {
     const comment = useRef(null);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { SNS } from '../components/custom-tw-components';
+import { SNS } from '@/components/custom-tw-components';
 import IconGithub from '/public/icons/icon-github.svg';
 import IconTwitter from '/public/icons/icon-twitter.svg';
 import IconLinkedIn from '/public/icons/icon-linkedin.svg';

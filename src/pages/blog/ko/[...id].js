@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Article, ArticleTitle, ArticleHeader, ArticleDate } from '@/components/custom-tw-components';
-import { getAllPostIds, getPostData } from '../../../../lib/blog';
-import Preview from '../../../../lib/codeblock';
-import Footer from '@/components/Footer'
-import IconArrowLeft from '/public/icons/icon-arrow-left.svg';
 import Link from 'next/link';
 import Image from 'next/image';
+import PropTypes from 'prop-types';
+import Footer from '@/components/Footer'
 import Comments from '@/components/Comments';
+import { Article, ArticleTitle, ArticleHeader, ArticleDate } from '@/components/custom-tw-components';
+import Preview from '@/lib/codeblock';
+import { getAllPostIds, getPostData } from '@/lib/blog';
+import IconArrowLeft from '/public/icons/icon-arrow-left.svg';
 
 Post.propTypes = {
     post: PropTypes.object.isRequired,
@@ -27,8 +27,8 @@ export default function Post({ post }) {
         </ArticleHeader>
         <Article>
             <Preview markdown={post.markdown} />
-            <Comments />
         </Article>
+        <Comments />
         <Footer />
         </>
     )

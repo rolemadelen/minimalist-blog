@@ -1,7 +1,7 @@
-import { PostsWrapper, PostList, PostUID, PostTitle } from '@/components/custom-tw-components';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getAllPosts } from '../../../../lib/blog';
+import { PostsWrapper, PostList, PostUID, PostTitle } from '@/components/custom-tw-components';
+import { getAllPosts } from '@/lib/blog';
 import Link from 'next/link';
 
 interface Post {
