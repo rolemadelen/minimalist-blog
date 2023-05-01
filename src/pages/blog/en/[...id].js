@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import Footer from '@/components/Footer'
-import Comments from '@/components/Comments';
+import Comments from '@/components/Comments.js';
 import { Article, ArticleTitle, ArticleHeader, ArticleDate } from '@/components/custom-tw-components';
 import Preview from '@/lib/codeblock';
 import { getAllPostIds, getPostData } from '@/lib/blog';
