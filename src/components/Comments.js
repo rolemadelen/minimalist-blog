@@ -1,22 +1,20 @@
-import React from 'react';
 import Giscus from "@giscus/react";
 
 export default function Comments() {
     return (
         <Giscus
             repo="rolemadelen/blogv2"
-            repoId="R_kgDOJXRY1A"
+            repo-id="R_kgDOJXRY1A"
             category="General"
-            categoryId="DIC_kwDOJXRY1M4CWLQD"
+            category-id="DIC_kwDOJXRY1M4CWLQD"
             mapping="title"
-            strict="0"
-            reactionsEnabled="1"
-            emitMetadata="0"
-            inputPosition="top"
-            theme="preferred_color_scheme"
-            llang="en"
+            reactions-enabled="1"
+            emit-metadata="0"
+            input-position="top"
+            theme="light"
+            lang={"en"}
             loading="lazy"
             crossorigin="anonymous"
-        />
+            />
     );
 };
