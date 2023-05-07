@@ -47,8 +47,8 @@ export default function Home() {
         <MainTitle>rolemadelen</MainTitle>
         <MainMenu>
           <MainMenuAbout>
-            about
-            </MainMenuAbout>
+            <Link href="/about">about</Link>
+          </MainMenuAbout>
           <MainMenuBlog>
             <Link href="/blog/ko">blog</Link>
           </MainMenuBlog>
