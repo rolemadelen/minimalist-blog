@@ -115,3 +115,26 @@ export const ArticleTitle = tw.h1`
     leading-10
     mb-2
 `
+
+export const AboutTitle = tw.h1`
+    about-title
+    z-10
+    font-['AmazonEmberDisplayMedium']
+    text-[3rem]
+    font-black
+    m-0
+    mt-[2rem]
+`;
+
+export const AboutSubtitle = tw.p`
+    about-subtitle
+    z-10
+    font-['AmazonEmberDisplayMedium']
+    text-[1rem]
+    text-[#757575]
+`;
+
+export const AboutContent = tw.div`
+    about-content
+    m-[2rem]
+`
