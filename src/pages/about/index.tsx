@@ -1,4 +1,3 @@
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import IconArrowLeft from '/public/icons/icon-arrow-left.svg';
@@ -43,6 +42,7 @@ const About = () => {
                     <Image src={IconArrowLeft} alt="←" />
                 </Link>
             </AboutContent>
+            <Footer lang={'ko'}/>
         </div>
         )
     }
