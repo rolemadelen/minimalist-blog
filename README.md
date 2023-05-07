@@ -25,6 +25,7 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [x] language toggle button clickable area is too narrow ([#16][i16]) - _2023.05.01_
 - [x] create a mobile wireframe ([#1][i1])
 - [ ] ~~create a PC wireframe ([#2][i2])~~ _2023.05.01_
+- [x] [feature] Redirect to the home menu when logo is clicked ([#20][i20]) - _2023.05.07_
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2
@@ -39,3 +40,4 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 [i11]: https://github.com/rolemadelen/blogv2/issues/11
 [i13]: https://github.com/rolemadelen/blogv2/issues/13
 [i16]: https://github.com/rolemadelen/blogv2/issues/16
+[i20]: https://github.com/rolemadelen/blogv2/issues/20
