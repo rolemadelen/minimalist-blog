@@ -8,7 +8,7 @@ import {
 const Header = ({lang}) => {
     return (
         <HeaderWrapper>
-            <Link href={"/"} >
+            <Link href={"/"} className={'btn btn-ghost'}>
                 <Logo>rolemadelen</Logo>
             </Link>
             <div>
