@@ -22,14 +22,14 @@ export default function Post({ post }) {
             <div className={'flex justify-between content-center'}>
                 <ArticleDate>{new Date(post.date).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' })}</ArticleDate>
                 <Link href='/blog/en' className={'w-[2rem] h-[1.5625rem] flex justify-center content-center rounded mb-[1.25rem] border-[1px] border-solid border-[#eee] hover:bg-[#e7e7e7] duration-75'}>
-                    <Image src={IconArrowLeft} alt="←" />
+                    <Image src={IconArrowLeft} alt="←" width="auto"/>
                 </Link>
             </div>
         </ArticleHeader>
         <Article>
             <Preview markdown={post.markdown} />
         </Article>
-        <Comments />
+        {/* <Comments /> */}
         <Footer />
         </div>
     )
