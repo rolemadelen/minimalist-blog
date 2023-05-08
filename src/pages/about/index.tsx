@@ -38,7 +38,7 @@ const About = () => {
                 <p>
                 In 2020, I worked as a Foreign Language Teacher (FLT) for one year at an elementary school in Japan. After that, I worked as a frontend developer for a healthcare startup in Japan for two years. My primary responsibilities included modifying and maintaining the company&apos;s internal application UI, debugging, and creating service introduction and inquiry pages from scratch. Additionally, I utilized my language skills to work as an English-Japanese interpreter among developers.
                 </p>
-                <Link href='/' className={'w-[2rem] h-[1.5625rem] flex justify-center content-center rounded mb-[1.25rem] border-[1px] border-solid border-[#eee] hover:bg-[#e7e7e7] duration-75'}>
+                <Link href='/' className={'back-button w-[2rem] h-[1.5625rem] flex justify-center items-center rounded mb-[1.25rem] border-[1px] border-solid border-[#ccc] hover:bg-[#e7e7e7] duration-75'}>
                     <Image src={IconArrowLeft} alt="←" />
                 </Link>
             </AboutContent>

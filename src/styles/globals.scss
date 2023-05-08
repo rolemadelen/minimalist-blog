@@ -91,7 +91,6 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-
 .about-content, .article {
   p, li {
     color: #353535;
@@ -105,6 +104,10 @@ h1, h2, h3, h4 {
       border-bottom: 1px solid #4e77dd;
       color: #4e77dd;
     }
+  }
+
+  .back-button {
+    border: 1px solid #ccc;
   }
 
   p {

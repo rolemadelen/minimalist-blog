@@ -8,8 +8,8 @@ import {
 const Header = ({lang}) => {
     return (
         <HeaderWrapper>
-            <Link href={"/"} className={'btn btn-ghost'}>
-                <Logo>rolemadelen</Logo>
+            <Link href={"/"} >
+            <Logo>rolemadelen</Logo>
             </Link>
             <div>
                 <Link className={`btn ${lang === 'en' ? 'btn-ghost' : ''}`} href="/blog/ko">한</Link>
