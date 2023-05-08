@@ -27,6 +27,8 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [ ] ~~create a PC wireframe ([#2][i2])~~ _2023.05.01_
 - [x] [feature] Redirect to the home menu when logo is clicked ([#20][i20]) - _2023.05.07_
 - [x] implement the About page ([#21][i21]) - _2023.05.07_
+- [x] [bug] when you refresh, it displays the initial iphone size background image ([#23][i23])
+
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2
@@ -43,3 +45,4 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 [i16]: https://github.com/rolemadelen/blogv2/issues/16
 [i20]: https://github.com/rolemadelen/blogv2/issues/20
 [i21]: https://github.com/rolemadelen/blogv2/issues/21
+[i23]: https://github.com/rolemadelen/blogv2/issues/23

@@ -19,6 +19,9 @@ export default function Home() {
 
   useEffect(() => {
       function handleResize() {
+        // prevents initial image showing when refreshing
+        document.querySelector('.profile-image')?.classList.remove('hidden');
+
         const screenWidth = window.innerWidth;
         if (screenWidth >= 1920) {
           setStaticImage(dt1920MainImage);
@@ -42,7 +45,7 @@ export default function Home() {
           <Image
           src={staticImage}
           alt="Main Picture"
-          className='profile-image'
+          className='profile-image hidden'
         />
         <MainTitle>rolemadelen</MainTitle>
         <MainMenu>
