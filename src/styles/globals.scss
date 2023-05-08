@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   word-break: keep-all;
 }
 
+.footnotes {
+  overflow-wrap: break-word;
+}
+
 // main home - background images
 img {
   max-width: 90%;

@@ -19,9 +19,7 @@ export default function Home() {
 
   useEffect(() => {
       function handleResize() {
-        // prevents initial image showing when refreshing
-        document.querySelector('.profile-image')?.classList.remove('hidden');
-
+        
         const screenWidth = window.innerWidth;
         if (screenWidth >= 1920) {
           setStaticImage(dt1920MainImage);
@@ -32,10 +30,12 @@ export default function Home() {
         } else {
           setStaticImage(iphoneMainImage);
         }
+        // prevents initial image showing when refreshing
       }
       window.addEventListener('resize', handleResize);
       handleResize(); // Call the function initially
       return () => {
+        document.querySelector('.profile-image')?.classList.remove('hidden');
         window.removeEventListener('resize', handleResize);
       };
   }, []);
