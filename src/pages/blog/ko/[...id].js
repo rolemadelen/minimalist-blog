@@ -18,9 +18,9 @@ export default function Post({ post }) {
         <div className={'wrapper'}>
         <ArticleHeader>
             <ArticleTitle>{post.title}</ArticleTitle>
-            <div className={'flex justify-between'}>
+            <div className={'flex flex-col'}>
                 <ArticleDate>{new Date(post.date).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' })}</ArticleDate>
-                <Link href='/blog/ko' className={'w-[2rem] h-[1.5625rem] flex justify-center content-center rounded mb-[1.25rem] border-[1px] border-solid border-[#eee] hover:bg-[#e7e7e7] duration-75'}>
+                <Link href='/blog/ko' className={'w-[2rem] h-[1.5625rem] flex justify-center items-center rounded mb-[1.25rem] border-[1px] border-solid border-[#ccc] hover:bg-[#e7e7e7] duration-75'}>
                     <Image src={IconArrowLeft} alt="←" width="auto"/>
                 </Link>
             </div>

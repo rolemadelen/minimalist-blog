@@ -43,7 +43,7 @@ export const HeaderWrapper = tw.div`
     header-wrapper
     flex
     justify-between
-    content-center
+    items-center
     m-[1.875rem]
 `
 
