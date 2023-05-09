@@ -34,8 +34,8 @@ export default function Home() {
       }
       window.addEventListener('resize', handleResize);
       handleResize(); // Call the function initially
+      document.querySelector('.profile-image')?.classList.remove('hidden');
       return () => {
-        document.querySelector('.profile-image')?.classList.remove('hidden');
         window.removeEventListener('resize', handleResize);
       };
   }, []);
