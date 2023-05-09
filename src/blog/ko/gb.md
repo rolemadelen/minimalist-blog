@@ -2,7 +2,7 @@
 title: 'Regular Expression: 언어 구분하기'
 posttitle: 'Regular Expression: 언어 구분하기'
 date: '2022-12-19 17:00:00'
-uid: 'e1'
+uid: 'gb'
 ---
 
 사용자의 이름이 일본어인 경우 `<성> <이름>` 순으로 표기하고, 그렇지 않다면 `<이름> <성>`순으로 표기하고 싶은데 가능할까?

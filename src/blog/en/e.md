@@ -3,10 +3,12 @@ title: 'Mac Setup 2023'
 posttitle: 'Mac Setup 2023'
 date: '2022-09-15 07:00:00'
 updated: '2023-02-28 08:00:00'
-uid: 'k'
+uid: 'e'
 ---
 
-> [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.
+Here I'm sharing my Mac setup for web development which I got inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/).
+
+---
 
 ## MacBook Pro
 
@@ -180,7 +182,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 ```
 
-## exa 셋업
+## exa setting
 
 Set aliases for `exa`:
 
@@ -217,19 +219,16 @@ fi
 - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 - [The Doki Theme](https://marketplace.visualstudio.com/items?itemName=unthrottled.doki-theme)
 
-## 해피해킹 (HHKB) 키보드
+## Happy Hacking Keyboard
 
-이상하게 맥북과 연결된 HHKB가 역따옴표(\`)와 물결표(~)키로 사용되는 `international1` 키를 인식하지 못했다.
+My mac had an issue with recognizing the keyboard.
+It couldn't read `international1` key which was used for backtick(\`) and tilde(~).
 
-이를 해결하기 위해 [Karabiner](https://karabiner-elements.pqrs.org/)를 사용했다. Karabinar 실행 후 `international1` 를 `grave_accent_and_tilde`로 리맵해준 결과 제대로 동작했다.
+I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international1` to `grave_accent_and_tilde` and it works great :)
 
-## 그 외
+## Other Apps
 
 - Arc - <https://thebrowser.company/>
 - Nota - <https://nota.md>
-- ~~Setapp - https://setapp.com/~~
+- ~~Setapp - <https://setapp.com/>~~
 - Immersed VR - <https://immersed.com/>
-
-## Immersed VR
-
-[모니터를 처분하고 가상환경으로 대체했다](./b2)

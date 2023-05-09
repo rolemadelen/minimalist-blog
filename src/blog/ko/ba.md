@@ -2,7 +2,7 @@
 title: 'Circular Queue란?'
 posttitle: 'Circular Queue란? (with TypeScript)'
 date: '2023-03-16 06:00:00'
-uid: 'j1'
+uid: 'ba'
 ---
 
 ## 원형 큐(Circular Queue)의 개념

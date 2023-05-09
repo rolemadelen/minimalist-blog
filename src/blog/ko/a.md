@@ -1,79 +1,160 @@
 ---
-title: '어찌할 수 없는 QWERTY 관성'
-posttitle: '어찌할 수 없는 QWERTY 관성'
-date: '2023-02-25 22:00:00'
-updated: '2023-02-26 11:00:00'
+title: 'Stack이란?'
+posttitle: 'Stack이란? (with TypeScript)'
+date: '2023-03-15 15:00:00'
 uid: 'a'
 ---
 
-_드보락(Dvorak)을 사용하는 글 주인의 주관적인 내용이 아주 잔뜩 담긴 글입니다._
+## 스택(Stack)이란?
 
----
+스택은 한쪽 끝에서만 데이터의 추가와 삭제가 가능한 단일구조 형식의 자료구조이다.
 
-현재 전 세계에서 가장 널리 사용되는 자판은 쿼티(QWERTY) 자판이다.
-자판 상단 행의 문자 여섯 개를 왼쪽부터 순서대로 나열해서 붙여진 이름이다.
+스택에 데이터를 집어넣는 것을 `push`라고 하고, 데이터를 빼는 것을 `pop`이라고 한다. `pop` 연산 실행 시 가장 나중에 들어간 데이터가 먼저 나오며, 처음에 집어넣은 데이터가 가장 마지막에 나오게 된다. 이와 같은 구조를 후입선출 (LIFO; Last In, First Out) 구조라고 한다.[^1]
 
-![qwerty keyboard](/images/a/qwerty-layout.webp)
+## 스택의 연산
 
-이 글을 보고 있는 사람들의 키보드가 쿼티 자판일 것이라고 근거 없이 99% 확신할 수 있다. 그중에서 또 98% 정도가 그대로 쿼티를 쓰고 있을 것이고, 그 외 2% 사람들이 쿼티 자판을 유지한 채 내부 설정만 바꿔서 다른 배열을 쓰고 있지 않을까 싶다.
+- **push** - 스택에 데이터를 집어넣는 함수
+- **pop** - 스택에서 데이터를 빼는 함수
+- **isEmpty** - 스택이 비어있는지 확인하는 함수
+- **peek** - 스택 가장 위(top)에 있는 데이터를 확인하는 함수
 
-예를 들면 나는 쿼티 자판인 맥북프로에 키보드 설정만 드보락(Dvorak)으로 변경해서 사용하고 있다.
+## 스택의 구현 방법
 
-![dvorak layout](/images/a/dvorak-layout.webp)
+데이터의 크기가 고정되어 있다면 배열을 사용하여 정적 스택을 구현할 수 있다. 반대로 데이터의 크기가 가변적인 경우, 연결 리스트를 사용하여 동적 스택을 구현할 수 있다.
 
-애초에 드보락 전용인 키보드 자체가 드물기도 하고, 키보드를 보면서 타이핑하지 않으니 자판의 형태에 대해서는 신경 쓰지 않는다 ([Kinesis Advantage2](https://kinesis-ergo.com/shop/advantage2/) 키보드는 심히 궁금하다).
+### 정적 스택 - Array
 
-이렇게 전 세계적으로 널리 사용되고 있는 자판인데, 왜 사용되고 있는 걸까? 나는 단 한 번도 "쿼티 자판으로 타자를 배우겠어"하고 본인이 선택해서 배웠다는 사람을 들어 본 적이 없다.
+```typescript
+export class StackArray<T> {
+  size: number;
+  top: number;
+  stack: (T | undefined)[];
 
-지인이 타자 수업을 받고 왔는데 "자판은 쿼티였어?" 와 같은 질문을 하면 "커.. 뭐?"와 같은 반응을 보이지 않을까 싶다. 본인이 사용하는 자판이 QWERTY라고 불리는 것도 모를 확률이 높다 (나는 몰랐다).
+  constructor(size: number) {
+    this.size = size;
+    this.top = 0;
+    this.stack = new Array<T | undefined>(size);
 
-사람들은 아무런 의심 없이 당연하게 쿼티 자판을 받아들이고 적응하며 사용하고 있다. 뭔가 불편한 부분이 있다면 그건 자판의 문제가 아니라 내 연습 부족이라고 생각하면서 말이다.
+    if(Object.seal) {
+      this.stack.fill(undefined);
+      Object.seal(this.stack);
+    }
+  }
 
-## QWERTY 자판은 사람이 아닌 타자기를 위한 것
+  // O(1)
+  push(val: T): void {
+    if(this.top >= this.size) {
+      throw new Error('Stack overflow');
+    }
 
-쿼티 자판은 애초에 타자기의 글쇠들이 서로 엉키지 않도록 하기 위해 만들어진 자판이다.
+    this.stack[this.top] = val;
+    this.top += 1;
+  }
 
-타자기에서 키를 동시에 입력하거나 주변에 위치한 키들을 빠르게 입력하면 글쇠가 엉켜 고장이 나버리는 문제가 있었다.
+  // O(1)
+  pop(): T | undefined {
+    if (this.isEmpty()) {
+      throw new Error('Stack underflow');
+    }
 
-이를 방지하기 위해 자주 쓰이는 문자와 문자의 조합(ph, sh, th, 등등)을 연구해서 자판에서 최대한 멀리 떨어뜨려 놓은 자판을 만들게 되는데 그것이 지금의 QWERTY 자판이다. Christopher Sholes가 발명했다고 알려져 있고 공개된 특허는 [여기](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0207559)에서 확인 할 수 있다.
+    this.top -= 1;
+    let val = this.stack[this.top];
+    return val;
+  }
 
-_(QWERTY의 디자인이 사실은 엉키는 글쇠 때문만은 아니고 당시 전신 기사(telegrapher)들이 좀 더 쉽게 모스코드를 해독할 수 있도록 하기 위해 만들어졌다는 설도 존재한다)_
+  // O(1)
+  isEmpty(): boolean {
+    return this.top === 0;
+  }
 
----
+  // O(1)
+  peek(): T | undefined {
+    if (this.isEmpty()) {
+      throw new Error('Stack is empty');
+    }
 
-한 가지 잘못된 정보가 있는데 쿼티 자판은 일부러 타자 속도를 늦추기 위해 만들어진 것이 아니다.
+    return this.stack[this.top - 1];
+  }
+}
+```
 
-> "When a key was pressed, the corresponding typebar would swing upwards, causing the print head to strike at the center of the ring. Gravity would then return the typebar to its initial position. The implication of this design, however, was that pressing adjoining keys in quick succession would cause their typebars to collide and jam the machine." (Utterback 1999, p5)[^a]
+### 동적 스택 - Linked List
 
-당시 Christopher Sholes의 타자기는 중력에 의해 글쇠가 제자리에 돌아오도록 설계되어 있었다. 글쇠가 돌아오는 걸 기다릴 필요가 없도록 같이 쓰이는 문자들을 멀리 떨어뜨려 놓은 것이다. 그렇기 때문에 더 이상 글쇠가 엉켜버릴 걱정을 하지 않아도 되었고, 왼쪽 오른쪽 번갈아 가면서 타자를 할 수가 있기 때문에 오히려 빠르게 칠 수 있었다. 애초에 드보락 자판도 타자기를 기반으로 만들어졌다.
+위에서 Array를 사용했지만, 사실 JavaScript의 Array는 HashMap으로 구현되어 있기 때문에 길이에 제한이 없다. 그래서 Array로 동적인 스택을 구현할 수 있다[^a]. 하지만 여기서는 연결리스트를 따로 만들어서[^b] 동적인 스택을 구현했다.
 
----
+```ts
+import { ListNode, LinkedListNode } from '../linked-list/LinkedList';
 
-글쇠의 문제를 떠나서, 쿼티의 배치 자체가 비효율적이다. 항상 쓰이는 모음 중에서 오직 `A`만이 홈 행(home row)에 자리 잡고 있다. 이 말은 거의 매번 손가락을 위 혹은 아래 행으로 움직여야 한다는 것이다.
+export class StackList<T> {
+  top: ListNode<T>;
 
-재밌는 건 Christopher Sholes도 이를 알고 있었다는 것. 그는 QWERTY가 좋은 자판이라고 생각하지 않았고 계속해서 좀 더 효율적인 자판을 만들어내려고 했다. 그의 마지막 자판은 아래와 같은 모습을 하고 있다.
+  constructor(value: T | null = null) {
+    if (value) {
+      this.top = new LinkedListNode(value);
+    } else {
+      this.top = null;
+    }
+  }
 
-< C.L. Sholes Type Writing Machine - [Patent No.568630](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0568630) >
-![Sholes' final layout](/images/a/clsholes-568630.webp)
+  // O(1)
+  isEmpty(): boolean {
+    return this.top === null;
+  }
 
-드보락 자판이 만들어진 이유도 효율성 때문이다. 쿼티의 구조가 비효율적이라고 느낀 August Dvorak이 손의 움직임을 최소화할 수 있도록 홈 행 왼쪽에는 모음을, 오른쪽에는 가장 자주 쓰이는 자음 5개를 배치했다. 자연스럽게 양손을 균형 있게 사용하게 되면서 속도와 정확도를 챙기게 된 것인데 "드보락은 빨리 칠 수 있게 만들어진 것"이라는 오해가 있다.
+  // O(1)
+  push(value: T): void {
+    let newNode = new LinkedListNode(value);
+    newNode.next = this.top;
+    this.top = newNode;
+  }
 
-## 사람들은 현재의 상태를 유지하고 싶어 한다
+  // O(1)
+  pop(): ListNode<T> {
+    let poppedNode = this.top;
 
-QWERTY가 비효율적이라면 어째서 2023년인 지금까지 계속해서 사용되고 있는 걸까? 여러 이유가 있겠지만, 내가 생각하는 바는 아래와 같다.
+    if (this.top) {
+      this.top = this.top.next;
+    }
 
-더욱 효율적인 자판이라고 하는 것들이 여럿 나왔지만, 그 '효율적'이라는 게 지금 웬만큼, 문제없이, 잘 사용하고 있는 자판을 굳이 버려가면서까지 배울 만큼 혁신적이지 않았기 때문이다. 단 몇 퍼센트의 성능 향상이 있다고 해서 당장 문제없이 돌아가는 시스템을 시간과 돈을 허비해가며 죄다 교체해버릴 수는 없지 않겠는가.
+    return poppedNode;
+  }
 
-변화를 싫어하는 사람들의 마음도 한몫했다고 본다. 쿼티의 발명가가 쿼티보다 효율적인 자판을 만들었지만 사장되어 버린 이유는, 쿼티를 사용하는 사람들은 계속해서 쿼티를 사용하려고 했기 때문이다. 타자기에서 전자로 넘어가면서 더 이상 글쇠의 문제는 없어지게 되었지만, QWERTY 관성(慣性)을 어찌할 수 없었다.
+  // O(1)
+  peek(): ListNode<T> {
+    if (this.top) {
+      return this.top;
+    } else {
+      return null;
+    }
+  }
+}
+```
 
-그렇게 점점 더 많은 사람이 쿼티를 접하게 되었고 결국엔 국제 기준까지 되어버렸다. 기준이 되어 버린 만큼 해당 자판을 쓰는 게 당연해졌고, 내가 키보드를 처음 접했을 때처럼 자판에 대해서는 아무런 의심도 하지 않는 게 당연하게 되어버렸다.
+## 정적 스택과 동적 스택 각각의 장단점
 
----
+정적 스택의 경우 스택의 크기가 고정되어 있기 때문에 스택이 가득 차버리면 더 이상 데이터를 추가할 수 없다. 하지만 구현이 간단하고 따로 메모리 할당이 필요하지 않기 때문에 메모리 사용량이 적다는 장점이 있다.
 
-다른 자판에 관한 얘기를 하면 속도 얘기가 항상 나오는데, 이는 비단 속도의 문제가 아니라 효율성의 문제이다. 내가 드보락을 사용하는 이유는 손에 부담을 덜기 위해서지 빠른 타자를 위해서가 아니다. 기분 탓이라면 어쩔 수 없지만 드보락을 사용하면서 손목의 통증이 없어졌다.
+동적 스택의 경우 크기가 고정되어 있지 않다. 그래서 데이터가 갑자기 늘어도 메모리가 허용하는 한 스택에 전부 집어넣을 수 있다. 하지만 동적 스택은 상대적으로 구현이 복잡하고 메모리 할당 또한 필요하기 때문에 메모리 사용량이 늘어나게 된다.
 
-쿼티가 세상을 지배하고 있는 만큼 쿼티를 모르면 불편함이 생기기 때문에 지금 당장 "쿼티 배우지 마세요"라고는 할 수 없다. 그렇지만 지금 키보드를 처음 접하는 사람들에게조차, 마치 쿼티 외에는 존재하는게 없는 것처럼 자판에 대한 설명이 하나도 없는 건 아쉽다.
+## 스택의 사용사례
 
-문장 하나 겨우 생각나는 학생 시절 제2외국어 수업처럼이라도 좋으니, 제2키보드 수업 같은 게 있으면 좋지 않을까? 사용하지 않게 되더라도, 다른 자판이 있다는 것 정도는 알게 될 테니까.
+- 재귀 알고리즘[^c] [^d]
+- 웹 브라우저 방문기록 (뒤로가기)
+- 실행 취소 (undo)
+- 수식의 괄호 검사 [^e]
+- 후위 표기법 (postfix) 계산 [^f]
 
-[^a]: Utterback, James M. (1999). Mastering the Dynamics of Innovation. Boston: Harvard Business Press.
+## Source
+
+- <https://cwjuns.tistory.com/18>
+- <https://velog.io/@jimmy48/%EC%8A%A4%ED%83%9D%EC%9D%B4%EB%9E%80>
+- <https://gmlwjd9405.github.io/2018/08/03/data-structure-stack.html>
+- <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
+
+[^1]: 선입후출 (FILO; First-In, Last-Out)이라고 부르기도 한다.
+[^a]: [TypeScript로 구현한 스택 - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
+[^b]: [TypeScript로 구현한 Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
+[^c]: 팩토리얼 구현 문제 - https://www.acmicpc.net/problem/10872
+[^d]: 피보나치 구현 문제 - https://www.acmicpc.net/problem/10870
+[^e]: 괄호 검사 문제 - https://www.acmicpc.net/problem/4949
+[^f]: 후위 표기식 문제 - https://www.acmicpc.net/problem/1918

@@ -2,7 +2,7 @@
 title: 'What is a Queue?'
 posttitle: 'What is a Queue? (with TypeScript)'
 date: '2023-03-15 15:00:00'
-uid: 'cb'
+uid: 'ab'
 ---
 
 ## Queue

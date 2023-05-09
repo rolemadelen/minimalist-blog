@@ -1,82 +1,63 @@
 ---
-title: 'Mac에서 GPG key 생성하기'
-posttitle: 'Mac에서 GPG key 생성하기'
-date: '2022-12-28 05:29:00'
+title: '선형 탐색 (Linear Search) 알고리즘'
+posttitle: '선형 탐색 (Linear Search)'
+date: '2022-10-23 12:00:00'
 uid: 'd'
 ---
 
-먼저 `gnupg`가 있어야한다. [여기](https://www.gnupg.org/download/)에서 다운받거나 `brew`를 사용한다.
+'선형'이란 이름에서도 알 수 있듯이, 해당 알고리즘은 리스트의 모든 요소를 하나하나 확인하며 값이 존재하는지 확인한다. 그렇기 때문에 리스트의 정렬 여부가 알고리즘 성능에 영향을 끼치지 못한다.
 
-```sh
-$ brew install gnupg
+## 복잡도
+
+리스트의 크기가 `n`일 때, `[0]` 요소부터 `[n-1]`까지 탐색하기 때문에 시간복잡도는 `O(N)`이 된다.
+
+탐색하는 과정에서 추가로 메모리를 할당하거나 하는 과정이 없기 때문에 공간복잡도는 `O(1)`이다.
+
+| 시간 복잡도 | 공간 복잡도 |
+| :---------: | :---------: |
+|    O(N)     |    O(1)     |
+
+## 의사코드
+
+```text
+LinearSearch(T[] arr, int len, T target) → number
+    Pre: arr is the array of type T
+         len is the total size
+         target is the value we'll look for from the list
+    Post: we know the exact position of the value in the list; -1 if not in the list.
+
+    i ← 0
+    WHILE (i < len)
+        IF (arr[i] == value)
+            return i
+        END IF
+
+        i ← i + 1
+    END WHILE
+
+    return -1
+END LinearSearch
 ```
 
-버전에 따라 사용하는 커맨드가 달라지기 때문에 gpg의 버전을 확인하자.
+## 구현
 
-```sh
-$ gpg --version
+```ts
+interface Array<T> {
+    linearSearch(target: number): number;
+}
 
-gpg (GnuPG) 2.3.8
+Array.prototype.linearSearch = (target) => {
+    const length = arr.length;
+
+    for (let i = 0; i < length; ++i) {
+        if (arr[i] === target) {
+            return i;
+        }
+    }
+    return -1;
+};
+
+console.log(arr.linearSearch(1)); // 0
+console.log(arr.linearSearch(5)); // 4
+console.log(arr.linearSearch(10)); // -1
 ```
-
-gpg의 버전이 2.1.17보다 낮은 경우 아래의 커맨드를 사용한다.
-
-```sh
-$ gpg --default-new-key-algo rsa4096 --gen-key
-```
-
-반대의 경우는 아래를 실행한다.
-
-```sh
-$ gpg --full-generate-key
-```
-
-커맨드를 실행하면 키를 생성하는 과정에 돌입하게 된다.
-
-```sh
-gpg (GnuPG) 2.4.0; Copyright (C) 2021 Free Software Foundation, Inc.
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-
-Please select what kind of key you want:
-   (1) RSA and RSA
-   (2) DSA and Elgamal
-   (3) DSA (sign only)
-   (4) RSA (sign only)
-   (9) ECC (sign and encrypt) *default*
-  (10) ECC (sign only)
-  (14) Existing key from card
-Your selection?
-```
-
-본인에게 필요한 부분을 선택하며 진행하면 된다 (디폴트의 경우 그냥 엔터를 입력). 마지막에 secure passphrase를 입력하면 끝이다.
-
----
-
-지금 생성한 GPG 키를 확인해보자.
-
-```sh
-$ gpg --list-secret-keys --keyid-format=long
-
-/Users/user/.gnupg/pubring.kbx
-------------------------------------
-sec   4096R/3AA5C34371567BD2 2022-12-27 [SC]
-uid                      Name <email@example.com>
-ssb   4096R/4BB6D45482678BE3 2022-12-27
-```
-
-위 예제의 경우, 나의 GPG ID는 `3AA5C34371567BD2`가 된다.
-
-나중에 GPG key를 본인 계정에 추가해야 할 때 (e.g. 깃허브), GPG ID를 사용해 public key를 생성하면된다.
-
-```sh
-$ gpg --armor --export 3AA5C34371567BD2
-
------BEGIN PGP PUBLIC KEY BLOCK-----
-...
-...
-...
------END PGP PUBLIC KEY BLOCK-----
-```
-
-`BEGIN`에서 `END`부분까지 전부 복사한 다음 필요한 곳에 붙여넣으면 된다.

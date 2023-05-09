@@ -2,7 +2,7 @@
 title: 'gpg: signing failed: No pinentry 오류 해결'
 posttitle: 'gpg: signing failed: No pinentry 오류 해결'
 date: '2023-02-05 12:00:00'
-uid: 'd1'
+uid: 'ja'
 ---
 
 나는 깃허브에 GPG key를 추가해서 커밋에 서명을 하고 있다.

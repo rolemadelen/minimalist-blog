@@ -1,235 +1,131 @@
 ---
-title: 'Mac Setup 2023'
-posttitle: 'Mac Setup 2023'
-date: '2022-09-15 07:00:00'
-updated: '2023-02-28 08:00:00'
+title: 'Linked List란?'
+posttitle: '연결 리스트(Linked List)란?'
+date: '2023-03-18 09:20:00'
 uid: 'c'
 ---
 
-> [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.
+## 연결 리스트(Linked List) 개념
 
-## MacBook Pro
+'노드(Node)'라는 개체가 있다. 이 개체는 데이터(`item`)와 포인터 두 개의 필드를 가진다. 포인터는 간단히 메모리 주소를 담는 변수라고 생각하면 된다.
 
-- 13-inch
-- 2 GHz Quad-Core Intel Core i5
-- Intel Iris Plus Graphics 1536 MB
-- 16 GB RAM
-- 512 GB SSD
-- DVORAK (English), Japanese (Romaji), Korean (3-Beolsik)
-- ~~macOS Monterey~~
-- macOS Ventura 13.2.1
-
-## System Preferences
-
-- Notifications
-  - ~~Off, except calendar, mail, and reminders~~
-  - Off except Calendar, LINE, Mail, Messages, Reminders, and Slack
-- Sound
-  - Play sound on startup - [Off]
-- General
-  - Sharing
-    - Turn off ~~"AirPlay Receiver" and~~ all sharings / Caching
-    - Change local hostname
-    - Also terminal:
-      - `sudo scutil --set ComputerName "newname"`
-      - `sudo scutil --set LocalHostName "newname"`
-      - `sudo scutil --set HostName "newname"`
-    - AirDrop & Handoff
-      - AirPlay Receiver - [OFF]
-- Appearance
-  - Appearance - Auto
-  - Accent Color - Blue
-  - Show scroll bars - When scrolling
-- Control Center
-  - ~~Wi-Fi~~ | Bluetooth | Airdrop | Stage Manager | ~~Sound~~ | Now Playing | Spotlight | Siri | Time Machine
-    - Show in menu bar - [OFF]
-  - Battery
-    - Show in Menu Bar - [ON]
-    - Show Percentage - [ON]
-  - Clock
-    - "use a 24-hour clock"
-    - "announce the time" -> on the hour
-- Siri
-  - disable
-- Spotlight
-  - Disable all except 'Applications' and 'System Preferences'
-- Privacy and Security
-  - Turn on FileVault
-  - Turn on Lockdown Mode
-- Desktop & Dock
-  - Dock
-    - Size - close to small
-    - Magnification - slightly larger than the size
-    - Position on screen - ~~Right~~ Bottom
-    - remove most apps from Dock
-    - Automatically hide and show the Dock - [ON]
-    - Show recent apps in Dock - [OFF]
-    - Show indicators for open apps - [ON]
-  - Menu Bar
-    - Automatically hide and show the menu bar - [Always]
-  - Windows & Apps
-    - Close windows when quitting an app - [ON]
-    - Default web browser - [Arc]
-  - Mission Control
-    - Hot Corners: disable all
-- Display
-  - Nightshift - Custom 22:30 to 5:00
-- Lock Screen
-  - Start Screen Saver when inactive - [Never]
-  - Turn display off on battery when inactive - [For 2 minutes]
-  - Turn display off on power adapter when inactive - [For 10 minutes]
-  - Require password after screen saver begins or display is turned off - [Immediately]
-- Touch ID & Password
-  - Turn on 'use apple watch to unlock your app and your Mac'
-- Keyboard
-  - Text Input
-    - Dvorak
-    - Japanese - Romaji
-    - 3-Set Korean (390)
-  - Text
-    - "correct spelling automatically" OFF
-    - "capitalize words automatically" OFF
-    - "add period with double-space" OFF
-    - "use smart quotes and dashes" OFF
-    - use "abc" for double quotes
-    - use 'abc' for single quotes
-  - Dictation
-    - 'press control key twice' to activate
-- Trackpad
-  - Silent clicking - [ON]
-  - Tap top Click - [ON]
-  - Tracking speed - 7/10
-  - Click - Firm
-- Finder Settings
-  - Tags
-    - disable all
-  - Sidebar
-    - activate all Favorites
-  - Advanced
-    - "show all filename extensions" ON
-      - "remove items from the trash after 30 days" ON
-  - View -> Show Preview (for images)
-
-## System Preferences (terminal)
-
-```sh
-# take screenshots as jpg (usually smaller size) and not png
-defaults write com.apple.screencapture type jpg
-
-# do not open previous previewed files (e.g. PDFs) when opening a new one
-defaults write com.apple.Preview ApplePersistenceIgnoreState YES
-
-# show Library folder
-chflags nohidden ~/Library
-
-# show path bar
-defaults write com.apple.finder ShowPathbar -bool true
-
-# show status bar
-defaults write com.apple.finder ShowStatusBar -bool true
-
-killall Finder;
+```text
+Node(data)
+    item  ← data;
+    *next ← Ø;
+end
 ```
 
-## Homebrew
+연결 리스트의 각 요소를 '노드'라고 한다. 배열의 경우 모든 요소들이 메모리 한 공간에 연속되게 나열되어 있지만, 연결 리스트의 노드들은 메모리 공간 여러 군데에 분산되어 있다. 모든 노드들이 떨어져 있기 때문에 서로 어디에 있는지 위치를 알 필요가 있다. 이 때 사용되는 것이 포인터이다.
 
-```sh
-# install homebrew as a package manager for macOS
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+`Node`의 `next` 포인터가 해당 노드와 연결되어 있는 다음 노드의 정보를 담고있다. 만약 다음 노드가 없다면 `NULL`값을 가진다.
 
-# update everything in homebrew to recent version
-brew update
+```cpp
+class ListNode<T> {
+  item: T;
+  next: ListNode<T> | null;
 
-# install GUI applications
-brew install --cask \
- bitwarden \
- iterm2 \
- visual-studio-code \
- discord \
- slack \
- imageoptim \
- raycast \
- spotify
+  constructor(item: T) {
+    this.item = item;
+    this.next = null;
+  }
+}
 
-# install terminal applications
-brew install \
- wget \
- exa \
- git \
- nvm \
- pnpm \
- graphicsmagick
+let nodeA = new ListNode<string>('A'); // A　→ NULL
+let nodeB = new ListNode<string>('B');  // B → NULL
+
+nodeA.next = nodeB; // A → B → NULL
+
+console.log(nodeA.item); // A
+console.log(nodeA.next.item); // B
+console.log(nodeA.next.next); // NULL
+console.log(nodeA.next.next.item); // ERROR: NULL.next가 되기 때문에 오류이다
 ```
 
-## OH MY ZSH
+## 연결 리스트 종류
 
-```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+### 단일 연결 리스트 (Singly Linked List)
 
-# omz update
-source ~/.zshrc
+단일 연결 리스트는 단방향 리스트라고 불리기도 한다. 이름 그대로 오로지 한 방향으로만 이동이 가능하도록 설계된 연결 리스트이다.
+
+각 노드는 데이터와 다음 노드를 가리키는 `next` 포인터를 필드로 가진다.
+
+```text
+Node(data)
+    item  ← data;
+    *next ← Ø;
+end
 ```
 
-## Oh My Zsh Theme + Fonts
+100개의 노드가 연결되어 있는 리스트에서 실수로 첫 번째 노드의 `next`값을 `NULL`로 덮어씌어진다면, 2~100번째 노드에 접근 할 수 없게 되므로 포인터 관리를 잘해야 한다[^a].
 
-```sh
-brew install starship
-echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+### 이중 연결 리스트 (Doubly Linked List)
 
-brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+이중 연결 리스트는 다음 노드를 가리키는 `next` 포인터에 더해 이전 노드를 가리키는 `prev`('previous') 포인터가 추가된 리스트이다.
+
+```text
+Node(data)
+    item  ← data;
+    *next ← Ø;
+    *prev ← Ø;
+end
 ```
 
-## exa 셋업
+단일 연결 리스트와는 달리, 중간의 어떤 노드의 `next` 값이 잘못되어도 `prev` 포인터를 사용하여 원하는 노드에 접근할 수 있다. 하지만 개체에 `prev` 필드가 추가되었기 때문에 메모리 사용량이 늘어난다는 단점이 있다.
 
-Set aliases for `exa`:
+### XOR 연결 리스트 (XOR Linked List)
 
-```sh
-if [[ $(command -v exa) ]]; then
-  alias e='exa --icons'
-  alias l=e
-  alias ls=e
-  alias ea='exa -a --icons'
-  alias la=ea
-  alias ee='exa -aal --icons'
-  alias ll=ee
-  alias et='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
-  alias lt=et
-  alias eta='exa -T -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
-  alias lta=eta
-fi
+XOR 연결 리스트는 이중 연결 리스트의 단점을 보완한 연결 리스트이다. `next`와 `prev` 대신에 XOR 연산을 사용한 단 하나의 포인터를 사용하여 이중 연결 리스트를 구현한다. 하지만 XOR 연산자를 지원하지 않는 언어에서는 구현할 수 없다.
+
+XOR 리스트의 노드는 이전 노드와 다음 노드를 XOR 연산한 값을 저장한다 (`prev ^ next`) .
+
+```text
+Node(data)
+    item  ← data;
+    *xor ← Ø;
+end
+
+XOR(prev, curr) → Node *
+    return (prev ^ curr);
+end
+
+Node *prev ← Ø;
+Node *curr = Ø;
+Node *next ← XOR(prev, curr->xor);
 ```
 
-## VS Code
+### 원형 연결 리스트 (Circular Linked List)
 
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- [Auto Hide](https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide)
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
-- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
-- [The Doki Theme](https://marketplace.visualstudio.com/items?itemName=unthrottled.doki-theme)
+일반적인 연결 리스트에서는 마지막 노드의 `next` 포인터가 `NULL`을 가리키게 되어 리스트의 끝을 나타낸다. 하지만 원형 연결 리스트에서는 마지막 노드가 첫 번째 노드를 가리키는 구조를 이루게 되어 원형 구조를 형성한다. 이중 원형 연결 리스트의 경우, 첫 번째 노드의 `prev` 포인터가 마지막 노드를 가리킨다.
 
-## 해피해킹 (HHKB) 키보드
+![Circular Linked List](/images/k//circular-linked-ilst.gif)
 
-이상하게 맥북과 연결된 HHKB가 역따옴표(\`)와 물결표(~)키로 사용되는 `international1` 키를 인식하지 못했다.
+## 배열과 연결리스트
 
-이를 해결하기 위해 [Karabiner](https://karabiner-elements.pqrs.org/)를 사용했다. Karabinar 실행 후 `international1` 를 `grave_accent_and_tilde`로 리맵해준 결과 제대로 동작했다.
+|  | 접근 | [0] 노드 삽입 |  [n/2] 노드 삽입 | [n-1] 노드 삽입 | 삭제 | [n-1] 삭제 |
+|:---|:--:|:--:|:--:|:--:|:--:|:--:|
+| 배열 | O(1) | O(n) | O(n) | O(1) | O(n) | O(1) |
+| 연결 리스트 | O(n) | O(1) | 접근 + O(1) | O(1) | O(1) | O(1) |
 
-## 그 외
+### 배열의 특징
 
-- Arc - <https://thebrowser.company/>
-- Nota - <https://nota.md>
-- ~~Setapp - https://setapp.com/~~
-- Immersed VR - <https://immersed.com/>
+- 메모리 공간에 데이터들이 연속적으로 저장된다.
+- 데이터의 빠르게 접근이 가능하다.
+- 배열의 처음 또는 중간에 새로운 데이터를 삽입할 경우, 요소들의 위치를 한 칸씩 이동시켜야 하기 때문에 오버헤드가 발생한다.
+- 데이터의 삭제할 때도 요소들의 위치를 이동시켜야 하므로 오버헤드가 발생한다.
 
-## Immersed VR
+### 연결리스트의 특징
 
-[모니터를 처분하고 가상환경으로 대체했다](./b2)
+- 각 노드들은 떨어진 공간에 존재하며 포인터로 연결되어 있다.
+- 리스트에 새로운 데이터를 삽입할 경우, 서로 떨어져있는 노드들을 포인터로 연결하면 되기 때문에 배열처럼 오버헤드가 발생하지 않는다.
+- 노드의 삭제도 마찬가지로 노드의 연결을 끊는 것만으로 처리할 수 있으므로 오버헤드가 발생하지 않는다.
+- 다만, 원하는 노드에 접근하기 위해서는 항상 첫 노드부터 순차적으로 접근해야 하기 때문에 상대적으로 느리다.
+- 배열과 달리 각 요소(노드)마다 포인터가 존재하기 때문에 상대적으로 메모리 사용량이 크다.
+
+## Source
+
+- <https://en.wikipedia.org/wiki/Linked_list>
+- <https://www.youtube.com/watch?v=HB7TcYklBHY>
+- <https://jud00.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8Linked-List>
+
+[^a]: 2~100번째 노드는 메모리에 계속 남게 되어 메모리 누수의 원인이 될 수 있다.

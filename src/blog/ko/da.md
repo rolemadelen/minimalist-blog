@@ -2,7 +2,7 @@
 title: '이진 탐색 (Binary Search) 알고리즘'
 posttitle: '이진 탐색 (Binary Search)'
 date: '2022-10-23 12:50:00'
-uid: 'h1'
+uid: 'da'
 ---
 
 검색 범위를 줄여 나가면서 원하는 데이터를 검색하는 알고리즘.

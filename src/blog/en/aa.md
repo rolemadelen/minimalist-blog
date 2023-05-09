@@ -1,87 +1,158 @@
 ---
-title: 'Installing Rust'
-posttitle: 'Installing Rust'
-date: '2022-08-12 17:42:00'
+title: 'What is a Stack?'
+posttitle: 'What is a Stack? (with TypeScript)'
+date: '2023-04-05 08:00:00'
 uid: 'aa'
 ---
 
-The official documentation recommends using `rustup` to install or upgrade Rust on your device.
+## What is a Stack?
 
-If you have installed Rust without `rustup`, you can remove it from your machine by running the following command:
+A stack is a linear data structure where data insertion or deletion occurs at one end only.
 
-```shell
-$ /usr/local/lib/rustlib/uninstall.sh
-install: uninstalling component 'rustc'
-install: uninstalling component 'rust-std-x86_64-apple-darwin'
-install: uninstalling component 'cargo'
-install: uninstalling component 'rust-docs'
+Inserting an item into the stack is called a `push` operation, and removing an item is called a `pop` operation. When you pop an item from the stack, the last item inserted will be removed. This means that the first item inserted into the stack will be the last item removed, creating a _Last In, First Out_ (LIFO) structure.[^1]
 
-    Rust Documentation is uninstalled.
-```
+## Stack Operations
 
-## Installation
+- **push** - A function that puts data into the stack.
+- **pop** - A function that takes data out of the stack.
+- **isEmpty** - A function that checks if the stack is empty.
+- **peek** - A function that checks the data at the top of the stack.
 
-You can install `rustup` on your machine by executing the following command:
+## Implementation
 
-```shell
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+If we know the exact size of the data, we can use an array to create a static stack. If the size is unknown, we can use a dynamic array or a linked list to create a stack whose capacity can grow and shrink as needed.
 
-...
- stable-x86_64-apple-darwin installed - rustc 1.63.0 (4b91a6ea7 2022-08-08)
+### Static Stack - Array
 
+```typescript
+export class StackArray<T> {
+  size: number;
+  top: number;
+  stack: (T | undefined)[];
 
-Rust is installed now. Great!
+  constructor(size: number) {
+    this.size = size;
+    this.top = 0;
+    this.stack = new Array<T | undefined>(size);
 
-To get started you may need to restart your current shell.
-This would reload your PATH environment variable to include
-Cargo's bin directory ($HOME/.cargo/bin).
-```
+    if(Object.seal) {
+      this.stack.fill(undefined);
+      Object.seal(this.stack);
+    }
+  }
 
-Now check the version:
+  // O(1)
+  push(val: T): void {
+    if(this.top >= this.size) {
+      throw new Error('Stack overflow');
+    }
 
-```shell
-$ rustc --version
-rustc 1.63.0 (4b91a6ea7 2022-08-08)
-```
+    this.stack[this.top] = val;
+    this.top += 1;
+  }
 
-## Hello World
+  // O(1)
+  pop(): T | undefined {
+    if (this.isEmpty()) {
+      throw new Error('Stack underflow');
+    }
 
-We'll use `cargo` to create a new project.
+    this.top -= 1;
+    let val = this.stack[this.top];
+    return val;
+  }
 
-```shell
-$ cargo new hello_world
-     Created binary (application) `hello_world` package
-```
+  // O(1)
+  isEmpty(): boolean {
+    return this.top === 0;
+  }
 
-Move to the directory `hello_world` and try to run the code.
+  // O(1)
+  peek(): T | undefined {
+    if (this.isEmpty()) {
+      throw new Error('Stack is empty');
+    }
 
-```shell
-$ cd hello_world
-
-$ cargo run 
-   Compiling hello_world v0.1.0 (/hello_world)
-    Finished dev [unoptimized + debuginfo] target(s) in 1.05s
-     Running `target/debug/hello_world`
-Hello, world!
-```
-
-You can find the source code of `hello_world` in `src/` directory.
-
-```rust
-// main.rs file
-fn main() {
-    println!("Hello, world!");
+    return this.stack[this.top - 1];
+  }
 }
 ```
 
-To check for any errors in your code without actually running it, you can use the `cargo check` command.
+### Dynamic Stack - Linked List
 
-```shell
-$ cargo check 
-    Checking hello_world v0.1.0 (/Users/bprsstnt/Documents/rust/hello_world)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
+To implement a dynamic stack in JavaScript, we can actually just use an array[^a], because it is implemented using a hash map. However, in this case, I'll use a linked list[^b] instead to create a dynamic stack.
+
+```ts
+import { ListNode, LinkedListNode } from '../linked-list/LinkedList';
+
+export class StackList<T> {
+  top: ListNode<T>;
+
+  constructor(value: T | null = null) {
+    if (value) {
+      this.top = new LinkedListNode(value);
+    } else {
+      this.top = null;
+    }
+  }
+
+  // O(1)
+  isEmpty(): boolean {
+    return this.top === null;
+  }
+
+  // O(1)
+  push(value: T): void {
+    let newNode = new LinkedListNode(value);
+    newNode.next = this.top;
+    this.top = newNode;
+  }
+
+  // O(1)
+  pop(): ListNode<T> {
+    let poppedNode = this.top;
+
+    if (this.top) {
+      this.top = this.top.next;
+    }
+
+    return poppedNode;
+  }
+
+  // O(1)
+  peek(): ListNode<T> {
+    if (this.top) {
+      return this.top;
+    } else {
+      return null;
+    }
+  }
+}
 ```
+
+## Static vs. Dynamic Stack
+
+In the case of a static stack, the size of the container is fixed. So if the stack becomes full, it can no longer add any more data. However, it has the advantage of being simple to implement and requiring less memory usage since it does not require separate memory allocation.
+
+On the other hand, a dynamic stack is not fixed in size. So even if the number of data suddenly increases, it can be placed in the stack as long as the memory allows it. However, a dynamic stack is relatively complex to implement and also requires memory allocation, so the memory usage increases.
+
+## Stack Applications
+
+Stacks can be used in various applications, including:
+
+- Recursive algorithms
+- Storing web browser history
+- Implementing undo functionality
+- Checking the validity of parentheses in mathematical expressions
+- Evaluating postfix expressions
 
 ## Source
 
-- [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
+- <https://cwjuns.tistory.com/18>
+- <https://velog.io/@jimmy48/%EC%8A%A4%ED%83%9D%EC%9D%B4%EB%9E%80>
+- <https://gmlwjd9405.github.io/2018/08/03/data-structure-stack.html>
+- <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
+
+[^1]: It is also known as a First-In, Last-Out (FILO) structure
+[^a]: [Stack implementation in TypeScript - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
+[^b]: [Stack implementation in TypeScript - Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
