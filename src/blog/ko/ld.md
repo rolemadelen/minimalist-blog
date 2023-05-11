@@ -7,6 +7,11 @@ uid: 'ld'
 
 > 성공이라기보다는 단순히 뿌듯했던 것의 기록이라고 보면 되지 않을까.
 
+## ??
+
+- 초등학교 시절 - 왕따에서 벗어남 (괴롭히던 애가 달리기 1등 이었는데 내가 더 빨랐음)
+- 중학교 시절 - 클라리넷 배움! recital 했다 🎵
+
 ## 2011
 
 - 크로스컨트리 팀 입단 - 도전! 🏃🏻
@@ -28,7 +33,8 @@ uid: 'ld'
 
 ## 2016
 
-- UCSD 편입 - [Mathematics-Computer Science B.S.](https://math.ucsd.edu/students/undergraduate/ma30-math-computer-science-b-s)
+- 인생의 파트너 👧🏻❤️
+- CC → UCSD 편입 - [Mathematics-Computer Science B.S.](https://math.ucsd.edu/students/undergraduate/ma30-math-computer-science-b-s)
 
 ## 2017
 
@@ -62,8 +68,7 @@ uid: 'ld'
 
 ## 2023
 
-- 귀국 → 켄터키 🐓
-- 우와 켄터키 사람이다 - 켄터키 면허증 - 필기 통과 - ID 나옴
+- 귀국 🐓 → 우와 켄터키 사람이다 - 켄터키 면허증 - 필기 통과 - ID 나옴
 
 [^1]: 코치에 의하면 우리 학교가 릴레이에서 이긴건 처음이었다고 한다.
 [^2]: 학교 끝날때까지 무려 4개월을 기다려주셨다.
