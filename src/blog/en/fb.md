@@ -74,7 +74,7 @@ I'm truly content and satisfied with this setup. In fact, I regret not consideri
 
 ---
 
-f you're considering setting up a VR workspace, I highly recommend trying VR first before making a purchase. While I personally didn't experience any discomfort, some individuals may feel dizzy or nauseated after using VR.
+If you're considering setting up a VR workspace, I highly recommend trying VR first before making a purchase. While I personally didn't experience any discomfort, some individuals may feel dizzy or nauseated after using VR.
 
 [^a]: I'm using [31.5" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSNSFLB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) and [23.6" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSDKWCC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 [^b]: I didn't want to go through the trouble of making a hole in the wall for internet installation, so I went with a pocket WiFi instead.
