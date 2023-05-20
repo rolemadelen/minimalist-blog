@@ -5,11 +5,11 @@ date: '2023-05-20 10:00:00'
 uid: 'g'
 ---
 
-When you click on an input field in a form, it highlights the field by surrounding it with a blue outer border line.
+When you click on an input field in a form, it becomes highlighted with a blue outer border line.
 
 ![blue outline](/images/blue-outline.webp)
 
-You can disable this with `outline` style attribute.
+You can disable this highlighting effect by using the `outline` style attribute.
 
 ```css
 input:focus {
@@ -17,7 +17,7 @@ input:focus {
 }
 ```
 
-If you want to be sure that this rule is not overridden by other styles, you can attach `!important` at the end.
+To ensure that this rule takes precedence over other styles, you can append `!important` at the end.
 
 ```css
 input:focus {
