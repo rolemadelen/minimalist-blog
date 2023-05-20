@@ -8,7 +8,7 @@ uid: 'l'
 
 작년 2022년 11월, 아래의 [트윗](https://twitter.com/hmartapp/status/1444891624538996740?s=20)을 우연히 보게 되었다.
 
-![hm vr tweet](/images/b2/hm-vr-setup.webp)
+![hm vr tweet](/images/hm-vr-setup.webp)
 
 곧 일본 생활을 접고 돌아갈 준비를 하던 시기라, 가지고 있는 두 대의 모니터[^a]며 온갖 것들이 짐처럼 느껴지던 시기였다. 그때, 노트북 한 대와 VR 기기 하나만 가지고 가상환경에서 개발하는 [𝒽𝓂](https://twitter.com/hmartapp) 님의 트윗은 매력적으로 다가왔다.
 
@@ -18,7 +18,7 @@ uid: 'l'
 
 당장 궁금한 점은 "잘 보이나?" 였다.
 
-![hm vr tweet 1](/images/b2/hm-vr-tweet-1.webp)
+![hm vr tweet 1](/images/hm-vr-tweet-1.webp)
 
 해결됐다.
 
@@ -28,7 +28,7 @@ uid: 'l'
 
 VR 기기를 착용한 상태로 몇 시간 동안 계속 개발을 하면 눈의 무리가 가지 않을까 걱정됐다. 나는 라식을 한 지 채 1년이 지나지 않았기 때문에 특히나 이 부분에 대해서는 더 예민했다.
 
-![hm vr tweet 2](/images/b2/hm-vr-tweet-2.webp)
+![hm vr tweet 2](/images/hm-vr-tweet-2.webp)
 
 𝒽𝓂님은 포모도로 타이머를 사용해서 집중할 때만 VR 기기를 착용하고, 쉴 때는 확실히 휴식을 취하는 방식으로 눈의 피로를 더는 것 같다.
 
@@ -36,7 +36,7 @@ VR 기기를 착용한 상태로 몇 시간 동안 계속 개발을 하면 눈�
 
 목에 관한 얘기도 하고 있는데, 찾아보니 VR 기기의 무게를 다들 부담스러워하는 것 같다.
 
-![vr reddit](/images/b2/vr-reddit.webp)
+![vr reddit](/images/vr-reddit.webp)
 
 하지만 중간마다 눈의 피로를 덜면서 나의 목 또한 휴식을 취할 수 있으니 일거양득이다. 𝒽𝓂님처럼 평소에 목 받침이 있는 의자를 사용해도 되고 말이다.
 
@@ -45,7 +45,7 @@ VR 기기를 착용한 상태로 몇 시간 동안 계속 개발을 하면 눈�
 궁금한 점은 전부 해소됐고, 마지막으로 해당 트윗의 당사자인 𝒽𝓂님에 최근 근황을 알고 싶었다. 트윗이 올라오고 1년이 지났는데, 혹시 불편한 점이 생겨서 사용하지 않고 있을 수도 있지 않은가.
 
 DM을 했고, 바로 다음 날 연락을 주셨다.
-![hm vr dm](/images/b2/hm-vr-dm.webp)
+![hm vr dm](/images/hm-vr-dm.webp)
 
 주변 환경이 제대로 보이지 않는 단점이 있지만 계속 사용하고 계신다고 한다. 나야 VR 기기를 집 외의 장소에서 사용할 생각은 없으니 그 정도는 문제없다고 느꼈다.
 
@@ -53,13 +53,13 @@ DM을 했고, 바로 다음 날 연락을 주셨다.
 
 가상환경에서의 코딩, 충분히 시도해볼 만하다고 느꼈고 바로 [Meta Quest 2](https://www.meta.com/jp/en/quest/products/quest-2/)를 구매했다.
 
-![meta quest](/images/b2/meta-quest.webp)
+![meta quest](/images/meta-quest.webp)
 
 본 트윗 타래에도 언급된 [_Immersed VR_](https://immersed.com/) 을 바로 설치하고 VR 기기와 연결했다.
 
 나에게 맞는 화면의 크기, 각도, 등등 설정하는 데 시간이 좀 걸렸지만, 아래처럼 세팅을 완료했다.
 
-![immersed gif](/images/b2/immersed.gif)
+![immersed gif](/images/immersed.gif)
 
 생각한 것 이상으로 글씨도 잘 보이고, 별다른 설정 없이 포켓 와이파이[^b]를 연결해서 무선으로 쓰고 있는데 버벅거리는 현상도 없다.
 

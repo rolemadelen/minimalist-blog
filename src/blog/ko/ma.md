@@ -13,13 +13,13 @@ _드보락(Dvorak)을 사용하는 글 주인의 주관적인 내용이 아주 �
 현재 전 세계에서 가장 널리 사용되는 자판은 쿼티(QWERTY) 자판이다.
 자판 상단 행의 문자 여섯 개를 왼쪽부터 순서대로 나열해서 붙여진 이름이다.
 
-![qwerty keyboard](/images/a/qwerty-layout.webp)
+![qwerty keyboard](/images/qwerty-layout.webp)
 
 이 글을 보고 있는 사람들의 키보드가 쿼티 자판일 것이라고 근거 없이 99% 확신할 수 있다. 그중에서 또 98% 정도가 그대로 쿼티를 쓰고 있을 것이고, 그 외 2% 사람들이 쿼티 자판을 유지한 채 내부 설정만 바꿔서 다른 배열을 쓰고 있지 않을까 싶다.
 
 예를 들면 나는 쿼티 자판인 맥북프로에 키보드 설정만 드보락(Dvorak)으로 변경해서 사용하고 있다.
 
-![dvorak layout](/images/a/dvorak-layout.webp)
+![dvorak layout](/images/dvorak-layout-2.webp)
 
 애초에 드보락 전용인 키보드 자체가 드물기도 하고, 키보드를 보면서 타이핑하지 않으니 자판의 형태에 대해서는 신경 쓰지 않는다 ([Kinesis Advantage2](https://kinesis-ergo.com/shop/advantage2/) 키보드는 심히 궁금하다).
 
@@ -54,7 +54,7 @@ _(QWERTY의 디자인이 사실은 엉키는 글쇠 때문만은 아니고 당�
 재밌는 건 Christopher Sholes도 이를 알고 있었다는 것. 그는 QWERTY가 좋은 자판이라고 생각하지 않았고 계속해서 좀 더 효율적인 자판을 만들어내려고 했다. 그의 마지막 자판은 아래와 같은 모습을 하고 있다.
 
 < C.L. Sholes Type Writing Machine - [Patent No.568630](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0568630) >
-![Sholes' final layout](/images/a/clsholes-568630.webp)
+![Sholes' final layout](/images/clsholes-568630.webp)
 
 드보락 자판이 만들어진 이유도 효율성 때문이다. 쿼티의 구조가 비효율적이라고 느낀 August Dvorak이 손의 움직임을 최소화할 수 있도록 홈 행 왼쪽에는 모음을, 오른쪽에는 가장 자주 쓰이는 자음 5개를 배치했다. 자연스럽게 양손을 균형 있게 사용하게 되면서 속도와 정확도를 챙기게 된 것인데 "드보락은 빨리 칠 수 있게 만들어진 것"이라는 오해가 있다.
 

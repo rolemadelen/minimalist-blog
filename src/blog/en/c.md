@@ -9,7 +9,7 @@ uid: 'c'
 
 `filter()` function calls a predicate function on every element and filters the one who passes a test.
 
-![predicate](/images/g/predicate.webp)
+![predicate](/images/predicate.webp)
 
 ```js
 let nums = [0, 1, 2, 3, 4, 5, 6];
@@ -22,7 +22,7 @@ The predicate function we used to determine if the item should be filtered or no
 
 `map()` creates a new array of elements from a callback function and returns the array.
 
-![callback](/images/g/callback.webp)
+![callback](/images/callback.webp)
 
 ```js
 let nums = [0, 1, 2, 3, 4, 5, 6];

@@ -11,7 +11,7 @@ uid: 'b'
 
 큐는 먼저 삽입된 데이터가 먼저 리스트를 빠져나오는 선입선출(FIFO; First In, First Out)의 구조로 되어 있다. 어딘가의 계산대에 먼저 온 손님이 먼저 계산하고 나가는 것과 같다.
 
-![queue regi](/images/j/adrien-delforge-queue.webp)
+![queue regi](/images/adrien-delforge-queue.webp)
 _Photo by [Adrien Delforge](https://unsplash.com/@adriendlf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/CrHG_ZYn1Dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 ## 큐의 연산

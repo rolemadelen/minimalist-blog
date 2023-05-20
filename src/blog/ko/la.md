@@ -35,7 +35,7 @@ uid: 'la'
 
 졸업까지 앞으로 1년. 듣고 싶은 수업도 별로 없고 학점도 웬만큼 채운 상태라, 뭐 재밌는 강의 없나 찾아보다가 기초 일본어 강의([JAPN 10A: First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html))를 발견했다. 재밌을 것 같아서 신청했고, 이는 아주 잘한 선택이었다.
 
-![japanese course - grade](/images/b1/japanese-grade.webp)
+![japanese course - grade](/images/japanese-grade.webp)
 
 내가 지금 일본어로 대화할 수 있는 이유는 전부 이 수업 덕이다.
 
@@ -63,7 +63,7 @@ uid: 'la'
 지금 일본에서 혼자 생활하며 말하고 듣는 데 문제는 없다. 일본인 개발자들과 같이 소통하는 데 문제도 없고, 심지어는 회의할 때 일본어를 못하는 외국인 개발자가 있기 때문에 영어-일본어 통역까지 하고 있다.
 
 어휘력은 부족하다. 공부를 안 했으니 (지금도 안 하고 있고) 부족한 게 당연. 지금 대충 찾아서 테스트해 보니 8세 소년 수준이라고 한다.
-![일본어 어휘력 테스트](/images/b1/japanese-test.webp)
+![일본어 어휘력 테스트](/images/japanese-test.webp)
 
 하지만 뭐 어떤가. 내가 전문 토론을 하는 사람도 아니고, 모르는 단어가 있으면 풀어 설명하면 된다.
 모든걸 8세 소년도 이해할 수 있는 쉬운 언어로 풀어 대화할 수 있으니 얼마나 좋은가.[^g]
@@ -71,7 +71,7 @@ uid: 'la'
 언어란, 내가 생각하고 있는 그림을 상대방 머릿속으로 집어넣기 위해 있는 것이라고 생각한다.
 그리고 8세 소년이 그리는 그림은, 당신이 생각하는 것보다 더 대단할 수 있다 😏
 
-![Mikai Akar](/images/b1/mikail-akar.webp)
+![Mikai Akar](/images/mikail-akar.webp)
 < 8세 피카소 미카일 아카르와 축구 선수 마누엘 노이어가 함께 그린 그림 - From [Mikail Akar](https://www.instagram.com/mikails_galerie/?hl=en)>
 
 [^a]: 가족 중 한 명이 관심이 많아서 항상 일본 애니, 드라마, 예능 등을 보고는 했다. 그러다 보니 자연스럽게 나도 일본 문화를 접하게 됐다.

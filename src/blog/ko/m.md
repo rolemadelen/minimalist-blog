@@ -10,7 +10,7 @@ uid: 'm'
 
 August Dvorak은 미네소타 글렌코 출신으로 University of Washington (UW)의 박사였으며, 2차 세계대전 당시 미 해군 잠수함의 장교로 복무한 인물이다.
 
-![August Dvorak](/images/a1/august-dvorak.webp)
+![August Dvorak](/images/august-dvorak.webp)
 
 Dvorak이 타자와 자판에 흥미를 느끼게 된 계기는 당시 타자기로 타자 수업을 하던 한 교수의 질문에서 비롯된다.
 
@@ -34,7 +34,7 @@ Dvorak은 타자기의 자판을 보면서 의문을 품기 시작했다. 자주
 
 약 10년 후, 1936년에 [드보락 자판](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/2040248)이 세상에 모습을 드러냈다.
 
-![dvorak layout](/images/a1/dvorak-layout.webp)
+![dvorak layout](/images/dvorak-layout.webp)
 < 드보락 자판의 초기 모습 From Typewriting Behavior via [Kristina Panos](https://hackaday.com/author/cornbreadninja/) >
 
 단어마다 하나 이상의 모음이 거의 무조건 들어가는 영어이기에, 모음 다섯 개를 전부 홈 행(home row) 왼쪽에 배치했다. 그리고 조합으로 자주 쓰이는 자음(consonant) 다섯 개를 오른쪽에 배치했다.
@@ -46,9 +46,9 @@ Dvorak은 타자기의 자판을 보면서 의문을 품기 시작했다. 자주
 아래는 내가 작성한 영어 블로그의 글을 드보락 자판을 사용했을 때와 사용하지 않았을때의 히트맵이다.[^b]
 
 현재 전세계적으로 널리 쓰이는 자판:
-![qwerty heat map](/images/a1/qwerty-heatmap.webp)
+![qwerty heat map](/images/qwerty-heatmap.webp)
 드보락 자판:
-![dvorak heat map](/images/a1/dvorak-heatmap.webp)
+![dvorak heat map](/images/dvorak-heatmap.webp)
 
 ---
 

@@ -69,6 +69,6 @@ h1 {
 
 일본어에만 해당 폰트가 적용된 것을 확인할 수 있다.
 
-## ![unicode-range example](/images/e/unicode-range.webp)
+## ![unicode-range example](/images/unicode-range.webp)
 
 [^a]: macOS Sierra에서 기본으로 제공하는 일본어 폰트 [리스트](https://wakufactory.jp/densho/font/osx_sierra.html)

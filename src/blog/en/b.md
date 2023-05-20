@@ -9,7 +9,7 @@ uid: 'b'
 
 Asymptotic notations are a set of mathematical tools used to analyze the performance of algorithms. They help us describe how the time and resources required to solve a problem grow as the size of the input data increases. By using these notations, we can compare different algorithms and choose the most efficient one for a particular task.
 
-[^a] ![Big-O Graph](/images/b/en/big-o-graph.webp)
+[^a] ![Big-O Graph](/images/big-o-graph.webp)
 
 There are primarily three distinct notations available to represent three different complexity states:
 
@@ -17,7 +17,7 @@ There are primarily three distinct notations available to represent three differ
 - Big-O Notation  for the worst-case complexity.
 - Omega (Ω) Notation  for the average-case complexity.
 
-[^b] ![Asymptotic notations](/images/b/en/notations.webp)
+[^b] ![Asymptotic notations](/images/notations.webp)
 
 ## Big-O Notation
 

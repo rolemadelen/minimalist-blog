@@ -25,7 +25,7 @@ uid: 'h'
 <h1>::marker</h1>
 ```
 
-![h1 marker](/images/f/h1-marker.webp)
+![h1 marker](/images/h1-marker.webp)
 
 `list-item`으로 설정하면 해당 요소는 마커 박스(marker box)를 가지게 되며 `::marker`를 본문과 `:before`보다 앞에 추가한다.
 
@@ -50,7 +50,7 @@ uid: 'h'
 </ol>
 ```
 
-![marker box](/images/f/marker-box.webp)
+![marker box](/images/marker-box.webp)
 
 `list-item`은 `::marker`를 지니는 것 외에 한 가지 더 하는 일이 있다. 바로 리스트 아이템의 counter를 증가시키는 것이다.
 
@@ -73,7 +73,7 @@ uid: 'h'
 
 `ol` 리스트는 ordered list의 약자로 순서가 있는 리스트이다. 만약 카운터가 없다면 목록의 개수를 알 수 없기 때문에 1, 2, 3,... 을 제대로 표시할 수 없다.
 
-![ul and ol list](/images/f/ul-ol.webp)
+![ul and ol list](/images/ul-ol.webp)
 
 그렇다면 카운터는 `ol` 리스트인 경우에만 존재하는 것일까?
 
@@ -100,7 +100,7 @@ uid: 'h'
 </ol>
 ```
 
-![parenthesis around list-item](/images/f/format1.webp)
+![parenthesis around list-item](/images/format1.webp)
 
 또는 리스트마다 기호의 색상이나 표기 형식을 다르게 설정할 수도 있다.
 
@@ -130,7 +130,7 @@ uid: 'h'
 </ul>
 ```
 
-![different format per list](/images/f/format2.webp)
+![different format per list](/images/format2.webp)
 
 ---
 
@@ -138,7 +138,7 @@ uid: 'h'
 
 위 예제에서 중첩된 리스트 `ul > ol li::marker`에 지정한 포맷을 지우면, 부모 리스트에서 지정한 `Note x`가 아닌 기본 기호가 출력된다.
 
-![singular - counter()](/images/f/format3.webp)
+![singular - counter()](/images/format3.webp)
 
 리스트 전체 트리의 기호를 설정하고 싶다면 `counter()`의 복수형, `counters()`를 사용하면 된다.
 
@@ -165,7 +165,7 @@ uid: 'h'
 </ol>
 ```
 
-![plural - counters()](/images/f/format4.webp)
+![plural - counters()](/images/format4.webp)
 
 ---
 

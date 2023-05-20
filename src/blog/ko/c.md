@@ -98,7 +98,7 @@ Node *next ← XOR(prev, curr->xor);
 
 일반적인 연결 리스트에서는 마지막 노드의 `next` 포인터가 `NULL`을 가리키게 되어 리스트의 끝을 나타낸다. 하지만 원형 연결 리스트에서는 마지막 노드가 첫 번째 노드를 가리키는 구조를 이루게 되어 원형 구조를 형성한다. 이중 원형 연결 리스트의 경우, 첫 번째 노드의 `prev` 포인터가 마지막 노드를 가리킨다.
 
-![Circular Linked List](/images/k//circular-linked-ilst.gif)
+![Circular Linked List](/images/circular-linked-ilst.gif)
 
 ## 배열과 연결리스트
 

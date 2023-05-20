@@ -11,7 +11,7 @@ A queue is a linear data structure where insertion and removal operations of dat
 
 A queue has a structure of _First In, First Out_ (FIFO), where the data first inserted is the first to be removed from the list. This is similar to how the first customer to arrive at a checkout counter is the first to be served and leave.
 
-![queue regi](/images/j/adrien-delforge-queue.webp)
+![queue regi](/images/adrien-delforge-queue.webp)
 _Photo by [Adrien Delforge](https://unsplash.com/@adriendlf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/CrHG_ZYn1Dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 ## Operations of Queue

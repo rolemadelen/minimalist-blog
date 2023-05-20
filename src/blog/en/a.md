@@ -15,7 +15,7 @@ Data structures can be classified into two main categories: _Linear Data Structu
 
 A linear data structure is characterized by elements that are arranged sequentially, one after the other.
 
-![Linear Data Structure](/images/c/en/linear-data-structure.gif)
+![Linear Data Structure](/images/linear-data-structure.gif)
 
 Examples of linear data structures are:
 
@@ -35,7 +35,7 @@ Linear data structures possess the following characteristics:
 
 A non-linear data structure doesn't follow a particular sequence to store its elements. Instead, it arranges them in a hierarchical manner where each element is linked to one or more other elements.
 
-![Non-Linear Data Structure](/images/c/en/nonlinear-data-structure.gif)
+![Non-Linear Data Structure](/images/nonlinear-data-structure.gif)
 
 Examples of non-linear data structures are:
 

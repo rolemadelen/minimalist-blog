@@ -7,7 +7,7 @@ uid: 'lb'
 
 아래는 현재 내가 쓰고 있는 노트 펜시브(Pensieve)[^a] 의 일부분이다.[^b]
 
-![pensieve note](/images/b/pensieve-note.webp)
+![pensieve note](/images/pensieve-note.webp)
 
 영어도 보이고, 한글도 보이고, 숫자도 보인다. 정렬되어 있는 건가? 무질서처럼 보이기도 한다.
 하지만 놀랍게도 제대로 정렬된 상태다.
