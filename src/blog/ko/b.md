@@ -93,7 +93,7 @@ class QueueArray<T> {
 
 ### 구현 - Linked List
 
-> 연결리스트는 이미 따로 구현 해두었고 [깃허브](https://github.com/bprsstnt/typescript-algorithms/tree/main/src/data-structures/linked-list)에서 확인할 수 있다. 여기서는 큐의 구현만 살펴본다.
+> 연결리스트는 이미 따로 구현 해두었고 [깃허브](https://github.com/rolemadelen/typescript-algorithms/tree/main/src/data-structures/linked-list)에서 확인할 수 있다. 여기서는 큐의 구현만 살펴본다.
 
 리스트 크기가 가변적인 연결리스트의 경우 배열과 같이 포화 상태의 문제는 발생하지 않는다. 다만 각 노드의 메모리 할당 때문에 메모리 사용량이 상대적으로 많아진다.
 

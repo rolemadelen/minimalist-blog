@@ -156,5 +156,5 @@ Stacks find utility in a wide range of applications, including:
 - <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
 
 [^1]: It is also known as a First-In, Last-Out (FILO) structure.
-[^a]: [Stack implementation in TypeScript - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
-[^b]: [Stack implementation in TypeScript - Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
+[^a]: [Stack implementation in TypeScript - Array](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
+[^b]: [Stack implementation in TypeScript - Linked List](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)

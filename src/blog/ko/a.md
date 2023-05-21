@@ -152,8 +152,8 @@ export class StackList<T> {
 - <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
 
 [^1]: 선입후출 (FILO; First-In, Last-Out)이라고 부르기도 한다.
-[^a]: [TypeScript로 구현한 스택 - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
-[^b]: [TypeScript로 구현한 Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
+[^a]: [TypeScript로 구현한 스택 - Array](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
+[^b]: [TypeScript로 구현한 Linked List](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
 [^c]: 팩토리얼 구현 문제 - https://www.acmicpc.net/problem/10872
 [^d]: 피보나치 구현 문제 - https://www.acmicpc.net/problem/10870
 [^e]: 괄호 검사 문제 - https://www.acmicpc.net/problem/4949

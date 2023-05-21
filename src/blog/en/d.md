@@ -78,7 +78,7 @@ To check for any errors in your code without actually running it, you can use th
 
 ```shell
 $ cargo check 
-    Checking hello_world v0.1.0 (/Users/bprsstnt/Documents/rust/hello_world)
+    Checking hello_world v0.1.0 (/Users/rolemadelen/Documents/rust/hello_world)
     Finished dev [unoptimized + debuginfo] target(s) in 0.10s
 ```
 

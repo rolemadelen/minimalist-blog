@@ -7,17 +7,12 @@ import IconLinkedIn from '/public/icons/icon-linkedin.svg';
 import IconEmail from '/public/icons/icon-email.svg';
 import Link from 'next/link';
 
-const Footer = ({lang}) => {
-    const twt = {
-        en: 'https://twitter.com/jii_bprsstnt',
-        ko: 'https://twitter.com/rolemadelen'
-    }
-    
+const Footer = ({lang}) => {    
     return (
         <>
             <SNS>
                 <button type='button'>
-                    <Link href={lang === 'ko' ? twt.ko : twt.en} target="_blank" rel="noopener noreferrer">
+                    <Link href="https://twitter.com/rolemadelen" target="_blank" rel="noopener noreferrer">
                         <Image src={IconTwitter} alt="Twitter" />
                     </Link>
                 </button>
