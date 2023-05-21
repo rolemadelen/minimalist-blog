@@ -7,23 +7,23 @@ uid: 'ab'
 
 ## Queue
 
-A queue is a linear data structure where insertion and removal operations of data are performed at both ends of the list. An item is added at one end (`rear`) and removed at the opposite end (`front`).
+A queue is a linear data structure where data is inserted at one end (`rear`) and removed from the opposite end (`front`). 
 
-A queue has a structure of _First In, First Out_ (FIFO), where the data first inserted is the first to be removed from the list. This is similar to how the first customer to arrive at a checkout counter is the first to be served and leave.
+This structure follows the principle of _First In, First Out_ (FIFO), where the item that is first inserted is the first to be removed from the queue. This can be likened to a checkout counter scenario, where the first customer to arrive is the first to be served and leave.
 
 ![queue regi](/images/adrien-delforge-queue.webp)
 _Photo by [Adrien Delforge](https://unsplash.com/@adriendlf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/CrHG_ZYn1Dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
-## Operations of Queue
+## Queue Operations
 
-- **enqueue** - Add data to the end of the list.
-- **dequeue** - Remove the first item in the list.
-- **isEmpty** - Check if the list is empty.
-- **front** - Return the data of the first item in the list.
+- **enqueue**: Adds data to the end of the queue.
+- **dequeue**: Removes the first item from the queue.
+- **isEmpty**: Checks if the queue is empty.
+- **front**: Returns the data of the first item in the queue.
 
 ## Implementation
 
-We'll implement the queue using an array and a linked list.
+For our queue implementation, we can use either an array or a linked list.
 
 ### Array
 
@@ -85,25 +85,22 @@ class QueueArray<T> {
 
 ## Limitations of Linear Queues
 
-If you use a static array to implement a linear queue, you may encounter a problem.
+When implementing a linear queue using a static array, you may encounter a limitation. Let's consider a queue with a capacity of 10 elements.
 
-Let say we have a queue with a capacity of 10 elements.
-
-We called `enqueue` operation 10 times and `dequeue` operation 9 times.
+Suppose we perform 10 `enqueue` operations followed by 9 `dequeue` operations:
 
 ```text
          0  1  2  3  4  5  6  7  8  9
 queue → [ ][ ][ ][ ][ ][ ][ ][ ][F][R] : full
 ```
 
-The `rear` index reached the end of the list and `front` is one before the `rear`. Although 8 out of 10 space is empty, the program will consider the queue to be full because `rear` is at the end of the list. This is a problem with a linear queue.
+In this scenario, the `rear` index has reached the end of the list, and the `front` is one position before the `rear`. Even though 8 out of 10 spaces are empty, the program considers the queue to be full because rear is at the end of the list. This limitation is inherent to linear queues.
 
-
-To solve this problem, you can use a 'Circular Queue'[^a], which is also implemented using an array like a linear queue. However, a circular queue is designed to be conceptualized as having the beginning and end of the array connected.
+To overcome this limitation, a solution is to use a 'Circular Queue'[^a]. A circular queue is also implemented using an array, but it is designed in a way that the beginning and end of the array are connected conceptually.
 
 ### Linked List
 
-We can implement a linear queue using a linked list as well. With this approach, we don't need to be concerned about the list becoming full since the container can expand and contract dynamically. However, one drawback is that it uses relatively more memory compared to the array implementation due to the presence of nodes.
+Another way to implement a linear queue is by using a linked list. This approach eliminates the concern of the list becoming full, as the container can dynamically expand and contract as needed. However, one drawback of this implementation is that it requires relatively more memory compared to the array implementation, due to the presence of nodes in the linked list structure.
 
 ```ts
 import { ListNode, LinkedListNode } from '../linked-list/LinkedList';
@@ -162,13 +159,15 @@ class QueueList<T> {
 
 ## Applications of Queue
 
-- Breadth First Search (BFS)
-- Manage processes or tasks with priority
-- Network Traffic Control
+Queues have various applications in computer science and real-world scenarios, including:
+
+- Breadth First Search (BFS) algorithm
+- Managing processes or tasks with priority
+- Network traffic control and packet scheduling
 
 ## Source
 
 - <https://galid1.tistory.com/483>
 - <https://gmlwjd9405.github.io/2018/08/02/data-structure-queue.html>
 
-[^a]: Circular Buffer: https://en.wikipedia.org/wiki/Circular_buffer
+[^a]: Circular Buffer: <https://en.wikipedia.org/wiki/Circular_buffer>

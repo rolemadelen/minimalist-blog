@@ -7,7 +7,7 @@ uid: 'd'
 
 The official documentation recommends using `rustup` to install or upgrade Rust on your device.
 
-If you have installed Rust without `rustup`, you can remove it from your machine by running the following command:
+If you have installed Rust without `rustup`, you can remove it from your machine by executing the following command:
 
 ```shell
 $ /usr/local/lib/rustlib/uninstall.sh
@@ -21,7 +21,7 @@ install: uninstalling component 'rust-docs'
 
 ## Installation
 
-You can install `rustup` on your machine by executing the following command:
+You can install `rustup` by executing the following command:
 
 ```shell
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -37,7 +37,7 @@ This would reload your PATH environment variable to include
 Cargo's bin directory ($HOME/.cargo/bin).
 ```
 
-Now check the version:
+To check the version, run the following command:
 
 ```shell
 $ rustc --version
@@ -53,7 +53,7 @@ $ cargo new hello_world
      Created binary (application) `hello_world` package
 ```
 
-Move to the directory `hello_world` and try to run the code.
+Move to the `hello_world` directory and try running the code.
 
 ```shell
 $ cd hello_world
@@ -65,7 +65,7 @@ $ cargo run
 Hello, world!
 ```
 
-You can find the source code of `hello_world` in `src/` directory.
+You can find the source code of `hello_world` in the `src/` directory.
 
 ```rust
 // main.rs file

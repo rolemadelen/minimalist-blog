@@ -7,7 +7,7 @@ uid: 'c'
 
 ## Array.prototype.filter
 
-`filter()` function calls a predicate function on every element and filters the one who passes a test.
+The `filter()` function calls a predicate function on every element and filters out the elements that pass a test.
 
 ![predicate](/images/predicate.webp)
 
@@ -16,11 +16,11 @@ let nums = [0, 1, 2, 3, 4, 5, 6];
 nums.filter((x) => x * 2); // [1, 2, 3, 4, 5, 6]
 ```
 
-The predicate function we used to determine if the item should be filtered or not is `x * 2`. In JavaScript, non-zero values are regarded as `true`. Therefore, all elements except 0 have been filtered.
+In this example, the predicate function `x * 2` is used to determine whether each item should be filtered or not. In JavaScript, non-zero values are considered `true`. As a result, all elements except 0 have passed the test and been included in the filtered array.
 
 ## Array.prototype.map
 
-`map()` creates a new array of elements from a callback function and returns the array.
+The `map()` function creates a new array by applying a callback function to each element of the original array, and returns the resulting array.
 
 ![callback](/images/callback.webp)
 
@@ -29,8 +29,8 @@ let nums = [0, 1, 2, 3, 4, 5, 6];
 nums.map((x) => x * 2); // [0, 2, 4, 6, 8, 10, 12];
 ```
 
-`map(callback)` function runs callback on each item and stores the data in a new array and returns when all items have been processed.
+The `map(callback)` function executes the callback function on each item of the array and stores the returned values in a new array. The function continues this process until all items have been processed, and finally returns the new array.
 
 ## Summary
 
-The `filter` function focuses on the selection of items from the original array while the `map` function focuses on creating a new array using the original data.
+The `filter` function is used to select specific items from the original array based on a condition, while the `map` function is used to create a new array by applying a transformation to each item of the original array.

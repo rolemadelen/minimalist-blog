@@ -5,49 +5,49 @@ date: '2022-07-04 22:20:00'
 uid: 'a'
 ---
 
-A data structure is an organized collection of data that is designed to be accessed and modified efficiently through specific operations.
+A data structure is a well-organized collection of data, intended to be accessed and modified efficiently through dedicated operations.
 
 ## Types of Data Structure
 
-Data structures can be classified into two main categories: _Linear Data Structures_ and _Non-Linear Data Structures_.
+Data structures can be categorized into two main types: _Linear Data Structures_ and _Non-Linear Data Structures_.
 
 ### Linear Data Structure
 
-A linear data structure is characterized by elements that are arranged sequentially, one after the other.
+A linear data structure is defined by elements arranged sequentially, one after another.
 
 ![Linear Data Structure](/images/linear-data-structure.gif)
 
-Examples of linear data structures are:
+Examples of linear data structures include:
 
 - Arrays
 - Linked Lists
 - Stacks
 - Queues
 
-Linear data structures possess the following characteristics:
+Linear data structures exhibit the following characteristics:
 
 - Data elements are organized sequentially in a contiguous manner.
 - The elements exist on a single level.
-- A complete visitation and traversal of all elements can be accomplished in a single pass.
-- Memory usage may not be optimal since a block of memory must be pre-allocated.
+- A complete visitation and traversal of all elements can be achieved in a single pass.
+- Memory usage may not be optimal as a block of memory needs to be pre-allocated.
 
 ### Non-Linear Data Structure
 
-A non-linear data structure doesn't follow a particular sequence to store its elements. Instead, it arranges them in a hierarchical manner where each element is linked to one or more other elements.
+A non-linear data structure does not adhere to a specific sequence for storing its elements. Instead, it organizes them in a hierarchical manner where each element is connected to one or more other elements.
 
 ![Non-Linear Data Structure](/images/nonlinear-data-structure.gif)
 
-Examples of non-linear data structures are:
+"Examples of non-linear data structures include:
 
 - Trees
 - Graphs
 
-Non-linear data structures possess the following characteristics:
+Non-linear data structures exhibit the following characteristics:
 
 - Data elements are not arranged in a sequential order.
-- The elements are present in a hierarchical manner, with different layers.
-- It is not possible to visit all elements in a single pass. Multiple passes are required to go through all the layers.
-- The utilization of memory varies across different structures in terms of efficiency.
+- The elements are organized hierarchically, with multiple layers.
+- Visiting all elements typically requires multiple passes through the structure.
+- Memory utilization efficiency varies across different non-linear structures.
 
 ## Source
 

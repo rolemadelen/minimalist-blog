@@ -7,24 +7,26 @@ uid: 'aa'
 
 ## What is a Stack?
 
-A stack is a linear data structure where data insertion or deletion occurs at one end only.
+A stack is a type of linear data structure where data insertion or deletion occurs at one end only.
 
-Inserting an item into the stack is called a `push` operation, and removing an item is called a `pop` operation. When you pop an item from the stack, the last item inserted will be removed. This means that the first item inserted into the stack will be the last item removed, creating a _Last In, First Out_ (LIFO) structure.[^1]
+Inserting an item into the stack is known as a `push` operation, while removing an item is referred to as a `pop` operation. When you pop an item from the stack, the last item inserted will be removed. This results in a _Last In, First Out_ (LIFO) structure[^1], meaning that the first item inserted into the stack will be the last item removed.
 
 ## Stack Operations
 
-- **push** - A function that puts data into the stack.
-- **pop** - A function that takes data out of the stack.
-- **isEmpty** - A function that checks if the stack is empty.
-- **peek** - A function that checks the data at the top of the stack.
+The stack supports several operations:
+
+- `push`: Adds data to the stack.
+- `pop`: Removes data from the stack.
+- `isEmpty`: Checks if the stack is empty.
+- `peek`: Retrieves the data at the top of the stack.
 
 ## Implementation
 
-If we know the exact size of the data, we can use an array to create a static stack. If the size is unknown, we can use a dynamic array or a linked list to create a stack whose capacity can grow and shrink as needed.
+If the size of the data is known in advance, we can use an array to create a static stack. Alternatively, if the size is unknown or may change dynamically, a dynamic array or linked list can be used to create a stack that can grow or shrink as needed.
 
 ### Static Stack - Array
 
-```typescript
+```ts
 export class StackArray<T> {
   size: number;
   top: number;
@@ -80,7 +82,7 @@ export class StackArray<T> {
 
 ### Dynamic Stack - Linked List
 
-To implement a dynamic stack in JavaScript, we can actually just use an array[^a], because it is implemented using a hash map. However, in this case, I'll use a linked list[^b] instead to create a dynamic stack.
+To implement a dynamic stack in JavaScript, we have the option to use an array[^a], which is implemented using a hash map. However, for this particular case, I will opt for a linked list[^b] to create the dynamic stack.
 
 ```ts
 import { ListNode, LinkedListNode } from '../linked-list/LinkedList';
@@ -132,18 +134,18 @@ export class StackList<T> {
 
 ## Static vs. Dynamic Stack
 
-In the case of a static stack, the size of the container is fixed. So if the stack becomes full, it can no longer add any more data. However, it has the advantage of being simple to implement and requiring less memory usage since it does not require separate memory allocation.
+A static stack has a fixed size, meaning that once it becomes full, it cannot accommodate additional data. However, it offers the advantage of simplicity in implementation and consumes less memory since it does not require separate memory allocation.
 
-On the other hand, a dynamic stack is not fixed in size. So even if the number of data suddenly increases, it can be placed in the stack as long as the memory allows it. However, a dynamic stack is relatively complex to implement and also requires memory allocation, so the memory usage increases.
+In contrast, a dynamic stack is not limited in size. It can handle an increasing number of data as long as memory permits. However, implementing a dynamic stack is relatively complex and entails memory allocation, resulting in increased memory usage.
 
-## Stack Applications
+## Applications of Stacks
 
-Stacks can be used in various applications, including:
+Stacks find utility in a wide range of applications, including:
 
 - Recursive algorithms
 - Storing web browser history
 - Implementing undo functionality
-- Checking the validity of parentheses in mathematical expressions
+- Verifying the validity of parentheses in mathematical expressions
 - Evaluating postfix expressions
 
 ## Source
@@ -153,6 +155,6 @@ Stacks can be used in various applications, including:
 - <https://gmlwjd9405.github.io/2018/08/03/data-structure-stack.html>
 - <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
 
-[^1]: It is also known as a First-In, Last-Out (FILO) structure
+[^1]: It is also known as a First-In, Last-Out (FILO) structure.
 [^a]: [Stack implementation in TypeScript - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
 [^b]: [Stack implementation in TypeScript - Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)

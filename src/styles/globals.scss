@@ -120,7 +120,9 @@ h1, h2, h3, h4 {
 
   p {
     margin: 2rem auto;
-
+  }
+  
+  p, li {
     & > code {
       background-color: #e5e5e5;
       padding: 2px 6px;

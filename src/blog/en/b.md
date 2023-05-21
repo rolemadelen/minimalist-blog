@@ -5,13 +5,14 @@ date: '2022-07-06 07:00:00'
 uid: 'b'
 ---
 
-## Asymptotic Notations
 
-Asymptotic notations are a set of mathematical tools used to analyze the performance of algorithms. They help us describe how the time and resources required to solve a problem grow as the size of the input data increases. By using these notations, we can compare different algorithms and choose the most efficient one for a particular task.
+### Asymptotic Notations
+
+Asymptotic notations are mathematical tools used to analyze the performance of algorithms. They provide a way to describe how the time and resources needed to solve a problem scale as the size of the input data increases. These notations enable us to compare and evaluate different algorithms, helping us choose the most efficient one for a specific task.
 
 [^a] ![Big-O Graph](/images/big-o-graph.webp)
 
-There are primarily three distinct notations available to represent three different complexity states:
+There are three primary notations used to represent different complexity states:
 
 - Theta (Θ) Notation for the best-case complexity.
 - Big-O Notation  for the worst-case complexity.
@@ -21,7 +22,7 @@ There are primarily three distinct notations available to represent three differ
 
 ## Big-O Notation
 
-The worst-case time complexity of an algorithm is described by Big-O notation.
+The worst-case time complexity of an algorithm is represented by Big-O notation.
 
 Mathematically, Big-O is defined as:
 
@@ -32,7 +33,7 @@ O(g(n)) = { f(n): there exist positive constants c and n_0
 
 ## Omega Notation
 
-The best-case time complexity of an algorithm is described by Omega (Ω) Notation.
+The best-case time complexity of an algorithm is represented by Omega (Ω) Notation.
 
 Mathematically, Omega notation is defined as:
 
@@ -43,7 +44,7 @@ Mathematically, Omega notation is defined as:
 
 ## Theta Notation
 
-And last but not least, the average time complexity of an algorithm is described by the Theta (Θ) Notation.
+And last but not least, the average time complexity of an algorithm is represented by the Theta (Θ) Notation.
 
 For a function `g(n)` and `Θ(g(n))` is given by the relation:
 
