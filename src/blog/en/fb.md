@@ -1,12 +1,12 @@
 ---
-title: 'Trading Monitors for Virtual Reality'
-posttitle: 'Trading Monitors for Virtual Reality'
+title: 'Transitioning from Monitors to a VR Workspace'
+posttitle: 'Transitioning from Monitors to a VR Workspace'
 date: '2022-12-28 17:00:00'
 updated: '2023-05-20 15:00:00'
 uid: 'fb'
 ---
 
-In November 2022, while still in Japan, I was busy packing, donating, selling, and discarding my belongings in preparation for my move back to the States. 
+In November 2022, while still in Japan, I was busy packing, donating, selling, and discarding my belongings in preparation for my move back to the States.
 
 During this time, I came across a [tweet](https://twitter.com/hmartapp/status/1444891624538996740?s=20) discussing the practicality and efficiency of coding in VR.
 
