@@ -23,6 +23,13 @@ Although I was interested, I didn't necessarily wanted to study Japanese; I just
 
 It continued like this, and when I entered university, my Japanese language skills were roughly as follows:
 
+|Skills| State|
+|:-----|:-----|
+|Hiragana| No problem|
+|Katakana|It's a bit confusing, but I can manage.|
+|Listening | I can understand about 70-80% of Japanese anime or dramas without subtitles. |
+|Vocabulary & Reading | My skills in vocabulary and reading are abysmal because I haven't studied grammar nor kanji. |
+| Speaking | Apart from the sentences I've memorized from anime and dramas, I struggle to form my own sentences. |
 
 In my senior year, I didn't have many classes I wanted to take, and I had enough credits to fulfill, so I looked for something interesting. That's when I came across [JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html), which sounded like a lot of fun, so I decided to sign up for it. Looking back, I'm really glad I made that choice.
 
