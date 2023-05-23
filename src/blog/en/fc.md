@@ -62,7 +62,7 @@ My vocabulary is limited since I didn't study extensively (and still don't), so 
 
 But it's okay. I'm not a professional debater, and if there's a word I don't understand, I can simply explain it. It's satisfying to be able to express everything in plain language that even an 8-year-old boy can comprehend.[^g]
 
-In my view, language serves the purpose of conveying the mental images I have to the other person. Interestingly, the drawings that an 8-year-old can create may be more astonishing than one might initially realize. 😏
+In my view, language serves the purpose of conveying the mental images I have to the other person. And you'll be astonished by what an 8-year-old can do 😏
 
 ![Mikai Akar](/images/mikail-akar.webp)
 < A painting by 8-year-old Picasso Mikail Akar and soccer player Manuel Neuer - From [Mikail Akar](https://www.instagram.com/mikails_galerie/?hl=en)>
