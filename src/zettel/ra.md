@@ -3,7 +3,7 @@ title: 'Array.prototype.map()'
 posttitle: 'Array.prototype.map()'
 date: '2023-02-12 17:17:17'
 updated: '2023-05-29 17:17:17'
-uid: 'r'
+uid: 'ra'
 ---
 
 `Array.prototype.map()` function creates a new array filled with elements resulted from a callback function and returns it.
