@@ -7,7 +7,7 @@ import IconLinkedIn from '/public/icons/icon-linkedin.svg';
 import IconEmail from '/public/icons/icon-email.svg';
 import Link from 'next/link';
 
-const Footer = ({lang}) => {    
+const Footer = () => {    
     return (
         <>
             <SNS>

@@ -53,10 +53,17 @@ li {
   word-break: break-word;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 .footnotes {
   overflow-wrap: break-word;
 }
 
+.btn {
+  text-transform: lowercase;
+}
 // main home - background images
 img {
   max-width: 90%;
@@ -122,6 +129,11 @@ h1, h2, h3, h4 {
     margin: 2rem auto;
   }
   
+  p + ul,
+  p + ol {
+    margin-top: -1.5rem;
+  }
+
   p, li {
     & > code {
       background-color: #e5e5e5;

@@ -1,7 +1,7 @@
-import { PostsWrapper, PostList, PostUID, PostTitle } from '@/components/custom-tw-components';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getAllPosts } from '../../../lib/blog';
+import { PostsWrapper, PostList, PostUID, PostTitle } from '@/components/custom-tw-components';
+import { getAllPosts } from '@/lib/blog';
 import Link from 'next/link';
 
 interface Post {
@@ -22,13 +22,13 @@ const Blog: React.FC<Posts> = ({posts}) => {
 // export default function Blog( { posts }) {
     return (
         <div className={'wrapper'}>
-            <Header lang='en'/>
+            <Header type='zettel'/>
             <PostsWrapper>
-                <p>* Posts are ordered by relevance, not by time of writing.</p>
+                <p>* Welcome to the gateway of my zettelkasten.</p>
                 {posts.map((post) => (
                     <Link
-                        key={`${post.lang}-${post.slug}`}
-                        href={`/blog/${post.lang}/${post.slug}`}
+                        key={`zettel-${post.slug}`}
+                        href={`/zettel/${post.slug}`}
                         passHref>
                             <PostList>
                                 <PostUID>{post.uid}</PostUID>
@@ -37,13 +37,14 @@ const Blog: React.FC<Posts> = ({posts}) => {
                     </Link>
                 ))}
             </PostsWrapper>
-            <Footer lang='en'/>
+            <Footer/>
         </div>
     )
 }
 
 export async function getStaticProps() {
-    const posts: {lang: string, slug: string}[] = getAllPosts('en');
+    const POST_TYPE = 'zettel';
+    const posts: {type: string, slug: string}[] = getAllPosts(POST_TYPE);
 
     return {
         props: {

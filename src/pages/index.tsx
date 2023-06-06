@@ -53,7 +53,7 @@ export default function Home() {
             <Link href="/about">about</Link>
           </MainMenuAbout>
           <MainMenuBlog>
-            <Link href="/blog/ko">blog</Link>
+            <Link href="/blog">blog</Link>
           </MainMenuBlog>
         </MainMenu>
     </Main>

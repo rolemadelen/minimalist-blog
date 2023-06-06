@@ -4,8 +4,8 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-export function getAllPosts(lang) {
-    const postsDirectory = path.join(process.cwd(), `/src/blog/${lang}`);
+export function getAllPosts(type) {
+    const postsDirectory = path.join(process.cwd(), `/src/${type}`);
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
         const slug = fileName.replace(/\.md$/, '');
@@ -17,7 +17,7 @@ export function getAllPosts(lang) {
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
         return {
-            lang,
+            type,
             slug,
             ...matterResult.data,
         };
@@ -26,8 +26,8 @@ export function getAllPosts(lang) {
     return allPostsData;
 }
 
-export function getAllPostIds(lang) {
-    const postsDirectory = path.join(process.cwd(), `/src/blog/${lang}/`);
+export function getAllPostIds(type) {
+    const postsDirectory = path.join(process.cwd(), `/src/${type}/`);
     const fileNames = fs.readdirSync(postsDirectory);
     return fileNames.map((fileName) => {
         return {
@@ -38,8 +38,8 @@ export function getAllPostIds(lang) {
     });
 }
 
-export async function getPostData(lang, id) {
-    const postsDirectory = path.join(process.cwd(), `/src/blog/${lang}`);
+export async function getPostData(type, id) {
+    const postsDirectory = path.join(process.cwd(), `/src/${type}`);
     const fullPath = path.join(postsDirectory, `${id[0]}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
