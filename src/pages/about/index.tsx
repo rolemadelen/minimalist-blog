@@ -6,7 +6,6 @@ import taikoGIF from '/public/images/about.gif';
 import { AboutContent, AboutSubtitle, AboutTitle } from '@/components/custom-tw-components';
 
 const About = () => {
-    // export default function Blog( { posts }) {
     return (
         <div className={'wrapper'}>
             <div className={'text-center'}>
@@ -42,7 +41,7 @@ const About = () => {
                     <Image src={IconArrowLeft} alt="←" />
                 </Link>
             </AboutContent>
-            <Footer lang={'ko'}/>
+            <Footer/>
         </div>
         )
     }
