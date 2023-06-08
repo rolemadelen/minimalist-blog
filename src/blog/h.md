@@ -1,20 +1,73 @@
 ---
-title: 'Tangent Note'
-posttitle: 'Tangent Note'
-date: '2023-05-27 09:50:00'
+title: 'Résumé of Success'
+posttitle: 'History of my Successes 👍🏼'
+date: '2023-05-10 17:00:00'
+updated: '2023-05-14 19:00:00'
 uid: 'h'
 ---
 
-_Tangent_ is a note-taking system developed by Taylor Hadden. It is implemented with [Svelte](https://svelte.dev/) and [Electron](https://www.electronjs.org/). The text editor is based on a heavily customized version of the [Typewriter](https://github.com/typewriter-editor/typewriter) editor.
+> My successes? It's more like things that made me proud for attempting.
 
-![tangent note GIF](/images/tangent-note.gif)
+## ??
 
-After using the application for about an hour, I decided not to continue using it.
+- Elementary School- I was able to break free from bullying (this bully was a fastest runner in the grade but it turns out that I was faster 🤣)
+- Junior High - I learned how to play the clarinet and also did a recital
 
-First, it lacks proper support for recognizing files written in other languages. Even when I pasted the document title to link the file, the application couldn't locate it. Additionally, the display didn't suit my preferences. When clicking on folders, there were two options for displaying documents: 'Feed' or 'Cards.' Both options had a cluttered user interface and made it difficult to locate specific documents (once again, this is just personal preference).
+## 2011
 
-However, I did appreciate the ability to focus on a single sentence within a paragraph by highlighting the current reading section. I also liked the feature that allowed for continuous opening of documents in a single window, scrolling from left to right.
+- Joined a cross country (XC) team 🏃🏻
+- XC - 3 miles personal record 20:04
 
-### Reference
+## 2012
 
-- <https://www.tangentnotes.com/>
+- Joined a track and field team - 100m dash time at a tryout 12.50 🏃🏻💨
+- I made it to the varsity team for 100m
+- broke 12 seconds for 100m - 11.88
+- Ran varsity 4x100 and we got 1st place 😆👍🏼
+- XC - 3 miles season record 20:23
+
+## 2013
+
+- 100m PR - 11.74
+- 100m PR - 11.66
+- 100m PR - 11.48 👍🏼
+
+## 2016
+
+- Met a life partner 👧🏻❤️
+- Successfully transfered from CC to UCSD - [Mathematics-Computer Science B.S.](https://math.ucsd.edu/students/undergraduate/ma30-math-computer-science-b-s)
+
+## 2017
+
+- Changed my major because I wanted to expand my views and thinking - [B.S. Cognitive Science Spec. in HCI](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)
+- Got my first internship as a frontend engineer at a startup
+- After 5 weeks of long tryout, I made it to the UCSD taiko group (Gen 17 💛)
+
+## 2018
+
+- Successfully finished our taiko concert - I played [kamaji](https://ghibli.fandom.com/wiki/Kamaj%C4%AB) 🕷️
+
+## 2019
+
+- Graudated from UCSD
+- Interviewed with a Japanese company for the FLT role and I got the job → OMW to Japan 🇯🇵✈️
+- another taiko concert but with LATI this time 👍🏼
+
+## 2020
+
+- What I'm an elementary school language teacher?... can't believe it 🧑🏻‍🏫
+- Started a miracle morning challenge - until I get a job as frontend engineer
+- Wait, what. I'm a frontend engineer?! - passed the interview and got the offer 🧑🏻‍💻
+
+## 2021
+
+- No more schools! My first day as an engineer 🧑🏻‍💻
+
+## 2022
+
+- Found a taiko team near my place → I joined the team
+- Visited Korea to meet my bestie 👍🏼
+
+## 2023
+
+- Returning home 🐓 → passed the driver license written test → got my Kentucky I.D → call me Kentucky-nean 😃

@@ -80,7 +80,7 @@ export const PostList = tw.span`
 export const PostUID = tw.span`
     post-uid
     block
-    text-[#ccc]
+    text-[#bbb]
     text-[0.8125rem]
     h-[13px]
     mb-[1px]

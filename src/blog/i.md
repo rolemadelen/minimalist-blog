@@ -1,38 +1,20 @@
 ---
-title: 'gpg: signing failed: Inappropriate ioctl for device'
-posttitle: 'gpg: signing failed: Inappropriate ioctl for device'
-date: '2023-06-05 19:15:00'
+title: 'Tangent Note'
+posttitle: 'Tangent Note'
+date: '2023-05-27 09:50:00'
 uid: 'i'
 ---
 
-On macOS, I encountered the following error:
+_Tangent_ is a note-taking system developed by Taylor Hadden. It is implemented with [Svelte](https://svelte.dev/) and [Electron](https://www.electronjs.org/). The text editor is based on a heavily customized version of the [Typewriter](https://github.com/typewriter-editor/typewriter) editor.
 
-```sh
-git commit -m "test"
-error: gpg failed to sign the data
-gpg: signing failed: Inappropriate ioctl for device
-```
+![tangent note GIF](/images/tangent-note.gif)
 
-Here are the steps I took to resolve this error:
+After using the application for about an hour, I decided not to continue using it.
 
-1. Add the following line to `~/.gnupg/gpg.conf`
-    ```conf
-    use-agent
-    pinentry-mode loopback
-    ```
-2. Create or modify the `~/.gnupg/gpg-agent.conf`
-    ```conf
-    allow-loopback-pinentry
-    ```
-3. Restart the GPG agent
-    ```sh
-    echo RELOADAGENT | gpg-connect-agent
-    ```
-4. (optional) You might need to set the `GPG-TTY`
-    ```sh
-    export GPG_TTY=$(tty)
-    ```
+First, it lacks proper support for recognizing files written in other languages. Even when I pasted the document title to link the file, the application couldn't locate it. Additionally, the display didn't suit my preferences. When clicking on folders, there were two options for displaying documents: 'Feed' or 'Cards.' Both options had a cluttered user interface and made it difficult to locate specific documents (once again, this is just personal preference).
+
+However, I did appreciate the ability to focus on a single sentence within a paragraph by highlighting the current reading section. I also liked the feature that allowed for continuous opening of documents in a single window, scrolling from left to right.
 
 ### Reference
-- [chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/pipermail/sgo-software-discuss/2020/000690.html)
-- [gist.github.com](https://gist.github.com/repodevs/a18c7bb42b2ab293155aca889d447f1b)
+
+- <https://www.tangentnotes.com/>

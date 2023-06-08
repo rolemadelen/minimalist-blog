@@ -1,58 +1,36 @@
 ---
-title: 'Résumé of Failure 💪🏼'
-posttitle: 'History of my Failures 💪🏼'
-date: '2023-05-10 17:00:00'
-updated: '2023-05-14 19:00:00'
+title: '[JavaScript] Array filter vs. map'
+posttitle: 'filter vs. map'
+date: '2023-02-13 11:45:00'
 uid: 'f'
 ---
 
-## ??
+## Array.prototype.filter
 
-- After only one month of learning to play the drums, my parents bought me an expensive drum set that ended up as a decoration in our home.
-- I bought a cheap electronic violin via Amazon, and again, it ended up as a decoration.
+The `filter()` function calls a predicate function on every element and filters out the elements that pass a test.
 
-## 2011
+![predicate](/images/predicate.webp)
 
-- HS Cross Country (XC) - failed to run 3 miles under 20mins.
+```js
+let nums = [0, 1, 2, 3, 4, 5, 6];
+nums.filter((x) => x * 2); // [1, 2, 3, 4, 5, 6]
+```
 
-## 2012
+In this example, the predicate function `x * 2` is used to determine whether each item should be filtered or not. In JavaScript, non-zero values are considered `true`. As a result, all elements except 0 have passed the test and been included in the filtered array.
 
-- HS XC -  still couldn't make it under 20 mins (PR 20:04).
-- HS Track & Field - my goal was to run under 11.50 for 100m sprints but I couldn't make it (PR 11.88).
+## Array.prototype.map
 
-## 2013
+The `map()` function creates a new array by applying a callback function to each element of the original array, and returns the resulting array.
 
-- HS Track & Field - faild to run 100m dash 11.00 flat (PR 11.48).
+![callback](/images/callback.webp)
 
-## 2014
+```js
+let nums = [0, 1, 2, 3, 4, 5, 6];
+nums.map((x) => x * 2); // [0, 2, 4, 6, 8, 10, 12];
+```
 
-- Joined a community college's track & field team, but I gave up running after realizing that this isn't the team I was imagining (hello discrimination).
+The `map(callback)` function executes the callback function on each item of the array and stores the returned values in a new array. The function continues this process until all items have been processed, and finally returns the new array.
 
-## 2016
+## Summary
 
-- UCSD - couldn't get in with the 1st choice maor (got accepted with the alternative major).
-
-## 2018
-
-- UCSD - went to a career fair but couldn't get anything out of it.
-
-## 2019
-
-- Boston Career Forum 2019 - Interviewed with Apple → failed at the 2nd interview.
-
-## 2020
-
-- Ruby on Rails programmer position → failed.
-
-## 2021
-
-- Joined a JavaScript study group → uhh.. we all got busy and the study was halted.
-- I made a 'data structure & algorithm' study group with 5 people - we only covered basic data structure and called it an end.
-
-## 2022
-
-- Ran early morning algorithm study upon request of my friend, but failed due to poor attendence rate.
-
-## 2023
-
-- After returning home 🐓 from Japan, I submitted around 40 resumes as a front-end developer but either got no response or got rejected right away.
+The `filter` function is used to select specific items from the original array based on a condition, while the `map` function is used to create a new array by applying a transformation to each item of the original array.

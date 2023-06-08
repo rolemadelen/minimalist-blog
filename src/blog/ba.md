@@ -1,5 +1,5 @@
 ---
-title: 'Primality Test'
+title: '[Algorithm] Primality Test'
 posttitle: 'Primality Test'
 date: '2023-04-03 06:45:00'
 uid: 'ba'

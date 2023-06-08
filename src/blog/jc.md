@@ -3,7 +3,7 @@ title: '어찌할 수 없는 QWERTY 관성'
 posttitle: '어찌할 수 없는 QWERTY 관성'
 date: '2023-02-25 22:00:00'
 updated: '2023-02-26 11:00:00'
-uid: 'ma'
+uid: 'jc'
 ---
 
 _드보락(Dvorak)을 사용하는 글 주인의 주관적인 내용이 아주 잔뜩 담긴 글입니다._

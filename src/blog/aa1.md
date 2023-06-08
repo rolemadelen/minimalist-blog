@@ -1,8 +1,8 @@
 ---
-title: 'Stack이란?'
-posttitle: 'Stack이란? (with TypeScript)'
+title: '[TypeScript] Stack이란?'
+posttitle: 'Stack이란?'
 date: '2023-03-15 15:00:00'
-uid: 'a'
+uid: 'aa1'
 ---
 
 ## 스택(Stack)이란?

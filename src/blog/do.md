@@ -1,9 +1,9 @@
 ---
-title: '<li> 태그 ::marker와 counter'
+title: '[HTML] <li> 태그 ::marker와 counter'
 posttitle: '<li> 태그 ::marker와 counter'
 date: '2023-01-12 07:00:00'
 updated: '2023-03-02 07:00:00'
-uid: 'h'
+uid: 'do'
 ---
 
 리스트 아이템(`list-item`)은 모두 `::marker` 의사 요소(pseudo-element)를 가진다. 리스트라 하면 `li` 태그만을 의미하는 것은 아니고 `display`가 `list-item`으로 설정된 모든 태그를 의미한다.

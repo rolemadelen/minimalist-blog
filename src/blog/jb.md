@@ -2,7 +2,7 @@
 title: '내가 기록하는 방법: Pensieve'
 posttitle: '내가 기록하는 방법: Pensieve'
 date: '2023-02-26 15:00:00'
-uid: 'lb'
+uid: 'jb'
 ---
 
 아래는 현재 내가 쓰고 있는 노트 펜시브(Pensieve)[^a] 의 일부분이다.[^b]

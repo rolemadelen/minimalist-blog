@@ -1,73 +1,43 @@
 ---
-title: 'Résumé of Success 👍🏼'
-posttitle: 'History of my Successes 👍🏼'
-date: '2023-05-10 17:00:00'
-updated: '2023-05-14 19:00:00'
+title: '[JavaScript] 숫자 정렬하기'
+posttitle: '숫자 정렬하기'
+date: '2023-01-04 05:30:00'
+updated: '2023-03-02 16:00:00'
 uid: 'fa'
 ---
 
-> My successes? It's more like things that made me proud for attempting.
+다음과 같은 배열 `[11, 17, 2, 5, 3, 0, 9]`를 내부 함수인 `sort()`를 사용해서 오름 순으로 정렬해 보자.
 
-## ??
+```js
+let arr = [11, 17, 2, 5, 3, 0, 9];
+arr.sort();
+```
 
-- Elementary School- I was able to break free from bullying (this bully was a fastest runner in the grade but it turns out that I was faster 🤣)
-- Junior High - I learned how to play the clarinet and also did a recital
+위와 같이 사용하면 될 것 같다. 하지만 출력해 보면 결과가 이상하다.
 
-## 2011
+```text
+> [0, 11, 17, 2, 3, 5, 9]
+```
 
-- Joined a cross country (XC) team 🏃🏻
-- XC - 3 miles personal record 20:04
+`11`과 `17`이 중간에 정렬되어 있다. 이유는 `sort()` 함수가 기본적으로 값을 사전 순으로 정렬하기 때문이다.[^a]
 
-## 2012
+사전 순(문자)로 `1`이 `2`보다 앞서기 때문에 위와 같이 정렬된다. 숫자로 정렬하기 위해서는 비교 함수(compare function)를 넘겨주어야 한다.
 
-- Joined a track and field team - 100m dash time at a tryout 12.50 🏃🏻💨
-- I made it to the varsity team for 100m
-- broke 12 seconds for 100m - 11.88
-- Ran varsity 4x100 and we got 1st place 😆👍🏼
-- XC - 3 miles season record 20:23
+```js
+let arr = [11, 17, 2, 5, 3, 0, 9];
+const integerCompareFunction = (a, b) => a - b;
 
-## 2013
+arr.sort(integerCompareFunction);
+// [0, 2, 3, 5, 9, 11, 17]
+```
 
-- 100m PR - 11.74
-- 100m PR - 11.66
-- 100m PR - 11.48 👍🏼
+좀 더 간단하게 인자에서 화살표 함수를 사용해서 바로 넘겨줄 수도 있다.
 
-## 2016
+```js
+let arr = [11, 17, 2, 5, 3, 0, 9];
 
-- Met a life partner 👧🏻❤️
-- Successfully transfered from CC to UCSD - [Mathematics-Computer Science B.S.](https://math.ucsd.edu/students/undergraduate/ma30-math-computer-science-b-s)
+arr.sort((a, b) => a - b);
+// [0, 2, 3, 5, 9, 11, 17]
+```
 
-## 2017
-
-- Changed my major because I wanted to expand my views and thinking - [B.S. Cognitive Science Spec. in HCI](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)
-- Got my first internship as a frontend engineer at a startup
-- After 5 weeks of long tryout, I made it to the UCSD taiko group (Gen 17 💛)
-
-## 2018
-
-- Successfully finished our taiko concert - I played [kamaji](https://ghibli.fandom.com/wiki/Kamaj%C4%AB) 🕷️
-
-## 2019
-
-- Graudated from UCSD
-- Interviewed with a Japanese company for the FLT role and I got the job → OMW to Japan 🇯🇵✈️
-- another taiko concert but with LATI this time 👍🏼
-
-## 2020
-
-- What I'm an elementary school language teacher?... can't believe it 🧑🏻‍🏫
-- Started a miracle morning challenge - until I get a job as frontend engineer
-- Wait, what. I'm a frontend engineer?! - passed the interview and got the offer 🧑🏻‍💻
-
-## 2021
-
-- No more schools! My first day as an engineer 🧑🏻‍💻
-
-## 2022
-
-- Found a taiko team near my place → I joined the team
-- Visited Korea to meet my bestie 👍🏼
-
-## 2023
-
-- Returning home 🐓 → passed the driver license written test → got my Kentucky I.D → call me Kentucky-nean 😃
+[^a]: 정확히는 아스키코드값에 따라 정렬이 이루어진다.

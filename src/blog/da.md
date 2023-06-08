@@ -1,8 +1,8 @@
 ---
-title: 'unicode-range: 언어별 다른 폰트 설정하기'
+title: '[CSS] unicode-range: 언어별 다른 폰트 설정하기'
 posttitle: 'unicode-range: 언어별 다른 폰트 설정하기'
 date: '2023-01-13 05:00:00'
-uid: 'i'
+uid: 'da'
 ---
 
 팀 디자이너분이 영어와 일본어에 각기 다른 폰트 스타일을 적용한 디자인을 넘겨주었다.

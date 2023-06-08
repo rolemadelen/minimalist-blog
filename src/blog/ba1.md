@@ -1,8 +1,8 @@
 ---
-title: '소수를 구하는 여러 가지 방법'
+title: '[Algorithm] 소수를 구하는 여러 가지 방법'
 posttitle: '소수를 구하는 여러 가지 방법'
 date: '2023-04-03 06:45:00'
-uid: 'e'
+uid: 'ba1'
 ---
 
 ## 소수(Prime Number)란

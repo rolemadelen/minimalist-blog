@@ -3,7 +3,7 @@ title: '효율을 추구한 박사 Dvorak'
 posttitle: '효율을 추구한 박사 Dvorak'
 date: '2023-02-24 10:00:00'
 updated: '2023-02-26 14:10:00'
-uid: 'm'
+uid: 'jd'
 ---
 
 ## August Dvorak (오거스트 드보락)

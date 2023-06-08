@@ -1,8 +1,8 @@
 ---
-title: '선형 탐색 (Linear Search) 알고리즘'
+title: '[Algorithm] 선형 탐색 (Linear Search)'
 posttitle: '선형 탐색 (Linear Search)'
 date: '2022-10-23 12:00:00'
-uid: 'd'
+uid: 'bb'
 ---
 
 '선형'이란 이름에서도 알 수 있듯이, 해당 알고리즘은 리스트의 모든 요소를 하나하나 확인하며 값이 존재하는지 확인한다. 그렇기 때문에 리스트의 정렬 여부가 알고리즘 성능에 영향을 끼치지 못한다.
