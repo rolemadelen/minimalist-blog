@@ -2,8 +2,10 @@
 title: '[Algorithm] 소수를 구하는 여러 가지 방법'
 posttitle: '소수를 구하는 여러 가지 방법'
 date: '2023-04-03 06:45:00'
-uid: 'ba1'
+uid: 'ba'
 ---
+
+[🇺🇸 Read this post in English](../blog/ba)
 
 ## 소수(Prime Number)란
 

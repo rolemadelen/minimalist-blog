@@ -6,6 +6,7 @@ updated: '2023-05-21 11:00:00'
 uid: 'ja'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/ja)
 
 I've been working as a developer in Japan for two years now. You'd think that since I came to Japan and got a job, I would have studied and prepared for Japanese to some extent, but that's not the case at all. I've never taken a single JLPT exam.
 

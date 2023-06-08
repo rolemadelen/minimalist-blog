@@ -5,6 +5,8 @@ date: '2022-08-12 17:42:00'
 uid: 'e'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/e)
+
 The official documentation recommends using `rustup` to install or upgrade Rust on your device.
 
 If you have installed Rust without `rustup`, you can remove it from your machine by executing the following command:

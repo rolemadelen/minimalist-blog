@@ -5,6 +5,8 @@ date: '2023-02-13 11:45:00'
 uid: 'f'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/f)
+
 ## Array.prototype.filter
 
 The `filter()` function calls a predicate function on every element and filters out the elements that pass a test.

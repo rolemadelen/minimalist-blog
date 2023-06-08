@@ -2,8 +2,10 @@
 title: '[TypeScript] Stack이란?'
 posttitle: 'Stack이란?'
 date: '2023-03-15 15:00:00'
-uid: 'aa1'
+uid: 'aa'
 ---
+
+[🇺🇸 Read this post in English](../blog/aa)
 
 ## 스택(Stack)이란?
 

@@ -2,8 +2,10 @@
 title: '[TypeScript] Queue란?'
 posttitle: 'Queue란?'
 date: '2023-03-15 15:00:00'
-uid: 'ab1'
+uid: 'ab'
 ---
+
+[🇺🇸 Read this post in English](../blog/ab)
 
 ## 큐(Queue)의 개념
 

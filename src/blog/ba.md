@@ -5,6 +5,8 @@ date: '2023-04-03 06:45:00'
 uid: 'ba'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/ba)
+
 ## Prime Numbers
 
 A prime number is a number that can only be divided by 1 and itself without resulting in a fraction or decimal.

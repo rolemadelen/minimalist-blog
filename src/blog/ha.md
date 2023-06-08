@@ -6,6 +6,8 @@ updated: '2023-05-14 19:00:00'
 uid: 'ha'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/ha)
+
 ## ??
 
 - After only one month of learning to play the drums, my parents bought me an expensive drum set that ended up as a decoration in our home.

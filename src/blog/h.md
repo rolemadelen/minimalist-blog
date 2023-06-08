@@ -6,6 +6,8 @@ updated: '2023-05-14 19:00:00'
 uid: 'h'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/h)
+
 > My successes? It's more like things that made me proud for attempting.
 
 ## ??

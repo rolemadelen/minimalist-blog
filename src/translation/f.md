@@ -2,8 +2,10 @@
 title: '[JavaScript] Array filter와 map 비교'
 posttitle: 'Array filter와 map 비교'
 date: '2023-02-13 11:45:00'
-uid: 'f1'
+uid: 'f'
 ---
+
+[🇺🇸 Read this post in English](../blog/f)
 
 ## Array.prototype.filter
 

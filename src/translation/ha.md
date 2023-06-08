@@ -2,8 +2,10 @@
 title: '실패 이력서'
 posttitle: '내 실패의 이력 💪🏼'
 date: '2023-05-10 17:00:00'
-uid: 'ha1'
+uid: 'ha'
 ---
+
+[🇺🇸 Read this post in English](../blog/ha)
 
 > 실패 혹은 시도의 기록
 

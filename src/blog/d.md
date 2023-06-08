@@ -5,6 +5,8 @@ date: '2023-05-20 10:00:00'
 uid: 'd'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/d)
+
 When you click on an input field in a form, it becomes highlighted with a blue outer border line.
 
 ![blue outline](/images/blue-outline.webp)

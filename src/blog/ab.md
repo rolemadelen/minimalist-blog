@@ -5,6 +5,8 @@ date: '2023-03-15 15:00:00'
 uid: 'ab'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/ab)
+
 ## Queue
 
 A queue is a linear data structure where data is inserted at one end (`rear`) and removed from the opposite end (`front`). 

@@ -5,6 +5,8 @@ date: '2023-04-05 08:00:00'
 uid: 'aa'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/aa)
+
 ## What is a Stack?
 
 A stack is a type of linear data structure where data insertion or deletion occurs at one end only.

@@ -6,6 +6,8 @@ updated: '2023-05-20 15:00:00'
 uid: 'j'
 ---
 
+[🇰🇷 한국어로 읽기](../ko/j)
+
 In November 2022, while still in Japan, I was busy packing, donating, selling, and discarding my belongings in preparation for my move back to the States.
 
 During this time, I came across a [tweet](https://twitter.com/hmartapp/status/1444891624538996740?s=20) discussing the practicality and efficiency of coding in VR.
