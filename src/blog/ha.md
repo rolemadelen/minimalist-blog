@@ -58,3 +58,4 @@ uid: 'ha'
 ## 2023
 
 - After returning home 🐓 from Japan, I submitted around 40 resumes as a front-end developer but either got no response or got rejected right away.
+- My plan was to get a job by June and I almost had it but nope!
