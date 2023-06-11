@@ -85,6 +85,14 @@ export const PostUID = tw.span`
     h-[13px]
     mb-[1px]
 `
+export const PostDate = tw.span`
+    post-date
+    block
+    text-[#bbb]
+    text-[0.8125rem]
+    h-[13px]
+    mb-[1px]
+`
 export const PostTitle = tw.p`
     post-title
     mb-[1.75rem]
