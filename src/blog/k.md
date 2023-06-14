@@ -1,6 +1,6 @@
 ---
-title: '[神経衰弱] Project Setup & Card UI'
-posttitle: '[神経衰弱] Project Setup & Card UI'
+title: '[神経衰弱] ① Project Setup & Card UI'
+posttitle: '[Shinkei Suijaku] ① Project Setup & Card UI'
 date: '2023-06-12 22:00:00'
 uid: 'k'
 ---
@@ -160,7 +160,7 @@ Sweet. Everything is installed correctly.
 
 ## Creating a Card UI
 
-I created a component called `Card` that accepts two values: the Pokemon name and the image.
+I created a component called `Card` that accepts two values: the Pokémon name and the image.
 
 ```tsx
 <Card name={POKEMON_NAME} image={POKEMON_IMG_PATH} />
@@ -191,7 +191,7 @@ const Card = (card: IPokeCard) => {
 
 export default Card;
 ```
-As a temporary measure, I downloaded a sample Pokemon card image, which happened to be a Charizard.
+As a temporary measure, I downloaded a sample Pokémon card image, which happened to be a Charizard.
 
 Now, let's use this image and render our `Card` component
 
@@ -232,4 +232,4 @@ when integrating Tailwind CSS.
 Luckily, I came across Vite, and everything went smoothly from there.
 
 Next, I plan to implement a card flip animation. 
-Players will be able to click on a card to reveal its pokemon.
+Players will be able to click on a card to reveal its Pokémon.
