@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// English
+@font-face {
+  font-family: 'Iowan Old Style', 'Iowan';
+  src: local('Iowan Old Style');
+  unicode-range: U+0000-007F, U+0080-00FF;
+}
+
+// Korean
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('/font/NotoSansKR.otf');
+  unicode-range: U+AC00-D7AF, U+4E00;
+}
+
+@function px2rem($px) {
+  @return #{$px / 16}rem;
+}
+
+:root {
+  max-width: 1920px;
+  font-size: 16px;
+  margin: 0 auto;
+  font-family: "Iowan Old Style","Iowan","Georgia", 'Noto Sans KR', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::selection {
+  background: #009dff33;
+}
+
+.post {
+  &-content {
+    color: #444;
+
+    hr {
+      margin: 1rem 0;
+    }
+    a {
+      text-decoration: underline;
+      text-decoration-color: #009dff33;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: 0.5rem;
+      text-underline-offset: -0.2rem;
+      transition: text-decoration .3s;   
+    }
+
+    hr ~ (p + p) {
+      text-indent: 2rem;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    pre, img {
+      margin: 1.5rem 0;
+
+      & > div {
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+body, p, blockquote, span,
+h1, h2, h3, h4, h5, h6 {
+  word-break: keep-all;
+}

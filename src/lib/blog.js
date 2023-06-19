@@ -4,8 +4,8 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-export function getAllPosts(type) {
-  const postsDirectory = path.join(process.cwd(), `/src/${type}`);
+export function getAllPosts() {
+  const postsDirectory = path.join(process.cwd(), `/src/blog`);
   const fileNames = fs.readdirSync(postsDirectory);
 
   const allPostsData = fileNames.map((fileName) => {
@@ -18,27 +18,24 @@ export function getAllPosts(type) {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
     return {
-      type,
       slug,
       ...matterResult.data,
     };
   });
 
   // sort posts by most recent only for the Blog 
-  if(type === 'blog') {
-    return allPostsData.sort((postA, postB) => {
-      let dateA = new Date(postA.date);
-      let dateB = new Date(postB.date);
+  allPostsData.sort((postA, postB) => {
+    let dateA = new Date(postA.date);
+    let dateB = new Date(postB.date);
 
-      return dateB - dateA;
-    })
-  } else {
-    return allPostsData;
-  }
+    return dateB - dateA;
+  })
+
+  return allPostsData;
 }
 
-export function getAllPostIds(type) {
-  const postsDirectory = path.join(process.cwd(), `/src/${type}/`);
+export function getAllPostIds() {
+  const postsDirectory = path.join(process.cwd(), `/src/blog/`);
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => {
     return {
@@ -49,8 +46,8 @@ export function getAllPostIds(type) {
   });
 }
 
-export async function getPostData(type, id) {
-  const postsDirectory = path.join(process.cwd(), `/src/${type}`);
+export async function getPostData(id) {
+  const postsDirectory = path.join(process.cwd(), `/src/blog`);
   const fullPath = path.join(postsDirectory, `${id[0]}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
