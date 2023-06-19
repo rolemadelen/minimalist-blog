@@ -15,10 +15,10 @@ interface Post {
 }
 
 interface Posts {
-  posts: Post[]
+  posts: Post[],
 }
 
-const Blog: React.FC<Posts> = ({ posts, postByYear }) => {
+const Blog: React.FC<Posts> = ({ posts }) => {
   const year = useRef('')
 
   const displayYear = useCallback((d: any) => {
@@ -72,7 +72,7 @@ const Blog: React.FC<Posts> = ({ posts, postByYear }) => {
               key={`blog-${post.slug}`}
               href={`/blog/${post.slug}`}
               passHref>
-              <div className='flex items-center grid gap-4 grid-cols-[auto_1fr_auto] my-5 text-md'>
+              <div className='items-center grid gap-4 grid-cols-[auto_1fr_auto] my-5 text-md'>
                 <div className='whitespace-nowrap overflow-hidden overflow-ellipsis'>{post.title}</div>
                 <hr className='m-0 p-0 w-full border-dashed min-w-[1rem]' />
                 <div className='text-gray-400 text-sm'>
@@ -91,21 +91,9 @@ const Blog: React.FC<Posts> = ({ posts, postByYear }) => {
 export async function getStaticProps() {
   let posts = getAllPosts()
 
-  let postByYear = {
-    '2021': [],
-    '2022': [],
-    '2023': [],
-  }
-
-  posts.map((post) => {
-    const year = post.date.split(' ')[0].split('-')[0]
-    postByYear[year].push(post)
-  })
-
   return {
     props: {
       posts,
-      postByYear
     },
   }
 }
