@@ -25,7 +25,7 @@
   font-size: 16px;
   margin: 0 auto;
   font-family: "Iowan Old Style","Georgia", 'serif', 'Noto Sans KR';
-  color: #333;
+  color: #555;
 }
 
 ::selection {
@@ -151,5 +151,14 @@ h1, h2, h3, h4, h5, h6 {
   p { text-indent: 0; margin: 0; padding: 0; line-height: 1.5;}
   a {
     text-decoration-color: transparent;
+  }
+}
+
+.post-list {
+  &:hover {
+  div {
+      color: #333;
+      transition: color 0.3s ease-in-out;
+    }
   }
 }

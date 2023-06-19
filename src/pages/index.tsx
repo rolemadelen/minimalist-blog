@@ -72,7 +72,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
               key={`blog-${post.slug}`}
               href={`/blog/${post.slug}`}
               passHref>
-              <div className='items-center grid gap-4 grid-cols-[auto_1fr_auto] my-5 text-md'>
+              <div className='post-list items-center grid gap-4 grid-cols-[auto_1fr_auto] my-5 text-md'>
                 <div className='whitespace-nowrap overflow-hidden overflow-ellipsis'>{post.title}</div>
                 <hr className='m-0 p-0 w-full border-dashed min-w-[1rem]' />
                 <div className='text-gray-400 text-sm'>
