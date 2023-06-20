@@ -1,12 +1,10 @@
 ## Blog v2
 
 Blog v1 → [Repository](https://github.com/rolemadelen/blog)
-
+Blog v3 → [Repository](https://github.com/rolemadelen/blogv3)
 ---
 
 ## Progress
-
-- [ ] [feature] integrate giscus comment ([#9][i9])
 
 ## TODO
 
@@ -28,7 +26,7 @@ Blog v1 → [Repository](https://github.com/rolemadelen/blog)
 - [x] [feature] Redirect to the home menu when logo is clicked ([#20][i20]) - _2023.05.07_
 - [x] implement the About page ([#21][i21]) - _2023.05.07_
 - [x] [bug] when you refresh, it displays the initial iphone size background image ([#23][i23])
-
+- [ ] ~~[feature] integrate giscus comment~~ ([#9][i9])
 
 [i1]: https://github.com/rolemadelen/blogv2/issues/1
 [i2]: https://github.com/rolemadelen/blogv2/issues/2
