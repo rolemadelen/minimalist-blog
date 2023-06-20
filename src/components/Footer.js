@@ -4,15 +4,17 @@ import React from 'react';
 const Footer = ({ pageFrom }) => {
   return (
     <>
-      <div className='footer max-w-[18rem] mb-16 m-auto flex justify-center item-center'>
-        {pageFrom !== 'blog' && (
-          <Link href='/'>blog</Link>
-        )}
-        {pageFrom !== 'about' && (
-          <Link href='/about'>about</Link>
-        )}
-        <span>(o´▽`o)ﾉ</span>
-      </div >
+      <div className='max-w-[18rem] m-auto flex flex-col items-center'>
+        <div className='footer max-w-[18rem] mb-5 m-auto flex justify-center item-center'>
+          {pageFrom !== 'blog' && (
+            <Link href='/'>blog</Link>
+          )}
+          {pageFrom !== 'about' && (
+            <Link href='/about'>about</Link>
+          )}
+        </div >
+        <span className='mb-16'>૮₍ • ᴥ • ₎ა</span>
+      </div>
     </>
   );
 };

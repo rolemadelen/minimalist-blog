@@ -83,7 +83,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
           </div>
         ))}
       </div >
-      <Footer pageFrom='main' />
+      <Footer pageFrom='blog' />
     </>
   )
 }
