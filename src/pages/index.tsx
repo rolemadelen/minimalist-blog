@@ -28,7 +28,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     if (year.current === postYear) return ''
     else {
       year.current = postYear
-      return <div className='year text-gray-400 sm:text-gray-200 sm:absolute left-[-6rem] top-[-3rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]' key={postYear}>{postYear}</div>
+      return <div className='text-gray-400 sm:text-gray-200 absolute top-[-4rem] sm:left-[-6rem] sm:top-[-3rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]' key={postYear}>{postYear}</div>
     }
   }, [])
 
@@ -72,7 +72,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     return (
       <>
         <div className='my-14'></div>
-        <div className='text-gray-200 absolute right-[-8rem] top-0 w-[10rem] text-xl tracking-tight rotate-90 mt-[4rem]'>{s}</div>
+        <div className='text-gray-300 right-[-8rem] top-0 w-full text-xl tracking-tight text-right sm:text-left sm:w-[10rem] sm:text-gray-200 sm:mt-[4rem] sm:absolute sm:rotate-90'>{s}</div>
       </>
     )
   }, [])
