@@ -16,6 +16,14 @@
   unicode-range: U+AC00-D7AF, U+4E00;
 }
 
+// for Japanese
+@font-face {
+    font-family: 'Klee-Medium';
+    src: local('Klee-Medium');
+    unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
+}
+
+
 @function px2rem($px) {
   @return #{$px / 16}rem;
 }
@@ -24,7 +32,7 @@
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: "Iowan Old Style","Georgia", 'serif', 'Noto Sans KR';
+  font-family: "Iowan Old Style","Georgia", 'serif', 'Noto Sans KR', 'Klee-Medium';
   color: #555;
 }
 
