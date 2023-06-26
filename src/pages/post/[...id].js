@@ -17,7 +17,7 @@ export default function Post({ post }) {
           {post.posttitle}
         </Link>
       </div>
-      <div className='post-content max-w-[36rem] m-auto mb-44'>
+      <div className='post-content max-w-[36rem] m-auto mb-14 pb-20 border-b'>
         <Preview markdown={post.markdown} />
       </div>
       <Footer pageFrom='post' />
