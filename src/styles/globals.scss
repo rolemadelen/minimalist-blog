@@ -171,3 +171,50 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.puppy {
+  display: block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    .ear {
+      &-left {
+          transform: translateY(-3px) rotateZ(90deg);
+      }
+
+      &-right {
+          transform: translateY(-3px) rotateZ(-45deg);
+      }
+    }
+
+    &::after {
+      content: '(hi!)';
+      display: block;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  }
+
+  .ear-left,
+  .ear-right {
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.about {
+  p {
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+  }
+
+  .content {
+    a {
+      text-decoration: underline;
+      text-decoration-color: #009dff33;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: 0.5rem;
+      text-underline-offset: -0.2rem;
+      transition: text-decoration .3s;   
+    }
+  }
+}

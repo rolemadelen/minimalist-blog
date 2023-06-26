@@ -13,7 +13,7 @@ const Footer = ({ pageFrom }) => {
             <Link href='/about'>about</Link>
           )}
         </div >
-        <span className='mb-16'>૮₍ • ᴥ • ₎ა</span>
+        <span className='puppy mb-16'><span className='ear-left'>૮</span> • ᴥ • <span className='ear-right'>ა</span></span>
       </div>
     </>
   );
