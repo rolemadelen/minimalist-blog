@@ -26,9 +26,9 @@ const About = () => {
         <div className='content mb-10 text-left border-b pb-16'>
           <p>
             I was born in <a href="https://www.google.com/search?q=andong+south+korea&oq=Andong+south+korea&sourceid=chrome&ie=UTF-8">Andong</a>, South Korea in the mid-1990s.
-            Although I don't recall the exact year, I believe I was around 9 years old when our family relocated to Southern California.
+            Although I don&apos;t recall the exact year, I believe I was around 9 years old when our family relocated to Southern California.
             At that time, my knowledge of English was limited to just one word: <i>hello</i>.
-            So, I spent the majority of my time with my only friend, Diablo II. I think it's fair to say that
+            So, I spent the majority of my time with my only friend, Diablo II. I think it&apos;s fair to say that
             I was a game addict.
           </p>
           <p>
@@ -54,7 +54,7 @@ const About = () => {
             I reside in Kentucky with my partner and our beloved German Shepherd puppy.
           </p>
           <p>
-            That's about who I am. If there's something you want to know more about me or are
+            That&apos;s about who I am. If there&apos;s something you want to know more about me or are
             interested in discussing potential remote opportunities, please don&apos;t hesitate
             to reach out to me via email at <a href="mailto:hello@jiieu.com">hello@jiieu.com</a>.
           </p>
