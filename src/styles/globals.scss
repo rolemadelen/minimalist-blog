@@ -4,25 +4,24 @@
 
 // English
 @font-face {
-  font-family: 'Iowan Old Style', 'Iowan';
-  src: local('Iowan Old Style');
+  font-family: "Times New Roman", "Times";
+  src: local("Times New Roman");
   unicode-range: U+0000-007F, U+0080-00FF;
 }
 
 // Korean
 @font-face {
-  font-family: 'Noto Sans KR';
-  src: url('/font/NotoSansKR.otf');
+  font-family: "Noto Sans KR";
+  src: url("/font/NotoSansKR.otf");
   unicode-range: U+AC00-D7AF, U+4E00;
 }
 
 // for Japanese
 @font-face {
-    font-family: 'Klee-Medium';
-    src: local('Klee-Medium');
-    unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
+  font-family: "Klee-Medium";
+  src: local("Klee-Medium");
+  unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
 }
-
 
 @function px2rem($px) {
   @return #{$px / 16}rem;
@@ -32,7 +31,8 @@
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: "Iowan Old Style","Georgia", 'serif', 'Noto Sans KR', 'Klee-Medium';
+  font-family: "Times New Roman", "Times", "serif", "Noto Sans KR",
+    "Klee-Medium";
   color: #555;
 }
 
@@ -45,14 +45,25 @@
     margin: 4rem auto 3rem;
     text-align: center;
     font-size: 1.25rem;
+    font-style: italic;
   }
 
-  code, kbd {
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  code,
+  kbd {
     font-family: monospace;
   }
 
   &-content {
-    table, thead, tr, td, th {
+    table,
+    thead,
+    tr,
+    td,
+    th {
       border: 1px solid #eee;
       padding: 1rem;
       margin: 2rem 0;
@@ -68,7 +79,8 @@
         margin: 0;
         line-height: 1.75;
 
-        code, kbd {
+        code,
+        kbd {
           font-style: italic;
           background: none;
         }
@@ -85,7 +97,7 @@
       text-decoration-skip-ink: none;
       text-decoration-thickness: 0.5rem;
       text-underline-offset: -0.2rem;
-      transition: text-decoration .3s;   
+      transition: text-decoration 0.3s;
     }
 
     p > code,
@@ -94,7 +106,7 @@
     }
 
     p {
-      text-indent: 0rem;
+      text-indent: 1rem;
       line-height: 2;
       margin-bottom: 1.15rem;
     }
@@ -115,7 +127,8 @@
       }
     }
 
-    pre, img {
+    pre,
+    img {
       margin: 2rem auto;
 
       & > div {
@@ -123,7 +136,8 @@
       }
     }
 
-    ul, ol {
+    ul,
+    ol {
       margin: 1rem auto;
     }
 
@@ -144,8 +158,16 @@
   }
 }
 
-body, p, blockquote, span,
-h1, h2, h3, h4, h5, h6 {
+body,
+p,
+blockquote,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   word-break: keep-all;
 }
 
@@ -153,10 +175,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   margin-top: 3rem;
   color: gray;
-  h2 { display: none; }
+  h2 {
+    display: none;
+  }
   border-top: 1px solid #eee;
-  li { list-style: roman; }
-  p { text-indent: 0; margin: 0; padding: 0; line-height: 1.5;}
+  li {
+    list-style: roman;
+  }
+  p {
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
   a {
     text-decoration-color: transparent;
   }
@@ -164,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-list {
   &:hover {
-  div {
+    div {
       color: #333;
       transition: color 0.3s ease-in-out;
     }
@@ -178,16 +209,16 @@ h1, h2, h3, h4, h5, h6 {
   &:hover {
     .ear {
       &-left {
-          transform: translateY(-3px) rotateZ(90deg);
+        transform: translateY(-3px) rotateZ(90deg);
       }
 
       &-right {
-          transform: translateY(-3px) rotateZ(-45deg);
+        transform: translateY(-3px) rotateZ(-45deg);
       }
     }
 
     &::after {
-      content: '(hi!)';
+      content: "(hi!)";
       display: block;
       font-size: 0.7rem;
       text-align: center;
@@ -214,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration-skip-ink: none;
       text-decoration-thickness: 0.5rem;
       text-underline-offset: -0.2rem;
-      transition: text-decoration .3s;   
+      transition: text-decoration 0.3s;
     }
   }
 }
