@@ -5,8 +5,8 @@ date: "2023-06-28 07:30:00"
 published: "2023-06-28 11:20:00"
 ---
 
-Okay. It's little shameful but I have to admit that I didn't knew about this
-thing called _Callback Hell_. So what is it? Take a look at the code below.
+Okay. It's a little shameful, but I have to admit that I didn't knew about this
+thing called _Callback Hell_. So, what is it? Take a look at the code below.
 
 ```js
 userStorage.loginUser {
