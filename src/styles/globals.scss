@@ -42,20 +42,28 @@
 
 .post {
   h2 {
-    margin: 4rem auto 3rem;
+    margin: 2.5rem auto 1rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-style: italic;
   }
 
   h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
+    margin: 3rem auto 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 2rem;
   }
 
   code,
   kbd {
-    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.2rem;
   }
 
   &-content {
@@ -107,7 +115,7 @@
 
     p {
       text-indent: 1rem;
-      line-height: 2;
+      line-height: 1.5;
       margin-bottom: 1.15rem;
     }
 
@@ -136,24 +144,34 @@
       }
     }
 
-    ul,
-    ol {
-      margin: 1rem auto;
-    }
-
     ul > li {
       position: relative;
       left: 1rem;
-      list-style: circle outside;
-      margin: 0.5rem auto;
+      list-style: disc outside;
+
+      & > ul > li {
+        list-style: circle outside;
+
+        & > ul > li {
+          list-style: square outside;
+        }
+      }
     }
 
     ol > li {
-      list-style: decimal outside;
+      list-style: decimal inside;
+
+      & > ol > li {
+        list-style: lower-roman inside;
+
+        & > ol > li {
+          list-style: lower-latin inside;
+        }
+      }
     }
 
     li {
-      line-height: 1.75;
+      line-height: 1.5;
     }
   }
 }
@@ -173,7 +191,8 @@ h6 {
 
 .footnotes {
   font-size: 0.8rem;
-  margin-top: 3rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
   color: gray;
   h2 {
     display: none;

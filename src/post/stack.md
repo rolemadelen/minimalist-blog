@@ -1,21 +1,21 @@
 ---
-title: 'Stack'
-posttitle: 'Stack'
-date: '2023-04-05 08:00:00'
+title: "Stack"
+posttitle: "Stack"
+date: "2023-04-05 08:00:00"
 ---
 
 A stack is a type of linear data structure where data insertion or deletion occurs at one end only.
 
 Inserting an item into the stack is known as a `push` operation, while removing an item is referred to as a `pop` operation. When you pop an item from the stack, the last item inserted will be removed. This results in a _Last In, First Out_ (LIFO) structure[^1], meaning that the first item inserted into the stack will be the last item removed.
 
-## Stack Operations
+### Stack Operations
 
 - `push`: Adds data to the stack.
 - `pop`: Removes data from the stack.
 - `isEmpty`: Checks if the stack is empty.
 - `peek`: Retrieves the data at the top of the stack.
 
-## Static Stack - Array
+### Static Stack - Array
 
 If the size of the data is known in advance, we can use an array to create a static stack. Alternatively, if the size is unknown or may change dynamically, a dynamic array or linked list can be used to create a stack that can grow or shrink as needed.
 
@@ -30,7 +30,7 @@ export class StackArray<T> {
     this.top = 0;
     this.stack = new Array<T | undefined>(size);
 
-    if(Object.seal) {
+    if (Object.seal) {
       this.stack.fill(undefined);
       Object.seal(this.stack);
     }
@@ -38,8 +38,8 @@ export class StackArray<T> {
 
   // O(1)
   push(val: T): void {
-    if(this.top >= this.size) {
-      throw new Error('Stack overflow');
+    if (this.top >= this.size) {
+      throw new Error("Stack overflow");
     }
 
     this.stack[this.top] = val;
@@ -49,7 +49,7 @@ export class StackArray<T> {
   // O(1)
   pop(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error('Stack underflow');
+      throw new Error("Stack underflow");
     }
 
     this.top -= 1;
@@ -65,7 +65,7 @@ export class StackArray<T> {
   // O(1)
   peek(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error('Stack is empty');
+      throw new Error("Stack is empty");
     }
 
     return this.stack[this.top - 1];
@@ -73,12 +73,12 @@ export class StackArray<T> {
 }
 ```
 
-## Dynamic Stack - Linked List
+### Dynamic Stack - Linked List
 
 To implement a dynamic stack in JavaScript, we have the option to use an array, which is implemented using a hash map. However, for this particular case, I will opt for a linked list to create the dynamic stack.
 
 ```ts
-import { ListNode, LinkedListNode } from '../linked-list/LinkedList';
+import { ListNode, LinkedListNode } from "../linked-list/LinkedList";
 
 export class StackList<T> {
   top: ListNode<T>;
@@ -125,13 +125,13 @@ export class StackList<T> {
 }
 ```
 
-## Static vs. Dynamic Stack
+### Static vs. Dynamic Stack
 
 A static stack has a fixed size, meaning that once it becomes full, it cannot accommodate additional data. However, it offers the advantage of simplicity in implementation and consumes less memory since it does not require separate memory allocation.
 
 In contrast, a dynamic stack is not limited in size. It can handle an increasing number of data as long as memory permits. However, implementing a dynamic stack is relatively complex and entails memory allocation, resulting in increased memory usage.
 
-## Applications of Stacks
+### Applications of Stacks
 
 - Recursive algorithms
 - Storing web browser history
@@ -139,9 +139,8 @@ In contrast, a dynamic stack is not limited in size. It can handle an increasing
 - Verifying the validity of parentheses in mathematical expressions
 - Evaluating postfix expressions
 
-## ૮ ・ﻌ・ა
+### Reference
 
-**Reference**
 - <https://cwjuns.tistory.com/18>
 - <https://velog.io/@jimmy48/%EC%8A%A4%ED%83%9D%EC%9D%B4%EB%9E%80>
 - <https://gmlwjd9405.github.io/2018/08/03/data-structure-stack.html>
