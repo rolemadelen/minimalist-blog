@@ -4,8 +4,8 @@
 
 // English
 @font-face {
-  font-family: "Times New Roman", "Times";
-  src: local("Times New Roman");
+  font-family: "Cardo";
+  src: url("/font/Cardo-Regular.ttf");
   unicode-range: U+0000-007F, U+0080-00FF;
 }
 
@@ -31,8 +31,7 @@
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: "Times New Roman", "Times", "serif", "Noto Sans KR",
-    "Klee-Medium";
+  font-family: "Iowan", "Noto Sans KR", "Klee-Medium", serif;
   color: #555;
 }
 
@@ -114,8 +113,8 @@
     }
 
     p {
-      text-indent: 1rem;
-      line-height: 1.5;
+      text-indent: 0rem;
+      line-height: 1.7;
       margin-bottom: 1.15rem;
     }
 
