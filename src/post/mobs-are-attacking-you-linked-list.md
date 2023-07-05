@@ -2,7 +2,7 @@
 title: "Mobs are attacking you (feat. Linked List)"
 posttitle: "Mobs are attacking you (feat. Linked List)"
 date: "2023-07-05 09:00:00"
-published: ""
+published: "2023-07-05 12:05:00"
 ---
 
 Linked List is a linear data structure composed of nodes where each node contains a data field and a reference to the next and/or previous node in the list. Unlike Arrays, the order of nodes in the list is NOT given by their physical placement in memory.
