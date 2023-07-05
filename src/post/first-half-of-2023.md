@@ -2,6 +2,7 @@
 title: "First half of 2023"
 posttitle: "First half of 2023"
 date: "2023-07-03 15:52:00"
+published: "2023-07-03 23:55:00"
 ---
 
 ## Life

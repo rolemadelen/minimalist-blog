@@ -198,7 +198,7 @@ h6 {
   }
   border-top: 1px solid #eee;
   li {
-    list-style: roman;
+    list-style: roman outside !important;
   }
   p {
     text-indent: 0;
