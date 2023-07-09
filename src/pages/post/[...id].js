@@ -12,7 +12,7 @@ Post.propTypes = {
 
 export default function Post({ post }) {
   return (
-    <div className="post max-w-[36rem] m-auto">
+    <div className="post max-w-[36rem] m-auto px-6">
       <div className="post-title text-3xl mt-36 mb-10 leading-normal">
         <Link href="/" title="post.postitle">
           {post.posttitle}
