@@ -20,11 +20,11 @@ console.log(arr)
 // [1, 2, 3, 4]
 ```
 
-There are two ways prevent JavaScript from modifying the array: `Object.seal()` and `Object.freeze()`. However, _freezing_ is not a good option here because it will make your object read-only.
+There are two ways to prevent JavaScript from modifying the array: `Object.seal()` and `Object.freeze()`. However, _freezing_ is not a good option here because it will make your object read-only.
 
 > "A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned"
 
-By _sealing_ the object, we can prevent a user from inserting an additional data beyond the given size.
+By _sealing_ the array object, we can modify the exisiting array and prevent a user from inserting an additional data beyond the given size.
 
 ```js
 let arr = new Array(2)
