@@ -43,16 +43,6 @@ const About = () => {
                   LN
                 </a>
               </li>
-              <li>
-                <a
-                  className="tracking-[1px] hover:line-through"
-                  href="https://www.twitter.com/rolemadelen/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TW
-                </a>
-              </li>
             </ul>
           </div>
         </div>
