@@ -3,7 +3,9 @@ title: "Tired of Social Media"
 posttitle: "Tired of Social Media"
 date: "2023-08-05 07:15:00"
 published: "2023-08-05 08:10:00"
+updated: "2023-08-10 21:46:00"
 ---
+
 
 I have to admit, it's become a bit of a habit for me to reach for my phone and check social media as soon as I wake up. Instagram, BlueSky, and Twitter (or X).
 
@@ -16,3 +18,9 @@ But I'm not cutting myself off completely from social media.
 I'll still be keeping Instagram, as it's the place where I connect with my real-life friends.
 
 With these changes, I'm looking forward to starting my mornings on a more positive note, focusing on the things that truly matter and surrounding myself with uplifting content and meaningful connections.
+
+---
+
+#### Update - August 10th, 2023
+
+I noticed I was spending a lot of time on Instagram shorts and reels, so I made the choice to remove the app from my phone. However, I'm currently taking on a challenge for the month of August where I draw something new every day and share it on my account. For the purpose of posting my drawings, I'll reinstall the app temporarily and then promptly remove it afterward.
