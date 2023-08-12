@@ -55,17 +55,13 @@ weakMap.set("test", "whoops");
 
 ## Garbage Collector
 
-The keys stored in a WeakMap are weakly referenced, which means that the garbage collector can remove the key pointer from the WeakMap
-and subsequently remove the key from memory. In contrast, in a regular map, the keys remain in memory
-unless the Map itself is explictily removed.
+The keys stored in a WeakMap are weakly referenced, which means that the garbage collector can remove the key pointer from the WeakMap and subsequently remove the key from memory. In contrast, in a regular map, the keys remain in memory unless the Map itself is explicitly removed.
 
 ---
 
 ### Sidenote
 
-If you come from another programming language where you use bracket notation to insert data into a map,
-you need to be careful when using JavaScript because in this case, you're adding a property,
-not an entry.
+If you come from another programming language where you use bracket notation to insert data into a map, you need to be careful when using JavaScript because in this case, you're adding a property, not an entry.
 
 ```js
 const weakMap = new WeakMap();
@@ -77,9 +73,7 @@ console.log(weakMap["test"]);
 console.log(weakMap.test);
 ```
 
-Don't make the above error (_like myself_) and think, "Oh, I can use a string as a key in WeakMap".
-If you use a regular Map and attempt the same operation, you will realize
-that the entry length is still zero.
+Don't make the above error (_like myself_) and think, "Oh, I can use a string as a key in WeakMap". If you use a regular Map and attempt the same operation, you will realize that the entry length is still zero.
 
 ```js
 const map = new Map();

@@ -129,7 +129,7 @@ If the list is not empty, we can simply move the current head pointer to the nex
 
 Removing a node at the end of the list is a bit more complex. We need to access the node just before the tail pointer in order to disconnect the link and update the tail. To accomplish this, we have no choice but to iterate through the list from the beginning until we reach the second-to-last node[^1]. This operation will have a linear time complexity due to the traversal of the list.
 
-[^1]: By using a doubly linked list with references to the next and previous nodes, we can achive constant time complexity for removing node at the end of the list.
+[^1]: By using a doubly linked list with references to the next and previous nodes, we can achieve constant time complexity for removing node at the end of the list.
 
 ```ts
   popBack(): NodeType<T> {

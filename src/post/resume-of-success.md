@@ -5,7 +5,7 @@ date: "2023-05-10 17:00:00"
 updated: "2023-06-19 10:50:00"
 ---
 
-#### last updated on June 19th, 2023\_
+#### last updated on June 19th, 2023
 
 Let me share with you a glimpse into my proudest moments, achievements and unforgettable experiences. While some may be buried in the depths of my memory, I acknowledge that I may have inadvertently missed a few along the way.
 

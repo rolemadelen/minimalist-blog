@@ -49,7 +49,7 @@ Done in 6s
 ### Tailwind CSS and Daisy UI
 
 I'm going to install Tailwind CSS and other necessary libraries to use Daisy UI. Then, I'll need to create two
-configuration files: `tailwind.config.cjs` and `postcss.config.cjs`, to propery setup tailwind and
+configuration files: `tailwind.config.cjs` and `postcss.config.cjs`, to properly setup tailwind and
 daisy UI.
 
 ```bash

@@ -5,18 +5,11 @@ date: "2023-07-09 11:08:00"
 published: "2023-07-09 13:45:00"
 ---
 
-I've started working on a side project called 'Things I Want' and have made significant progress,
-although it's still in a somewhat unfinished state. I've implemented all the features I initially planned,
-but I'm eager to add something more to enhance the project. But I'm facing a creative block at the moment, so ...
-we'll see.
+I've started working on a side project called 'Things I Want' and have made significant progress, although it's still in a somewhat unfinished state. I've implemented all the features I initially planned, but I'm eager to add something more to enhance the project. But I'm facing a creative block at the moment, so ... we'll see.
 
 ![demo](/images/things-i-want/demo.gif)
 
-Anyway, let me tell you more about this project. As the name suggests, 'Things I Want' is a website that
-showcases a collection of items I aspire to own in the future. This diverse collection encompassess
-everything from keyboards, monitors, and laptops to taiko drums and AR glasses. Currently, there are
-approximately 20 items listed, but I envision the list growing as time goes on and my desirs evolve.
-The website serves a a personal catalog and a source of inspiration.
+Anyway, let me tell you more about this project. As the name suggests, 'Things I Want' is a website that showcases a collection of items I aspire to own in the future. This diverse collection encompasses everything from keyboards, monitors, and laptops to taiko drums and AR glasses. Currently, there are approximately 20 items listed, but I envision the list growing as time goes on and my desires evolve. The website serves a a personal catalog and a source of inspiration.
 
 ## Design
 
@@ -37,9 +30,9 @@ its geometric compositions.
 ## Tech Stack
 
 As I'm currently learning [Svelte](https://svelte.dev/), I decided to utilize it for the frontend of my project. Although
-I acknowledge that my project structure may not be optimial and that I may not have fully utilized all
+I acknowledge that my project structure may not be optimal and that I may not have fully utilized all
 the language's capabilities, I believe that practicing and learning go hand in hand. Embracing the learning
-process allows me to continously improve and refine my skills in Svelte.
+process allows me to continuously improve and refine my skills in Svelte.
 
 ![svelte structure](/images/things-i-want/svelte-structure.png)
 
