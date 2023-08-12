@@ -1,6 +1,6 @@
 ---
-title: 'Unveiling the Mystery - How I Learned to Speak Japanese'
-posttitle: 'Unveiling the Mystery - How I Learned to Speak Japanese'
+title: 'How I Learned to Speak Japanese'
+posttitle: 'How I Learned to Speak Japanese'
 date: '2023-02-26 18:00:00'
 updated: '2023-05-21 11:00:00'
 ---
