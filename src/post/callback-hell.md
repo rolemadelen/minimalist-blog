@@ -5,8 +5,7 @@ date: "2023-06-28 07:30:00"
 published: "2023-06-28 11:20:00"
 ---
 
-Okay. It's a little shameful, but I have to admit that I didn't knew about this
-thing called _Callback Hell_. So, what is it? Take a look at the code below.
+Okay. It's a little shameful, but I have to admit that I didn't knew about this thing called _Callback Hell_. So, what is it? Take a look at the code below.
 
 ```js
 userStorage.loginUser {
@@ -49,8 +48,7 @@ userStorage.loginUser {
 ```
 
 Yipes! Nesting callbacks within callbacks within callbacks creating
-a pyramid shape. This coding style should be avoided as it
-significantly impacts the readability and maintainability of the code.
+a pyramid shape. This coding style should be avoided as it significantly impacts the readability and maintainability of the code.
 
 Does this mean that we should never call other callbacks within a
 function to avoid the pyramid? Of course not.
