@@ -18,7 +18,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 - Now you have two numbers from 2 lists. Reverse this numbers because they're given in reverse order; `O(A+B), A, B = number of digits from list A and list B`
 - Add two numbers; `O(1)`
 - Reverse and split them into digits; `O(M), M = number of digits of A+B`
-- iteratate through splitted digits to form a linked list; `O(M)`
+- iterate through split digits to form a linked list; `O(M)`
 - return
 
 ```ts 
@@ -130,7 +130,7 @@ The overall time complexity is going to be `O(L)`.
 
 ### Even Better Solution
 - Iterate through the list and add two digits; `O(max(L1, L2)), L = length of a list`
-  - if a node is null, let the vaule be 0 _(I did this step separately in previous solution by appending a new node at the end)_
+  - if a node is null, let the value be 0 _(I did this step separately in previous solution by appending a new node at the end)_
 
 ```ts 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
