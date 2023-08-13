@@ -4,7 +4,7 @@ posttitle: "2. Add Two Numbers"
 date: "2023-08-12 11:00:00"
 ---
 
-- Difficulty:  🟡 Medium
+- Difficulty:  🟠 Medium
 - Problem Link: https://leetcode.com/problems/add-two-numbers/
 
 ### Problem
