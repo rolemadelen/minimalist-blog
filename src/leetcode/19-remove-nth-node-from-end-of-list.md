@@ -4,27 +4,18 @@ posttitle: "19. Remove Nth Node From End of List"
 date: "2023-08-13 09:04:00"
 ---
 
-- Difficulty: Medium
-- Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- Difficulty:  🟡 Medium
+- Problem Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
-### Naive
-- iterate through the list and count number of nodes -> `M`
-- move to `M - 1`  -> `del`
-- remove `del`
+### Problem
+Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
+
+### Naive Solution
+- Iterate through the list to count number of nodes; `O(N), N = number of nodes`
+- Locate to the node one before the one we're going to delete; `O(N-n-1), n = given`
+- Remove the node and return head; `O(1)`
 
 ```ts
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
- * }
- */
-
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     if(!head) return null;
     let count = 0;
@@ -53,22 +44,18 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
 };
 ```
 
-Time complexity: O(N), length of list + O(count), which is less than N -> **O(N)**
+Time complexity: `O(N)`
 
-### One pass
+### One Pass Solution
+- Use two pointers: _fast_ and _slow_
+- First, iterate the list `n` times using _fast_ pointer; `O(n), n = given`
+- If _fast_ reached the end, return `null`; `O(1)`
+- Continue iterating the list with _fast_ until it reaches the end; `O(N-n), N = length of a list`
+    - as you iterate, move _slow_ as well.
+- _slow_ should be located right before the nth node we're going to remove from end of the list.
+- remove _slow.next_ and return the head; `O(1)`
+
 ```ts
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
- * }
- */
-
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     if(!head) return null;
 
@@ -92,4 +79,4 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
 };
 ```
 
-Time complexity: O(N), one pass
+The overall time complexity becomes `O(N)` with one pass because `O(n + N - n)` is just one full iteration of a list of size N.
