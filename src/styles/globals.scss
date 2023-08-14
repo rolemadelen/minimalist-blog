@@ -211,6 +211,11 @@ h6 {
   }
 }
 
+.post-content {
+  li > a {
+    word-break: break-all;
+  }
+}
 .post-list {
   &:hover {
     div {
