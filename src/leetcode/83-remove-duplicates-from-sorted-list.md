@@ -13,11 +13,11 @@ Given the `head` of a sorted linked list, _delete all duplicates such that each 
 
 ### Solution
 
-Use two pointers to track which nodes you are comparing with. I'm using `dummy` and `curr` variables. `dummy` is used to keep unique values and `curr` is current node or position.
+Utilize two pointers to track the nodes you are comparing. In this case, I'm employing the `dummy` and `curr` variables. The `dummy` pointer is employed to retain unique values, while `curr` represents the current node or position.
 
-As you iterate through the list, compare two nodes using two pointers you have. If two values are different, keep the `curr` node and move on. If they are same, just proceed to the next node in the list.
+While iterating through the list, compare the nodes using the designated pointers. If the values differ, add `curr` node to the unique listing and continue. If they match, simply proceed to the next node on the list.
 
-The time complexity of this algorithm is `O(N), N = number of nodes in the list`.
+The time complexity of this algorithm is `O(N), where N is the number of nodes in the list`.
 
 ```ts
 type NodeOrNull = ListNode | null;

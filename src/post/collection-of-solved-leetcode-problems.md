@@ -16,4 +16,4 @@ The levels of difficulty are visually represented by colored circles: 🟢 desig
 - Day 1 - 🟠 [(2) Add Two Numbers](/leetcode/2-add-two-numbers)
 - Day 2 - 🟠 [(19) Remove Nth Node From End of List ](/leetcode/19-remove-nth-node-from-end-of-list)
 - Day 3 - 🟢 [(21) Merge Two Sorted Lists](/leetcode/21-merge-two-sorted-lists)
-- Day 4 - 🟢 [(83) Remove Duplicates from Sorted List](/leetcode/83-remove-duplicates-from-sorted-list)
+- Day 4 - 🟢🟢 [(83) Remove Duplicates from Sorted List](/leetcode/83-remove-duplicates-from-sorted-list), [(141) Linked List Cycle](/leetcode/141-linked-list-cycle)
