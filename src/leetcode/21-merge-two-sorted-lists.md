@@ -7,7 +7,7 @@ date: "2023-08-14 10:38:00"
 - Difficulty: 🟢 Easy
 - Problem Link: https://leetcode.com/problems/merge-two-sorted-lists/
 
-## Problem
+### Problem
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
 
@@ -15,7 +15,7 @@ Merge the two lists into one **sorted** list. The list should be made by splicin
 
 Return _the head of the merged linked list_.
 
-## Solution
+### Solution
 
 Compare two nodes' values and append a smaller one to a temporary head. Repeat this process until there's no more nodes to compare with.
 
