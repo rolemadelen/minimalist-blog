@@ -17,9 +17,9 @@ Return _the head of the merged linked list_.
 
 ### Solution
 
-Compare two nodes' values and append a smaller one to a temporary head. Repeat this process until there's no more nodes to compare with.
+Compare the values of two nodes and append the smaller one to a temporary head. Repeat this process until there are no more nodes left to compare.
 
-After the iteration, one of the list may have some nodes left in the list. We can simply append all of those nodes to our temporary list.
+After the iteration, one of the lists may still contain some nodes. We can straightforwardly append all of these remaining nodes to our temporary list.
 
 The time complexity of this solution is `O(max(M, N)), M = length of list 1 and N = length of list 2`.
 
