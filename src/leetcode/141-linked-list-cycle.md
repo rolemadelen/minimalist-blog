@@ -4,7 +4,7 @@ posttitle: '141. Linked List Cycle'
 date: '2023-08-15 09:35:00'
 ---
 
-- Difficulty:  🟢 Easy
+- Difficulty:  🍰 Easy
 - https://leetcode.com/problems/linked-list-cycle/
 
 ### Problem

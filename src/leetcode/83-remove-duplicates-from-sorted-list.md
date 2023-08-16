@@ -4,7 +4,7 @@ posttitle: '83. Remove Duplicates from Sorted List'
 date: '2023-08-15 09:35:00'
 ---
 
-- Difficulty:  🟢 Easy
+- Difficulty: 🍰 Easy
 - https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
 ### Problem

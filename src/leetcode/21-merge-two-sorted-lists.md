@@ -4,7 +4,7 @@ posttitle: "21. Merge Two Sorted Lists"
 date: "2023-08-14 10:38:00"
 ---
 
-- Difficulty: 🟢 Easy
+- Difficulty: 🍰 Easy
 - https://leetcode.com/problems/merge-two-sorted-lists/
 
 ### Problem

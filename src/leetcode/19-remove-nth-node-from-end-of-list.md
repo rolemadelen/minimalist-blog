@@ -4,7 +4,7 @@ posttitle: "19. Remove Nth Node From End of List"
 date: "2023-08-13 09:04:00"
 ---
 
-- Difficulty:  🟠 Medium
+- Difficulty: 😾 Medium
 - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
 ### Problem

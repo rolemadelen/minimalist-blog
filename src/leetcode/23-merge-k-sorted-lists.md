@@ -4,7 +4,7 @@ posttitle: "23. Merge k Sorted Lists"
 date: '2023-08-16 09:30:00'
 ---
 
-- Difficulty:  🔴 Hard
+- Difficulty: 🙀 Hard
 - https://leetcode.com/problems/merge-k-sorted-lists/
 
 ### Problem
