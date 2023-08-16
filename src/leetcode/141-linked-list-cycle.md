@@ -5,7 +5,7 @@ date: '2023-08-15 09:35:00'
 ---
 
 - Difficulty:  🟢 Easy
-- Problem Link: https://leetcode.com/problems/linked-list-cycle/
+- https://leetcode.com/problems/linked-list-cycle/
 
 ### Problem
 

@@ -5,7 +5,7 @@ date: "2023-08-14 10:38:00"
 ---
 
 - Difficulty: 🟢 Easy
-- Problem Link: https://leetcode.com/problems/merge-two-sorted-lists/
+- https://leetcode.com/problems/merge-two-sorted-lists/
 
 ### Problem
 

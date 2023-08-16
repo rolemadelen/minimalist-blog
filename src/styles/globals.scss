@@ -148,6 +148,10 @@
       left: 1rem;
       list-style: disc outside;
 
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
+
       & > ul > li {
         list-style: circle outside;
 
@@ -213,7 +217,6 @@ h6 {
 
 .post-content {
   li > a {
-    word-break: break-all;
   }
 }
 .post-list {

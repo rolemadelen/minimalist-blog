@@ -5,7 +5,7 @@ date: "2023-08-13 09:04:00"
 ---
 
 - Difficulty:  🟠 Medium
-- Problem Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
 ### Problem
 Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
