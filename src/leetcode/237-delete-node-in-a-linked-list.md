@@ -46,3 +46,15 @@ function deleteNode(node: ListNode | null): void {
   }
 }
 ```
+
+### O(1) Solution
+
+I realized that there's no need to loop through every node in the list.
+
+```ts
+function deleteNode(node: ListNode | null): void {
+  let nextNode = node.next;
+  node.val = nextNode.val;
+  node.next = nextNode.next;
+}
+```
