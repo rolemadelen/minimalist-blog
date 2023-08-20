@@ -22,6 +22,8 @@ Delete the given node. Note that by deleting the node, we do not mean removing i
 - All the values before `node` should be in the same order.
 - All the values after `node` should be in the same order.
 
+---
+
 ### Solution
 
 Our goal is to delete a given _node_ from the list, yet we lack direct access to the _head_ node.
@@ -46,6 +48,8 @@ function deleteNode(node: ListNode | null): void {
   }
 }
 ```
+
+---
 
 ### O(1) Solution
 

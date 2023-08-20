@@ -4,7 +4,7 @@ posttitle: "146. LRU Cache"
 date: "2023-08-17 19:50:00"
 ---
 
-- Difficulty:  😾 Medium
+- Difficulty: 😾 Medium
 - https://leetcode.com/problems/lru-cache
 
 ### Problem
@@ -19,6 +19,8 @@ Implement the `LRUCache` class:
 
 The functions `get` and `put` must each run in `O(1)` average time complexity.
 
+---
+
 ### Solution using a Map
 
 An LRU Cache is typically implemented using a doubly linked list and a hash map. However, in this problem, I employed a map to create the LRU cache.
@@ -29,33 +31,33 @@ The time complexity is constant for both the `get` and `put` functions.
 
 ```ts
 class LRUCache {
-    private capacity: number;
-    private map: Map<number, number>;
+  private capacity: number;
+  private map: Map<number, number>;
 
-    constructor(capacity: number) {
-        this.capacity = capacity;
-        this.map = new Map();
+  constructor(capacity: number) {
+    this.capacity = capacity;
+    this.map = new Map();
+  }
+
+  get(key: number): number {
+    const value = this.map.get(key);
+
+    if (value === undefined) return -1;
+
+    this.map.delete(key);
+    this.map.set(key, value);
+
+    return value;
+  }
+
+  put(key: number, value: number): void {
+    if (this.map.size == this.capacity && !this.map.has(key)) {
+      const lru = this.map.keys().next().value;
+      this.map.delete(lru);
     }
 
-    get(key: number): number {
-        const value = this.map.get(key);
-
-        if(value === undefined) return -1;
-
-        this.map.delete(key);
-        this.map.set(key, value);
-
-        return value;
-    }
-
-    put(key: number, value: number): void {
-        if(this.map.size == this.capacity && !this.map.has(key)) {
-            const lru = this.map.keys().next().value;
-            this.map.delete(lru);
-        }
-
-        this.map.delete(key);
-        this.map.set(key, value);
-    }
+    this.map.delete(key);
+    this.map.set(key, value);
+  }
 }
 ```

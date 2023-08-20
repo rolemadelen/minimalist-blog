@@ -1,10 +1,10 @@
 ---
-title: '160. Intersection of Two Linked List'
-posttitle: '160. Intersection of Two Linked List'
-date: '2023-08-18 06:20:00'
+title: "160. Intersection of Two Linked List"
+posttitle: "160. Intersection of Two Linked List"
+date: "2023-08-18 06:20:00"
 ---
 
-- Difficulty:  🍰 Easy
+- Difficulty: 🍰 Easy
 - https://leetcode.com/problems/intersection-of-two-linked-lists/
 
 ### Problem
@@ -12,6 +12,8 @@ date: '2023-08-18 06:20:00'
 Given the heads of two singly linked-lists `headA` and `headB`, return _the node at which the two lists intersect_. If the two linked lists have no intersection at all, return `null`.
 
 **Note** that the linked lists must **retain their original structure** after the function returns.
+
+---
 
 ### O(N) Solution
 
@@ -23,19 +25,19 @@ The time complexity of this algorithm is `O(max(N, M)), where N and M represent 
 type NodeOrNull = ListNode | null;
 
 function getIntersectionNode(headA: NodeOrNull, headB: NodeOrNull): NodeOrNull {
-    const map: Map<ListNode, number> = new Map();
+  const map: Map<ListNode, number> = new Map();
 
-    while(headA) {
-        map.set(headA, 1);
-        headA = headA.next;
-    }
+  while (headA) {
+    map.set(headA, 1);
+    headA = headA.next;
+  }
 
-    while(headB) {
-        if(map.has(headB)) return headB;
-        map.set(headB, 1);
-        headB = headB.next;
-    }
+  while (headB) {
+    if (map.has(headB)) return headB;
+    map.set(headB, 1);
+    headB = headB.next;
+  }
 
-    return null;
-};
+  return null;
+}
 ```

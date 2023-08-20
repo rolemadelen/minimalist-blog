@@ -11,6 +11,8 @@ date: "2023-08-20 05:50:00"
 
 Given the `head` of a singly linked list, reverse the list, and return _the reversed list_.
 
+---
+
 ### Iterative Solution
 
 - Time Complexity: O(N)
@@ -32,6 +34,8 @@ function reverseList(head: NodeOrNull): NodeOrNull {
   return prev;
 }
 ```
+
+---
 
 ### Recursive Solution
 

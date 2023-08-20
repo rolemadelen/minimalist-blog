@@ -15,6 +15,8 @@ Merge the two lists into one **sorted** list. The list should be made by splicin
 
 Return _the head of the merged linked list_.
 
+---
+
 ### Solution
 
 Compare the values of two nodes and append the smaller one to a temporary head. Repeat this process until there are no more nodes left to compare.
