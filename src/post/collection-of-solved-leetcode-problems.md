@@ -20,5 +20,5 @@ Day 4: 🍰 [(83) Remove Duplicates from Sorted List](/leetcode/83-remove-duplic
 Day 5: 🙀 [(23) Merge k Sorted Lists](/leetcode/23-merge-k-sorted-lists)  
 Day 6: 😾 [(146) LRU Cache](/leetcode/146-lru-cache)  
 Day 7: 🍰 [(160) Intersection of Two Linked List](/leetcode/160-intersection-of-two-linked-list) - 🍰 [(203) Remove Linked List Elements](/leetcode/203-remove-linked-list-elements)  
-Day 8: 🍰 [(234) Palindrome Linked List](/leetcode/234-palindrome-linked-list)
-Day 9: 😾 [(237) Delete Node in a Linked List](/leetcode/237-delete-node-in-a-linked-list)
+Day 8: 🍰 [(234) Palindrome Linked List](/leetcode/234-palindrome-linked-list)  
+Day 9: 😾 [(237) Delete Node in a Linked List](/leetcode/237-delete-node-in-a-linked-list) - 🍰 [(206) Reverse Linked List](/leetcode/206-reverse-linked-list)
