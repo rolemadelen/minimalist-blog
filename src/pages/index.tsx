@@ -20,7 +20,6 @@ interface Posts {
 
 const Blog: React.FC<Posts> = ({ posts }) => {
   const year = useRef("");
-  const month = useRef("");
 
   const displayYear = useCallback((d: any) => {
     let postYear = d.split("-")[0];
@@ -42,81 +41,6 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     }
   }, []);
 
-  const sameMonth = useCallback((d: any) => {
-    let postMonth = d.split("-")[1];
-    return month.current === postMonth;
-  }, []);
-
-  const addSuffix = useCallback((d: any) => {
-    d = parseInt(d.split("-")[2]);
-    let j: number = d % 10;
-    let k: number = d % 100;
-
-    if (j == 1 && k != 11) return d + "st";
-    if (j == 2 && k != 12) return d + "nd";
-    if (j == 3 && k != 13) return d + "rd";
-    return d + "th";
-  }, []);
-
-  const displayMonth = useCallback((d: any) => {
-    if (sameMonth(d)) return "";
-
-    month.current = d.split("-")[1];
-    const m: number = parseInt(month.current);
-    let s = "";
-
-    switch (m) {
-      case 1:
-        s = "Jan";
-        break;
-      case 2:
-        s = "Feb";
-        break;
-      case 3:
-        s = "Mar";
-        break;
-      case 4:
-        s = "Apr";
-        break;
-      case 5:
-        s = "May";
-        break;
-      case 6:
-        s = "June";
-        break;
-      case 7:
-        s = "July";
-        break;
-      case 8:
-        s = "Aug";
-        break;
-      case 9:
-        s = "Sept";
-        break;
-      case 10:
-        s = "Oct";
-        break;
-      case 11:
-        s = "Nov";
-        break;
-      default:
-        s = "Dec";
-    }
-    return (
-      <>
-        <div className="my-10"></div>
-        <div className="text-gray-300 right-[-8rem] top-0 w-full text-xl tracking-tight text-right sm:text-left sm:w-[10rem] sm:text-gray-200 sm:mt-[4rem] sm:absolute sm:rotate-90">
-          {s}
-        </div>
-      </>
-    );
-  }, []);
-
-  const options = {
-    month: "short",
-    day: "numeric",
-  };
-
   return (
     <>
       <Header />
@@ -131,7 +55,12 @@ const Blog: React.FC<Posts> = ({ posts }) => {
             >
               <div className="post-list items-center flex text-md mb-2">
                 <div className="hidden sm:block flex-[0.15] text-gray-300">
-                  {new Date(post.date).toLocaleDateString("en-us", options)}
+                  {new Date(post.date)
+                    .toLocaleDateString("en-us", {
+                      month: "numeric",
+                      day: "numeric",
+                    })
+                    .toString()}
                 </div>
                 <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
                   {post.title}
