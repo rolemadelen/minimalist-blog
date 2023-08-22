@@ -113,7 +113,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
   }, []);
 
   const options = {
-    month: "numeric",
+    month: "short",
     day: "numeric",
   };
 
