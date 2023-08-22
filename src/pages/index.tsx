@@ -29,12 +29,15 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     else {
       year.current = postYear;
       return (
-        <div
-          className="text-gray-400 sm:text-gray-200 absolute top-[-4rem] sm:left-[-6rem] sm:top-[-3rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]"
-          key={postYear}
-        >
-          {postYear}
-        </div>
+        <>
+          <div className="my-16 sm:my-10"></div>
+          <div
+            className="text-gray-400 sm:text-gray-200 absolute top-[-6rem] sm:left-[-6rem] sm:top-[-3rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]"
+            key={postYear}
+          >
+            {postYear}
+          </div>
+        </>
       );
     }
   }, []);
@@ -109,6 +112,11 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     );
   }, []);
 
+  const options = {
+    month: "numeric",
+    day: "numeric",
+  };
+
   return (
     <>
       <Header />
@@ -116,19 +124,17 @@ const Blog: React.FC<Posts> = ({ posts }) => {
         {posts.map((post, i) => (
           <div className="relative" key={i}>
             {displayYear(post.date.split(" ")[0])}
-            {displayMonth(post.date.split(" ")[0])}
             <Link
               key={`blog-${post.slug}`}
               href={`/post/${post.slug}`}
               passHref
             >
-              <div className="post-list items-center grid gap-4 grid-cols-[auto_1fr_auto] my-2 text-md">
-                <div className="whitespace-nowrap overflow-hidden overflow-ellipsis">
-                  {post.title}
+              <div className="post-list items-center flex text-md mb-2">
+                <div className="hidden sm:block flex-[0.15] text-gray-300">
+                  {new Date(post.date).toLocaleDateString("en-us", options)}
                 </div>
-                <hr className="m-0 p-0 w-full border-dashed min-w-[1rem]" />
-                <div className="text-gray-400 text-sm">
-                  {addSuffix(post.date.split(" ")[0])}
+                <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
+                  {post.title}
                 </div>
               </div>
             </Link>
