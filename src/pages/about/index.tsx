@@ -16,21 +16,11 @@ const About = () => {
               <li>
                 <a
                   className="tracking-[1px] hover:line-through"
-                  href="https://www.jiieu.com/#/cv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CV
-                </a>
-              </li>
-              <li>
-                <a
-                  className="tracking-[1px] hover:line-through"
                   href="https://github.com/rolemadelen"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GH
+                  GitHub
                 </a>
               </li>
               <li>
@@ -40,7 +30,7 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  LN
+                  LinkedIn
                 </a>
               </li>
             </ul>
