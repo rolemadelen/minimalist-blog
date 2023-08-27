@@ -11,7 +11,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-#### last updated on August 24th, 2023
+#### last updated on August 26th, 2023
 
 1. 😾 [(2) Add Two Numbers](/leetcode/2-add-two-numbers)
 2. 😾 [(19) Remove Nth Node From End of List ](/leetcode/19-remove-nth-node-from-end-of-list)
@@ -26,3 +26,5 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 11. None
 12. 😾 [(1669) Merge In Between Linked Lists](/leetcode/1669-merge-in-between-linked-lists)
 13. 😾 [(2181) Merge Nodes in Between Zeros](/leetcode/2181-merge-nodes-in-between-zeros)
+14. None
+15. [(1791) Find Center of Star Graph](/leetcode/1791-find-center-of-star-graph)
