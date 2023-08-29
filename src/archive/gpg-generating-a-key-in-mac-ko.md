@@ -1,6 +1,5 @@
 ---
 title: 'Mac에서 GPG key 생성하기'
-posttitle: 'Mac에서 GPG key 생성하기'
 date: '2022-12-28 05:29:00'
 uid: 'cb'
 ---

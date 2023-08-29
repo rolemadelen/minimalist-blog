@@ -1,8 +1,7 @@
 ---
-title: "Résumé of Failure"
-posttitle: "Résumé of Failure (｡•́︿•̀｡)"
-date: "2023-05-10 17:00:00"
-updated: "2023-06-19 10:49:00"
+title: 'Résumé of Failure'
+date: '2023-05-10 17:00:00'
+updated: '2023-06-19 10:49:00'
 ---
 
 #### last updated on June 19th, 2023

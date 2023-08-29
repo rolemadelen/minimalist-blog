@@ -1,6 +1,5 @@
 ---
 title: '내가 기록하는 방법: Pensieve'
-posttitle: '내가 기록하는 방법: Pensieve'
 date: '2023-02-26 15:00:00'
 uid: 'jb'
 ---

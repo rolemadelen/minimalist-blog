@@ -1,6 +1,6 @@
-import Giscus from "@giscus/react";
+import Giscus from '@giscus/react'
 
-export default function Comment() {
+const Comment = () => {
   return (
     <Giscus
       id="comments"
@@ -17,5 +17,7 @@ export default function Comment() {
       lang="en"
       loading="lazy"
     />
-  );
+  )
 }
+
+export default Comment

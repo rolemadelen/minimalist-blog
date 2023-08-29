@@ -1,7 +1,6 @@
 ---
-title: "2181. Merge Nodes in Between Zeros"
-posttitle: "2181. Merge Nodes in Between Zeros"
-date: "2023-08-24 22:04:00"
+title: '2181. Merge Nodes in Between Zeros'
+date: '2023-08-24 22:04:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -22,36 +21,36 @@ I utilized a flag called `open`. The flag is set when zero is encountered an odd
 The time complexity is `O(N)`, where N is the number of nodes.
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 function mergeNodes(head: NodeOrNull): NodeOrNull {
-  if (!head) return null;
+  if (!head) return null
 
-  let dummy = head;
-  let ans = head;
+  let dummy = head
+  let ans = head
 
-  let sum = 0;
-  let open = false;
+  let sum = 0
+  let open = false
   while (dummy && dummy.next) {
     if (dummy.val == 0) {
       if (!open) {
-        open = true;
+        open = true
       } else {
-        console.log(sum);
-        open = false;
-        ans.val = sum;
-        ans = ans.next;
-        sum = 0;
-        continue;
+        console.log(sum)
+        open = false
+        ans.val = sum
+        ans = ans.next
+        sum = 0
+        continue
       }
     }
 
-    sum += dummy.val;
-    dummy = dummy.next;
+    sum += dummy.val
+    dummy = dummy.next
   }
 
-  ans.val = sum;
-  ans.next = null;
+  ans.val = sum
+  ans.next = null
 
-  return head;
+  return head
 }
 ```

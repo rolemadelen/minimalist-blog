@@ -1,6 +1,5 @@
 ---
 title: 'Error - gpg: signing failed: No pinentry'
-posttitle: 'gpg: signing failed: No pinentry'
 date: '2023-02-05 12:00:00'
 uid: 'c'
 ---

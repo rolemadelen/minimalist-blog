@@ -1,7 +1,6 @@
 ---
-title: "237. Delete Node in a Linked List"
-posttitle: "237. Delete Node in a Linked List"
-date: "2023-08-20 05:18:00"
+title: '237. Delete Node in a Linked List'
+date: '2023-08-20 05:18:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -35,16 +34,16 @@ The time complexity of this algorithm is `O(N), where N represents the number of
 
 ```ts
 function deleteNode(node: ListNode | null): void {
-  let curr = node;
+  let curr = node
 
   while (curr && curr.next) {
     if (curr.next.next == null) {
-      curr.val = curr.next.val;
-      curr.next = null;
-      return;
+      curr.val = curr.next.val
+      curr.next = null
+      return
     }
-    curr.val = curr.next.val;
-    curr = curr.next;
+    curr.val = curr.next.val
+    curr = curr.next
   }
 }
 ```
@@ -57,8 +56,8 @@ I realized that there's no need to loop through every node in the list.
 
 ```ts
 function deleteNode(node: ListNode | null): void {
-  let nextNode = node.next;
-  node.val = nextNode.val;
-  node.next = nextNode.next;
+  let nextNode = node.next
+  node.val = nextNode.val
+  node.next = nextNode.next
 }
 ```

@@ -1,7 +1,6 @@
 ---
-title: "19. Remove Nth Node From End of List"
-posttitle: "19. Remove Nth Node From End of List"
-date: "2023-08-13 09:04:00"
+title: '19. Remove Nth Node From End of List'
+date: '2023-08-13 09:04:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -21,30 +20,30 @@ Given the `head` of a linked list, remove the `nth` node from the end of the lis
 
 ```ts
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
-  if (!head) return null;
-  let count = 0;
-  let dummy = head;
+  if (!head) return null
+  let count = 0
+  let dummy = head
   while (dummy) {
-    count += 1;
-    dummy = dummy.next;
+    count += 1
+    dummy = dummy.next
   }
 
-  count = count - n - 1;
-  dummy = head;
+  count = count - n - 1
+  dummy = head
 
   if (count < 0) {
-    dummy = dummy.next;
-    return dummy;
+    dummy = dummy.next
+    return dummy
   }
 
   while (count) {
-    dummy = dummy.next;
-    count -= 1;
+    dummy = dummy.next
+    count -= 1
   }
 
-  dummy.next = dummy && dummy.next ? dummy.next.next : null;
+  dummy.next = dummy && dummy.next ? dummy.next.next : null
 
-  return head;
+  return head
 }
 ```
 
@@ -64,25 +63,25 @@ Time complexity: `O(N)`
 
 ```ts
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
-  if (!head) return null;
+  if (!head) return null
 
-  let fast = head;
-  let slow = head;
+  let fast = head
+  let slow = head
 
   while (n--) {
-    fast = fast.next;
+    fast = fast.next
   }
 
-  if (!fast) return head.next;
+  if (!fast) return head.next
 
   while (fast.next) {
-    fast = fast.next;
-    slow = slow.next;
+    fast = fast.next
+    slow = slow.next
   }
 
-  slow.next = slow.next.next;
+  slow.next = slow.next.next
 
-  return head;
+  return head
 }
 ```
 

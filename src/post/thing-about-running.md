@@ -1,8 +1,6 @@
 ---
 title: 'Thing about running'
-posttitle: 'Thing about running'
 date: '2023-06-25 18:30:00'
-published: '2023-06-26 21:22:00'
 ---
 
 Throughout my childhood, I was a bashful kid who did everything to avoid attention,

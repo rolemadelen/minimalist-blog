@@ -1,6 +1,5 @@
 ---
 title: '2. Add Two Numbers'
-posttitle: '2. Add Two Numbers'
 date: '2023-08-12 11:00:00'
 ---
 

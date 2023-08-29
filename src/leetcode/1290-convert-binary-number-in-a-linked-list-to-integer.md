@@ -1,7 +1,6 @@
 ---
-title: "1290. Convert Binary Number in a Linked List to Integer"
-posttitle: "1290. Convert Binary Number in a Linked List to Integer"
-date: "2023-08-21 17:30:00"
+title: '1290. Convert Binary Number in a Linked List to Integer'
+date: '2023-08-21 17:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -33,14 +32,14 @@ The most significant bit (MSB) serves as the initial value. From there, begin wi
 
 ```ts
 function getDecimalValue(head: ListNode | null): number {
-  let d = head.val;
+  let d = head.val
 
   while (head) {
-    head = head.next;
-    if (!head) break;
-    d = d * 2 + head.val;
+    head = head.next
+    if (!head) break
+    d = d * 2 + head.val
   }
 
-  return d;
+  return d
 }
 ```

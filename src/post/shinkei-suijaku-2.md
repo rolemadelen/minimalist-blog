@@ -1,7 +1,6 @@
 ---
-title: "神経衰弱 pt.2 - Flipping Cards"
-posttitle: "Shinkei Suijaku - Flipping Cards"
-date: "2023-06-13 22:00:00"
+title: 'Shinkei Suijaku - Flipping Cards'
+date: '2023-06-13 22:00:00'
 ---
 
 [Previously](./shinkei-suijaku-project-setup), I have implemented the component for the card.
@@ -54,17 +53,17 @@ in the component to show both the front and back of the card.
 ```tsx
 return (
   <>
-    <div className={"rm-card ..."} onClick={handleOnClick}>
-      <figure className={"front"}>
+    <div className={'rm-card ...'} onClick={handleOnClick}>
+      <figure className={'front'}>
         <img src={card.image} alt={card.name} />
       </figure>
 
-      <figure className={"back flex justify-center items-center"}>
+      <figure className={'back flex justify-center items-center'}>
         <img src="/src/assets/pokeball.png" alt="back" />
       </figure>
     </div>
   </>
-);
+)
 ```
 
 ![flip card](/images/pokecard-flip-2.gif)
@@ -87,15 +86,15 @@ And when I click the card, I simply toggle the `hidden` class on both figure ele
 
 ```tsx
 const handleOnClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-  const currentTarget = e.currentTarget;
-  currentTarget.classList.toggle("flip");
+  const currentTarget = e.currentTarget
+  currentTarget.classList.toggle('flip')
 
-  const cardFront = currentTarget.children[0];
-  const cardBack = currentTarget.children[1];
+  const cardFront = currentTarget.children[0]
+  const cardBack = currentTarget.children[1]
 
-  cardFront.classList.toggle("hidden");
-  cardBack.classList.toggle("hidden");
-};
+  cardFront.classList.toggle('hidden')
+  cardBack.classList.toggle('hidden')
+}
 ```
 
 ![flip card](/images/pokecard-flip-3.gif)

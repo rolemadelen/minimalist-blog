@@ -1,7 +1,6 @@
 ---
-title: "83. Remove Duplicates from Sorted List"
-posttitle: "83. Remove Duplicates from Sorted List"
-date: "2023-08-15 09:35:00"
+title: '83. Remove Duplicates from Sorted List'
+date: '2023-08-15 09:35:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -22,22 +21,22 @@ While iterating through the list, compare the nodes using the designated pointer
 The time complexity of this algorithm is `O(N), where N is the number of nodes in the list`.
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 
 function deleteDuplicates(head: NodeOrNull): NodeOrNull {
-  if (!head) return null;
-  let dummy = head;
-  let curr = head.next;
+  if (!head) return null
+  let dummy = head
+  let curr = head.next
 
   while (curr) {
     if (dummy.val != curr.val) {
-      dummy.next = curr;
-      dummy = dummy.next;
+      dummy.next = curr
+      dummy = dummy.next
     }
-    curr = curr.next;
+    curr = curr.next
   }
 
-  dummy.next = null;
-  return head;
+  dummy.next = null
+  return head
 }
 ```

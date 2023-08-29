@@ -1,7 +1,6 @@
 ---
-title: "160. Intersection of Two Linked List"
-posttitle: "160. Intersection of Two Linked List"
-date: "2023-08-18 06:20:00"
+title: '160. Intersection of Two Linked List'
+date: '2023-08-18 06:20:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -22,22 +21,22 @@ We can utilize a map to count the frequency of each node that appears in the lis
 The time complexity of this algorithm is `O(max(N, M)), where N and M represent the number of nodes in lists A and B respectively`.
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 
 function getIntersectionNode(headA: NodeOrNull, headB: NodeOrNull): NodeOrNull {
-  const map: Map<ListNode, number> = new Map();
+  const map: Map<ListNode, number> = new Map()
 
   while (headA) {
-    map.set(headA, 1);
-    headA = headA.next;
+    map.set(headA, 1)
+    headA = headA.next
   }
 
   while (headB) {
-    if (map.has(headB)) return headB;
-    map.set(headB, 1);
-    headB = headB.next;
+    if (map.has(headB)) return headB
+    map.set(headB, 1)
+    headB = headB.next
   }
 
-  return null;
+  return null
 }
 ```

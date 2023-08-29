@@ -1,7 +1,6 @@
 ---
-title: "997. Find the Town Judge"
-posttitle: "997. Find the Town Judge"
-date: "2023-08-21 17:30:00"
+title: '997. Find the Town Judge'
+date: '2023-08-21 17:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -31,23 +30,23 @@ The time complexity is `O(V+E)` since I used an adjacency list, and the space co
 
 ```ts
 function findJudge(n: number, trust: number[][]): number {
-  if (n === 1) return 1;
-  let incoming = new Array();
-  let outgoing = new Array();
+  if (n === 1) return 1
+  let incoming = new Array()
+  let outgoing = new Array()
   for (let i = 0; i <= n; ++i) {
-    incoming[i] = new Array();
-    outgoing[i] = new Array();
+    incoming[i] = new Array()
+    outgoing[i] = new Array()
   }
 
   for (const edge of trust) {
-    outgoing[edge[0]].push(edge[1]);
-    incoming[edge[1]].push(edge[0]);
+    outgoing[edge[0]].push(edge[1])
+    incoming[edge[1]].push(edge[0])
   }
 
   for (let i = 0; i <= n; ++i) {
-    if (incoming[i].length === n - 1 && outgoing[i].length === 0) return i;
+    if (incoming[i].length === n - 1 && outgoing[i].length === 0) return i
   }
 
-  return -1;
+  return -1
 }
 ```

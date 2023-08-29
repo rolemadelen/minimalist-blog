@@ -1,8 +1,7 @@
 ---
-title: "Mac Setup 2022"
-posttitle: "Mac Setup 2022"
-date: "2022-12-25 08:00:00"
-updated: "2023-02-28 08:00:00"
+title: 'Mac Setup 2022'
+date: '2022-12-25 08:00:00'
+updated: '2023-02-28 08:00:00'
 ---
 
 Here I'm sharing my Mac setup for web development which I got inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/).

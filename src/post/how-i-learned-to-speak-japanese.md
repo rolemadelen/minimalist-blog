@@ -1,6 +1,5 @@
 ---
 title: 'How I Learned to Speak Japanese'
-posttitle: 'How I Learned to Speak Japanese'
 date: '2023-02-26 18:00:00'
 updated: '2023-05-21 11:00:00'
 ---
@@ -36,7 +35,7 @@ I had no issue understanding daily conversations but I couldn't form any of my o
 For instance, if someone asks me, 「手伝ってもらえますか。」 (_could you help me?_), I can understand its meaning and respond without needing any translation,
 but if you ask me to say 'Could you help me?' in Japanese, I can't.
 
-## ૮ ・ﻌ・ა
+### ૮ ・ﻌ・ა
 
 As I was about to fuse my soul with the [Geisel](https://library.ucsd.edu/about/geisel-library.html) doing assignments and studying for exams 24/7,
 I was looking for _fun_ for my last year at uni. And I found basic Japanese course: _[JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html)_ in the
@@ -59,7 +58,7 @@ For example, the Japanese verb '食べる' (_to eat_) is a 'る-verb' and can be
 Once I learned these conjugating rules, I was able to engage in conversations using verbs that I have heard before.
 I would occasionally use them incorrectly but people understood me. That's what all matters.
 
-## ^•ﻌ•^
+### ^•ﻌ•^
 
 These days, I live alone in Japan, and I have no trouble with speaking and listening. I can easily communicate with Japanese developers, and I even provide English-to-Japanese translations during meetings to assist non-Japanese-speaking foreign developers.
 

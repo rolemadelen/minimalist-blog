@@ -1,7 +1,6 @@
 ---
-title: "1791. Find Center of Star Graph"
-posttitle: "1791. Find Center of Star Graph"
-date: "2023-08-26 21:30:00"
+title: '1791. Find Center of Star Graph'
+date: '2023-08-26 21:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -23,17 +22,17 @@ The time complexity is `O(V+E), where V = vertices and E = edges`.
 
 ```ts
 function findCenter(edges: number[][]): number {
-  let cnt = new Array(edges.length + 2);
-  cnt.fill(0);
+  let cnt = new Array(edges.length + 2)
+  cnt.fill(0)
   for (const edge of edges) {
-    cnt[edge[0]] += 1;
-    cnt[edge[1]] += 1;
+    cnt[edge[0]] += 1
+    cnt[edge[1]] += 1
   }
 
   for (const [i, x] of cnt.entries()) {
-    if (x === edges.length) return i;
+    if (x === edges.length) return i
   }
 
-  return -1;
+  return -1
 }
 ```

@@ -1,7 +1,6 @@
 ---
-title: "Getting started with Rust"
-posttitle: "Getting started with Rust"
-date: "2022-08-12 17:42:00"
+title: 'Getting started with Rust'
+date: '2022-08-12 17:42:00'
 ---
 
 The official documentation recommends using `rustup` to install or upgrade Rust on your device.

@@ -1,6 +1,5 @@
 ---
 title: '100vh Layouts in iPhone'
-posttitle: '100vh Layouts in iPhone'
 date: '2023-06-26 18:04:00'
 ---
 

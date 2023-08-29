@@ -1,7 +1,6 @@
 ---
-title: "gpg: signing failed: Inappropriate ioctl for device"
-posttitle: "gpg: signing failed: Inappropriate ioctl for device"
-date: "2023-06-05 19:15:00"
+title: 'gpg: signing failed: Inappropriate ioctl for device'
+date: '2023-06-05 19:15:00'
 ---
 
 The other day, I encountered the following error when I made changes to my code and

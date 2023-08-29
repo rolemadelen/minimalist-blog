@@ -1,7 +1,6 @@
 ---
-title: "Queue"
-posttitle: "Queue"
-date: "2023-03-15 15:00:00"
+title: 'Queue'
+date: '2023-03-15 15:00:00'
 ---
 
 A queue is a linear data structure where data is inserted at one end (`rear`) and removed from the opposite end (`front`).
@@ -24,56 +23,56 @@ For our queue implementation, we can use either an array or a linked list.
 
 ```ts
 class QueueArray<T> {
-  size: number;
-  front: number;
-  rear: number;
-  queue: (T | undefined)[];
+  size: number
+  front: number
+  rear: number
+  queue: (T | undefined)[]
 
   constructor(size: number) {
-    this.size = size;
-    this.front = 0;
-    this.rear = 0;
-    this.queue = new Array<T>(size);
+    this.size = size
+    this.front = 0
+    this.rear = 0
+    this.queue = new Array<T>(size)
 
     if (Object.seal) {
-      this.queue.fill(undefined);
-      Object.seal(this);
+      this.queue.fill(undefined)
+      Object.seal(this)
     }
   }
 
   // O(1)
   isEmpty(): boolean {
-    return this.front === this.rear;
+    return this.front === this.rear
   }
 
   // O(1)
   enqueue(val: T): void {
     if (this.rear === this.size) {
-      throw new Error("Queue is full");
+      throw new Error('Queue is full')
     }
 
-    this.queue[this.rear] = val;
-    this.rear += 1;
+    this.queue[this.rear] = val
+    this.rear += 1
   }
 
   // O(1)
   dequeue(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error("Queue is empty");
+      throw new Error('Queue is empty')
     }
 
-    let val = this.queue[this.front];
-    this.front += 1;
-    return val;
+    let val = this.queue[this.front]
+    this.front += 1
+    return val
   }
 
   // O(1)
   getFront(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error("Queue is empty");
+      throw new Error('Queue is empty')
     }
 
-    return this.queue[this.front];
+    return this.queue[this.front]
   }
 }
 ```
@@ -97,56 +96,56 @@ To overcome this limitation, a solution is to use a _Circular Queue_. A circular
 Another way to implement a linear queue is by using a linked list. This approach eliminates the concern of the list becoming full, as the container can dynamically expand and contract as needed. However, one drawback of this implementation is that it requires relatively more memory compared to the array implementation, due to the presence of nodes in the linked list structure.
 
 ```ts
-import { ListNode, LinkedListNode } from "../linked-list/LinkedList";
+import { ListNode, LinkedListNode } from '../linked-list/LinkedList'
 
 class QueueList<T> {
-  front: ListNode<T>;
-  rear: ListNode<T>;
+  front: ListNode<T>
+  rear: ListNode<T>
 
   constructor(value: T | null = null) {
     if (value) {
-      this.front = new LinkedListNode(value);
-      this.front.next = this.rear;
-      this.rear = this.front;
+      this.front = new LinkedListNode(value)
+      this.front.next = this.rear
+      this.rear = this.front
     } else {
-      this.front = null;
-      this.rear = null;
+      this.front = null
+      this.rear = null
     }
   }
 
   // O(1)
   isEmpty(): boolean {
-    return this.front == null;
+    return this.front == null
   }
 
   // O(1)
   enqueue(value: T): void {
-    let newNode = new LinkedListNode(value);
+    let newNode = new LinkedListNode(value)
 
     if (null == this.front) {
-      this.front = newNode;
-      this.rear = newNode;
-      this.front.next = this.rear;
+      this.front = newNode
+      this.rear = newNode
+      this.front.next = this.rear
     } else {
-      this.rear!.next = newNode;
-      this.rear = newNode;
+      this.rear!.next = newNode
+      this.rear = newNode
     }
   }
 
   // O(1)
   dequeue(): ListNode<T> {
-    let frontNode = this.front;
+    let frontNode = this.front
 
     if (this.front) {
-      this.front = this.front.next;
+      this.front = this.front.next
     }
 
-    return frontNode;
+    return frontNode
   }
 
   // O(1)
   getFront(): ListNode<T> {
-    return this.front;
+    return this.front
   }
 }
 ```

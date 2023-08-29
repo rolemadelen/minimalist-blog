@@ -1,8 +1,7 @@
 ---
-title: "Résumé of Success"
-posttitle: "Résumé of Success ᕕ( ᐛ )ᕗ"
-date: "2023-05-10 17:00:00"
-updated: "2023-06-19 10:50:00"
+title: 'Résumé of Success'
+date: '2023-05-10 17:00:00'
+updated: '2023-06-19 10:50:00'
 ---
 
 #### last updated on June 19th, 2023
@@ -41,7 +40,7 @@ Let me share with you a glimpse into my proudest moments, achievements and unfor
 ### 2017
 
 - Embraced the opportunity to broaden my perspectives and thinking by changing my major to [B.S. Cognitive Science Spec. in HCI](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)
-- Secured my first internship as a frontend engineer at an exciting startup, gaining valuable industry experience.
+- Secured my first internship as a front-end developer at an exciting startup, gaining valuable industry experience.
 - Demonstrated perseverance and dedication during a rigorous 5-week tryout, earning a spot in the esteemed UCSD taiko group (Gen 17 💛)
 
 ### 2018
@@ -57,12 +56,12 @@ Let me share with you a glimpse into my proudest moments, achievements and unfor
 ### 2020
 
 - _"What?! I'm now an elementary school language teacher?"_ I began my new role as a teacher, embracing the opportunity to inspire and educate young minds.
-- Initiated a personal challenge known as the "miracle morning," committing to a routine of productive and positive activities each morning until achieving my goal of securing a job as a frontend engineer.
+- Initiated a personal challenge known as the "miracle morning," committing to a routine of productive and positive activities each morning until achieving my goal of securing a job as a front-end developer.
 
 ### 2021
 
-- _"What? I'm officially a frontend engineer?!"_ I passed the interview and received a job offer.
-- Bid farewell to the world of education as I embarked on my first day as a professional engineer.
+- _"What? I'm officially a front-end developer?!"_ I passed the interview and received a job offer.
+- Bid farewell to the world of education as I embarked on my first day as a professional developer.
 
 ### 2022
 

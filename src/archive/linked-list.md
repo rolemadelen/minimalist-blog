@@ -1,7 +1,6 @@
 ---
-title: "Linked List"
-posttitle: "Linked List"
-date: "2023-03-17 09:20:00"
+title: 'Linked List'
+date: '2023-03-17 09:20:00'
 ---
 
 ### 연결 리스트(Linked List) 개념

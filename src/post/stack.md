@@ -1,7 +1,6 @@
 ---
-title: "Stack"
-posttitle: "Stack"
-date: "2023-04-05 08:00:00"
+title: 'Stack'
+date: '2023-04-05 08:00:00'
 ---
 
 A stack is a type of linear data structure where data insertion or deletion occurs at one end only.
@@ -21,54 +20,54 @@ If the size of the data is known in advance, we can use an array to create a sta
 
 ```ts
 export class StackArray<T> {
-  size: number;
-  top: number;
-  stack: (T | undefined)[];
+  size: number
+  top: number
+  stack: (T | undefined)[]
 
   constructor(size: number) {
-    this.size = size;
-    this.top = 0;
-    this.stack = new Array<T | undefined>(size);
+    this.size = size
+    this.top = 0
+    this.stack = new Array<T | undefined>(size)
 
     if (Object.seal) {
-      this.stack.fill(undefined);
-      Object.seal(this.stack);
+      this.stack.fill(undefined)
+      Object.seal(this.stack)
     }
   }
 
   // O(1)
   push(val: T): void {
     if (this.top >= this.size) {
-      throw new Error("Stack overflow");
+      throw new Error('Stack overflow')
     }
 
-    this.stack[this.top] = val;
-    this.top += 1;
+    this.stack[this.top] = val
+    this.top += 1
   }
 
   // O(1)
   pop(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error("Stack underflow");
+      throw new Error('Stack underflow')
     }
 
-    this.top -= 1;
-    let val = this.stack[this.top];
-    return val;
+    this.top -= 1
+    let val = this.stack[this.top]
+    return val
   }
 
   // O(1)
   isEmpty(): boolean {
-    return this.top === 0;
+    return this.top === 0
   }
 
   // O(1)
   peek(): T | undefined {
     if (this.isEmpty()) {
-      throw new Error("Stack is empty");
+      throw new Error('Stack is empty')
     }
 
-    return this.stack[this.top - 1];
+    return this.stack[this.top - 1]
   }
 }
 ```
@@ -78,48 +77,48 @@ export class StackArray<T> {
 To implement a dynamic stack in JavaScript, we have the option to use an array, which is implemented using a hash map. However, for this particular case, I will opt for a linked list to create the dynamic stack.
 
 ```ts
-import { ListNode, LinkedListNode } from "../linked-list/LinkedList";
+import { ListNode, LinkedListNode } from '../linked-list/LinkedList'
 
 export class StackList<T> {
-  top: ListNode<T>;
+  top: ListNode<T>
 
   constructor(value: T | null = null) {
     if (value) {
-      this.top = new LinkedListNode(value);
+      this.top = new LinkedListNode(value)
     } else {
-      this.top = null;
+      this.top = null
     }
   }
 
   // O(1)
   isEmpty(): boolean {
-    return this.top === null;
+    return this.top === null
   }
 
   // O(1)
   push(value: T): void {
-    let newNode = new LinkedListNode(value);
-    newNode.next = this.top;
-    this.top = newNode;
+    let newNode = new LinkedListNode(value)
+    newNode.next = this.top
+    this.top = newNode
   }
 
   // O(1)
   pop(): ListNode<T> {
-    let poppedNode = this.top;
+    let poppedNode = this.top
 
     if (this.top) {
-      this.top = this.top.next;
+      this.top = this.top.next
     }
 
-    return poppedNode;
+    return poppedNode
   }
 
   // O(1)
   peek(): ListNode<T> {
     if (this.top) {
-      return this.top;
+      return this.top
     } else {
-      return null;
+      return null
     }
   }
 }

@@ -1,7 +1,6 @@
 ---
-title: "I decided to make a portfolio"
-posttitle: "I decided to make a portfolio"
-date: "2023-06-25 14:09:00"
+title: 'I decided to make a portfolio'
+date: '2023-06-25 14:09:00'
 ---
 
 I always thought my one-page resume with relevant work experiences, projects, and a link to my GitHub was enough to represent my skills. But I think it's time to think differently. Companies receive too many applications, and it's just not possible for them to read every bit of information in a resume or check links and GitHub profiles for every applicant. I need to stand out. I need to grab their attention. I need to make them want to know more about me.
@@ -20,7 +19,7 @@ inspiration — [Lauren Waller](https://www.lauren-waller.com/) and [Lee Boa](ht
 
 A good portfolio is what I need. Obviously, it won't magically get me a job,
 but it's a great way to showcase my skills and demonstrate to employers how enthusiastic
-I am as a front-end engineer (_I hope_).
+I am as a front-end developer (_I hope_).
 
 I'm still updating my portfolio based on the feedback I received from many great
 people I asked to review it, but here it is, [my portfolio](https://www.jiieu.com)

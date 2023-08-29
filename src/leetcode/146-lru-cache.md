@@ -1,7 +1,6 @@
 ---
-title: "146. LRU Cache"
-posttitle: "146. LRU Cache"
-date: "2023-08-17 19:50:00"
+title: '146. LRU Cache'
+date: '2023-08-17 19:50:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -31,33 +30,33 @@ The time complexity is constant for both the `get` and `put` functions.
 
 ```ts
 class LRUCache {
-  private capacity: number;
-  private map: Map<number, number>;
+  private capacity: number
+  private map: Map<number, number>
 
   constructor(capacity: number) {
-    this.capacity = capacity;
-    this.map = new Map();
+    this.capacity = capacity
+    this.map = new Map()
   }
 
   get(key: number): number {
-    const value = this.map.get(key);
+    const value = this.map.get(key)
 
-    if (value === undefined) return -1;
+    if (value === undefined) return -1
 
-    this.map.delete(key);
-    this.map.set(key, value);
+    this.map.delete(key)
+    this.map.set(key, value)
 
-    return value;
+    return value
   }
 
   put(key: number, value: number): void {
     if (this.map.size == this.capacity && !this.map.has(key)) {
-      const lru = this.map.keys().next().value;
-      this.map.delete(lru);
+      const lru = this.map.keys().next().value
+      this.map.delete(lru)
     }
 
-    this.map.delete(key);
-    this.map.set(key, value);
+    this.map.delete(key)
+    this.map.set(key, value)
   }
 }
 ```

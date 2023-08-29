@@ -1,7 +1,6 @@
 ---
-title: "203. Remove Linked List Elements"
-posttitle: "203. Remove Linked List Elements"
-date: "2023-08-18 06:35:00"
+title: '203. Remove Linked List Elements'
+date: '2023-08-18 06:35:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -22,32 +21,32 @@ Then, in the second pass, I will iterate through the list and select only the no
 The time complexity is `O(N), where N is the number of nodes in the list`.
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 
 function removeElements(head: NodeOrNull, val: number): NodeOrNull {
-  if (!head) return null;
+  if (!head) return null
 
-  let curr = head;
+  let curr = head
 
   while (curr) {
-    if (curr.val === val) curr.val = -1;
-    curr = curr.next;
+    if (curr.val === val) curr.val = -1
+    curr = curr.next
   }
 
-  curr = head;
-  let newList = new ListNode(-1);
-  head = newList;
+  curr = head
+  let newList = new ListNode(-1)
+  head = newList
   while (curr) {
     if (curr.val !== -1) {
-      newList.next = curr;
-      newList = newList.next;
+      newList.next = curr
+      newList = newList.next
     }
-    curr = curr.next;
+    curr = curr.next
   }
 
-  newList.next = null;
+  newList.next = null
 
-  return head.next;
+  return head.next
 }
 ```
 
@@ -62,11 +61,11 @@ The time complexity is still `O(N)`.
 ```ts
 // https://leetcode.com/problems/remove-linked-list-elements/solutions/3345548/easiest-typescript-solution-3-liners-99/
 
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 
 function removeElements(head: NodeOrNull, val: number): NodeOrNull {
-  if (head === null) return null;
-  if (head.val === val) return removeElements(head.next, val);
-  return (head.next = removeElements(head.next, val)), head;
+  if (head === null) return null
+  if (head.val === val) return removeElements(head.next, val)
+  return (head.next = removeElements(head.next, val)), head
 }
 ```

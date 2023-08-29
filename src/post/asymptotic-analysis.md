@@ -1,7 +1,6 @@
 ---
-title: "Asymptotic Analysis: Big-O, Omega, and Theta"
-posttitle: "Asymptotic Analysis: Big-O, Omega, and Theta"
-date: "2022-07-06 07:00:00"
+title: 'Asymptotic Analysis: Big-O, Omega, and Theta'
+date: '2022-07-06 07:00:00'
 ---
 
 Asymptotic notations are mathematical tools used to analyze the performance of algorithms. They provide a way to describe how the time and resources needed to solve a problem scale as the size of the input data increases. These notations enable us to compare and evaluate different algorithms, helping us choose the most efficient one for a specific task.

@@ -1,6 +1,4 @@
-import Footer from "@/components/Footer";
-import Image from "next/image";
-import taikoGIF from "/public/images/about.gif";
+import Footer from '@/components/Footer'
 
 const About = () => {
   return (
@@ -15,7 +13,7 @@ const About = () => {
             <ul className="flex justify-evenly text-xs w-56 mx-auto">
               <li>
                 <a
-                  className="tracking-[1px] hover:line-through"
+                  className="hover:line-through"
                   href="https://github.com/rolemadelen"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -25,7 +23,7 @@ const About = () => {
               </li>
               <li>
                 <a
-                  className="tracking-[1px] hover:line-through"
+                  className="hover:line-through"
                   href="https://www.linkedin.com/in/jiieu/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -39,7 +37,7 @@ const About = () => {
 
         <div className="content mb-10 text-left border-b pb-16">
           <p>
-            I was born in{" "}
+            I was born in
             <a href="https://www.google.com/search?q=andong+south+korea&oq=Andong+south+korea&sourceid=chrome&ie=UTF-8">
               Andong
             </a>
@@ -67,8 +65,8 @@ const About = () => {
             As my fascination with web development grew, I began creating
             personal bolgs as a way to practice and refine my skills. Following
             my graduation from UCSD, I moved to Japan and got my first
-            professional work experience as a front-end engineer at a healthcare
-            startup.
+            professional work experience as a front-end developer at a
+            healthcare startup.
           </p>
           <p>
             After spending three years abroad, I returned to the States.
@@ -82,22 +80,10 @@ const About = () => {
             email at <a href="mailto:hello@jiieu.com">hello@jiieu.com</a>.
           </p>
         </div>
-
-        {/*
-          <div>Enjoy the short clip of me playing taiko (・_・)ノ</div>
-          <Image
-            priority
-            width={350}
-            height={390}
-            src={taikoGIF}
-            alt='GIF is loading.'
-            className={'rounded-xl mx-auto my-[1.5rem]'}
-          />
-          */}
       </div>
       <Footer pageFrom="about" />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

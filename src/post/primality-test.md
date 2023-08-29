@@ -1,7 +1,6 @@
 ---
-title: "Primality Test"
-posttitle: "Primality Test"
-date: "2023-04-03 06:45:00"
+title: 'Primality Test'
+date: '2023-04-03 06:45:00'
 ---
 
 A prime number is a number that can only be divided by 1 and itself without resulting in a fraction or decimal.
@@ -19,12 +18,12 @@ The following code demonstrates this algorithm implemented in TypeScript:
 const isPrime = (n: number): boolean => {
   for (let i = 2; i < n; ++i) {
     if (n % i === 0) {
-      return false;
+      return false
     }
   }
 
-  return true;
-};
+  return true
+}
 ```
 
 The time complexity of this algorithm is `O(N)`, which is not too bad, but there is room for further optimization.
@@ -32,17 +31,17 @@ One way to reduce the number of operations is to exclude even numbers, as all pr
 
 ```ts
 const isPrime = (n: number): boolean => {
-  if (n === 2) return true;
-  if (n % 2 === 0) return false;
+  if (n === 2) return true
+  if (n % 2 === 0) return false
 
   for (let i = 3; i < n; i += 2) {
     if (n % i === 0) {
-      return false;
+      return false
     }
   }
 
-  return true;
-};
+  return true
+}
 ```
 
 While we have reduced the number of operations, it is important to note that this algorithm still has a linear time complexity.
@@ -56,18 +55,18 @@ If `n` is not a prime number, it can be represented as a product of two factors,
 
 ```ts
 const isPrime = (n: number): boolean => {
-  if (n === 2) return true;
-  if (n % 2 === 0) return false;
-  const UPPER_BOUND = Math.sqrt(n);
+  if (n === 2) return true
+  if (n % 2 === 0) return false
+  const UPPER_BOUND = Math.sqrt(n)
 
   for (let i = 3; i <= UPPER_BOUND; i += 2) {
     if (n % i === 0) {
-      return false;
+      return false
     }
   }
 
-  return true;
-};
+  return true
+}
 ```
 
 The time complexity of this algorithm is `O(sqrt(N))`.
@@ -97,16 +96,16 @@ Therefore, we can optimize our algorithm by only checking the values of `6K-1` a
 
 ```ts
 const isPrime = (k: number): boolean => {
-  if (k <= 1) return false;
-  if (k === 2 || k === 3) return true;
-  if (k % 2 === 0 || k % 3 === 0) return false;
+  if (k <= 1) return false
+  if (k === 2 || k === 3) return true
+  if (k % 2 === 0 || k % 3 === 0) return false
 
   for (let i = 5; i * i <= k; i += 6) {
-    if (k % i === 0 || k % (i + 2) === 0) return false;
+    if (k % i === 0 || k % (i + 2) === 0) return false
   }
 
-  return true;
-};
+  return true
+}
 ```
 
 The time complexity of this optimize algorithm is `O(sqrt(N))`.
@@ -128,24 +127,24 @@ Here is an example of code implementing this algorithm:
 
 ```ts
 const sieve = (n: number): boolean => {
-  const SIZE: number = n + 1;
-  let arr: boolean[] = new Array(SIZE).fill(true);
-  arr[0] = false;
-  arr[1] = false;
+  const SIZE: number = n + 1
+  let arr: boolean[] = new Array(SIZE).fill(true)
+  arr[0] = false
+  arr[1] = false
 
-  let p = 2;
+  let p = 2
   while (p < SIZE) {
     if (arr[p]) {
       for (let i = p + p; i < SIZE; i += p) {
-        arr[i] = false;
+        arr[i] = false
       }
     }
 
-    p += 1;
+    p += 1
   }
 
-  return arr[n];
-};
+  return arr[n]
+}
 ```
 
 The Sieve of Eratosthenes algorithm has a time complexity of `O(n log log n)`.

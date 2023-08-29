@@ -1,7 +1,6 @@
 ---
-title: "神経衰弱 pt.1 - Project Setup & Card UI"
-posttitle: "Shinkei Suijaku - Project Setup & Card UI"
-date: "2023-06-12 22:00:00"
+title: 'Shinkei Suijaku - Project Setup & Card UI'
+date: '2023-06-12 22:00:00'
 ---
 
 Shinkei Suijaku (神経衰弱) is a memory game in which the objective is to find two
@@ -63,12 +62,12 @@ But you'll need to modify `tailwind.config.cjs` like the below.
 ```js
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
-};
+  plugins: [require('daisyui')],
+}
 ```
 
 Now we're going to add tailwind directives to our CSS file. This will add basic style configurations
@@ -92,30 +91,30 @@ Let's see if Daisy UI is working properly or not. Copy the code below and
 refresh or build the server again.
 
 ```tsx
-import "./App.css";
+import './App.css'
 
 function App() {
   return (
     <>
       <div>
-        <kbd className={"kbd"}>H</kbd>
-        <kbd className={"kbd"}>E</kbd>
-        <kbd className={"kbd"}>L</kbd>
-        <kbd className={"kbd"}>L</kbd>
-        <kbd className={"kbd"}>O</kbd>
+        <kbd className={'kbd'}>H</kbd>
+        <kbd className={'kbd'}>E</kbd>
+        <kbd className={'kbd'}>L</kbd>
+        <kbd className={'kbd'}>L</kbd>
+        <kbd className={'kbd'}>O</kbd>
       </div>
       <div>
-        <kbd className={"kbd"}>W</kbd>
-        <kbd className={"kbd"}>O</kbd>
-        <kbd className={"kbd"}>R</kbd>
-        <kbd className={"kbd"}>L</kbd>
-        <kbd className={"kbd"}>D</kbd>
+        <kbd className={'kbd'}>W</kbd>
+        <kbd className={'kbd'}>O</kbd>
+        <kbd className={'kbd'}>R</kbd>
+        <kbd className={'kbd'}>L</kbd>
+        <kbd className={'kbd'}>D</kbd>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 ![kbd](/images/daisyui-hello-world.jpg)
@@ -133,8 +132,8 @@ base of our card game. I created a component called `Card` that accepts two valu
 /* Card.tsx */
 
 interface PokeCard {
-  name: string;
-  image: string;
+  name: string
+  image: string
 }
 
 const Card: React.FC = (card: PokeCard) => {
@@ -142,7 +141,7 @@ const Card: React.FC = (card: PokeCard) => {
     <>
       <div
         className={
-          "rm-card flex items-center justify-center min-w-[10rem] w-44 min-h-[15.3rem] m-4 overflow-hidden rounded bashadow-xl hover:cursor-pointer hover:rotate-[5deg] duration-150"
+          'rm-card flex items-center justify-center min-w-[10rem] w-44 min-h-[15.3rem] m-4 overflow-hidden rounded bashadow-xl hover:cursor-pointer hover:rotate-[5deg] duration-150'
         }
       >
         {/*    This is a front side - pokemon      */}
@@ -151,10 +150,10 @@ const Card: React.FC = (card: PokeCard) => {
         </figure>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
 ```
 
 As a temporary measure, I downloaded a sample Pokémon card image, which happened to be a Charizard.
@@ -163,19 +162,19 @@ Now, let's use this image and render our `Card` component. Please note that `Pok
 ```tsx
 /* App.tsx */
 
-import "./App.css";
-import Card from "./Card";
+import './App.css'
+import Card from './Card'
 
 const App: React.FC = () => {
   return (
     <>
-      <Card name={"Charizard"} image={"/src/assets/charizard.png"} />
-      <Card name={"Pokeball"} image={"/src/assets/pokeball.png"} />
+      <Card name={'Charizard'} image={'/src/assets/charizard.png'} />
+      <Card name={'Pokeball'} image={'/src/assets/pokeball.png'} />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 ```
 
 ![poke card](/images/card-ui.gif)

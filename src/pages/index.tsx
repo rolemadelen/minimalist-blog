@@ -1,32 +1,30 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { getAllPosts } from "@/lib/blog";
-import Link from "next/link";
-import { useCallback, useRef } from "react";
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import { getAllPosts } from '@/lib/blog'
+import Link from 'next/link'
+import React, { useCallback, useRef } from 'react'
 
 interface Post {
-  lang: string;
-  slug: string;
-  title: string;
-  posttitle: string;
-  date: string;
-  updated: string;
-  uid: string;
+  lang: string
+  slug: string
+  title: string
+  date: string
+  lastUpdated?: string
 }
 
 interface Posts {
-  posts: Post[];
+  posts: Post[]
 }
 
 const Blog: React.FC<Posts> = ({ posts }) => {
-  const year = useRef("");
+  const year = useRef('')
 
   const displayYear = useCallback((d: any) => {
-    let postYear = d.split("-")[0];
+    let postYear = d.split('-')[0]
 
-    if (year.current === postYear) return "";
+    if (year.current === postYear) return ''
     else {
-      year.current = postYear;
+      year.current = postYear
       return (
         <>
           <div className="my-16 sm:my-10"></div>
@@ -37,52 +35,56 @@ const Blog: React.FC<Posts> = ({ posts }) => {
             {postYear}
           </div>
         </>
-      );
+      )
     }
-  }, []);
+  }, [])
 
   return (
     <>
       <Header />
       <div className="max-w-[36rem] m-auto mb-20 px-6">
-        {posts.map((post, i) => (
-          <div className="relative" key={i}>
-            {displayYear(post.date.split(" ")[0])}
-            <Link
-              key={`blog-${post.slug}`}
-              href={`/post/${post.slug}`}
-              passHref
-            >
-              <div className="post-list items-center flex text-md mb-2">
-                <div className="hidden sm:block flex-[0.15] text-gray-300">
-                  {new Date(post.date)
-                    .toLocaleDateString("en-us", {
-                      month: "numeric",
-                      day: "numeric",
-                    })
-                    .toString()}
-                </div>
-                <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
-                  {post.title}
-                </div>
+        {posts.map(({ date, slug, title }, i) => {
+          const formattedYear = displayYear(date.split(' ')[0])
+          const formattedDate = new Date(date)
+            .toLocaleDateString('en-us', {
+              month: 'numeric',
+              day: 'numeric',
+            })
+            .toString()
+
+          return (
+            <React.Fragment key={i}>
+              <div className="relative">
+                {formattedYear}
+
+                <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
+                  <div className="post-list items-center flex text-md mb-2">
+                    <div className="hidden sm:block flex-[0.15] text-gray-300">
+                      {formattedDate}
+                    </div>
+                    <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
+                      {title}
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
-        ))}
+            </React.Fragment>
+          )
+        })}
       </div>
       <Footer pageFrom="blog" />
     </>
-  );
-};
+  )
+}
 
 export async function getStaticProps() {
-  let posts = getAllPosts();
+  let posts = getAllPosts()
 
   return {
     props: {
       posts,
     },
-  };
+  }
 }
 
-export default Blog;
+export default Blog

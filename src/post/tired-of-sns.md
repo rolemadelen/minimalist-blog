@@ -1,8 +1,6 @@
 ---
 title: 'Tired of Social Media'
-posttitle: 'Tired of Social Media'
 date: '2023-08-05 07:15:00'
-published: '2023-08-05 08:10:00'
 updated: '2023-08-10 21:46:00'
 ---
 

@@ -1,13 +1,11 @@
 ---
-title: "First half of 2023"
-posttitle: "First half of 2023"
-date: "2023-07-03 15:52:00"
-published: "2023-07-03 23:55:00"
+title: 'First half of 2023'
+date: '2023-07-03 15:52:00'
 ---
 
 ## Life
 
-Until the beginning of this year, I was working as a frontend engineer
+Until the beginning of this year, I was working as a front-end developer
 at a startup in Japan. As I had planned to move back to the States by the end of February,
 I had to resign from my job. Right up until my last day at work, I was dedicated
 to developing a brand new website, and I successfully launched it before leaving.
@@ -25,9 +23,9 @@ The lush greens are simply perfect.
 
 I had been actively searching for remote job opportunities and was quite confident
 that I would secure a position by the end of June. I started applying for
-frontend engineer roles around mid-April, but by the end of June, I had only managed
+front-end developer roles around mid-April, but by the end of June, I had only managed
 to secure a single interview, and to my disappointment, it wasn't even for a
-frontend position. In fact, when considering only the frontend positions,
+front-end position. In fact, when considering only the front-end positions,
 I had zero interviews. I was genuinely shocked and disheartened that I couldn't
 even make it to the initial interview stage.
 I can't find a better word than "현타" to describe how I felt.
@@ -92,7 +90,7 @@ as it will ultimately enhance my proficiency in algorithmic problem-solving.
 
 ### Svelte Study
 
-React has been my go-to framework for frontend development, but I'm eager to expand
+React has been my go-to framework for front-end development, but I'm eager to expand
 my skill set and explore other technologies. As a result, I have recently embarked
 on learning Svelte. I plan to invest more time in studying and
 familiarizing myself with Svelte, and I intend to utilize it in my side projects
@@ -113,7 +111,7 @@ Why is it already July?!
 
 Time has flown by like... no, it feels like it just teleported from January to July (\*sigh\*).
 The best thing that could happen before the end of 2023 would be for me
-to secure a job. Nevertheless, I'm determined to focus on enhancing my frontend skills,
+to secure a job. Nevertheless, I'm determined to focus on enhancing my front-end skills,
 diving deeper into algorithms, and strengthening my understanding of data structures.
 
 To wrap up this lengthy post, I'd like to share the music that has been on constant replay

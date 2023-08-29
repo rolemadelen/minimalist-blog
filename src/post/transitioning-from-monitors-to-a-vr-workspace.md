@@ -1,8 +1,7 @@
 ---
-title: "Transitioning from Monitors to a VR Workspace"
-posttitle: "Transitioning from Monitors to a VR Workspace"
-date: "2022-12-28 17:00:00"
-updated: "2023-06-19 10:00:00"
+title: 'Transitioning from Monitors to a VR Workspace'
+date: '2022-12-28 17:00:00'
+updated: '2023-06-19 10:00:00'
 ---
 
 #### Last updated on June 19th, 2023

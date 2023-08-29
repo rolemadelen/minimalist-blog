@@ -1,7 +1,6 @@
 ---
-title: "234. Palindrome Linked List"
-posttitle: "234. Palindrome Linked List"
-date: "2023-08-19 05:30:00"
+title: '234. Palindrome Linked List'
+date: '2023-08-19 05:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -23,22 +22,22 @@ The time complexity remains `O(N), where N is the number of nodes`. Additionally
 
 ```ts
 function isPalindrome(head: ListNode | null): boolean {
-  let arr = [];
+  let arr = []
   while (head) {
-    arr.push(head.val);
-    head = head.next;
+    arr.push(head.val)
+    head = head.next
   }
 
-  let p = 0;
-  let q = arr.length - 1;
+  let p = 0
+  let q = arr.length - 1
 
   while (p < q) {
-    if (arr[p] != arr[q]) return false;
-    ++p;
-    --q;
+    if (arr[p] != arr[q]) return false
+    ++p
+    --q
   }
 
-  return true;
+  return true
 }
 ```
 
@@ -52,13 +51,13 @@ Both the time and space complexity is `O(N)`.
 
 ```ts
 function isPalindrome(head: ListNode | null): boolean {
-  let arr = [];
+  let arr = []
   while (head) {
-    arr.push(head.val);
-    head = head.next;
+    arr.push(head.val)
+    head = head.next
   }
 
-  return arr.join("") === arr.reverse().join("");
+  return arr.join('') === arr.reverse().join('')
 }
 ```
 
@@ -73,45 +72,45 @@ To begin, we find the middle of the list by using two pointers: `slow` and `fast
 Subsequently, we iterate through the list using two pointers and compare the values. If the values don't match, the list is not a palindrome. Conversely, if they match throughout the iteration, the list is a palindrome.
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 
 function reverseList(head: NodeOrNull): NodeOrNull {
-  let prev = null;
-  let curr = head;
+  let prev = null
+  let curr = head
 
   while (curr != null) {
-    const next = curr.next;
-    curr.next = prev;
-    prev = curr;
-    curr = next;
+    const next = curr.next
+    curr.next = prev
+    prev = curr
+    curr = next
   }
 
-  return prev;
+  return prev
 }
 
 function getMidNode(head: NodeOrNull): NodeOrNull {
-  let fast = head;
-  let slow = head;
+  let fast = head
+  let slow = head
 
   while (fast && fast.next) {
-    fast = fast.next.next;
-    slow = slow.next;
+    fast = fast.next.next
+    slow = slow.next
   }
 
-  return slow;
+  return slow
 }
 
 function isPalindrome(head: ListNode | null): boolean {
-  const midNode = getMidNode(head);
-  let curr = head;
-  let reverse = reverseList(midNode);
+  const midNode = getMidNode(head)
+  let curr = head
+  let reverse = reverseList(midNode)
 
   while (reverse) {
-    if (curr.val !== reverse.val) return false;
-    reverse = reverse.next;
-    curr = curr.next;
+    if (curr.val !== reverse.val) return false
+    reverse = reverse.next
+    curr = curr.next
   }
 
-  return true;
+  return true
 }
 ```

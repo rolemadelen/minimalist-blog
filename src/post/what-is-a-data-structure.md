@@ -1,8 +1,7 @@
 ---
-title: "What is a Data Structure?"
-posttitle: "What is a Data Structure?"
-date: "2022-07-04 22:20:00"
-updated: "2023-06-19 10:53:00"
+title: 'What is a Data Structure?'
+date: '2022-07-04 22:20:00'
+updated: '2023-06-19 10:53:00'
 ---
 
 #### Last updated on June 19th, 2023

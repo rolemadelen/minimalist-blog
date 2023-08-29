@@ -1,6 +1,5 @@
 ---
 title: 'Setting environment variables in fish shell (feat. rustup)'
-posttitle: 'Setting environment variables in fish shell (feat. rustup)'
 date: '2023-06-15 20:00:00'
 ---
 

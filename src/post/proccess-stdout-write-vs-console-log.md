@@ -1,6 +1,5 @@
 ---
 title: 'process.stdout.write vs. console.log'
-posttitle: 'process.stdout.write vs. console.log'
 date: '2023-05-24 21:58:00'
 ---
 

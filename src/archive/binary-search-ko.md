@@ -1,6 +1,5 @@
 ---
 title: 'Algorithm - 이진 탐색 (Binary Search)'
-posttitle: '이진 탐색 (Binary Search)'
 date: '2022-10-23 12:50:00'
 uid: 'bc'
 ---

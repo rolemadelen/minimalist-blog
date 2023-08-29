@@ -2,24 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-// English
-@font-face {
-  font-family: "Cardo";
-  src: url("/font/Cardo-Regular.ttf");
-  unicode-range: U+0000-007F, U+0080-00FF;
-}
-
 // Korean
 @font-face {
-  font-family: "Noto Sans KR";
-  src: url("/font/NotoSansKR.otf");
+  font-family: 'Noto Sans KR';
+  src: url('/font/NotoSansKR.otf');
   unicode-range: U+AC00-D7AF, U+4E00;
 }
 
 // for Japanese
 @font-face {
-  font-family: "Klee-Medium";
-  src: local("Klee-Medium");
+  font-family: 'Klee-Medium';
+  src: local('Klee-Medium');
   unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
 }
 
@@ -31,7 +24,7 @@
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: "Iowan", "Noto Sans KR", "Klee-Medium", serif;
+  font-family: 'Iowan', 'Noto Sans KR', 'Klee-Medium', serif;
   color: #555;
 }
 
@@ -243,7 +236,7 @@ h6 {
     }
 
     &::after {
-      content: "(hi!)";
+      content: '(hi!)';
       display: block;
       font-size: 0.7rem;
       text-align: center;

@@ -1,8 +1,6 @@
 ---
 title: 'Simulating a fixed array in JavaScript'
-posttitle: 'Simulating a fixed array in JavaScript'
 date: '2023-07-30 10:49:00'
-published: '2023-07-30 11:31:00'
 ---
 
 Arrays in JavaScript are dynamic in nature, which means that the length of the array can be modified at runtime.

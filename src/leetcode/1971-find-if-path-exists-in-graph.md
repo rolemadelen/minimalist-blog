@@ -1,6 +1,5 @@
 ---
 title: '1971. Find if Path Exists in Graph'
-posttitle: '1971. Find if Path Exists in Graph'
 date: '2023-08-27 18:30:00'
 ---
 

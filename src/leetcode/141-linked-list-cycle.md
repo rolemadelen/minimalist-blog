@@ -1,7 +1,6 @@
 ---
-title: "141. Linked List Cycle"
-posttitle: "141. Linked List Cycle"
-date: "2023-08-15 09:35:00"
+title: '141. Linked List Cycle'
+date: '2023-08-15 09:35:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -25,20 +24,20 @@ The number of iterations required will be the number of nodes in the list, plus 
 
 ```ts
 function hasCycle(head: ListNode | null): boolean {
-  if (!head) return false;
-  if (!head.next) return false;
-  if (head.next == head) return true;
+  if (!head) return false
+  if (!head.next) return false
+  if (head.next == head) return true
 
-  let slow = head;
-  let fast = head.next;
+  let slow = head
+  let fast = head.next
 
   while (fast && fast.next && slow) {
-    slow = slow.next;
-    fast = fast.next.next;
+    slow = slow.next
+    fast = fast.next.next
 
-    if (slow == fast) return true;
+    if (slow == fast) return true
   }
 
-  return false;
+  return false
 }
 ```

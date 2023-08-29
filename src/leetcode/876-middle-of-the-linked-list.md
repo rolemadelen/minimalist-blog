@@ -1,7 +1,6 @@
 ---
-title: "876. Middle of the Linked List"
-posttitle: "876. Middle of the Linked List"
-date: "2023-08-21 16:30:00"
+title: '876. Middle of the Linked List'
+date: '2023-08-21 16:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -23,20 +22,20 @@ The time complexity of this problem is `O(N), where N is number of nodes`.
 
 ```ts
 function middleNode(head: ListNode | null): ListNode | null {
-  if (!head) return null;
-  if (!head.next) return head;
+  if (!head) return null
+  if (!head.next) return head
 
-  let s = head;
-  let f = head.next;
+  let s = head
+  let f = head.next
 
   while (f && f.next) {
-    s = s.next;
-    if (!f.next) return s.next;
-    f = f.next;
-    if (!f.next) return s;
-    f = f.next;
+    s = s.next
+    if (!f.next) return s.next
+    f = f.next
+    if (!f.next) return s
+    f = f.next
   }
 
-  return s.next;
+  return s.next
 }
 ```

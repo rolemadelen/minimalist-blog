@@ -1,7 +1,6 @@
 ---
-title: "206. Reverse Linked List"
-posttitle: "206. Reverse Linked List"
-date: "2023-08-20 05:50:00"
+title: '206. Reverse Linked List'
+date: '2023-08-20 05:50:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -19,19 +18,19 @@ Given the `head` of a singly linked list, reverse the list, and return _the reve
 - Space Complexity: O(1)
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 function reverseList(head: NodeOrNull): NodeOrNull {
-  let prev = null;
-  let curr = head;
+  let prev = null
+  let curr = head
 
   while (curr != null) {
-    const next = curr.next;
-    curr.next = prev;
-    prev = curr;
-    curr = next;
+    const next = curr.next
+    curr.next = prev
+    prev = curr
+    curr = next
   }
 
-  return prev;
+  return prev
 }
 ```
 
@@ -43,14 +42,14 @@ function reverseList(head: NodeOrNull): NodeOrNull {
 - Space Complexity: O(N)
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 function reverseList(head: NodeOrNull): NodeOrNull {
-  if (!head || !head.next) return head;
+  if (!head || !head.next) return head
 
-  let prev: NodeOrNull = null;
-  let h2 = reverseList(head.next);
-  head.next.next = head;
-  head.next = prev;
-  return h2;
+  let prev: NodeOrNull = null
+  let h2 = reverseList(head.next)
+  head.next.next = head
+  head.next = prev
+  return h2
 }
 ```
