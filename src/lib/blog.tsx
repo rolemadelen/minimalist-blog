@@ -6,10 +6,15 @@ import html from 'remark-html'
 
 const postDirectory = path.join(process.cwd(), `/src/post`)
 
+interface Frontmatter {
+  slug?: string
+  [key: string]: any
+}
+
 export function getAllPosts() {
   const fileNames = fs.readdirSync(postDirectory)
 
-  const allpostData = fileNames.map((fileName) => {
+  const allpostData: Frontmatter = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '')
 
     // Read markdown file as string
@@ -22,9 +27,9 @@ export function getAllPosts() {
   })
 
   // sort the posts by latest date
-  allpostData.sort((postA, postB) => {
+  allpostData.sort((postA: Frontmatter, postB: Frontmatter) => {
     let [dateA, dateB] = [new Date(postA.date), new Date(postB.date)]
-    return dateB - dateA
+    return dateB.getTime() - dateA.getTime()
   })
 
   return allpostData
@@ -37,7 +42,7 @@ export function getAllPostIds() {
   })
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string[]) {
   const fullPath = path.join(postDirectory, `${id[0]}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 

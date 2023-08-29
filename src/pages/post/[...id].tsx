@@ -1,20 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Preview from '@/lib/codeblock'
 import { getAllPostIds, getPostData } from '@/lib/blog'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Comment from '@/lib/giscus'
 import Head from 'next/head'
+import { GetStaticProps, GetStaticPropsContext } from 'next'
 
-const options = {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
+interface IPost {
+  post: {
+    title: string
+    date: string
+    markdown: string
+  }
 }
 
-const Post = ({ post: { title, date, markdown } }) => {
-  const formattedDate = new Date(date).toLocaleDateString('en-us', options)
+const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
+  const formattedDate = new Date(date).toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
   return (
     <>
       <Head>
@@ -46,14 +52,6 @@ const Post = ({ post: { title, date, markdown } }) => {
   )
 }
 
-Post.propTypes = {
-  post: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    markdown: PropTypes.string.isRequired,
-  }).isRequired,
-}
-
 export async function getStaticPaths() {
   const paths = getAllPostIds()
   return {
@@ -62,8 +60,16 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
-  const post = await getPostData(params.id)
+export const getStaticProps: GetStaticProps = async ({
+  params,
+}: GetStaticPropsContext) => {
+  if (!params) {
+    return {
+      notFound: true,
+    }
+  }
+
+  const post = await getPostData(params.id as string[])
   return {
     props: {
       post,

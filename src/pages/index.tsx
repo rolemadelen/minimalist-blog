@@ -25,6 +25,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
     if (year.current === postYear) return ''
     else {
       year.current = postYear
+
       return (
         <>
           <div className="my-16 sm:my-10"></div>
