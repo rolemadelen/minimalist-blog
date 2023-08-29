@@ -1,6 +1,6 @@
 # Minimalist Blog
 
-This blog features a clean and elegant design, focusing on simplicity and readability. It is built with a minimalist aesthetic to provide a distraction-free reading experience. 
+This blog features a clean and elegant design, focusing on simplicity and readability. It is built with a minimalist aesthetic to provide a distraction-free reading experience.
 
 ## Features
 
@@ -10,6 +10,7 @@ This blog features a clean and elegant design, focusing on simplicity and readab
 - Fast and lightweight: The blog is optimized for speed and performance, ensuring quick loading times for an optimal user experience.
 
 ## Blog History:
+
 - Vue blog → https://github.com/rolemadelen/vue-blog
 - Multilingual Blog v1 → https://github.com/euisblue/euisblue.github.io
 - Multilingual Blog v2 → https://github.com/euisblue/bluelog

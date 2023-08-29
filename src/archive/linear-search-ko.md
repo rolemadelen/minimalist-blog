@@ -43,21 +43,21 @@ END LinearSearch
 
 ```ts
 interface Array<T> {
-    linearSearch(target: number): number;
+  linearSearch(target: number): number
 }
 
 Array.prototype.linearSearch = (target) => {
-    const length = arr.length;
+  const length = arr.length
 
-    for (let i = 0; i < length; ++i) {
-        if (arr[i] === target) {
-            return i;
-        }
+  for (let i = 0; i < length; ++i) {
+    if (arr[i] === target) {
+      return i
     }
-    return -1;
-};
+  }
+  return -1
+}
 
-console.log(arr.linearSearch(1)); // 0
-console.log(arr.linearSearch(5)); // 4
-console.log(arr.linearSearch(10)); // -1
+console.log(arr.linearSearch(1)) // 0
+console.log(arr.linearSearch(5)) // 4
+console.log(arr.linearSearch(10)) // -1
 ```

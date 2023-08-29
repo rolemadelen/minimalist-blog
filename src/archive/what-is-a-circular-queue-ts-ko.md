@@ -52,7 +52,7 @@ end
 
 ```text
 enqueue(item) → void
-    if(isFull()) then 
+    if(isFull()) then
         Error("Queue is Full");
     else if(isEmpty()) then
         front    ← 0;
@@ -71,7 +71,7 @@ end
 
 ```text
 dequeue(item) → item
-    if(isEmpty()) then 
+    if(isEmpty()) then
         Error("Queue is Empty");
     else if(rear = front) then
         item  ← cq[front];
@@ -90,65 +90,65 @@ end
 
 ```ts
 export class CircularQueueArray<T> {
-    capacity: number;
-    front: number;
-    rear: number;
-    cq: Array<T | undefined>;
-    
-    constructor(size: number) {
-        this.capacity = size;
-        this.cq = new Array(size);
-        this.front = -1;
-        this.rear = -1;
-        
-        if(Object.seal) {
-            this.cq.fill(undefined);
-            Object.seal(this.cq);
-        }
-    }
-    
-    // O(1)
-    isEmpty(): boolean {
-        return this.front == -1 && this.rear == -1;
-    }
+  capacity: number
+  front: number
+  rear: number
+  cq: Array<T | undefined>
 
-    // O(1)
-    isFull(): boolean {
-        return (this.rear + 1) % this.capacity == this.front;
+  constructor(size: number) {
+    this.capacity = size
+    this.cq = new Array(size)
+    this.front = -1
+    this.rear = -1
+
+    if (Object.seal) {
+      this.cq.fill(undefined)
+      Object.seal(this.cq)
     }
-    
-    // O(1)
-    enqueue(item: T): void {
-        if(this.isFull()) {
-            throw new Error("Queue is full");
-        } else if (this.isEmpty()) {
-            this.front = 0;
-            this.rear = 0;
-            this.cq[this.rear] = item;
-        } else {   
-            this.rear = (this.rear + 1) % this.capacity;
-            this.cq[this.rear] = item;
-        }
+  }
+
+  // O(1)
+  isEmpty(): boolean {
+    return this.front == -1 && this.rear == -1
+  }
+
+  // O(1)
+  isFull(): boolean {
+    return (this.rear + 1) % this.capacity == this.front
+  }
+
+  // O(1)
+  enqueue(item: T): void {
+    if (this.isFull()) {
+      throw new Error('Queue is full')
+    } else if (this.isEmpty()) {
+      this.front = 0
+      this.rear = 0
+      this.cq[this.rear] = item
+    } else {
+      this.rear = (this.rear + 1) % this.capacity
+      this.cq[this.rear] = item
     }
-    
-    // O(1)
-    dequeue(): T | undefined {
-        if(this.isEmpty()) {
-            throw new Error("Queue is empty");
-        } else if (this.front == this.rear) {
-            const item = this.cq[this.front];
-            this.cq[this.front] = undefined;
-            this.front = -1;
-            this.rear = -1;
-            return item;
-        } else {   
-            const item = this.cq[this.front];
-            this.cq[this.front] = undefined;
-            this.front = (this.front + 1) % this.capacity;
-            return item;
-        }
+  }
+
+  // O(1)
+  dequeue(): T | undefined {
+    if (this.isEmpty()) {
+      throw new Error('Queue is empty')
+    } else if (this.front == this.rear) {
+      const item = this.cq[this.front]
+      this.cq[this.front] = undefined
+      this.front = -1
+      this.rear = -1
+      return item
+    } else {
+      const item = this.cq[this.front]
+      this.cq[this.front] = undefined
+      this.front = (this.front + 1) % this.capacity
+      return item
     }
-};
+  }
+}
 ```
 
 ## 큐의 사용사례

@@ -15,10 +15,10 @@ uid: 'da'
 
 ```css
 body {
-    font-family: 'your font', sans-serif;
+  font-family: 'your font', sans-serif;
 }
 :lang(ja) {
-    font-family: 'Klee-Medium', 'Noto Sans JP';
+  font-family: 'Klee-Medium', 'Noto Sans JP';
 }
 ```
 
@@ -48,14 +48,14 @@ MDN은 `unicode-range`를 아래와 같이 설명하고 있다.
 
 ```css
 h1 {
-    font-family: 'Klee-Medium', sans-serif;
+  font-family: 'Klee-Medium', sans-serif;
 }
 
 // for Japanese
 @font-face {
-    font-family: 'Klee-Medium';
-    src: local('Klee-Medium');
-    unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
+  font-family: 'Klee-Medium';
+  src: local('Klee-Medium');
+  unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
 }
 ```
 

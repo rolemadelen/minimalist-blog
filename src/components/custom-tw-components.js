@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components';
+import tw from 'tailwind-styled-components'
 
 export const Main = tw.div`
     main
@@ -12,14 +12,14 @@ export const Main = tw.div`
     content-center
 
     mx-[1.875rem]
-`;
+`
 
 export const MainTitle = tw.h1`
     main-title
     z-10
     text-5xl
     font-black
-`;
+`
 
 export const MainMenu = tw.div`
     main-menu
@@ -84,14 +84,14 @@ export const AboutTitle = tw.h1`
     font-black
     m-0
     mt-[2rem]
-`;
+`
 
 export const AboutSubtitle = tw.p`
     about-subtitle
     z-10
     text-[1rem]
     text-[#757575]
-`;
+`
 
 export const AboutContent = tw.div`
     about-content

@@ -43,6 +43,7 @@ After configuring SendGrid, I deployed the app to Vercel and tested the form. Wh
 I found the solution on Stack Overflow.
 
 > The issue lies in how vercel handles serverless functions:
+>
 > - If you're on free tier, each request must resolve in 10 seconds (for pro its 60)
 > - Vercel seems to instantly terminate a serverless function once a response is returned, aka side effects that are not finished will cease to run.
 
@@ -50,10 +51,10 @@ Essentially, the problem arose because Vercel wasn't waiting for SendGrid to ful
 
 ```js
 try {
-  await sgMail.send(msg);
-  return { success: true };
-} catch(err) {
-  return { success: false };
+  await sgMail.send(msg)
+  return { success: true }
+} catch (err) {
+  return { success: false }
 }
 ```
 

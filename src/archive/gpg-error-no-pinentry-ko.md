@@ -40,4 +40,4 @@ No pinentry라고 나오지만 `pinentry`는 설치되어 있다. `~/.gnupg/gpg-
 
 ### Source
 
--   https://superuser.com/questions/1628782/gpg-signing-failed-no-pinentry
+- https://superuser.com/questions/1628782/gpg-signing-failed-no-pinentry

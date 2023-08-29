@@ -1,8 +1,8 @@
 ---
-title: "Mobs are attacking you (feat. Linked List)"
-posttitle: "Mobs are attacking you (feat. Linked List)"
-date: "2023-07-05 09:00:00"
-published: "2023-07-05 12:05:00"
+title: 'Mobs are attacking you (feat. Linked List)'
+posttitle: 'Mobs are attacking you (feat. Linked List)'
+date: '2023-07-05 09:00:00'
+published: '2023-07-05 12:05:00'
 ---
 
 Linked List is a linear data structure composed of nodes where each node contains a data field and a reference to the next and/or previous node in the list. Unlike Arrays, the order of nodes in the list is NOT given by their physical placement in memory.
@@ -18,7 +18,7 @@ class Mob {
   ) {}
 
   attack(player: Player) {
-    player.damaged.pushBack(this.damage);
+    player.damaged.pushBack(this.damage)
   }
 }
 ```
@@ -29,18 +29,18 @@ Speaking of a player, here's the definition of the `Player` class.
 
 ```ts
 class Player {
-  private level = 1;
-  private hp = 25;
-  readonly damaged: SinglyLinkedList<number>;
+  private level = 1
+  private hp = 25
+  readonly damaged: SinglyLinkedList<number>
 
   constructor(public readonly name: string) {
-    this.damaged = new SinglyLinkedList<number>();
+    this.damaged = new SinglyLinkedList<number>()
   }
 
   ready() {
     while (!this.damaged.isEmpty()) {
-      const dmg = this.damaged.popFront();
-      this.hp -= dmg.value;
+      const dmg = this.damaged.popFront()
+      this.hp -= dmg.value
     }
   }
 }
@@ -50,11 +50,11 @@ class Player {
 
 ```ts
 interface ILinkedList<T> {
-  isEmpty(): boolean;
-  pushFront(data: T): void;
-  pushBack(data: T): void;
-  popFront(): NodeType<T>;
-  popBack(): NodeType<T>;
+  isEmpty(): boolean
+  pushFront(data: T): void
+  pushBack(data: T): void
+  popFront(): NodeType<T>
+  popBack(): NodeType<T>
 }
 ```
 
@@ -164,28 +164,28 @@ Removing a node at the end of the list is a bit more complex. We need to access 
 Let's see if our player can survive after enduring 50 attacks from our colorful snails.
 
 ```ts
-const greenSnail = new Mob("Green Snail", 1);
-const blueSnail = new Mob("Blue Snail", 3);
-const redSnail = new Mob("Red Snail", 5);
+const greenSnail = new Mob('Green Snail', 1)
+const blueSnail = new Mob('Blue Snail', 3)
+const redSnail = new Mob('Red Snail', 5)
 
-const madelen = new Player("madelen");
+const madelen = new Player('madelen')
 
-let turn = Math.floor(Math.random() * 50) + 1;
+let turn = Math.floor(Math.random() * 50) + 1
 while (turn) {
   switch (Math.floor(Math.random() * 3) + 1) {
     case 1:
-      greenSnail.attack(madelen);
-      break;
+      greenSnail.attack(madelen)
+      break
     case 2:
-      blueSnail.attack(madelen);
-      break;
+      blueSnail.attack(madelen)
+      break
     case 3:
-      redSnail.attack(madelen);
+      redSnail.attack(madelen)
   }
-  turn -= 1;
+  turn -= 1
 }
 
-madelen.ready();
+madelen.ready()
 ```
 
 ![mob](/images/mob.gif)

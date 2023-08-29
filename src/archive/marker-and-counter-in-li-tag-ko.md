@@ -12,12 +12,12 @@ uid: 'do'
 
 ```html
 <style>
-    h1 {
-        display: list-item;
-    }
-    h1::marker {
-        content: '👋🏼 ';
-    }
+  h1 {
+    display: list-item;
+  }
+  h1::marker {
+    content: '👋🏼 ';
+  }
 </style>
 
 <h1>Hello</h1>
@@ -31,22 +31,22 @@ uid: 'do'
 
 ```html
 <style>
-    li::marker {
-        content: '👋';
-    }
+  li::marker {
+    content: '👋';
+  }
 
-    li:before {
-        content: 'before';
-        border-radius: 5px;
-        background-color: #ccc;
-        padding: 2px 5px;
-        margin-left: 5px;
-    }
+  li:before {
+    content: 'before';
+    border-radius: 5px;
+    background-color: #ccc;
+    padding: 2px 5px;
+    margin-left: 5px;
+  }
 </style>
 <ol>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
 </ol>
 ```
 
@@ -58,16 +58,16 @@ uid: 'do'
 
 ```html
 <div class="example">
-    <ul>
-        <li>item One</li>
-        <li>item Two</li>
-        <li>item Three</li>
-    </ul>
-    <ol>
-        <li>item One</li>
-        <li>item Two</li>
-        <li>item Three</li>
-    </ol>
+  <ul>
+    <li>item One</li>
+    <li>item Two</li>
+    <li>item Three</li>
+  </ul>
+  <ol>
+    <li>item One</li>
+    <li>item Two</li>
+    <li>item Three</li>
+  </ol>
 </div>
 ```
 
@@ -87,16 +87,16 @@ uid: 'do'
 
 ```html
 <style>
-    li::marker {
-        content: '(' counter(list-item) ')  ';
-    }
+  li::marker {
+    content: '(' counter(list-item) ')  ';
+  }
 </style>
 
 <ol>
-    <li>item One</li>
-    <li>item Two</li>
-    <li>item Three</li>
-    <li>item Four</li>
+  <li>item One</li>
+  <li>item Two</li>
+  <li>item Three</li>
+  <li>item Four</li>
 </ol>
 ```
 
@@ -106,27 +106,27 @@ uid: 'do'
 
 ```html
 <style>
-    ul > li::marker {
-        color: green;
-        content: 'Note ' counter(list-item) ':  ';
-    }
+  ul > li::marker {
+    color: green;
+    content: 'Note ' counter(list-item) ':  ';
+  }
 
-    ul > ol > li::marker {
-        color: blue;
-        content: counter(list-item, katakana) '   ';
-    }
+  ul > ol > li::marker {
+    color: blue;
+    content: counter(list-item, katakana) '   ';
+  }
 </style>
 
 <ul>
-    <li>Item One</li>
-    <li>Item Two</li>
-    <li>Item Three</li>
-    <ol>
-        <li>Nested Item 1</li>
-        <li>Nested Item 2</li>
-        <li>Nested Item 3</li>
-    </ol>
-    <li>List item Four</li>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
+  <ol>
+    <li>Nested Item 1</li>
+    <li>Nested Item 2</li>
+    <li>Nested Item 3</li>
+  </ol>
+  <li>List item Four</li>
 </ul>
 ```
 
@@ -144,24 +144,24 @@ uid: 'do'
 
 ```html
 <style>
-    ol li::marker {
-        content: counters(list-item, '.') ': ';
-    }
+  ol li::marker {
+    content: counters(list-item, '.') ': ';
+  }
 </style>
 
 <ol>
-    <li>Item One</li>
-    <li>Item Two</li>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <ol>
+    <li>Nested 1</li>
+    <li>Nested 2</li>
+    <li>Nested 3</li>
     <ol>
-        <li>Nested 1</li>
-        <li>Nested 2</li>
-        <li>Nested 3</li>
-        <ol>
-            <li>Nested Nested A</li>
-            <li>Nested Nested B</li>
-            <li>Nested Nested C</li>
-        </ol>
+      <li>Nested Nested A</li>
+      <li>Nested Nested B</li>
+      <li>Nested Nested C</li>
     </ol>
+  </ol>
 </ol>
 ```
 
@@ -171,6 +171,6 @@ uid: 'do'
 
 ### Source
 
--   https://www.w3.org/TR/css-lists-3/#declaring-a-list-item
+- https://www.w3.org/TR/css-lists-3/#declaring-a-list-item
 
 [^a]: 사용 가능한 list-style-type의 목록: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type

@@ -1,7 +1,7 @@
 ---
-title: "1971. Find if Path Exists in Graph"
-posttitle: "1971. Find if Path Exists in Graph"
-date: "2023-08-27 18:30:00"
+title: '1971. Find if Path Exists in Graph'
+posttitle: '1971. Find if Path Exists in Graph'
+date: '2023-08-27 18:30:00'
 ---
 
 - Difficulty: 🍰 Easy
@@ -26,36 +26,36 @@ function validPath(
   s: number,
   d: number
 ): boolean {
-  if (s == d) return true;
+  if (s == d) return true
 
-  let adj = new Array();
-  for (let i = 0; i < v; ++i) adj.push(new Array());
+  let adj = new Array()
+  for (let i = 0; i < v; ++i) adj.push(new Array())
 
   for (const edge of edges) {
-    adj[edge[0]].push(edge[1]);
-    adj[edge[1]].push(edge[0]);
+    adj[edge[0]].push(edge[1])
+    adj[edge[1]].push(edge[0])
   }
 
-  let visited: boolean[] = new Array(v).fill(false);
+  let visited: boolean[] = new Array(v).fill(false)
 
-  let q = new Array();
+  let q = new Array()
 
-  visited[s] = true;
-  q.push(s);
+  visited[s] = true
+  q.push(s)
 
   while (q.length !== 0) {
-    s = q.pop();
+    s = q.pop()
 
     for (let i = 0; i < adj[s].length; ++i) {
-      if (adj[s][i] === d) return true;
+      if (adj[s][i] === d) return true
 
       if (!visited[adj[s][i]]) {
-        visited[adj[s][i]] = true;
-        q.push(adj[s][i]);
+        visited[adj[s][i]] = true
+        q.push(adj[s][i])
       }
     }
   }
 
-  return false;
+  return false
 }
 ```

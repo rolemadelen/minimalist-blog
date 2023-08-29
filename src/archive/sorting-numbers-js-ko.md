@@ -9,8 +9,8 @@ uid: 'fa'
 다음과 같은 배열 `[11, 17, 2, 5, 3, 0, 9]`를 내부 함수인 `sort()`를 사용해서 오름 순으로 정렬해 보자.
 
 ```js
-let arr = [11, 17, 2, 5, 3, 0, 9];
-arr.sort();
+let arr = [11, 17, 2, 5, 3, 0, 9]
+arr.sort()
 ```
 
 위와 같이 사용하면 될 것 같다. 하지만 출력해 보면 결과가 이상하다.
@@ -24,19 +24,19 @@ arr.sort();
 사전 순(문자)로 `1`이 `2`보다 앞서기 때문에 위와 같이 정렬된다. 숫자로 정렬하기 위해서는 비교 함수(compare function)를 넘겨주어야 한다.
 
 ```js
-let arr = [11, 17, 2, 5, 3, 0, 9];
-const integerCompareFunction = (a, b) => a - b;
+let arr = [11, 17, 2, 5, 3, 0, 9]
+const integerCompareFunction = (a, b) => a - b
 
-arr.sort(integerCompareFunction);
+arr.sort(integerCompareFunction)
 // [0, 2, 3, 5, 9, 11, 17]
 ```
 
 좀 더 간단하게 인자에서 화살표 함수를 사용해서 바로 넘겨줄 수도 있다.
 
 ```js
-let arr = [11, 17, 2, 5, 3, 0, 9];
+let arr = [11, 17, 2, 5, 3, 0, 9]
 
-arr.sort((a, b) => a - b);
+arr.sort((a, b) => a - b)
 // [0, 2, 3, 5, 9, 11, 17]
 ```
 

@@ -1,14 +1,14 @@
 ---
-title: "Simulating a fixed array in JavaScript"
-posttitle: "Simulating a fixed array in JavaScript"
-date: "2023-07-30 10:49:00"
-published: "2023-07-30 11:31:00"
+title: 'Simulating a fixed array in JavaScript'
+posttitle: 'Simulating a fixed array in JavaScript'
+date: '2023-07-30 10:49:00'
+published: '2023-07-30 11:31:00'
 ---
 
-Arrays in JavaScript are dynamic in nature, which means that the length of the array can be modified at runtime. 
+Arrays in JavaScript are dynamic in nature, which means that the length of the array can be modified at runtime.
 This posed a problem during my data structure study, as we were attempting to implement a stack and queue using a fixed-size array.
 
-```js 
+```js
 let arr = new Array(2)
 
 arr[0] = 1
@@ -47,7 +47,7 @@ It's important to note that you cannot modify an empty array. Therefore, before 
 
 Now, with `Object.seal()`, I can create a fixed-size stack and queue.
 
-```js 
+```js
 export class StackArray<T> {
   ...
 
@@ -62,9 +62,9 @@ export class StackArray<T> {
 }
 ```
 
-```js 
+```js
 export class Queue<T> {
-  ... 
+  ...
 
   constructor(size: number) {
     this.queue = new Array<T>(size);

@@ -7,30 +7,30 @@ updated: '2023-05-21 11:00:00'
 
 _last updated on May 21st, 2023_
 
-Because of my sister who loved Japanese culture[^a], 
-I grew up indirectly watching and listening to Japanese dramas, movies, 
-entertainment, anime, and music since elementary school. 
+Because of my sister who loved Japanese culture[^a],
+I grew up indirectly watching and listening to Japanese dramas, movies,
+entertainment, anime, and music since elementary school.
 
- As my interest naturally grew, I learned hiragana and katakana by looking them up online. 
-Whenever I was bored, I would jot down every object in front of me in kana in my notebook. 
-For instance, if I had a computer in front of me, I'd sound it out and write 'コンピュタ', 
+As my interest naturally grew, I learned hiragana and katakana by looking them up online.
+Whenever I was bored, I would jot down every object in front of me in kana in my notebook.
+For instance, if I had a computer in front of me, I'd sound it out and write 'コンピュタ',
 which is written wrong by the way. This is how I _practiced_.
 
 Although I was interested, I didn't necessarily wanted to study Japanese.
-It was just fun to play with another language. 
-In high school, when we had to choose a second language, 
-I would have studied Japanese if it had been available. 
+It was just fun to play with another language.
+In high school, when we had to choose a second language,
+I would have studied Japanese if it had been available.
 Unfortunately, the only options were Spanish and French, so I chose French.
 
 Fast forwarding couple years, I became a uni student and my Japanese language skills were roughly as follows:
 
-|Skills| State|
-|:-----|:-----|
-|Hiragana| No problem|
-|Katakana|It's a bit confusing, but I can manage.|
-|Listening | I can understand about 70-80% of Japanese anime or dramas without subtitles. |
-|Vocabulary & Reading | My skills in vocabulary and reading are abysmal because I never studied grammar nor kanji. |
-| Speaking | Apart from the sentences I've memorized from anime and dramas, I struggle to form my own sentences. |
+| Skills               | State                                                                                               |
+| :------------------- | :-------------------------------------------------------------------------------------------------- |
+| Hiragana             | No problem                                                                                          |
+| Katakana             | It's a bit confusing, but I can manage.                                                             |
+| Listening            | I can understand about 70-80% of Japanese anime or dramas without subtitles.                        |
+| Vocabulary & Reading | My skills in vocabulary and reading are abysmal because I never studied grammar nor kanji.          |
+| Speaking             | Apart from the sentences I've memorized from anime and dramas, I struggle to form my own sentences. |
 
 I had no issue understanding daily conversations but I couldn't form any of my own sentences.
 For instance, if someone asks me, 「手伝ってもらえますか。」 (_could you help me?_), I can understand its meaning and respond without needing any translation,
@@ -39,7 +39,7 @@ but if you ask me to say 'Could you help me?' in Japanese, I can't.
 ## ૮ ・ﻌ・ა
 
 As I was about to fuse my soul with the [Geisel](https://library.ucsd.edu/about/geisel-library.html) doing assignments and studying for exams 24/7,
-I was looking for _fun_ for my last year at uni. And I found basic Japanese course: _[JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html)_ in the 
+I was looking for _fun_ for my last year at uni. And I found basic Japanese course: _[JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html)_ in the
 list of course offerings. I decided to take this course and I did.
 The reason I can now converse in Japanese is all thanks to this course.
 
@@ -67,7 +67,7 @@ My vocabulary is limited since I didn't study extensively (and still don't), so 
 
 But it's okay. I'm not a professional debater, and if there's a word I don't understand, I can simply explain it using more words. It's satisfying to be able to express everything in plain language that even an 8-year-old boy can comprehend.
 
-In my view, language serves the purpose of transferring your mental image to another person's brain. 
+In my view, language serves the purpose of transferring your mental image to another person's brain.
 It's okay if it takes time to deliver the image. It's also okay if your image is little crooked.
 Just go and talk.
 

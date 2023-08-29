@@ -1,7 +1,7 @@
 ---
-title: "1669. Merge In Between Linked Lists"
-posttitle: "1669. Merge In Between Linked Lists"
-date: "2023-08-23 21:04:00"
+title: '1669. Merge In Between Linked Lists'
+posttitle: '1669. Merge In Between Linked Lists'
+date: '2023-08-23 21:04:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -27,25 +27,25 @@ The process is quite straightforward:
 The time complexity is `O(N + M), N = list1 size and M = list2 size`
 
 ```ts
-type NodeOrNull = ListNode | null;
+type NodeOrNull = ListNode | null
 function mergeInBetween(
   list1: NodeOrNull,
   a: number,
   b: number,
   list2: NodeOrNull
 ): NodeOrNull {
-  let dummy = list1;
-  let dummy2 = list1.next;
-  while (b--) dummy2 = dummy2.next;
+  let dummy = list1
+  let dummy2 = list1.next
+  while (b--) dummy2 = dummy2.next
 
-  while (a-- > 1) dummy = dummy.next;
+  while (a-- > 1) dummy = dummy.next
 
-  dummy.next = list2;
+  dummy.next = list2
 
-  let dummy3 = list2;
-  while (dummy3 && dummy3.next) dummy3 = dummy3.next;
-  dummy3.next = dummy2;
+  let dummy3 = list2
+  while (dummy3 && dummy3.next) dummy3 = dummy3.next
+  dummy3.next = dummy2
 
-  return list1;
+  return list1
 }
 ```

@@ -1,7 +1,7 @@
 ---
-title: "2. Add Two Numbers"
-posttitle: "2. Add Two Numbers"
-date: "2023-08-12 11:00:00"
+title: '2. Add Two Numbers'
+posttitle: '2. Add Two Numbers'
+date: '2023-08-12 11:00:00'
 ---
 
 - Difficulty: 😾 Medium
@@ -29,64 +29,64 @@ function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null
 ): ListNode | null {
-  if (!l1 || !l2) return null;
+  if (!l1 || !l2) return null
 
-  let z1 = l1.val == 0 ? 1 : 0;
-  let z2 = l2.val == 0 ? 1 : 0;
+  let z1 = l1.val == 0 ? 1 : 0
+  let z2 = l2.val == 0 ? 1 : 0
 
-  let n1: bigint = BigInt(l1.val);
-  let n2: bigint = BigInt(l2.val);
-  let leading = l1.val == 0;
-  l1 = l1.next;
+  let n1: bigint = BigInt(l1.val)
+  let n2: bigint = BigInt(l2.val)
+  let leading = l1.val == 0
+  l1 = l1.next
 
   while (l1) {
     if (leading && l1.val == 0) {
-      z1 += 1;
+      z1 += 1
     } else {
-      leading = false;
+      leading = false
     }
-    n1 *= BigInt(10);
-    n1 += BigInt(l1.val);
-    l1 = l1.next;
+    n1 *= BigInt(10)
+    n1 += BigInt(l1.val)
+    l1 = l1.next
   }
 
-  leading = l2.val == 0;
-  l2 = l2.next;
+  leading = l2.val == 0
+  l2 = l2.next
 
   while (l2) {
     if (leading && l2.val == 0) {
-      z2 += 1;
+      z2 += 1
     } else {
-      leading = false;
+      leading = false
     }
-    n2 *= BigInt(10);
-    n2 += BigInt(l2.val);
-    l2 = l2.next;
+    n2 *= BigInt(10)
+    n2 += BigInt(l2.val)
+    l2 = l2.next
   }
 
-  n1 = BigInt(n1.toString().split("").reverse().join(""));
-  n2 = BigInt(n2.toString().split("").reverse().join(""));
+  n1 = BigInt(n1.toString().split('').reverse().join(''))
+  n2 = BigInt(n2.toString().split('').reverse().join(''))
 
   while (z1) {
-    n1 *= BigInt(10);
-    z1 -= 1;
+    n1 *= BigInt(10)
+    z1 -= 1
   }
   while (z2) {
-    n2 *= BigInt(10);
-    z2 -= 1;
+    n2 *= BigInt(10)
+    z2 -= 1
   }
 
-  let n3 = (n1 + n2).toString().split("").reverse();
-  let curr = new ListNode(+n3.shift());
-  let temp = curr;
+  let n3 = (n1 + n2).toString().split('').reverse()
+  let curr = new ListNode(+n3.shift())
+  let temp = curr
 
   while (n3.length > 0) {
-    const newNode = new ListNode(+n3.shift());
-    temp.next = newNode;
-    temp = temp.next;
+    const newNode = new ListNode(+n3.shift())
+    temp.next = newNode
+    temp = temp.next
   }
 
-  return curr;
+  return curr
 }
 ```
 
@@ -104,38 +104,38 @@ function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null
 ): ListNode | null {
-  let carry = 0;
-  let head1 = l1;
-  let head2 = l2;
+  let carry = 0
+  let head1 = l1
+  let head2 = l2
 
   while (l1 || l2) {
     if (l1.next && !l2.next) {
-      l2.next = new ListNode(0);
+      l2.next = new ListNode(0)
     } else if (!l1.next && l2.next) {
-      l1.next = new ListNode(0);
+      l1.next = new ListNode(0)
     }
-    l1 = l1.next;
-    l2 = l2.next;
+    l1 = l1.next
+    l2 = l2.next
   }
 
-  l1 = head1;
-  l2 = head2;
+  l1 = head1
+  l2 = head2
 
   while (l1 && l2) {
-    let sum = l1.val + l2.val + carry;
-    carry = sum >= 10 ? 1 : 0;
-    l1.val = sum % 10;
+    let sum = l1.val + l2.val + carry
+    carry = sum >= 10 ? 1 : 0
+    l1.val = sum % 10
 
     if (!l1.next && !l2.next && carry) {
-      l1.next = new ListNode(1);
-      carry = 0;
-      break;
+      l1.next = new ListNode(1)
+      carry = 0
+      break
     }
-    l1 = l1.next;
-    l2 = l2.next;
+    l1 = l1.next
+    l2 = l2.next
   }
 
-  return head1;
+  return head1
 }
 ```
 
@@ -153,22 +153,22 @@ function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null
 ): ListNode | null {
-  let dummyHead = new ListNode(0);
-  let curr = dummyHead;
-  let carry = 0;
+  let dummyHead = new ListNode(0)
+  let curr = dummyHead
+  let carry = 0
 
   while (l1 || l2 || carry) {
-    let x = l1 ? l1.val : 0;
-    let y = l2 ? l2.val : 0;
-    let sum = carry + x + y;
-    carry = Math.floor(sum / 10);
-    curr.next = new ListNode(sum % 10);
-    curr = curr.next;
-    l1 = l1 ? l1.next : null;
-    l2 = l2 ? l2.next : null;
+    let x = l1 ? l1.val : 0
+    let y = l2 ? l2.val : 0
+    let sum = carry + x + y
+    carry = Math.floor(sum / 10)
+    curr.next = new ListNode(sum % 10)
+    curr = curr.next
+    l1 = l1 ? l1.next : null
+    l2 = l2 ? l2.next : null
   }
 
-  return dummyHead.next;
+  return dummyHead.next
 }
 ```
 

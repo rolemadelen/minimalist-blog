@@ -11,8 +11,8 @@ The `filter()` function calls a predicate function on every element and filters 
 ![predicate](/images/predicate.webp)
 
 ```js
-let nums = [0, 1, 2, 3, 4, 5, 6];
-nums.filter((x) => x * 2); // [1, 2, 3, 4, 5, 6]
+let nums = [0, 1, 2, 3, 4, 5, 6]
+nums.filter((x) => x * 2) // [1, 2, 3, 4, 5, 6]
 ```
 
 In this example, the predicate function `x * 2` is used to determine whether each item should be filtered or not. In JavaScript, non-zero values are considered `true`. As a result, all elements except 0 have passed the test and been included in the filtered array.
@@ -24,8 +24,8 @@ The `map()` function creates a new array by applying a callback function to each
 ![callback](/images/callback.webp)
 
 ```js
-let nums = [0, 1, 2, 3, 4, 5, 6];
-nums.map((x) => x * 2); // [0, 2, 4, 6, 8, 10, 12];
+let nums = [0, 1, 2, 3, 4, 5, 6]
+nums.map((x) => x * 2) // [0, 2, 4, 6, 8, 10, 12];
 ```
 
 The `map(callback)` function executes the callback function on each item of the array and stores the returned values in a new array. The function continues this process until all items have been processed, and finally returns the new array.

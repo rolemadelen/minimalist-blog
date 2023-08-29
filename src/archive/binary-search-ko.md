@@ -13,9 +13,9 @@ uid: 'bc'
 
 예를 들어 리스트 `[1,2,3,4,5]`가 있고, `2`를 찾고자 한다. 과정은 아래와 같다.
 
--   [1,2,3,4,5] → `3`과 비교. `3 > 2`이므로 `3` 이후에 있는 요소들은 검색 범위에서 제외.
--   [1,2] → `1`과 비교. `1 < 2` 이므로 `1`이전에 있는 요소들을 검색 범위에서 제외.
--   [2] → `2`와 비교. `2 == 2` 값을 찾았으므로 인덱스를 반환.
+- [1,2,3,4,5] → `3`과 비교. `3 > 2`이므로 `3` 이후에 있는 요소들은 검색 범위에서 제외.
+- [1,2] → `1`과 비교. `1 < 2` 이므로 `1`이전에 있는 요소들을 검색 범위에서 제외.
+- [2] → `2`와 비교. `2 == 2` 값을 찾았으므로 인덱스를 반환.
 
 ## 복잡도
 
@@ -58,29 +58,29 @@ END BinarySearch
 
 ```ts
 interface Array<T> {
-    binarySearch(target: number): number;
+  binarySearch(target: number): number
 }
 
 Array.prototype.binarySearch = function (target) {
-    let low = 0;
-    let high = this.length - 1;
+  let low = 0
+  let high = this.length - 1
 
-    while (low <= high) {
-        let mid = Math.floor(low + (high - low) / 2);
-        if (this[mid] === target) {
-            return mid;
-        }
-
-        if (this[mid] > target) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
+  while (low <= high) {
+    let mid = Math.floor(low + (high - low) / 2)
+    if (this[mid] === target) {
+      return mid
     }
-    return -1;
-};
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    if (this[mid] > target) {
+      high = mid - 1
+    } else {
+      low = mid + 1
+    }
+  }
+  return -1
+}
 
-console.log(arr.binarySearch(3));
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+console.log(arr.binarySearch(3))
 ```
