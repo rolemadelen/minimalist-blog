@@ -11,7 +11,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-#### last updated on August 27th, 2023
+#### last updated on August 28th, 2023
 
 - Day 1. 😾 [Add Two Numbers](/leetcode/2-add-two-numbers)
 - Day 2. 😾 [Remove Nth Node From End of List ](/leetcode/19-remove-nth-node-from-end-of-list)
@@ -29,3 +29,4 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 - Day 14. None
 - Day 15. 🍰 [Find Center of Star Graph](/leetcode/1791-find-center-of-star-graph)
 - Day 16. 🍰 [Find if Path Exists in Graph](/leetcode/1971-find-if-path-exists-in-graph)
+- Day 17. 🍰 [Find the Town Judge](/leetcode/997-find-the-town-judge)
