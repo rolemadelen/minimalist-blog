@@ -10,7 +10,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-#### last updated on August 28th, 2023
+#### last updated on August 29th, 2023
 
 - Day 1. 😾 [Add Two Numbers](/leetcode/2-add-two-numbers)
 - Day 2. 😾 [Remove Nth Node From End of List ](/leetcode/19-remove-nth-node-from-end-of-list)
