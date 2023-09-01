@@ -4,20 +4,13 @@ import remarkGfm from 'remark-gfm'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vs } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-import { CodeComponent } from 'react-markdown/lib/ast-to-react'
 
 interface PreviewProps {
   markdown: string
 }
 
-interface CodeRendererProps {
-  inline: boolean
-  className: string
-  children: React.ReactNode
-}
-
 const Preview: React.FC<PreviewProps> = ({ markdown }) => {
-  const codeRenderer: React.FC<CodeRendererProps> = ({
+  const codeRenderer: React.FC<any> = ({
     inline,
     className,
     children,
