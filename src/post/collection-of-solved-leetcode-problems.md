@@ -30,4 +30,4 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 - Day 16. 🍰 [Find if Path Exists in Graph](/leetcode/1971-find-if-path-exists-in-graph)
 - Day 17. 🍰 [Find the Town Judge](/leetcode/997-find-the-town-judge)
 - Day 18. 😾 [Clone Graph](/leetcode/133-clone-graph)
-- Day 19. 😾 [Clone Graph](/leetcode/797-all-paths-from-source-to-target)
+- Day 19. 😾 [All Paths From Source to Target](/leetcode/797-all-paths-from-source-to-target)
