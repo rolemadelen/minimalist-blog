@@ -6,9 +6,7 @@ const About = () => {
       <div className="mb-16">
         <div className="border-b mb-16">
           <h1 className="text-5xl mt-36 leading-tight">Jii Eu</h1>
-          <h2 className="text-md text-gray-500 mb-8 leading-loose">
-            Front-End Developer
-          </h2>
+          <h2 className="text-md mb-8 leading-loose">Front-End Developer</h2>
           <div className="mb-8">
             <ul className="flex justify-evenly text-xs w-56 mx-auto">
               <li>
