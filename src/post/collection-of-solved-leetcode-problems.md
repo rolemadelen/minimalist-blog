@@ -10,7 +10,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-#### last updated on September 11th, 2023
+#### last updated on September 12nd, 2023
 
 ### August (21 problems solved in 19 days)
 
@@ -55,11 +55,11 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-### September
+### September (10 problems solved in 12 days)
 
 - 09/09
   - 🍰 [Counting Bits](/leetcode/338-counting-bits)
-- 09/11
+- 09/10
   - 🍰 [Merge Strings Alternatively](/leetcode/1768-merge-strings-alternatively)
   - 🍰 [Greatest Common Divisor of Strings](/leetcode/1071-greatest-common-divisor-of-strings)
   - 🍰 [Kids With the Greatest Number of Candies](/leetcode/1431-kids-with-the-greatest-number-of-candies)
@@ -67,3 +67,6 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
   - 🍰 [Reverse Vowels of a String](/leetcode/345-reverse-vowels-of-a-string)
   - 😾 [Reverse Words in a String](/leetcode/151-reverse-words-in-a-string)
   - 😾 [Product of Array Except Self](/leetcode/238-product-of-array-except-self)
+- 09/12
+  - 😾 [Increasing Triplet Subsequence](/leetcode/334-increasing-triplet-subsequence)
+  - 😾 [String Compression](/leetcode/443-string-compression)
