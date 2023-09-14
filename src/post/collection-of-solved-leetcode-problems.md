@@ -55,7 +55,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-### September (10 problems solved in 12 days)
+### September (12 problems solved in 14 days)
 
 - 09/09
   - 🍰 [Counting Bits](/leetcode/338-counting-bits)
@@ -70,3 +70,6 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 - 09/12
   - 😾 [Increasing Triplet Subsequence](/leetcode/334-increasing-triplet-subsequence)
   - 😾 [String Compression](/leetcode/443-string-compression)
+- 09/14
+  - 🍰 [Move Zeroes](/leetcode/283-move-zeroes)
+  - 🍰 [Is Subsequence](/leetcode/382-is-subsequence)
