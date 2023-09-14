@@ -72,4 +72,4 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
   - 😾 [String Compression](/leetcode/443-string-compression)
 - 09/14
   - 🍰 [Move Zeroes](/leetcode/283-move-zeroes)
-  - 🍰 [Is Subsequence](/leetcode/382-is-subsequence)
+  - 🍰 [Is Subsequence](/leetcode/392-is-subsequence)
