@@ -10,8 +10,6 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-#### last updated on September 12nd, 2023
-
 ### August (21 problems solved in 19 days)
 
 - 08/12
