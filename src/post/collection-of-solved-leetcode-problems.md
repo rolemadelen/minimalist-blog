@@ -53,7 +53,7 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
 
 ---
 
-### September (15 problems solved in 16 days)
+### September (16 problems solved in 17 days)
 
 - 09/09
   - 🍰 [Counting Bits](/leetcode/338-counting-bits)
@@ -76,3 +76,5 @@ The levels of difficulty are visually represented by emoticons: 🍰 (_shortcake
   - 😾 [Max Number of K-Sum Pairs](/leetcode/1679-max-number-of-k-sum-pairs)
 - 09/16
   - 🍰 [Maximum Average Subarray I](/leetcode/643-maximum-average-subarray-i)
+- 09/17
+  - 😾 [Maximum Number of Vowels in a Substring of Given Length](/leetcode/1456-maximum-number-of-vowels-in-a-substring-of-given-length)
