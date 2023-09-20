@@ -1,10 +1,9 @@
 ---
 title: 'Résumé of Success'
 date: '2023-05-10 17:00:00'
-updated: '2023-06-19 10:50:00'
 ---
 
-#### last updated on June 19th, 2023
+#### last updated on September 20th, 2023
 
 Let me share with you a glimpse into my proudest moments, achievements and unforgettable experiences. While some may be buried in the depths of my memory, I acknowledge that I may have inadvertently missed a few along the way.
 
@@ -73,3 +72,4 @@ Let me share with you a glimpse into my proudest moments, achievements and unfor
 - Upon returning home, I successfully passed the written driver's license test and obtained my Kentucky identification.
 - Our first attempt at floor installation turned out to be a triumph!
 - Currently learning how to play the shinobue, exploring the beautiful melodies of this traditional Japanese flute.
+- Volunteered as a freelance front-end developer and revapmed the Asayake Taiko website using my skills. I'm glad they like it.
