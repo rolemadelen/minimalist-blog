@@ -12,6 +12,16 @@ const About = () => {
               <li>
                 <a
                   className="hover:line-through"
+                  href="https://www.jiieu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:line-through"
                   href="https://github.com/rolemadelen"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -35,7 +45,7 @@ const About = () => {
 
         <div className="content mb-10 text-left border-b pb-16">
           <p>
-            I was born in
+            I was born in{' '}
             <a href="https://www.google.com/search?q=andong+south+korea&oq=Andong+south+korea&sourceid=chrome&ie=UTF-8">
               Andong
             </a>
@@ -61,7 +71,7 @@ const About = () => {
             However, my passion for understanding user experiences and
             interfaces led me to switch my major to Human-Computer-Interaction.
             As my fascination with web development grew, I began creating
-            personal bolgs as a way to practice and refine my skills. Following
+            personal blogs as a way to practice and refine my skills. Following
             my graduation from UCSD, I moved to Japan and got my first
             professional work experience as a front-end developer at a
             healthcare startup.

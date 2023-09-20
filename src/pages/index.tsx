@@ -22,8 +22,9 @@ const Blog: React.FC<Posts> = ({ posts }) => {
   const displayYear = useCallback((d: any) => {
     let postYear = d.split('-')[0]
 
-    if (year.current === postYear) return ''
-    else {
+    if (year.current === postYear) {
+      return ''
+    } else {
       year.current = postYear
 
       return (

@@ -11,15 +11,15 @@ interface Frontmatter {
   [key: string]: any
 }
 
-export function getAllPosts() {
+export function getAllPosts(): Frontmatter {
   const fileNames = fs.readdirSync(postDirectory)
 
   const allpostData: Frontmatter = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, '')
+    const slug: string = fileName.replace(/\.md$/, '')
 
     // Read markdown file as string
-    const fullPath = path.join(postDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const fullPath: string = path.join(postDirectory, fileName)
+    const fileContents: string = fs.readFileSync(fullPath, 'utf8')
 
     // Use gray-matter to parse the post metadata section
     const { data: frontmatter } = matter(fileContents)
