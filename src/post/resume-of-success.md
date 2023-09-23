@@ -72,4 +72,4 @@ Let me share with you a glimpse into my proudest moments, achievements and unfor
 - Upon returning home, I successfully passed the written driver's license test and obtained my Kentucky identification.
 - Our first attempt at floor installation turned out to be a triumph!
 - Currently learning how to play the shinobue, exploring the beautiful melodies of this traditional Japanese flute.
-- Volunteered as a freelance front-end developer and revapmed the Asayake Taiko website using my skills. I'm glad they like it.
+- Volunteered as a freelance front-end developer and revamped the [Asayake Taiko website](https://asayaketaiko.ucsd.edu) using my skills. I'm glad they like it.
