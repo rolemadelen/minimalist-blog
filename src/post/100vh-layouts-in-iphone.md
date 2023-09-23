@@ -5,13 +5,13 @@ date: '2023-06-26 18:04:00'
 
 I was frustrated when I discovered that the top and bottom portions of my portfolio
 were blocked by the iOS address bar on my iPhone XR. Surprisingly, it appeared perfectly
-fine on my SE and 2nd gen iPad Air, but only on the iPhone XR did the status and address bar
+fine on my SE and 2nd Gen. iPad Air, but only on the iPhone XR did the status and address bar
 overlapped and hid my name from my own portfolio.
 
 ![div100vh](/images/div100vh-1.webp)
 
 One quick solution to address this issue is by utilizing CSS media queries.
-By targetting the specific device dimensions of the iPhone XR, I can make adjustments to
+By targeting the specific device dimensions of the iPhone XR, I can make adjustments to
 ensure the optimal display of my portfolio on this particular device.
 
 ```text
