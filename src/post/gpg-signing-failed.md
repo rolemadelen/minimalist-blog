@@ -15,23 +15,29 @@ gpg: signing failed: Inappropriate ioctl for device
 It took me approximately 15 minutes to resolve this error, and here are the steps I took to fix it.
 
 1. Add the following line to `~/.gnupg/gpg.conf`.
-   ```conf
-   use-agent
-   pinentry-mode loopback
-   ```
+
+```conf
+use-agent
+pinentry-mode loopback
+```
+
 2. Create or modify the `~/.gnupg/gpg-agent.conf`.
-   ```conf
-   allow-loopback-pinentry
-   ```
+
+```conf
+allow-loopback-pinentry
+```
+
 3. Restart the GPG agent.
-   ```sh
-   echo RELOADAGENT | gpg-connect-agent
-   ```
+
+```sh
+echo RELOADAGENT | gpg-connect-agent
+```
+
 4. (optional) You might need to set the `GPG-TTY`.
 
-   ```sh
-   export GPG_TTY=$(tty)
-   ```
+```sh
+export GPG_TTY=$(tty)
+```
 
 ### Reference
 
