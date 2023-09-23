@@ -22,5 +22,5 @@ but it's a great way to showcase my skills and demonstrate to employers how enth
 I am as a front-end developer (_I hope_).
 
 I'm still updating my portfolio based on the feedback I received from many great
-people I asked to review it, but here it is, [my portfolio](https://www.jiieu.com)
+people I asked to review it, but here it is, [my portfolio](https://rolemadelen.github.io)
 website.
