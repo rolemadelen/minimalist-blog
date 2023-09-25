@@ -1,17 +1,31 @@
 ---
 title: 'What is a Data Structure?'
 date: '2022-07-04 22:20:00'
-updated: '2023-06-19 10:53:00'
+updated: '2023-09-25 14:05:00'
 ---
 
-#### Last updated on June 19th, 2023
+#### Last updated on September 25th, 2023
 
-A data structure is a well-organized collection of data, intended to be accessed and modified efficiently through dedicated operations.
-Data structures can be categorized into two main types: _Linear Data Structures_ and _Non-Linear Data Structures_.
+A data structure represents a specialized format for organizing, processing, retrieving, and storing data. It makes it easier and more efficient for developers to work with data elements.
+
+### Why should we know Data Structures?
+
+Understanding data structures is crucial for several reasons. Firstly, data structures serve as the fundamental building blocks for creating more advanced applications. Additionally, familiarity with various data structures is essential because it gives you more opportunity to enhance algorithmic performance, leading to faster execution times.
+
+Choosing an ill-suited data structure will result in slower runtime and, in the worst case, your program may stop running due to the algorithm being too slow with the selected data structure.
+
+### Characteristics of Data Structures
+
+Characteristics of data structures are determined based on the following factors: ❶ whether data elements are stored sequentially, ❷ whether all data elements are of the same type, and ❸ whether the structure can be altered during the runtime.
+
+1. Data structures are considered **linear** when data elements are stored sequentially; otherwise, they are deemed **non-linear**.
+2. A data structure is **homogeneous** if it imposes a constraint that only the same data type can be stored, and **heterogenous** if it allows different data types.
+3. When a data structure has a fixed size, structure, and memory location, it is referred to as **static**. Conversely, if a data structure has a size, structure, and memory location that can be modified during the runtime, it is termed **dynamic**
 
 ### Linear Data Structure
 
 A linear data structure is defined by elements arranged sequentially, one after another.
+
 Examples of linear data structures include: _Arrays_, _Linked Lists_, _Stacks_, and _Queues_.
 
 ![Linear Data Structure](/images/linear-data-structure.gif)
@@ -26,6 +40,7 @@ Linear data structures exhibit the following characteristics:
 ### Non-Linear Data Structure
 
 A non-linear data structure does not adhere to a specific sequence for storing its elements. Instead, it organizes them in a hierarchical manner where each element is connected to one or more other elements.
+
 Examples of non-linear data structures include: _Trees_ and _Graphs_.
 
 ![Non-Linear Data Structure](/images/nonlinear-data-structure.gif)
@@ -36,7 +51,3 @@ Non-linear data structures exhibit the following characteristics:
 - The elements are organized hierarchically, with multiple layers.
 - Visiting all elements typically requires multiple passes through the structure.
 - Memory utilization efficiency varies across different non-linear structures.
-
-### Reference
-
-- <https://www.programiz.com/dsa/data-structure-types>
