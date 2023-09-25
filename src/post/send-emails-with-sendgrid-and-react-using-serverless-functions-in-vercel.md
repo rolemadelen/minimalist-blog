@@ -3,13 +3,13 @@ title: 'Build a Contact Form Using Serverless Functions in Vercel'
 date: '2023-09-22 10:00'
 ---
 
-### Install Dependencies
+## Install Dependencies
 
 ```sh
 $ pnpm install @sendgrid/mail
 ```
 
-### Create a Serverless API Route
+## Create a Serverless API Route
 
 Vercel will turn all code inside the `api` directory into serverless functions.
 
@@ -83,7 +83,7 @@ async function sendEmail(req, res) {
 }
 ```
 
-### Call the API and Handle Responses
+## Call the API and Handle Responses
 
 I have a contact form on my page, similar to the one below. When a viewer fills out all the form inputs and submits the form, the `handleSubmit` function takes over, allowing us to call the API.
 
@@ -130,7 +130,7 @@ const handleSubmit = async (e: BaseSyntheticEvent) => {
 
 However, the end-user cannot know whether the email was successfully sent because we lack a UI to distinguish between these two states. To address this, I'm going to use a toast message.
 
-### React Hot Toast
+## React Hot Toast
 
 I'm going to use [react-hot-toast](https://github.com/timolins/react-hot-toast), a lightweight library that allows you to create notification messages in a React project.
 

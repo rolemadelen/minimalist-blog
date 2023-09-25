@@ -12,7 +12,3 @@ After using the application for about an hour, I decided not to continue using i
 First, it lacks proper support for recognizing files written in other languages. Even when I pasted the document title to link the file, the application couldn't locate it. Additionally, the display didn't suit my preferences. When clicking on folders, there were two options for displaying documents: 'Feed' or 'Cards.' Both options had a cluttered user interface and made it difficult to locate specific documents (once again, this is just personal preference).
 
 However, I did appreciate the ability to focus on a single sentence within a paragraph by highlighting the current reading section. I also liked the feature that allowed for continuous opening of documents in a single window, scrolling from left to right.
-
-### Reference
-
-- <https://www.tangentnotes.com/>

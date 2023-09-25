@@ -29,7 +29,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
         <meta content={title} property="og:description" />
         <meta content={title} property="twitter:description" />
       </Head>
-      <div className="post max-w-[36rem] m-auto px-6">
+      <div className="post max-w-[40rem] m-auto px-6">
         <div className="post-title text-3xl mb-3 mt-36 leading-normal">
           {title}
         </div>

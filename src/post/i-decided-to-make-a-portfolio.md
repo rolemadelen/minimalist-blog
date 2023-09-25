@@ -15,7 +15,7 @@ yet it contains enough information to show who you are and the amazing things yo
 I started looking up some portfolios, and they were full of
 inspiration — [Lauren Waller](https://www.lauren-waller.com/) and [Lee Boa](http://leeboa.com/).
 
-## "This is it!"
+---
 
 A good portfolio is what I need. Obviously, it won't magically get me a job,
 but it's a great way to showcase my skills and demonstrate to employers how enthusiastic

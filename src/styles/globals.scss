@@ -10,7 +10,7 @@
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: 'Times', sans-serif;
+  font-family: Times, sans-serif;
   color: #555;
 }
 
@@ -20,16 +20,13 @@
 
 .post {
   h2 {
-    margin: 2.5rem auto 1rem;
-    text-align: center;
+    margin: 3rem 0 0.5rem;
     font-size: 1.5rem;
-    font-style: italic;
   }
 
   h3 {
-    margin: 3rem auto 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+    font-size: 1.3rem;
   }
 
   h4 {
@@ -115,7 +112,7 @@
 
     pre,
     img {
-      margin: 2rem auto;
+      margin: 1rem auto;
 
       & > div {
         border-radius: 0.5rem;
@@ -175,7 +172,6 @@ h6 {
   font-size: 0.8rem;
   padding-top: 2rem;
   margin-top: 2rem;
-  color: gray;
   h2 {
     display: none;
   }
@@ -194,10 +190,6 @@ h6 {
   }
 }
 
-.post-content {
-  li > a {
-  }
-}
 .post-list {
   &:hover {
     div {
