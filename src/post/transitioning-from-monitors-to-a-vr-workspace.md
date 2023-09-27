@@ -15,7 +15,7 @@ Gazing at my desk cluttered with 24 and 32-inch monitors[^a] and various unneces
 
 Inspired by this person, I yearned for a minimalistic lifestyle with fewer belongings (this may not what this person was aiming for but anyway).
 
-## "Will VR coding really work?"
+## Will VR coding really work?
 
 I needed to be cautious. I didn't want to impulsively spend hundreds of dollars on a device and end up regretting it if it didn't work well for me.
 So, I decided to conduct some research.
@@ -26,7 +26,7 @@ First and foremost, is it possible to read texts and code comfortably in VR? The
 
 [𝒽𝓂](https://twitter.com/hmartapp) confirms, "Yes, the text is easily readable."
 
-## "Is it going to hurt your eyes?"
+## Is it going to hurt your eyes?
 
 Next, I became curious about eye fatigue.
 I wondered if prolonged use of a VR device would cause eye fatigue. This topic concerned me even more since I had recently undergone LASIK surgery and wanted to protect my eyesight.
@@ -42,7 +42,7 @@ I'm currently using the [Flow](https://flowapp.info/) pomodoro app, which helps 
 
 Fortunately, with the pomodoro timer, I can give both my eyes and neck regular breaks, which is fantastic.
 
-## "Is he still using it?"
+## Is he still using it?
 
 With all my questions answered, there was one final task remaining. I wanted to know if 𝒽𝓂 is still using the VR workspace, considering it has been around a year since the tweet was posted.
 I reached out to 𝒽𝓂 through Twitter, and to my delight, received a response the following day.
