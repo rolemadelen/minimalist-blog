@@ -3,6 +3,7 @@ import Preview from '@/lib/codeblock'
 import { getAllPostIds, getPostData } from '@/lib/blog'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import ProgressBar from '@/components/ProgressBar'
 import Comment from '@/lib/giscus'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPropsContext } from 'next'
@@ -29,6 +30,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
         <meta content={title} property="og:description" />
         <meta content={title} property="twitter:description" />
       </Head>
+      <ProgressBar />
       <div className="post max-w-[40rem] m-auto px-6">
         <div className="post-title text-3xl mb-3 mt-36 leading-normal">
           {title}

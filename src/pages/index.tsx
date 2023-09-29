@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ProgressBar from '@/components/ProgressBar'
 import { getAllPosts } from '@/lib/blog'
 import Link from 'next/link'
 import React, { useCallback, useRef } from 'react'
@@ -44,6 +45,7 @@ const Blog: React.FC<Posts> = ({ posts }) => {
   return (
     <>
       <Header />
+      <ProgressBar />
       <div className="max-w-[36rem] m-auto mb-20 px-6">
         {posts.map(({ date, slug, title }, i) => {
           const formattedYear = displayYear(date.split(' ')[0])

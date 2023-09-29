@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+
+import ProgressBar from '@/components/ProgressBar'
+
 const Document = () => {
   return (
     <Html lang="en">
