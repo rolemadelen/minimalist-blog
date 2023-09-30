@@ -1,5 +1,5 @@
 ---
-title: 'Setting environment variables in fish shell (feat. rustup)'
+title: 'How to install rustp using the fish shell'
 date: '2023-06-15 20:00:00'
 ---
 
