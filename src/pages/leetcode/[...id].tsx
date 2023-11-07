@@ -36,8 +36,8 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
         <div className="flex justify-between items-center mb-20">
           <div className="text-[#777] w-fit">{formattedDate}</div>
           <Link href="/" title="Back to home">
-            <div className="border-[1px] w-fit rounded-md pl-5 pr-3 border-gray-300 ml-auto hover:bg-black hover:text-[#eee] duration-200">
-              ⃪
+            <div className="border-[1px] w-fit rounded-lg border-gray-300 hover:bg-black hover:border-black hover:text-[#eee] duration-200 flex justify-center items-center px-2 pb-1">
+              ←
             </div>
           </Link>
         </div>

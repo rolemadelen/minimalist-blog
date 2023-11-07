@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '/public/fonts/satoshi.scss';
+
 @function px2rem($px) {
   @return #{$px / 16}rem;
 }
+
+$--color-h1: #03045e;
+$--color-h2: #0077b6;
+$--color-h3: #00b4db;
 
 :root {
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: Times, sans-serif;
+  font-family: Satoshi, Times, sans-serif;
   color: #555;
 }
 
@@ -19,18 +25,30 @@
 }
 
 .post {
+  h1,
   h2,
   h3 {
-    font-style: italic;
+    letter-spacing: 0.5px;
   }
-  h2 {
+
+  h1 {
     margin: 3rem 0 0.5rem;
     font-size: 1.6rem;
+    color: $--color-h1;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.4rem;
+    color: $--color-h2;
+    font-weight: 600;
   }
 
   h3 {
     margin: 2rem 0 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    color: $--color-h3;
   }
 
   h4 {
@@ -99,7 +117,8 @@
     }
 
     img {
-      border: 1px solid whitesmoke;
+      border: 1px solid #eee;
+      max-width: 80%;
 
       & ~ em {
         display: block;
@@ -157,6 +176,10 @@
       line-height: 1.5;
     }
   }
+}
+
+.post-content > p:first-child > img {
+  max-width: 100%;
 }
 
 body,
