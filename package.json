@@ -40,7 +40,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "sass": "^1.69.4",
+    "sass": "^1.69.5",
     "tailwind-styled-components": "^2.2.0",
     "typescript": "5.0.4"
   },
