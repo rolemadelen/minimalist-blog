@@ -20,7 +20,6 @@ interface Posts {
 const Blog: React.FC<Posts> = ({ posts }) => {
   const year = useRef('')
   const month = useRef<null | string>(null)
-  let app = useRef<HTMLElement | null>(null)
 
   const displayYear = useCallback((d: any) => {
     let postYear = d.split('-')[0]
@@ -98,12 +97,12 @@ const Blog: React.FC<Posts> = ({ posts }) => {
               <div className="relative">
                 {formattedYear}
 
+                {isNewMonth(formattedMonth) && (
+                  <div className="mt-8 text-[#ccc] mb-2 text-md">
+                    {month.current}
+                  </div>
+                )}
                 <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
-                  {isNewMonth(formattedMonth) && (
-                    <div className="mt-8 text-[#ccc] mb-2 text-md">
-                      {month.current}
-                    </div>
-                  )}
                   <div className="post-list items-center flex text-md mb-2">
                     <div className="hidden sm:block flex-[0.125] text-[#ccc] text-sm">
                       {formattedDate}

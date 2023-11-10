@@ -111,7 +111,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
       counts[headLevel - 1] += 1
     })
 
-    return `<ul class="max-w-[20rem] hidden lg:block lg:fixed left-[2vw] top-0 mt-52">${listItems}</ul>`
+    return `<ul class="max-w-[20rem] hidden lg:block lg:fixed left-[2%] top-0 mt-52">${listItems}</ul>`
   }
   return (
     <>
@@ -123,7 +123,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
       </Head>
       <ProgressBar />
 
-      <div className="post max-w-[40rem] m-auto px-6">
+      <div className="post max-w-[40rem] m-auto px-6 relative">
         <div className="post-title text-4xl mb-3 mt-36 leading-normal">
           {title}
         </div>
