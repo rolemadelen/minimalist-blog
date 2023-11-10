@@ -298,4 +298,14 @@ h6 {
   .h3:hover {
     color: $--color-h3;
   }
+
+  .h1.toc--active {
+    color: $--color-h1 !important;
+  }
+  .h2.toc--active {
+    color: $--color-h2 !important;
+  }
+  .h3.toc--active {
+    color: $--color-h3 !important;
+  }
 }

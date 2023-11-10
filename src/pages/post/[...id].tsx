@@ -1,4 +1,4 @@
-import React, { createElement, useEffect } from 'react'
+import React, { createElement, useEffect, useRef } from 'react'
 import Preview from '@/lib/codeblock'
 import { getAllPostIds, getPostData } from '@/lib/blog'
 import Link from 'next/link'
@@ -17,6 +17,7 @@ interface IPost {
 }
 
 const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
+  const headingRefs = useRef<any[]>([])
   const toc = markdown.split('\n').filter((line) => line.trim().startsWith('#'))
   const formattedDate = new Date(date).toLocaleDateString('en-us', {
     year: 'numeric',
@@ -25,6 +26,43 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
   })
 
   useEffect(() => {
+    const allHeadings = document.querySelectorAll('h1, h2, h3')
+    headingRefs.current = Array.from({ length: allHeadings.length }, () =>
+      React.createRef()
+    )
+
+    const setRef = (index: number, element: Element) => {
+      headingRefs.current[index].current = element
+    }
+
+    allHeadings.forEach((heading, i) => {
+      setRef(i, heading)
+    })
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1,
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let toc = document.getElementById(`toc-${entry.target.id}`)
+          toc?.classList.add('toc--active')
+        } else {
+          let toc = document.getElementById(`toc-${entry.target.id}`)
+          toc?.classList.remove('toc--active')
+        }
+      })
+    }, options)
+
+    headingRefs.current.forEach((hRef) => {
+      if (hRef.current) {
+        observer.observe(hRef.current)
+      }
+    })
+
     const h1 = document.querySelectorAll('h1')
     const h2 = document.querySelectorAll('h2')
     const h3 = document.querySelectorAll('h3')
@@ -37,6 +75,14 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     }
     for (let i = 0; i < h3.length; ++i) {
       h3[i].id = `h3-${i}`
+    }
+
+    return () => {
+      headingRefs.current.forEach((hRef) => {
+        if (hRef.current) {
+          observer.unobserve(hRef.current)
+        }
+      })
     }
   }, [])
 
@@ -53,13 +99,15 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
   const createTOC = () => {
     let listItems = ''
     let counts = [0, 0, 0]
-    toc.forEach((item) => {
+    toc.forEach((item, i) => {
       let headLevel = getHeadingLevel(item)
       item = item.replace('#', '')
       item = item.replaceAll('#', '　')
       listItems += `<a href='#h${headLevel}-${
         counts[headLevel - 1]
-      }'><li class="h${headLevel} text-sm !list-none !left-0">${item}</li></a>`
+      }'><li id="toc-h${headLevel}-${
+        counts[headLevel - 1]
+      }"class="h${headLevel} text-sm !list-none !left-0">${item}</li></a>`
       counts[headLevel - 1] += 1
     })
 
