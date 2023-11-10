@@ -8,7 +8,7 @@ lang: 'ko'
 
 지금까지 내가 만들었던 블로그를 간략하게 소개해 보고자 한다.
 
-# Vue Blog
+# Vue 다국어 블로그
 
 [🔗 GitHub](https://github.com/rolemadelen/vue-blog)
 
@@ -18,7 +18,7 @@ lang: 'ko'
 
 ![blog-1](/images/blog-history/blog1.gif)
 
-# 첫번째 다국어 블로그
+# Jekyll 다국어 블로그 (테마 사용)
 
 [🔗 GitHub](https://github.com/euisblue/euisblue.github.io)
 
@@ -26,7 +26,7 @@ lang: 'ko'
 
 ![blog-2](/images/blog-history/blog2.gif)
 
-# 두번째 다국어 블로그
+# Next.js 다국어 블로그
 
 [🔗 GitHub](https://github.com/euisblue/bluelog)
 
@@ -59,7 +59,7 @@ lang: 'ko'
 그리고 메인 화면에서 모니터 해상도에 따라 뒷그림이 바뀌도록 해봤다. 첨언이지만 직접 그린 그림이다.
 ![blog-5-1](/images/blog-history/blog5-1.gif)
 
-# 현재 블로그
+# 현재
 
 위 과정을 거쳐서, 지금의 블로그에 이르게 되었다.
 근데 [이 글](./monthly-record-2023-10)을 읽어봤다면 알겠지만, 또 블로그를 새로 만들 준비를 하고 있다 (환장🤷🏻‍♂️)
