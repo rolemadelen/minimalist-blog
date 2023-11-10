@@ -42,7 +42,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 1,
+      threshold: 0.1,
     }
 
     const observer = new IntersectionObserver((entries) => {
