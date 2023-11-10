@@ -1,4 +1,4 @@
-import React, { createElement } from 'react'
+import React, { createElement, useEffect } from 'react'
 import Preview from '@/lib/codeblock'
 import { getAllPostIds, getPostData } from '@/lib/blog'
 import Link from 'next/link'
@@ -24,6 +24,22 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     day: 'numeric',
   })
 
+  useEffect(() => {
+    const h1 = document.querySelectorAll('h1')
+    const h2 = document.querySelectorAll('h2')
+    const h3 = document.querySelectorAll('h3')
+
+    for (let i = 0; i < h1.length; ++i) {
+      h1[i].id = `h1-${i}`
+    }
+    for (let i = 0; i < h2.length; ++i) {
+      h2[i].id = `h2-${i}`
+    }
+    for (let i = 0; i < h3.length; ++i) {
+      h3[i].id = `h3-${i}`
+    }
+  }, [])
+
   const getHeadingLevel = (str: string) => {
     const match = str.match(/^#+/)
     if (match) {
@@ -36,11 +52,15 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
 
   const createTOC = () => {
     let listItems = ''
+    let counts = [0, 0, 0]
     toc.forEach((item) => {
-      let headLevel = `h-${getHeadingLevel(item)}`
+      let headLevel = getHeadingLevel(item)
       item = item.replace('#', '')
       item = item.replaceAll('#', '　')
-      listItems += `<li class="${headLevel} text-sm !list-none !left-0">${item}</li>`
+      listItems += `<a href='#h${headLevel}-${
+        counts[headLevel - 1]
+      }'><li class="h${headLevel} text-sm !list-none !left-0">${item}</li></a>`
+      counts[headLevel - 1] += 1
     })
 
     return `<ul class="max-w-[20rem] hidden lg:block lg:fixed left-[2vw] top-0 mt-52">${listItems}</ul>`

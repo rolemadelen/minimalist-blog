@@ -278,20 +278,24 @@ h6 {
 }
 
 .toc {
-  .h-1,
-  .h-2,
-  .h-3 {
+  .h1,
+  .h2,
+  .h3 {
     letter-spacing: 0.5px;
     line-height: 1.5;
+    color: #aaa;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
-  .h-1 {
-    font-weight: 600;
+  .h1:hover {
     color: $--color-h1;
   }
-  .h-2 {
+  .h2:hover {
     color: $--color-h2;
   }
-  .h-3 {
+  .h3:hover {
     color: $--color-h3;
   }
 }

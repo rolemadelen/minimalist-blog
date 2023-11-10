@@ -20,8 +20,7 @@ interface Posts {
 const Blog: React.FC<Posts> = ({ posts }) => {
   const year = useRef('')
   const month = useRef<null | string>(null)
-
-  useEffect(() => {}, [])
+  let app = useRef<HTMLElement | null>(null)
 
   const displayYear = useCallback((d: any) => {
     let postYear = d.split('-')[0]
