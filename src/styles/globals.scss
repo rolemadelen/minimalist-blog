@@ -276,3 +276,22 @@ h6 {
     }
   }
 }
+
+.toc {
+  .h-1,
+  .h-2,
+  .h-3 {
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+  .h-1 {
+    font-weight: 600;
+    color: $--color-h1;
+  }
+  .h-2 {
+    color: $--color-h2;
+  }
+  .h-3 {
+    color: $--color-h3;
+  }
+}
