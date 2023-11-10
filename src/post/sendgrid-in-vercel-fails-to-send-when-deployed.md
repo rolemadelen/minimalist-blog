@@ -3,6 +3,8 @@ title: 'Sendgrid in Vercel fails to send and email when deployed'
 date: '2023-08-15 11:36:00'
 ---
 
+# SendGrid
+
 I've created a contact form for my recent side project, which sends an email to a designated account. To facilitate email delivery, I utilized a third-party mail service called [SendGrid](https://sendgrid.com/).
 
 The documentation provided by SendGrid was solid and easy to follow, making the integration process feel like a breeze.
@@ -35,9 +37,11 @@ I made modifications to the code and tested it locally, and it worked perfectly.
 
 ![contact form received](/images/contact-form-received.png)
 
+## Issues with Vercel
+
 After configuring SendGrid, I deployed the app to Vercel and tested the form. While there were no errors upon submission, unfortunately, the email didn't arrive. Despite testing multiple times, the outcome remained consistent. Interestingly, when I retried it in the local environment, it worked as expected. Hence, there appears to be an issue with my app in the production environment, particularly on Vercel.
 
----
+# Solution
 
 I found the solution on Stack Overflow.
 
@@ -57,7 +61,7 @@ try {
 }
 ```
 
----
+# Reference
 
 - https://stackoverflow.com/questions/73725033/sendgrid-emails-wont-send-when-deployed-to-vercel
 - https://github.com/orgs/vercel/discussions/116

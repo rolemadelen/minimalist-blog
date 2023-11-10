@@ -1,7 +1,9 @@
 ---
-title: 'Queue'
+title: 'What is a Queue?'
 date: '2023-03-15 15:00:00'
 ---
+
+# Queue
 
 A queue is a linear data structure where data is inserted at one end (`rear`) and removed from the opposite end (`front`).
 
@@ -10,16 +12,17 @@ This structure follows the principle of _First In, First Out_ (FIFO), where the 
 ![queue regi](/images/adrien-delforge-queue.webp)
 _Photo by [Adrien Delforge](https://unsplash.com/@adriendlf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/CrHG_ZYn1Dw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
-### Queue Operations
+## Queue Operations
 
 - **enqueue**: Adds data to the end of the queue.
 - **dequeue**: Removes the first item from the queue.
 - **isEmpty**: Checks if the queue is empty.
 - **front**: Returns the data of the first item in the queue.
 
-### Implementation
+## Array Implementation
 
 For our queue implementation, we can use either an array or a linked list.
+Here's an implementation using an array.
 
 ```ts
 class QueueArray<T> {
@@ -91,7 +94,7 @@ In this scenario, the `rear` index has reached the end of the list, and the `fro
 
 To overcome this limitation, a solution is to use a _Circular Queue_. A circular queue is also implemented using an array, but it is designed in a way that the beginning and end of the array are connected conceptually.
 
-### Linked List
+## Linked List Implementation
 
 Another way to implement a linear queue is by using a linked list. This approach eliminates the concern of the list becoming full, as the container can dynamically expand and contract as needed. However, one drawback of this implementation is that it requires relatively more memory compared to the array implementation, due to the presence of nodes in the linked list structure.
 
@@ -150,13 +153,13 @@ class QueueList<T> {
 }
 ```
 
-### Applications of Queue
+## Applications of Queue
 
 Queues have various applications in computer science and real-world scenarios, including:
 Breadth First Search (BFS) algorithm, Managing processes or tasks with priority, and
 Network traffic control and packet scheduling.
 
-### Reference
+# Reference
 
 - <https://galid1.tistory.com/483>
 - <https://gmlwjd9405.github.io/2018/08/02/data-structure-queue.html>

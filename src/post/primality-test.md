@@ -9,7 +9,9 @@ Primality test is an algorithm to determine whether an input number is prime.
 
 There are several ways to implement an algorithm to test whether a given number is prime or not. Let's start with a simple algorithm.
 
-### Naive Approach
+# Implementation
+
+## Naive Approach
 
 One way to check if a number is prime is to iterate from `2` to `n-1` and try dividing `n` by each number. If there is a number that divides `n` without a remainder, then `n` is not prime.
 The following code demonstrates this algorithm implemented in TypeScript:
@@ -48,7 +50,7 @@ While we have reduced the number of operations, it is important to note that thi
 Is it possible to improve upon the linear time complexity of this algorithm?
 Absolutely.
 
-### Square Root Optimization
+## Square Root Optimization
 
 To achieve a more efficient primality test algorithm, we can limit our checks to numbers up to the square root of `n`.
 If `n` is not a prime number, it can be represented as a product of two factors, `p` and `q`. At least one of these factors will be less than or equal to the square root of `n`.
@@ -72,7 +74,7 @@ const isPrime = (n: number): boolean => {
 The time complexity of this algorithm is `O(sqrt(N))`.
 We can further optimize the algorithm by leveraging the properties of `6K-1` and `6K+1`.
 
-### 6k ± 1 Optimization
+## 6k ± 1 Optimization
 
 All prime numbers, except for 2 and 3, can be expressed in the form of `6K-1` or `6K+1`.
 
@@ -110,7 +112,7 @@ const isPrime = (k: number): boolean => {
 
 The time complexity of this optimize algorithm is `O(sqrt(N))`.
 
-### Sieve of Eratosthenes
+## Sieve of Eratosthenes
 
 The Sieve of Eratosthenes is an algorithm used to find all prime numbers up to a given value `N`.
 

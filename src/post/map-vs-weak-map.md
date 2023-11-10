@@ -3,10 +3,10 @@ title: 'Map vs. Weak Map'
 date: '2023-07-12 11:21:00'
 ---
 
-JavaScript provides two different types of Map data structures: one that stores the key (_Map_) and the other
-that stores a reference to the key (_Weak Map_).
+JavaScript provides two different types of Map data structures: one that stores the key _(Map)_ and the other
+that stores a reference to the key _(Weak Map)_.
 
-## Map
+# Map
 
 A map is an unordered list of key-value pairs. A key can be of any type, such as number, boolean, string, object, etc.
 
@@ -20,7 +20,7 @@ Map(5) {
 }
 ```
 
-## Weak Map
+# Weak Map
 
 A WeakMap is similar to Map in that it stores key-value pairs. However, a WeakMap only allows objects
 and functions to be used as keys. WeakMaps are primarily used to store weak object references, and you'll
@@ -51,13 +51,11 @@ console.log(weakMap.get(mouseObj))
 weakMap.set('test', 'whoops')
 ```
 
-## Garbage Collector
+# Garbage Collector
 
 The keys stored in a WeakMap are weakly referenced, which means that the garbage collector can remove the key pointer from the WeakMap and subsequently remove the key from memory. In contrast, in a regular map, the keys remain in memory unless the Map itself is explicitly removed.
 
----
-
-### Sidenote
+# Sidenote
 
 If you come from another programming language where you use bracket notation to insert data into a map, you need to be careful when using JavaScript because in this case, you're adding a property, not an entry.
 
@@ -71,7 +69,7 @@ console.log(weakMap['test'])
 console.log(weakMap.test)
 ```
 
-Don't make the above error (_like myself_) and think, "Oh, I can use a string as a key in WeakMap". If you use a regular Map and attempt the same operation, you will realize that the entry length is still zero.
+Don't make the above error (like myself) and think, "Oh, I can use a string as a key in WeakMap". If you use a regular Map and attempt the same operation, you will realize that the entry length is still zero.
 
 ```js
 const map = new Map()

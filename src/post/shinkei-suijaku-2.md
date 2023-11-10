@@ -8,7 +8,7 @@ Today, I'm going to add a flipping motion to a Pokémon card when clicked.
 
 ---
 
-### Motion
+# Flipping a card
 
 Whenever I click a card, I toggle a class called `flip`, which rotates the card along
 the y-axis by 180 degrees. To achieve this, I have added an `onClick` event to the card.
@@ -45,7 +45,7 @@ const Card: React.FC = (card: PokeCard) => {
 
 Now, let's add some logic to display the actual Pokémon rather than the duplicate image of the back.
 
-### Logic
+# Differentiate front and back
 
 First, I added my Charizard to the card and included an additional `<figure>` element
 in the component to show both the front and back of the card.
@@ -99,7 +99,7 @@ const handleOnClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 
 ![flip card](/images/pokecard-flip-3.gif)
 
-### Reflection ･ω･ﾉﾉﾞ
+# Reflection ･ω･ﾉﾉﾞ
 
 The flipping motion was easier than I expected. I'm fairly certain there's room for
 improvement, but for now, I'm satisfied with the result.

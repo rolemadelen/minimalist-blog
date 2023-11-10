@@ -3,6 +3,8 @@ title: 'Things I Want'
 date: '2023-07-09 11:08:00'
 ---
 
+# Things I Want
+
 I've started working on a side project called 'Things I Want' and have made significant progress, although it's still in a somewhat unfinished state. I've implemented all the features I initially planned, but I'm eager to add something more to enhance the project. But I'm facing a creative block at the moment, so ... we'll see.
 
 ![demo](/images/things-i-want/demo.gif)
@@ -34,7 +36,7 @@ For the backend, I opted to utilize [Supabase](https://supabase.com/), an open-s
 
 I utilized [netlify](https://www.netlify.com/) to swiftly deploy the app. And I configured a custom domain to provide personalized and memorable web address for the application.
 
----
+# Things I Own?
 
 I'm planning to create a similar website called 'Things I Own'. I'm not sure whether I should utilize the same format and simply modify the wording and images, or embark on a new project with an entirely different design.
 

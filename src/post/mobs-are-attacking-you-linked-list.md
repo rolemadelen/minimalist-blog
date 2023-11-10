@@ -3,7 +3,11 @@ title: 'Mobs are attacking you (feat. Linked List)'
 date: '2023-07-05 09:00:00'
 ---
 
+# What is a Linked List?
+
 Linked List is a linear data structure composed of nodes where each node contains a data field and a reference to the next and/or previous node in the list. Unlike Arrays, the order of nodes in the list is NOT given by their physical placement in memory.
+
+# Scenario
 
 We're going to create a simple game utilizing a linked list. Let's imagine you have a mob class defined as follows. A mob has a `name` and deals a certain amount of `damage` when attacking the player.
 

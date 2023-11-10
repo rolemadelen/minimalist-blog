@@ -3,7 +3,7 @@ title: 'First half of 2023'
 date: '2023-07-03 15:52:00'
 ---
 
-## Life
+# Life
 
 Until the beginning of this year, I was working as a front-end developer
 at a startup in Japan. As I had planned to move back to the States by the end of February,
@@ -19,7 +19,7 @@ I'm really happy to finally have a place where I can unwind and relax.
 Oh, and our neighbors are awesome too. And have I mentioned the view?
 The lush greens are simply perfect.
 
-## Jobs
+# Jobs
 
 I had been actively searching for remote job opportunities and was quite confident
 that I would secure a position by the end of June. I started applying for
@@ -42,7 +42,7 @@ I realized that I was just one among many candidates out there.
 Therefore, [I made the decision to create a portfolio](./i-decided-to-make-a-portfolio) and update my [CV](<(https://www.jiieu.com/#/cv)>).
 While I'm unsure if these actions will lead to any changes, I believe that good things will eventually come my way.
 
-## Projects
+# Projects
 
 I made some updates to my blog design. Previously, it had the following appearance.
 
@@ -64,9 +64,9 @@ to include actual Pokémon cards.
 
 ![shinkei-suijaku](/images/shinkei-suijaku.gif)
 
-## Coming up
+# Coming up
 
-### Data Structure Study
+## Data Structure Study
 
 I've started a data structure study with my friend.
 We've planned to cover several essential data structures,
@@ -76,7 +76,7 @@ rather than solely focusing on coding. To enhance our understanding,
 we've decided to explore them using different programming languages.
 Personally, I've chosen TypeScript as my language of choice for this study.
 
-### Algorithm Study
+## Algorithm Study
 
 I've been actively involved in an algorithm study group with six participants,
 including myself. For solving the problems, I have been using Rust,
@@ -88,7 +88,7 @@ Therefore, I need to allocate a specific time slot to focus on strengthening my 
 It's important to ensure that I give Rust the attention it deserves,
 as it will ultimately enhance my proficiency in algorithmic problem-solving.
 
-### Svelte Study
+## Svelte Study
 
 React has been my go-to framework for front-end development, but I'm eager to expand
 my skill set and explore other technologies. As a result, I have recently embarked
@@ -105,7 +105,7 @@ and personally fulfilling.
 
 ![things I want](/images/things-i-want.gif)
 
-## Reflection
+# Reflection
 
 Why is it already July?!
 

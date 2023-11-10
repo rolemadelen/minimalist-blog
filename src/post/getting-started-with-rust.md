@@ -16,7 +16,7 @@ You can install `rustup` by executing the following command:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### Hello World
+# Hello World
 
 We're going use Rust package manager called **Cargo** to create a new package or a project.
 Cargo will generate a directory and number of files to get you start with.
@@ -47,6 +47,6 @@ fn main() {
 
 To check for any errors in your code without actually running it, you can use the `cargo check` command.
 
-### Reference
+# Reference
 
 - <https://doc.rust-lang.org/cargo/getting-started/index.html>

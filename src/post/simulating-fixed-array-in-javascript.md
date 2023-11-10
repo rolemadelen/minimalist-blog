@@ -3,6 +3,8 @@ title: 'Simulating a fixed array in JavaScript'
 date: '2023-07-30 10:49:00'
 ---
 
+# Arrays in JavaScript
+
 Arrays in JavaScript are dynamic in nature, which means that the length of the array can be modified at runtime.
 This posed a problem during my data structure study, as we were attempting to implement a stack and queue using a fixed-size array.
 
@@ -18,9 +20,13 @@ console.log(arr)
 // [1, 2, 3, 4]
 ```
 
+# How do you make fixed arrays in JS?
+
 There are two ways to prevent JavaScript from modifying the array: `Object.seal()` and `Object.freeze()`. However, _freezing_ is not a good option here because it will make your object read-only.
 
 > "A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned"
+
+## Object.seal
 
 By _sealing_ the array object, we can modify the existing array and prevent a user from inserting an additional data beyond the given size.
 

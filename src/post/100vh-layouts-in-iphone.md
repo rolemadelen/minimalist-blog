@@ -3,12 +3,18 @@ title: '100vh Layouts in iPhone'
 date: '2023-06-26 18:04:00'
 ---
 
+# The Issue
+
 I was frustrated when I discovered that the top and bottom portions of my portfolio
 were blocked by the iOS address bar on my iPhone XR. Surprisingly, it appeared perfectly
 fine on my SE and 2nd Gen. iPad Air, but only on the iPhone XR did the status and address bar
 overlapped and hid my name from my own portfolio.
 
 ![div100vh](/images/div100vh-1.webp)
+
+# Solutions
+
+## 1) CSS Media Queries
 
 One quick solution to address this issue is by utilizing CSS media queries.
 By targeting the specific device dimensions of the iPhone XR, I can make adjustments to
@@ -30,6 +36,9 @@ that lacks elegance. We value aesthetics in code, don't we (´･ω･`)?
 
 Anyway, if you're using npm, you know npm is a vast ecosystem with numerous
 packages to explore. I came across a particularly useful npm package called [react-div-100vh](https://www.npmjs.com/package/react-div-100vh).
+
+## 2) react-div-100vh
+
 This package provides a straightforward solution for achieving a consistent 100vh layout across different devices.
 
 By simply wrapping the elements in 100vh layout with `<Div100vh></Div100vh>`, this package

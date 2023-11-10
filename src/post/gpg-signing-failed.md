@@ -3,6 +3,8 @@ title: 'gpg: signing failed: Inappropriate ioctl for device'
 date: '2023-06-05 19:15:00'
 ---
 
+# Error
+
 The other day, I encountered the following error when I made changes to my code and
 attempted making a commit.
 
@@ -11,6 +13,8 @@ git commit -m "message"
 error: gpg failed to sign the data
 gpg: signing failed: Inappropriate ioctl for device
 ```
+
+# Resolved
 
 It took me approximately 15 minutes to resolve this error, and here are the steps I took to fix it.
 
@@ -39,7 +43,7 @@ echo RELOADAGENT | gpg-connect-agent
 export GPG_TTY=$(tty)
 ```
 
-### Reference
+# Reference
 
 - [chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/pipermail/sgo-software-discuss/2020/000690.html)
 - [gist.github.com](https://gist.github.com/repodevs/a18c7bb42b2ab293155aca889d447f1b)

@@ -18,6 +18,6 @@ With these changes, I'm looking forward to starting my mornings on a more positi
 
 ---
 
-#### Update - August 10th, 2023
+_Update - August 10th, 2023_
 
 I noticed I was spending a lot of time on Instagram shorts and reels, so I made the choice to remove the app from my phone. However, I'm currently taking on a challenge for the month of August where I draw something new every day and share it on my account. For the purpose of posting my drawings, I'll reinstall the app temporarily and then promptly remove it afterward.

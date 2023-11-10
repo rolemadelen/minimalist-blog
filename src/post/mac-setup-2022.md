@@ -8,7 +8,7 @@ Here I'm sharing my Mac setup for web development which I got inspired by [Robin
 
 ---
 
-### MacBook Pro
+# MacBook Pro
 
 - 13-inch
 - 2 GHz Quad-Core Intel Core i5
@@ -19,7 +19,7 @@ Here I'm sharing my Mac setup for web development which I got inspired by [Robin
 - ~~macOS Monterey~~
 - macOS Ventura 13.2.1
 
-### System Preferences
+# System Preferences
 
 - Notifications
   - ~~Off, except calendar, mail, and reminders~~
@@ -110,37 +110,37 @@ Here I'm sharing my Mac setup for web development which I got inspired by [Robin
       - "remove items from the trash after 30 days" ON
   - View -> Show Preview (for images)
 
-### System Preferences (terminal)
+# System Preferences (terminal)
 
-```sh
-# take screenshots as jpg (usually smaller size) and not png
+```c
+// take screenshots as jpg (usually smaller size) and not png
 defaults write com.apple.screencapture type jpg
 
-# do not open previous previewed files (e.g. PDFs) when opening a new one
+// do not open previous previewed files (e.g. PDFs) when opening a new one
 defaults write com.apple.Preview ApplePersistenceIgnoreState YES
 
-# show Library folder
+// show Library folder
 chflags nohidden ~/Library
 
-# show path bar
+// show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-# show status bar
+// show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
 killall Finder;
 ```
 
-### Homebrew
+## Homebrew
 
-```sh
-# install homebrew as a package manager for macOS
+```c
+// install homebrew as a package manager for macOS
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# update everything in homebrew to recent version
+// update everything in homebrew to recent version
 brew update
 
-# install GUI applications
+// install GUI applications
 brew install --cask \
  bitwarden \
  iterm2 \
@@ -151,7 +151,7 @@ brew install --cask \
  raycast \
  spotify
 
-# install terminal applications
+// install terminal applications
 brew install \
  wget \
  exa \
@@ -161,16 +161,16 @@ brew install \
  graphicsmagick
 ```
 
-### OH MY ZSH
+## OH MY ZSH
 
-```sh
+```c
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# omz update
+// omz update
 source ~/.zshrc
 ```
 
-### Oh My Zsh Theme + Fonts
+## Oh My Zsh Theme + Fonts
 
 ```sh
 brew install starship
@@ -180,7 +180,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 ```
 
-### exa setting
+## exa setting
 
 Set aliases for `exa`:
 
@@ -200,7 +200,7 @@ if [[ $(command -v exa) ]]; then
 fi
 ```
 
-### VS Code
+# VS Code
 
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 - [Auto Hide](https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide)
@@ -217,16 +217,15 @@ fi
 - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 - [The Doki Theme](https://marketplace.visualstudio.com/items?itemName=unthrottled.doki-theme)
 
-### Happy Hacking Keyboard
+# Happy Hacking Keyboard
 
 My mac had an issue with recognizing the keyboard.
 It couldn't read `international1` key which was used for backtick(\`) and tilde(~).
 
 I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international1` to `grave_accent_and_tilde` and it works great :)
 
-### Other Apps
+# Other Apps
 
 - Arc - <https://thebrowser.company/>
 - Nota - <https://nota.md>
-- ~~Setapp - <https://setapp.com/>~~
 - Immersed VR - <https://immersed.com/>

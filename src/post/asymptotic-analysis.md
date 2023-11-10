@@ -13,7 +13,9 @@ There are three primary notations used to represent different complexity states:
 ![Asymptotic notations](/images/notations.webp)
 _https://www.dotnetlovers.com/article/129/explanation-on-asymptotic-notations_
 
-### Big-O Notation
+# Notations
+
+## Big-O Notation
 
 The **worst-case time complexity** of an algorithm is represented by Big-O notation.
 Mathematically, Big-O is defined as:
@@ -23,7 +25,7 @@ O(g(n)) = { f(n): there exist positive constants c and n_0
             such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n_0 }
 ```
 
-### Omega Notation
+## Omega Notation
 
 The **best-case time complexity** of an algorithm is represented by Omega (Ω) Notation.
 Mathematically, Omega notation is defined as:
@@ -33,7 +35,7 @@ Mathematically, Omega notation is defined as:
             such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n_0 }
 ```
 
-### Theta Notation
+## Theta Notation
 
 And last but not least, the **average time complexity** of an algorithm is represented by the Theta (Θ) Notation.
 For a function `g(n)` and `Θ(g(n))` is given by the relation:
@@ -43,6 +45,6 @@ For a function `g(n)` and `Θ(g(n))` is given by the relation:
             such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ n_0 }
 ```
 
-### Reference
+# Reference
 
 - <https://www.programiz.com/dsa/asymptotic-notations)>

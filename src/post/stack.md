@@ -1,20 +1,22 @@
 ---
-title: 'Stack'
+title: 'What is a Stack?'
 date: '2023-04-05 08:00:00'
 ---
+
+# Stack
 
 A stack is a type of linear data structure where data insertion or deletion occurs at one end only.
 
 Inserting an item into the stack is known as a `push` operation, while removing an item is referred to as a `pop` operation. When you pop an item from the stack, the last item inserted will be removed. This results in a _Last In, First Out_ (LIFO) structure[^1], meaning that the first item inserted into the stack will be the last item removed.
 
-### Stack Operations
+## Stack Operations
 
 - `push`: Adds data to the stack.
 - `pop`: Removes data from the stack.
 - `isEmpty`: Checks if the stack is empty.
 - `peek`: Retrieves the data at the top of the stack.
 
-### Static Stack - Array
+## Static Stack - Array
 
 If the size of the data is known in advance, we can use an array to create a static stack. Alternatively, if the size is unknown or may change dynamically, a dynamic array or linked list can be used to create a stack that can grow or shrink as needed.
 
@@ -72,7 +74,7 @@ export class StackArray<T> {
 }
 ```
 
-### Dynamic Stack - Linked List
+## Dynamic Stack - Linked List
 
 To implement a dynamic stack in JavaScript, we have the option to use an array, which is implemented using a hash map. However, for this particular case, I will opt for a linked list to create the dynamic stack.
 
@@ -124,13 +126,13 @@ export class StackList<T> {
 }
 ```
 
-### Static vs. Dynamic Stack
+## Static vs. Dynamic Stack
 
 A static stack has a fixed size, meaning that once it becomes full, it cannot accommodate additional data. However, it offers the advantage of simplicity in implementation and consumes less memory since it does not require separate memory allocation.
 
 In contrast, a dynamic stack is not limited in size. It can handle an increasing number of data as long as memory permits. However, implementing a dynamic stack is relatively complex and entails memory allocation, resulting in increased memory usage.
 
-### Applications of Stacks
+## Applications of Stacks
 
 - Recursive algorithms
 - Storing web browser history
@@ -138,7 +140,7 @@ In contrast, a dynamic stack is not limited in size. It can handle an increasing
 - Verifying the validity of parentheses in mathematical expressions
 - Evaluating postfix expressions
 
-### Reference
+# Reference
 
 - <https://cwjuns.tistory.com/18>
 - <https://velog.io/@jimmy48/%EC%8A%A4%ED%83%9D%EC%9D%B4%EB%9E%80>

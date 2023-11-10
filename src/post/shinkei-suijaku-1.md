@@ -3,6 +3,8 @@ title: 'Shinkei Suijaku - Project Setup & Card UI'
 date: '2023-06-12 22:00:00'
 ---
 
+# Shinkei Suijaku (神経衰弱)
+
 Shinkei Suijaku (神経衰弱) is a memory game in which the objective is to find two
 matching cards. It i also commonly referred to as Concentration or Pairs.
 I have chosen to create my own version of this game using Pokémon cards, and I will document my progress
@@ -10,20 +12,24 @@ by writing a blog post.
 
 ![poke card](/images/card-ui.gif)
 
-### Project Setup
+# Project Setup
+
+## Vite
 
 I'm going to use Vite to quickly set up a React project with TypeScript.
 When prompted, select `React` as the framework and `TypeScript` as the variant.
 
 ```bash
-pnpm create vite@latest bashinkei-suijaku -- --template react
+pnpm create vite@latest shinkei-suijaku -- --template react
 ```
 
-Once executed, a directory named `bashinkei-suijaku` will be created, containing all the necessary dependencies to run React and TypeScript.
+## Install Dependencies
+
+Once executed, a directory named `shinkei-suijaku` will be created, containing all the necessary dependencies to run React and TypeScript.
 Then, navigate to the project directory and install the project dependencies.
 
 ```bash
-$ cd bashinkei-suijaku
+$ cd shinkei-suijaku
 $ pnpm install
 
 dependencies:
@@ -45,7 +51,7 @@ devDependencies:
 Done in 6s
 ```
 
-### Tailwind CSS and Daisy UI
+## Set up Tailwind CSS and Daisy UI
 
 I'm going to install Tailwind CSS and other necessary libraries to use Daisy UI. Then, I'll need to create two
 configuration files: `tailwind.config.cjs` and `postcss.config.cjs`, to properly setup tailwind and
@@ -85,7 +91,7 @@ Let's run Vite server by running the command, `pnpm run dev`, and make sure ever
 
 I'm ready to write some code.
 
-### Validation Check
+## Validation Check
 
 Let's see if Daisy UI is working properly or not. Copy the code below and
 refresh or build the server again.
@@ -119,7 +125,7 @@ export default App
 
 ![kbd](/images/daisyui-hello-world.jpg)
 
-### Card Component
+# Card Component
 
 Now that we're done with the setup. Let's go ahead and create a card which is going to be the
 base of our card game. I created a component called `Card` that accepts two values: the Pokémon name and the image.
@@ -179,7 +185,7 @@ export default App
 
 ![poke card](/images/card-ui.gif)
 
-### Reflection (o´▽`o)
+# Reflection (o´▽`o)
 
 It didn't take too long to create the basic structure of the component.
 However, I spent a lot of time setting up the project.
