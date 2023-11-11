@@ -41,17 +41,18 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
 
     const options = {
       root: null,
-      rootMargin: '0px 0px -80% 0px',
+      rootMargin: '0px 0px -90% 0px',
       threshold: 0.5,
     }
+
+    const visibleHeadings: HTMLElement[] = []
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document
-            .querySelectorAll('.toc--active')
-            .forEach((tag) => tag.classList.remove('toc--active'))
+          visibleHeadings.forEach((tag) => tag.classList.remove('toc--active'))
           let toc = document.getElementById(`toc-${entry.target.id}`)
+          visibleHeadings.push(toc as HTMLElement)
           toc?.classList.add('toc--active')
         }
       })
@@ -103,11 +104,11 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
         counts[headLevel - 1]
       }'><li id="toc-h${headLevel}-${
         counts[headLevel - 1]
-      }"class="h${headLevel} text-xs !list-none !left-0">${item}</li></a>`
+      }"class="h${headLevel} text-[0.8rem] !list-none !left-0">${item}</li></a>`
       counts[headLevel - 1] += 1
     })
 
-    return `<ul class="max-w-[20rem] hidden lg:block lg:fixed left-[2%] top-0 mt-52">${listItems}</ul>`
+    return `<ul class="max-w-[12rem] w-full max-h-[30rem] overflow-hidden overflow-y-scroll hidden lg:block lg:fixed left-[2%] top-0 mt-52">${listItems}</ul>`
   }
   return (
     <>

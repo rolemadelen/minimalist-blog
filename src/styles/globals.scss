@@ -311,8 +311,7 @@ h6 {
     color: $--color-h3 !important;
   }
 
-  .toc--active {
-    transition: all 0.3s ease;
-    font-size: 0.8rem;
+  li {
+    margin: 0.2rem 0;
   }
 }
