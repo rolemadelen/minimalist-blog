@@ -54,6 +54,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
           let toc = document.getElementById(`toc-${entry.target.id}`)
           visibleHeadings.push(toc as HTMLElement)
           toc?.classList.add('toc--active')
+          toc?.scrollIntoView(false)
         }
       })
     }, options)
