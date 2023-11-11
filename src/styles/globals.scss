@@ -310,4 +310,9 @@ h6 {
   .h3.toc--active {
     color: $--color-h3 !important;
   }
+
+  .toc--active {
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+  }
 }

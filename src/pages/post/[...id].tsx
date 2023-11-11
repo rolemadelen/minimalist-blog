@@ -41,18 +41,18 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
 
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1,
+      rootMargin: '0px 0px -80% 0px',
+      threshold: 0.5,
     }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          document
+            .querySelectorAll('.toc--active')
+            .forEach((tag) => tag.classList.remove('toc--active'))
           let toc = document.getElementById(`toc-${entry.target.id}`)
           toc?.classList.add('toc--active')
-        } else {
-          let toc = document.getElementById(`toc-${entry.target.id}`)
-          toc?.classList.remove('toc--active')
         }
       })
     }, options)
@@ -78,11 +78,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     }
 
     return () => {
-      headingRefs.current.forEach((hRef) => {
-        if (hRef.current) {
-          observer.unobserve(hRef.current)
-        }
-      })
+      observer.disconnect()
     }
   }, [])
 
@@ -101,13 +97,13 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     let counts = [0, 0, 0]
     toc.forEach((item, i) => {
       let headLevel = getHeadingLevel(item)
-      item = item.replace('#', '')
+      item = item.replace('#', '') // remove first #, this is to prevent heading1 being indented
       item = item.replaceAll('#', '　')
       listItems += `<a href='#h${headLevel}-${
         counts[headLevel - 1]
       }'><li id="toc-h${headLevel}-${
         counts[headLevel - 1]
-      }"class="h${headLevel} text-sm !list-none !left-0">${item}</li></a>`
+      }"class="h${headLevel} text-xs !list-none !left-0">${item}</li></a>`
       counts[headLevel - 1] += 1
     })
 
