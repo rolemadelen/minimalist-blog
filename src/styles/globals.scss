@@ -35,7 +35,7 @@ $--color-h3: #00b4db;
     margin: 3rem 0 0.5rem;
     font-size: 1.6rem;
     color: $--color-h1;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   h2 {
@@ -160,6 +160,10 @@ $--color-h3: #00b4db;
       }
     }
 
+    ol:last-of-type {
+      margin-bottom: 1rem;
+    }
+
     ol > li {
       list-style: decimal inside;
 
@@ -278,9 +282,34 @@ h6 {
 }
 
 .toc {
-  .h1,
-  .h2,
+  .h1 {
+    &:hover,
+    &.toc--active {
+      color: $--color-h1;
+      font-weight: 700;
+    }
+  }
+
+  .h2 {
+    margin-left: 0.8rem;
+    &:hover,
+    &.toc--active {
+      color: $--color-h2;
+      font-weight: 600;
+    }
+  }
+
   .h3 {
+    margin-left: 1.6rem;
+    &:hover,
+    &.toc--active {
+      color: $--color-h3;
+    }
+  }
+
+  a.h1,
+  a.h2,
+  a.h3 {
     letter-spacing: 0.5px;
     line-height: 1.5;
     color: #aaa;
@@ -288,27 +317,6 @@ h6 {
     &:hover {
       cursor: pointer;
     }
-  }
-  .h1:hover {
-    color: $--color-h1;
-  }
-  .h2:hover {
-    color: $--color-h2;
-  }
-  .h3:hover {
-    color: $--color-h3;
-  }
-
-  .h1.toc--active {
-    color: $--color-h1 !important;
-    font-weight: bold;
-  }
-  .h2.toc--active {
-    color: $--color-h2 !important;
-    font-weight: 600;
-  }
-  .h3.toc--active {
-    color: $--color-h3 !important;
   }
 
   li {
