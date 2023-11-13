@@ -7,6 +7,7 @@ import ProgressBar from '@/components/ProgressBar'
 import Comment from '@/lib/giscus'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPropsContext } from 'next'
+import TOC from '@/components/TOC'
 
 interface IPost {
   post: {
@@ -18,7 +19,6 @@ interface IPost {
 
 const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
   const headingRefs = useRef<Array<React.RefObject<HTMLHeadingElement>>>([])
-  const toc = markdown.split('\n').filter((line) => line.trim().startsWith('#'))
   const formattedDate = new Date(date).toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'short',
@@ -87,33 +87,6 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     }
   }, [])
 
-  const getHeadingLevel = (str: string) => {
-    const match = str.match(/^#+/)
-    if (match) {
-      const count = match[0].length
-      return count
-    }
-
-    return 0
-  }
-
-  const createTOC = () => {
-    let listItems = ''
-    let counts = [0, 0, 0] // [h1, h2, h3]
-
-    toc.forEach((item) => {
-      let headLevel = getHeadingLevel(item)
-      let count = counts[headLevel - 1]
-
-      item = item.replaceAll('#', '')
-      listItems += `<a href='#h${headLevel}-${count}'><li id="toc-h${headLevel}-${count}"class="h${headLevel} text-[0.8rem] !list-none !left-0">${item}</li></a>`
-
-      counts[headLevel - 1] += 1
-    })
-
-    return `<ul class="max-w-[12rem] w-full max-h-[30rem] overflow-hidden overflow-y-scroll hidden lg:block lg:fixed left-[2%] top-0 mt-52">${listItems}</ul>`
-  }
-
   return (
     <>
       <Head>
@@ -124,7 +97,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
       </Head>
       <ProgressBar />
 
-      <div className="post max-w-[40rem] m-auto px-6 relative">
+      <div className="post max-w-[36rem] m-auto px-6 relative">
         <div className="post-title text-4xl mb-3 mt-36 leading-normal">
           {title}
         </div>
@@ -136,10 +109,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
             </div>
           </Link>
         </div>
-        <div
-          className="toc"
-          dangerouslySetInnerHTML={{ __html: createTOC() }}
-        ></div>
+        <TOC markdown={markdown} />
         <div className="post-content mb-10 pb-10 border-b">
           <Preview markdown={markdown} />
         </div>

@@ -282,6 +282,12 @@ h6 {
 }
 
 .toc {
+  color: #999;
+
+  &--active {
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+  }
   .h1 {
     &:hover,
     &.toc--active {
