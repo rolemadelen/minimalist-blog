@@ -16,6 +16,7 @@ const TOC: React.FC<Props> = ({ markdown }) => {
 
     return 0
   }
+
   const createTOC = () => {
     let listItems = ''
     let counts = [0, 0, 0] // [h1, h2, h3]
@@ -32,6 +33,7 @@ const TOC: React.FC<Props> = ({ markdown }) => {
 
     return `<ul class="max-w-[15rem] w-full max-h-[30rem] overflow-hidden overflow-y-auto hidden lg:block lg:fixed left-[2%] top-0 mt-52">${listItems}</ul>`
   }
+
   return (
     <>
       <div

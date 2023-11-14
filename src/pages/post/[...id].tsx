@@ -1,15 +1,15 @@
-import React, { RefObject, createElement, useEffect, useRef } from 'react'
-import Preview from '@/lib/codeblock'
-import { getAllPostIds, getPostData } from '@/lib/blog'
-import Link from 'next/link'
-import Footer from '@/components/Footer'
-import ProgressBar from '@/components/ProgressBar'
-import Comment from '@/lib/giscus'
-import Head from 'next/head'
+import React, { useEffect, useRef } from 'react'
 import { GetStaticProps, GetStaticPropsContext } from 'next'
+import Head from 'next/head'
+import { getAllPostIds, getPostData } from '@/lib/blog'
+import Comment from '@/lib/giscus'
+import ProgressBar from '@/components/ProgressBar'
+import Footer from '@/components/Footer'
 import TOC from '@/components/TOC'
+import PostHeader from '@/components/PostHeader'
+import PostContent from '@/components/PostContent'
 
-interface IPost {
+interface Props {
   post: {
     title: string
     date: string
@@ -17,13 +17,27 @@ interface IPost {
   }
 }
 
-const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
-  const headingRefs = useRef<Array<React.RefObject<HTMLHeadingElement>>>([])
-  const formattedDate = new Date(date).toLocaleDateString('en-us', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })
+type MutableRefObj = React.MutableRefObject<HTMLHeadingElement>
+type RefObj = React.RefObject<HTMLHeadingElement>
+
+const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
+  const headingRefs = useRef<Array<RefObj>>([])
+
+  useEffect(() => {
+    const h1 = document.querySelectorAll('h1')
+    const h2 = document.querySelectorAll('h2')
+    const h3 = document.querySelectorAll('h3')
+
+    h1.forEach((tag, i) => {
+      tag.id = `h1-${i}`
+    })
+    h2.forEach((tag, i) => {
+      tag.id = `h2-${i}`
+    })
+    h3.forEach((tag, i) => {
+      tag.id = `h3-${i}`
+    })
+  }, [])
 
   useEffect(() => {
     const allHeadings = document.querySelectorAll('h1, h2, h3')
@@ -32,9 +46,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     )
 
     const setRef = (index: number, element: Element) => {
-      let ref = headingRefs.current[
-        index
-      ] as React.MutableRefObject<HTMLHeadingElement>
+      let ref = headingRefs.current[index] as MutableRefObj
       ref.current = element as HTMLHeadingElement
     }
 
@@ -68,20 +80,6 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
       }
     })
 
-    const h1 = document.querySelectorAll('h1')
-    const h2 = document.querySelectorAll('h2')
-    const h3 = document.querySelectorAll('h3')
-
-    h1.forEach((tag, i) => {
-      tag.id = `h1-${i}`
-    })
-    h2.forEach((tag, i) => {
-      tag.id = `h2-${i}`
-    })
-    h3.forEach((tag, i) => {
-      tag.id = `h3-${i}`
-    })
-
     return () => {
       observer.disconnect()
     }
@@ -98,21 +96,9 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
       <ProgressBar />
 
       <div className="post max-w-[36rem] m-auto px-6 relative">
-        <div className="post-title text-4xl mb-3 mt-36 leading-normal">
-          {title}
-        </div>
-        <div className="flex justify-between items-center mb-20">
-          <div className="text-[#777] w-fit">{formattedDate}</div>
-          <Link href="/" title="Back to home">
-            <div className="border-[1px] w-fit rounded-lg border-gray-300 hover:bg-black hover:border-black hover:text-[#eee] duration-200 flex justify-center items-center px-2 pb-1">
-              ←
-            </div>
-          </Link>
-        </div>
         <TOC markdown={markdown} />
-        <div className="post-content mb-10 pb-10 border-b">
-          <Preview markdown={markdown} />
-        </div>
+        <PostHeader title={title} date={date} />
+        <PostContent markdown={markdown} />
         <Comment />
         <Footer pageFrom="post" />
       </div>
