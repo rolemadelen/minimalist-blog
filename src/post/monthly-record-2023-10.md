@@ -4,8 +4,6 @@ date: '2023-11-03 06:30:00'
 lang: 'ko'
 ---
 
-![banner](/images/monthly-record-2023-10/banner.webp)
-
 # Bye, October
 
 ## 취업 현황
