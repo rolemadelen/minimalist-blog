@@ -154,7 +154,7 @@ const About = () => {
               <h2 className="text-xl mb-4 font-semibold">About</h2>
               <div
                 className={`${
-                  expand ? 'max-h-[999vh]' : 'max-h-[150px]'
+                  expand ? 'max-h-[1000px]' : 'max-h-[150px]'
                 } transition-all duration-500 overflow-hidden`}
               >
                 <p>
@@ -205,7 +205,8 @@ const About = () => {
                 </p>
               </div>
               <div
-                className="mt-4 text-right hover:cursor-pointer"
+                role="button"
+                className="mt-4 text-right hover:cursor-pointer hover:line-through decoration-2 decoration-[rgb(2,132,199)]"
                 onClick={handleReadMore}
               >
                 <span className="text-sky-600">
