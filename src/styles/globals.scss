@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/public/fonts/satoshi.scss';
+@import '/public/fonts/Pretendard/static/pretendard.css';
+@import '/public/fonts/PretendardJP/static/pretendard-jp.css';
 
 @function px2rem($px) {
   @return #{$px / 16}rem;
@@ -16,7 +17,7 @@ $--color-h3: #00b4db;
   max-width: 1920px;
   font-size: 16px;
   margin: 0 auto;
-  font-family: Satoshi, Times, sans-serif;
+  font-family: 'Pretendard', 'Pretendard JP', Times, sans-serif;
   color: #555;
 }
 
@@ -269,14 +270,10 @@ h6 {
     text-indent: 1rem;
   }
 
-  .content {
+  .content,
+  .header {
     a {
-      text-decoration: underline;
-      text-decoration-color: #009dff33;
-      text-decoration-skip-ink: none;
-      text-decoration-thickness: 0.5rem;
-      text-underline-offset: -0.2rem;
-      transition: text-decoration 0.3s;
+      color: rgb(2 132 199);
     }
   }
 }
@@ -286,7 +283,6 @@ h6 {
 
   &--active {
     font-size: 0.85rem;
-    transition: all 0.3s ease;
   }
   .h1 {
     &:hover,
