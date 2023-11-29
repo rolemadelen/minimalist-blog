@@ -52,7 +52,7 @@ const metadata: Metadata = {
     4: {
       year: '2014-2016',
       icon: '🧑🏻‍💻🇺🇸',
-      company: 'Riverside City Colleges',
+      company: 'Riverside City College',
       link: 'https://www.rcc.edu/student-support/ccc-lab.html',
     },
   },
