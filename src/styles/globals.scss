@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/public/fonts/Pretendard/static/pretendard.css';
-@import '/public/fonts/PretendardJP/static/pretendard-jp.css';
+@import '/public/fonts/Pretendard/static/pretendard.scss';
+@import '/public/fonts/PretendardJP/static/pretendard-jp.scss';
 
 @function px2rem($px) {
   @return #{$px / 16}rem;
