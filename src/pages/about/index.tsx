@@ -28,30 +28,31 @@ const metadata: Metadata = {
   },
   work_exp: {
     0: {
-      year: '2023',
-      role: 'Freelance Web Developer',
+      year: '2023~',
+      icon: '🧑🏻‍💻🇺🇸',
+      company: 'Freelance Web Developer',
     },
     1: {
       year: '2021-2023',
-      role: 'Front-End Developer',
+      icon: '🧑🏻‍💻🇯🇵',
       company: 'Aikomi Inc.',
       link: 'https://aikomi.co.jp/',
     },
     2: {
       year: '2020-2021',
-      role: 'Foreign Language Teacher',
+      icon: '🧑🏻‍🏫🇯🇵',
       company: 'BorderLink Inc.',
       link: 'https://www.borderlink.co.jp/alt/',
     },
     3: {
       year: 'Winter 2017',
-      role: 'Front-End Developer Intern',
+      icon: '🧑🏻‍💻🇺🇸',
       company: 'FASTech LLC.',
     },
     4: {
       year: '2014-2016',
-      role: 'Programming Lab Aide',
-      company: 'RCC',
+      icon: '🧑🏻‍💻🇺🇸',
+      company: 'Riverside City Colleges',
       link: 'https://www.rcc.edu/student-support/ccc-lab.html',
     },
   },
@@ -144,7 +145,7 @@ const About = () => {
             </h1>
             <h3 className="text-md mb-2">{owner.role}</h3>
             <h4 className="text-sm mb-8 text-gray-500">
-              <a href={`mailto:${owner.email}`}>📮 {owner.email}</a>
+              📮 <a href={`mailto:${owner.email}`}>{owner.email}</a>
             </h4>
           </div>
 
@@ -222,18 +223,20 @@ const About = () => {
                       <span className="w-28 inline-block">
                         {work_exp[key].year}
                       </span>{' '}
-                      {work_exp[key].role} {work_exp[key].company ? 'at' : ''}{' '}
-                      {work_exp[key].link ? (
-                        <a
-                          href={work_exp[key].link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {work_exp[key].company}
-                        </a>
-                      ) : (
-                        work_exp[key].company
-                      )}
+                      <span className="inline-block">
+                        {work_exp[key].icon}{' '}
+                        {work_exp[key].link ? (
+                          <a
+                            href={work_exp[key].link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {work_exp[key].company}
+                          </a>
+                        ) : (
+                          work_exp[key].company
+                        )}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -249,7 +252,9 @@ const About = () => {
                       <span className="w-16 inline-block">
                         {education[key].year}
                       </span>{' '}
-                      {education[key].school}
+                      <span className="inline-block">
+                        {education[key].school}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -265,13 +270,15 @@ const About = () => {
                       <span className="w-16 inline-block">
                         {work[key].year}
                       </span>{' '}
-                      <a
-                        href={work[key].link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {work[key].project}
-                      </a>
+                      <span className="inline-block">
+                        <a
+                          href={work[key].link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {work[key].project}
+                        </a>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -284,12 +291,11 @@ const About = () => {
                 {Object.keys(contacts).map((key) => (
                   <li key={key} className="mb-2">
                     <a
-                      className="hover:line-through"
                       href={contacts[key].link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {contacts[key].name} / {contacts[key].handle}
+                      {contacts[key].name} / @{contacts[key].handle}
                     </a>
                   </li>
                 ))}

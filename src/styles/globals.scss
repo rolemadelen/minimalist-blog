@@ -274,6 +274,10 @@ h6 {
   .header {
     a {
       color: rgb(2 132 199);
+
+      &:hover {
+        text-decoration: line-through;
+      }
     }
   }
 }
