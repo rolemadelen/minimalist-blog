@@ -153,7 +153,7 @@ const About = () => {
               <h2 className="text-xl mb-4 font-semibold">About</h2>
               <div
                 className={`${
-                  expand ? 'max-h-[100vh]' : 'max-h-[150px]'
+                  expand ? 'max-h-[999vh]' : 'max-h-[150px]'
                 } transition-all duration-500 overflow-hidden`}
               >
                 <p>
