@@ -26,11 +26,11 @@ const About = () => {
           </div>
 
           <div className="content mb-10 text-left border-b pb-16">
+            <h2 className="text-xl mb-4 font-semibold">About</h2>
             <div className="mb-8">
-              <h2 className="text-xl mb-4 font-semibold">About</h2>
               <div
                 className={`${
-                  expand ? 'max-h-[1000px]' : 'max-h-[150px]'
+                  expand ? 'max-h-[1000px]' : 'max-h-[150px] bottom-gradient'
                 } transition-all duration-500 overflow-hidden`}
               >
                 <p>
