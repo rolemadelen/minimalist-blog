@@ -5,7 +5,16 @@ interface Props {
 }
 
 const TOC: React.FC<Props> = ({ markdown }) => {
-  const toc = markdown.split('\n').filter((line) => line.trim().startsWith('#'))
+  let isInsideCode = false
+  const toc = markdown.split('\n').filter((line) => {
+    let curr = line.trim()
+    if (curr.startsWith('```')) {
+      isInsideCode = !isInsideCode
+    }
+    if (isInsideCode) return false
+
+    return curr.startsWith('#') ? true : false
+  })
 
   const getHeadingLevel = (str: string) => {
     const match = str.match(/^#+/)
@@ -19,7 +28,7 @@ const TOC: React.FC<Props> = ({ markdown }) => {
 
   const createTOC = () => {
     let listItems = ''
-    let counts = [0, 0, 0] // [h1, h2, h3]
+    let counts = [0, 0, 0, 0] // [h1, h2, h3, h4]
 
     toc.forEach((item) => {
       let headLevel = getHeadingLevel(item)

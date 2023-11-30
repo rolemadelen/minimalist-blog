@@ -12,6 +12,7 @@
 $--color-h1: #03045e;
 $--color-h2: #0077b6;
 $--color-h3: #00b4db;
+$--color-h4: #67a6b4;
 
 :root {
   max-width: 1920px;
@@ -53,9 +54,8 @@ $--color-h3: #00b4db;
   }
 
   h4 {
-    font-style: italic;
-    text-align: right;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: $--color-h4;
   }
 
   code,
@@ -313,9 +313,18 @@ h6 {
     }
   }
 
+  .h4 {
+    margin-left: 2.4rem;
+    &:hover,
+    &.toc--active {
+      color: $--color-h4;
+    }
+  }
+
   a.h1,
   a.h2,
-  a.h3 {
+  a.h3,
+  a.h4 {
     letter-spacing: 0.5px;
     line-height: 1.5;
     color: #aaa;

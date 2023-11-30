@@ -27,6 +27,7 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
     const h1 = document.querySelectorAll('h1')
     const h2 = document.querySelectorAll('h2')
     const h3 = document.querySelectorAll('h3')
+    const h4 = document.querySelectorAll('h4')
 
     h1.forEach((tag, i) => {
       tag.id = `h1-${i}`
@@ -37,10 +38,13 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
     h3.forEach((tag, i) => {
       tag.id = `h3-${i}`
     })
+    h4.forEach((tag, i) => {
+      tag.id = `h4-${i}`
+    })
   }, [])
 
   useEffect(() => {
-    const allHeadings = document.querySelectorAll('h1, h2, h3')
+    const allHeadings = document.querySelectorAll('h1, h2, h3, h4')
     headingRefs.current = Array.from({ length: allHeadings.length }, () =>
       React.createRef()
     )

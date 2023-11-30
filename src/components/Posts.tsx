@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 
 interface Post {
@@ -99,7 +99,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
               {fyear}
 
               {isNewMonth(+fmonth) && (
-                <div className="mt-8 text-[#ccc] mb-2 text-md">
+                <div className="mt-8 text-[#ccc] mb-2 text-sm">
                   {month.current}
                 </div>
               )}
