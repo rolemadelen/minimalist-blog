@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const About = () => {
   const [expand, setExpand] = useState(false)
-  const { owner, work_exp, work, education, contacts } = metadata
+  const { owner, work_exp, work, blog, education, contacts } = metadata
 
   const handleReadMore = () => {
     setExpand((prev) => !prev)
@@ -97,7 +97,7 @@ const About = () => {
                 <ul role="list">
                   {Object.keys(work_exp).map((key) => (
                     <li key={key} className="mb-2">
-                      <span className="w-28 inline-block">
+                      <span className="w-28 inline-block text-sm">
                         {work_exp[key].year}
                       </span>{' '}
                       <span className="inline-block">
@@ -126,7 +126,7 @@ const About = () => {
                 <ul role="list">
                   {Object.keys(education).map((key) => (
                     <li key={key} className="mb-2">
-                      <span className="w-16 inline-block">
+                      <span className="w-16 inline-block text-sm">
                         {education[key].year}
                       </span>{' '}
                       <span className="inline-block">
@@ -139,12 +139,13 @@ const About = () => {
             </div>
 
             <div className="mb-12">
-              <h2 className="text-xl mb-4 font-semibold">Creative Works</h2>
+              <h2 className="text-xl mb-2 font-semibold">Creative Works</h2>
               <div>
+                <div className="my-4 text-sm">Side Projects</div>
                 <ul role="list">
                   {Object.keys(work).map((key) => (
                     <li key={key} className="mb-2">
-                      <span className="w-16 inline-block">
+                      <span className="w-16 text-sm inline-block">
                         {work[key].year}
                       </span>{' '}
                       <span className="inline-block">
@@ -154,6 +155,27 @@ const About = () => {
                           rel="noopener noreferrer"
                         >
                           {work[key].project}
+                        </a>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="my-4 text-sm">
+                  Blog Design and Implementation
+                </div>
+                <ul role="list">
+                  {Object.keys(blog).map((key) => (
+                    <li key={key} className="mb-2">
+                      <span className="w-16 text-sm inline-block">
+                        {blog[key].year}
+                      </span>{' '}
+                      <span className="inline-block">
+                        <a
+                          href={blog[key].link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {blog[key].project}
                         </a>
                       </span>
                     </li>

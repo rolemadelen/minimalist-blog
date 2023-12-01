@@ -8,26 +8,26 @@ _created: 2023-05-10_
 
 ---
 
-Let me share with you a glimpse into my proudest moments, achievements and unforgettable experiences. While some may be buried in the depths of my memory, I acknowledge that I may have inadvertently missed a few along the way.
+Hey there! Welcome to my adventure filled with wins, cool moments, and unforgettable experiences. This is like a scrapbook of my fav memories, each one a step in my journey. Tried my best to remember them all, but hey, some probably got lost in the memory maze.
 
-_Want to hear about my failures?_ -> [Résumé of Failure](./resume-of-failure)
+_Curious about the not-so-great moments?_ -> [Résumé of Failure](./resume-of-failure)
 
 # ??
 
-- Elementary School - Triumphed over bullying as I discovered my speed and outpaced the fastest runner (the bully) in my grade.
-- Junior High - Successfully learned to play the clarinet and showcased my skills through a recital performance.
+- Elementary School - Outran the fastest kid (who happened to be a bully) in my grade. Who knew I was that fast?
+- Junior High - Picked up the clarinet and rocked a recital performance.
 
 # 2011
 
 - Transcending my comfort zone as a short-distance sprinter, I decided to challenge myself by joining a XC team.
-- Achieved a PR in XC, completing the 3-mile distance in 20:04.
+- Achieved a PR in XC, completing the 3-mile distance in 20:04 (it's actually pretty slow but not to me 😂)
 
 # 2012
 
 - Joined a track and field team and recorded a 100m dash time of 12.50 during tryouts.
 - Earned a spot on the varsity team for the 100m event.
 - Achieved a personal milestone by breaking the 12-second barrier in the 100m dash with a time of 11.88.
-- Contributed to the varsity 4x100 relay team's success as we secured first place, marking a historic victory for our school as acknowledged by our coach.
+- Played a pivotal role as the second leg in the varsity 4x100 relay, contributing to our school's first-ever victory in this event and securing the 1st place.
 
 # 2013
 
@@ -38,14 +38,14 @@ _Want to hear about my failures?_ -> [Résumé of Failure](./resume-of-failure)
 
 # 2016
 
-- Found a life partner, with whom I share a deep connection and companionship👧🏻
+- Found myself a life partner 👧🏻
 - Successfully transferred from a community college to UCSD, pursuing [Mathematics-Computer Science B.S.](https://math.ucsd.edu/students/undergraduate/ma30-math-computer-science-b-s)
 
 # 2017
 
 - Embraced the opportunity to broaden my perspectives and thinking by changing my major to [B.S. Cognitive Science Spec. in HCI](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)
 - Secured my first internship as a front-end developer at an exciting startup, gaining valuable industry experience.
-- Demonstrated perseverance and dedication during a rigorous 5-week tryout, earning a spot in the esteemed UCSD taiko group (Gen 17 💛)
+- Showed perseverance and dedication throughout a challenging 5-week tryout, earning a spot in UCSD's esteemed taiko group (Gen 17 💛).
 
 # 2018
 
@@ -70,18 +70,19 @@ _Want to hear about my failures?_ -> [Résumé of Failure](./resume-of-failure)
 # 2022
 
 - Found a [taiko team](https://www.taikolab.com/) near my place and happily joined.
-- Went on a trip to Korea to meet my best friend and had a great time.
+- Traveled to Korea to meet a friend I initially connected with online. I'm delighted that we had the chance to meet (hey bestie👋🏼).
 
 # 2023
 
+## February
+- Successfully launched a new website before my exit from the company.
 
 ## June
 
-- Our first attempt at floor installation turned out to be a triumph!
+- 🏠 Our first attempt at floor installation turned out to be a triumph!
 
 ## July
-- Upon returning home, I successfully passed the written driver's license test and obtained my Kentucky identification.
-- I'm officially a resident in Kentucky with a valid ID + Driver License.
+- CA to KY. I'm officially a resident in Kentucky with a valid ID + Driver License.
 
 ## September 
 - Volunteered as a freelance front-end developer and revamped the [Asayake Taiko website](https://asayaketaiko.ucsd.edu) using my skills. I'm glad they like it.

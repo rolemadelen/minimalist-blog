@@ -244,13 +244,6 @@ h6 {
         transform: translateY(-3px) rotateZ(-45deg);
       }
     }
-
-    &::after {
-      content: '(hi!)';
-      display: block;
-      font-size: 0.7rem;
-      text-align: center;
-    }
   }
 
   .ear-left,

@@ -8,6 +8,9 @@ type Metadata = {
   work: {
     [index: string]: any
   }
+  blog: {
+    [index: string]: any
+  }
   education: {
     [index: string]: any
   }
@@ -54,34 +57,71 @@ export const metadata: Metadata = {
   },
   work: {
     0: {
-      year: '2023',
+      year: '2023.08',
       project: 'Asayake Taiko Website Renewal',
       link: 'https://github.com/rolemadelen/asayake',
     },
-    1: {
-      year: '2023',
+    5: {
+      year: '2023.07',
       project: 'Things I Want',
       link: 'https://github.com/rolemadelen/things-i-want',
     },
-    2: {
-      year: '2023',
+    10: {
+      year: '2023.06',
+      project: 'Portfolio v1.0',
+      link: 'https://github.com/rolemadelen/rolemadelen.github.io',
+    },
+    20: {
+      year: '2023.03',
       project: 'Artlog',
       link: 'https://github.com/rolemadelen/artlog',
     },
-    3: {
-      year: '2022',
+    30: {
+      year: '2022.07',
       project: 'ghostvatar',
       link: 'https://github.com/rolemadelen/ghost-vatar',
     },
-    4: {
-      year: '2020',
+    40: {
+      year: '2020.05',
       project: 'Baekjoon Online Judge CLI',
       link: 'https://github.com/euisblue/euisblue.github.io',
     },
-    5: {
-      year: '2016',
+    50: {
+      year: '2016.04',
       project: 'TUI Chess',
       link: 'https://github.com/rolemadelen/chess',
+    },
+  },
+  blog: {
+    0: {
+      year: '2023.06',
+      project: 'Next.js - Minimalist Blog (current)',
+      link: 'https://github.com/rolemadelen/minimalist-blog',
+    },
+    1: {
+      year: '2023.04',
+      project: 'Next.js - Zettelkasten Blog',
+      link: 'https://github.com/rolemadelen/blog-v2',
+    },
+    2: {
+      year: '2022.05',
+      project: 'Next.js - Blog (Sorted by relevance)',
+      link: 'https://mido-blog.vercel.app/',
+    },
+    3: {
+      year: '2020.08',
+      project: 'Vue.js - Multilingual Blog',
+      link: 'https://old-vue-blog.netlify.app/',
+    },
+    4: {
+      year: '2020.03',
+      project: 'Next.js - Multilingual Blog',
+      link: 'https://bluelog-b6d3ilsz3-euisblue.vercel.app/',
+    },
+    5: {
+      year: '2019.09',
+      project: 'Jekyll - Multilingual Blog (modified a theme)',
+      link: 'https://euisblue.github.io/',
     },
   },
   education: {
