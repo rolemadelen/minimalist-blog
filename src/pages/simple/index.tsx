@@ -3,7 +3,6 @@ import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import Posts from '@/components/Posts'
 import { getAllPosts } from '@/lib/blog'
-import { atom, useAtom } from 'jotai'
 
 interface Post {
   lang: string
@@ -22,7 +21,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
     <>
       <Header />
       <ProgressBar />
-      <Posts posts={posts} />
+      <Posts posts={posts} simpleView={true} />
       <Footer pageFrom="blog" />
     </>
   )

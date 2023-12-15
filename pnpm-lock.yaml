@@ -17,6 +17,9 @@ dependencies:
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
+  jotai:
+    specifier: ^2.6.0
+    version: 2.6.0(@types/react@18.0.35)(react@18.2.0)
   next:
     specifier: 13.3.0
     version: 13.3.0(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
@@ -61,6 +64,9 @@ dependencies:
     version: 3.3.1(postcss@8.4.21)
 
 devDependencies:
+  '@swc-jotai/react-refresh':
+    specifier: ^0.1.0
+    version: 0.1.0
   '@types/node':
     specifier: 18.15.11
     version: 18.15.11
@@ -754,6 +760,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.2
+    dev: true
+
+  /@swc-jotai/react-refresh@0.1.0:
+    resolution:
+      {
+        integrity: sha512-CWV4W06GdfQo3cW3CoUM2fp7avH4Z/suR7SvECNJnQbr6Sa9U3p7o10nXjNv2zT6z09bbNUPM55HBw5Nwd24Iw==,
+      }
     dev: true
 
   /@swc/helpers@0.4.14:
@@ -2810,6 +2823,25 @@ packages:
         integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==,
       }
     hasBin: true
+    dev: false
+
+  /jotai@2.6.0(@types/react@18.0.35)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-Vt6hsc04Km4j03l+Ax+Sc+FVft5cRJhqgxt6GTz6GM2eM3DyX3CdBdzcG0z2FrlZToL1/0OAkqDghIyARWnSuQ==,
+      }
+    engines: { node: '>=12.20.0' }
+    peerDependencies:
+      '@types/react': '>=17.0.0'
+      react: '>=17.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.0.35
+      react: 18.2.0
     dev: false
 
   /js-tokens@4.0.0:

@@ -11,9 +11,10 @@ interface Post {
 
 interface Props {
   posts: Post[]
+  simpleView?: boolean
 }
 
-const Posts: React.FC<Props> = ({ posts }) => {
+const Posts: React.FC<Props> = ({ posts, simpleView = false }) => {
   const year = useRef('')
   const month = useRef<null | string>(null)
 
@@ -29,7 +30,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
         <>
           <div className="my-32 sm:my-20"></div>
           <div
-            className="text-[#ccc] absolute top-[-6rem] sm:left-[-6rem] sm:top-[-2.5rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]"
+            className="text-[#505050] absolute top-[-6rem] sm:left-[-6rem] sm:top-[-2.5rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]"
             key={postYear}
           >
             {postYear}
@@ -88,32 +89,53 @@ const Posts: React.FC<Props> = ({ posts }) => {
     return { fyear, fmonth, fdate }
   }
 
+  const displaySimpleView = (slug: string, title: string, date: string) => {
+    const { fyear, fmonth, fdate } = formatDate(date)
+
+    if (!simpleView) {
+      return (
+        <div className="relative">
+          {fyear}
+
+          {isNewMonth(+fmonth) && (
+            <div className="mt-8 text-[#505050] mb-2 text-sm font-semibold">
+              {month.current}
+            </div>
+          )}
+          <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
+            <div className="post-list items-center flex text-md mb-2">
+              <div className="hidden sm:block flex-[0.1] text-[#505050] text-xs">
+                {fdate}
+              </div>
+              <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
+                {title}
+              </div>
+            </div>
+          </Link>
+        </div>
+      )
+    } else {
+      return (
+        <div className="relative">
+          <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
+            <div className="post-list text-md mb-4">
+              <div className="text-[#777] text-xs">{date.split(' ')[0]}</div>
+              <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
+                {title}
+              </div>
+            </div>
+          </Link>
+        </div>
+      )
+    }
+  }
+
   return (
     <div className="max-w-[36rem] m-auto mb-20 px-6">
       {posts.map(({ date, slug, title }, i) => {
-        const { fyear, fmonth, fdate } = formatDate(date)
-
         return (
           <React.Fragment key={i}>
-            <div className="relative">
-              {fyear}
-
-              {isNewMonth(+fmonth) && (
-                <div className="mt-8 text-[#ccc] mb-2 text-sm">
-                  {month.current}
-                </div>
-              )}
-              <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
-                <div className="post-list items-center flex text-md mb-2">
-                  <div className="hidden sm:block flex-[0.125] text-[#ccc] text-sm">
-                    {fdate}
-                  </div>
-                  <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
-                    {title}
-                  </div>
-                </div>
-              </Link>
-            </div>
+            {displaySimpleView(slug, title, date)}
           </React.Fragment>
         )
       })}
