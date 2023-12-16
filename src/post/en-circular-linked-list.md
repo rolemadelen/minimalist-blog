@@ -24,7 +24,7 @@ is linked with the last node. This is perhaps why it's called a _circular_ linke
 
 A circular linked list is a variation of a singly and a doubly linked list, thus the structure of a node in a circular list will be based on the type of a linked list we use.
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 ```cpp
 template <class T>
@@ -38,7 +38,7 @@ class Node
 };
 ```
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 ```cpp
 template <class T>
@@ -79,7 +79,7 @@ class CircularLinkedList
 
 ## Constructor
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 In a singly linked list, most operations start by accessing the first node and traverse to insert, delete, or search an element. So we save the first element into a node called `head` or `first` (names don't matter, but these two are typically used).
 
@@ -104,7 +104,7 @@ We don't have to traverse the whole list; we can insert a new element at the end
 
 <div class="divider"></div>
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 A doubly linked list can traverse the list in both ways using `next` and `prev` pointers, thus there's no need to use the `last` node.
 
@@ -126,7 +126,7 @@ DoublyLinkedList<T>::DoublyLinkedList(int val)
 
 ## Insert at the beginning
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 ```cpp
 template <class T>
@@ -150,7 +150,7 @@ Currently our `last->next` is pointing at A. We need to update this so that it's
   <img src="/images/data-structure/linked-list/cll-singly-insert_at2.png" alt="circular doubly linked list picture">
 </div>
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 ```cpp
 template <class T>
@@ -186,7 +186,7 @@ And lastly, update our current `head->prev` so that it points to `newNode`.
 
 ## Insert at the end
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 At the beginning of this post, I mentioned that it's easier to insert an element at the end when we use the `tail` node. This is the part.
 
@@ -215,7 +215,7 @@ Now change the link for `last->next` so that its pointing `newNode`, which is ou
   <img src="/images/data-structure/linked-list/cll-singly-insert3.png" alt="circular singly list image">
 </div>
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 ```cpp
 template <class T>
@@ -251,7 +251,7 @@ Last but not least, the previous node of our current `head` should now be the `n
 
 ## Remove the first node
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 ```cpp
 template <class T>
@@ -277,7 +277,7 @@ we can let our `last->next` point it its next which is `last->next->next`.
   <img src="/images/data-structure/linked-list/cll-singly-remove-at1.png" alt="circular doubly linked list picture">
 </div>
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 ```cpp
 template <class T>
@@ -312,7 +312,7 @@ And update the `head` and we're done.
  
 ## Remove the last node
 
-### **Circular Singly Linked List**
+### Circular Singly Linked List
 
 ```cpp
 template <class T>
@@ -349,7 +349,7 @@ Then we delete our current `last` and we're done.
   <img src="/images/data-structure/linked-list/cll-singly-remove-at3.png" alt="circular doubly linked list picture">
 </div>
 
-### **Circular Doubly Linked List**
+### Circular Doubly Linked List
 
 ```cpp
 template <class T>

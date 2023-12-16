@@ -1,9 +1,10 @@
-import Header from '@/components/Header'
+import Header, { simpleViewAtom } from '@/components/Header'
 import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import Posts from '@/components/Posts'
 import { getAllPosts } from '@/lib/blog'
-import { atom, useAtom } from 'jotai'
+import { atom, useAtom, useSetAtom } from 'jotai'
+import { useEffect } from 'react'
 
 interface Post {
   lang: string

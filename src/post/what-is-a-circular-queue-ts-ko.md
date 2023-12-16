@@ -13,7 +13,7 @@ date: '2023-03-16 06:00:00'
 
 ## 원형 큐의 기본 연산 - 의사코드
 
-### **생성자**
+### 생성자
 
 ```text
 constructor(size)
@@ -24,7 +24,7 @@ constructor(size)
 end
 ```
 
-### **isEmpty**
+### isEmpty
 
 리스트가 비어있는지 확인하는 함수.
 
@@ -34,7 +34,7 @@ isEmpty() → boolean
 end
 ```
 
-### **isFull**
+### isFull
 
 큐의 포화상태 여부를 확인하는 함수이다. 만약 `rear` 인덱스가 `front` 보다 바로 전에 자리 잡고 있다면 포화상태로 인식한다.
 
@@ -44,7 +44,7 @@ isFull() → boolean
 end
 ```
 
-### **enqueue**
+### enqueue
 
 리스트 끝에 데이터를 추가하는 함수.
 
@@ -63,7 +63,7 @@ enqueue(item) → void
 end
 ```
 
-### **dequeue**
+### dequeue
 
 리스트의 첫번째 항목을 제거하는 함수.
 

@@ -1,4 +1,4 @@
-import Header from '@/components/Header'
+import Header, { simpleViewAtom } from '@/components/Header'
 import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import Posts from '@/components/Posts'
