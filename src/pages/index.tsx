@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import Posts from '@/components/Posts'
 import { getAllPosts } from '@/lib/blog'
-import { atom, useAtom, useSetAtom } from 'jotai'
+import { useSetAtom } from 'jotai'
 import { useEffect } from 'react'
 
 interface Post {
@@ -19,6 +19,10 @@ interface Props {
 }
 
 const Blog: React.FC<Props> = ({ posts }) => {
+  const setIsSimpleView = useSetAtom(simpleViewAtom)
+  useEffect(() => {
+    setIsSimpleView(false)
+  }, [])
   return (
     <>
       <Header />

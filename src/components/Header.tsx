@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { atom, useAtom } from 'jotai'
+import { atom, useAtomValue } from 'jotai'
 
 export const simpleViewAtom = atom(false)
 
 const Header = () => {
-  const [isSimpleView, setIsSimpleView] = useAtom(simpleViewAtom)
+  const isSimpleView = useAtomValue(simpleViewAtom)
 
   return (
     <header className="max-w-[36rem] m-auto mt-20 mb-16 px-6">
@@ -21,10 +21,7 @@ const Header = () => {
             <Link href="https://www.jiieu.com">Portfolio</Link>
           </li>
           <li className="text-sm hover:underline text-sky-700">
-            <Link
-              href={isSimpleView ? '/' : '/simple'}
-              onClick={() => setIsSimpleView(!isSimpleView)}
-            >
+            <Link href={isSimpleView ? '/' : '/simple'}>
               {isSimpleView ? 'Regular' : 'Simplified'}
             </Link>
           </li>

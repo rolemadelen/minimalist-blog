@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import Link from 'next/link'
+import { useAtomValue } from 'jotai'
+import { simpleViewAtom } from './Header'
 
 interface Post {
   lang: string
@@ -11,10 +13,10 @@ interface Post {
 
 interface Props {
   posts: Post[]
-  simpleView?: boolean
 }
 
-const Posts: React.FC<Props> = ({ posts, simpleView = false }) => {
+const Posts: React.FC<Props> = ({ posts }) => {
+  const isSimpleView = useAtomValue(simpleViewAtom)
   const year = useRef('')
   const month = useRef<null | string>(null)
 
@@ -92,7 +94,7 @@ const Posts: React.FC<Props> = ({ posts, simpleView = false }) => {
   const displaySimpleView = (slug: string, title: string, date: string) => {
     const { fyear, fmonth, fdate } = formatDate(date)
 
-    if (!simpleView) {
+    if (!isSimpleView) {
       return (
         <div className="relative">
           {fyear}
