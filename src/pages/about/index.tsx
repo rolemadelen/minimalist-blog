@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import { metadata } from '@/lib/metadata'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const About = () => {
@@ -14,17 +15,52 @@ const About = () => {
     <>
       <ProgressBar />
       <div className="about max-w-[36rem] m-auto px-4">
-        <div className="header mb-16">
-          <div className="border-b mb-8">
-            <h1 className="text-5xl mt-36 leading-tight font-semibold">
-              {owner.name}
-            </h1>
-            <h3 className="text-md mb-2">{owner.role}</h3>
-            <h4 className="text-sm mb-8 text-gray-500">
-              📮 <a href={`mailto:${owner.email}`}>{owner.email}</a>
-            </h4>
-          </div>
+        <div className="header">
+          <div className="border-b mt-4 mb-8 py-8 flex items-center">
+            <Image
+              className="rounded-lg mr-4"
+              src="/profile.webp"
+              width={120}
+              height={120}
+              alt="profile"
+            />
+            <div>
+              <h1 className="text-5xl leading-tight font-semibold">
+                {owner.name}
+              </h1>
+              <h3 className="text-md mb-4">{owner.role}</h3>
+              <h4 className="text-sm text-gray-500">
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://twitter.com/rolemadelen"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      src={'/x-logo.png'}
+                      width={15}
+                      height={15}
+                      alt="twitter"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/rolemadelen"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      src={'/gh-logo.png'}
+                      width={20}
+                      height={20}
+                      alt="github"
+                    />
+                  </a>
 
+                  <a href={`mailto:${owner.email}`}>{owner.email}</a>
+                </div>
+              </h4>
+            </div>
+          </div>
           <div className="content mb-10 text-left border-b pb-16">
             <h2 className="text-xl mb-4 font-semibold">About</h2>
             <div className="mb-8">

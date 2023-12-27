@@ -36,7 +36,18 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta content="summary_large_image" property="twitter:card" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-64x64.png"
+          sizes="64x64"
+        />
       </Head>
       <Component {...pageProps} />
     </>

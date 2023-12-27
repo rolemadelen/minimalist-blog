@@ -20,7 +20,6 @@ interface Props {
 
 const Blog: React.FC<Props> = ({ posts }) => {
   const setIsSimpleView = useSetAtom(simpleViewAtom)
-
   useEffect(() => {
     setIsSimpleView(true)
   }, [])
