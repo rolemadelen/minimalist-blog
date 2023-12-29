@@ -2,6 +2,7 @@
 title: 'What is a Singly Linked List?'
 date: '2020-08-10 07:00:00'
 updated: '2020-11-15 07:00:00'
+lang: 'en'
 ---
 
 # Singly Linked List?

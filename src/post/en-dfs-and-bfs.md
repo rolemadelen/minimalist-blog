@@ -1,6 +1,7 @@
 ---
 title: 'DFS and BFS'
 date: '2020-09-22 07:00:00'
+lang: 'en'
 ---
 
 ![](/images/algorithm/graph/dfsbfs.gif)

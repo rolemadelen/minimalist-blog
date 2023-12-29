@@ -1,6 +1,7 @@
 ---
 title: 'gpg: signing failed: Inappropriate ioctl for device'
 date: '2023-06-05 19:15:00'
+lang: 'en'
 ---
 
 # Error

@@ -1,6 +1,7 @@
 ---
 title: 'What is a Doubly Linked List?'
 date: '2020-08-12 07:00:00'
+lang: 'en'
 ---
 
 # What is Doubly Linked List?

@@ -1,6 +1,7 @@
 ---
 title:  "Devouring Study Week 3: Stack & Queue"
 date:   "2021-03-14 07:00:00"
+lang: 'ko'
 ---
 
 지금까지 배열과 연결리스트에 대해서 공부를 했습니다. **배열의 최고의 장점**으로는 **임의접근**(*random access*)이 가능하다는 것이었습니다. 

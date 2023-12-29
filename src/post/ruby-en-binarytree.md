@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] What is a Binary Tree?'
 date: '2020-09-20 07:00:00'
+lang: 'en'
 ---
 
 # Binary Tree

@@ -1,6 +1,7 @@
 ---
 title: 'process.stdout.write vs. console.log'
 date: '2023-05-24 21:58:00'
+lang: 'en'
 ---
 
 What's the difference between `process.stdout.write` and `console.log`?

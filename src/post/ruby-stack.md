@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] What is a Stack?'
 date: '2020-08-17 07:00:00'
+lang: 'en'
 ---
 
 # What is Stack?

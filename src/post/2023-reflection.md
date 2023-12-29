@@ -1,6 +1,7 @@
 ---
 title: '2023 Year-End Reflection'
 date: '2023-12-29 05:15:00'
+lang: 'en'
 ---
 
 The year 2023 in two sentences:  **"Career-wise, it was the most dreadful year I ever had. On a persnal level, it was the greatest year I ever had."**

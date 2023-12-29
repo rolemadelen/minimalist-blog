@@ -1,6 +1,7 @@
 ---
 title:  "Python for Data Analysis - Numpy"
 date:   "2022-01-31 07:00:00"
+lang: 'ko'
 ---
 
 # Numpy 준비하기

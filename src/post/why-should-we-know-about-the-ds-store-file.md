@@ -1,6 +1,7 @@
 ---
 title: 'Why should I know about the .DS_Store'
 date: '2023-09-24 11:11'
+lang: 'en'
 ---
 
 `.DS_Store` file stands for _Desktop Services Store file_. This file is automatically created by the Mac operating system whenever you visit any directory with the _Finder_ application. Once created, this file will follow you even when you zip or compress the files in the same directory.

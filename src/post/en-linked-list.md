@@ -2,6 +2,7 @@
 title: 'What is a Linked List?'
 date: '2020-08-03 07:00:00'
 updated: '2020-11-01 07:00:00'
+lang: 'en'
 ---
 
 # Linked List

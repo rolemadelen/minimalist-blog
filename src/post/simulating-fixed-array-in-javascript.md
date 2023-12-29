@@ -1,6 +1,7 @@
 ---
 title: 'Simulating a fixed array in JavaScript'
 date: '2023-07-30 10:49:00'
+lang: 'en'
 ---
 
 # Arrays in JavaScript

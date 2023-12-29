@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] What is a Queue?'
 date: '2020-08-20 07:00:00'
+lang: 'en'
 ---
 
 # What is Queue

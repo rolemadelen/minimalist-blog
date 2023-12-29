@@ -2,6 +2,7 @@
 title: 'Tired of Social Media'
 date: '2023-08-05 07:15:00'
 updated: '2023-08-10 21:46:00'
+lang: 'en'
 ---
 
 I have to admit, it's become a bit of a habit for me to reach for my phone and check social media as soon as I wake up. Instagram, BlueSky, and Twitter (or X).

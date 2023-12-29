@@ -1,6 +1,7 @@
 ---
 title: 'Map vs. Weak Map'
 date: '2023-07-12 11:21:00'
+lang: 'en'
 ---
 
 JavaScript provides two different types of Map data structures: one that stores the key _(Map)_ and the other

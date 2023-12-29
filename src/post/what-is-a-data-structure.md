@@ -2,6 +2,7 @@
 title: 'What is a Data Structure?'
 date: '2022-07-04 22:20:00'
 updated: '2023-09-25 14:05:00'
+lang: 'en'
 ---
 
 A data structure represents a specialized format for organizing, processing, retrieving, and storing data. It makes it easier and more efficient for developers to work with data elements.

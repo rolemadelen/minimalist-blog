@@ -1,6 +1,7 @@
 ---
 title: 'I decided to make a portfolio'
 date: '2023-06-25 14:09:00'
+lang: 'en'
 ---
 
 I always thought my one-page resume with relevant work experiences, projects, and a link to my GitHub was enough to represent my skills. But I think it's time to think differently. Companies receive too many applications, and it's just not possible for them to read every bit of information in a resume or check links and GitHub profiles for every applicant. I need to stand out. I need to grab their attention. I need to make them want to know more about me.

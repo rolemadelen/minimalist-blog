@@ -1,6 +1,7 @@
 ---
 title: "[RoR] Migrating from SQLite3 to PostgreSQL"
 date: "2021-12-17 07:00:00"
+lang: 'en'
 ---
 
 Machine used: **macOS Monterey Version 12.0.1**

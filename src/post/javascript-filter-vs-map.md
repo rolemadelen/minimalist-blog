@@ -1,6 +1,7 @@
 ---
 title: '[JavaScript] Array filter vs. map'
 date: '2023-02-13 11:45:00'
+lang: 'en'
 ---
 
 # Array.prototype.filter

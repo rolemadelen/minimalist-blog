@@ -1,6 +1,7 @@
 ---
 title: 'Bubble Sort'
 date: '2020-08-04 07:00:00'
+lang: 'en'
 ---
 
 # Bubble Sort

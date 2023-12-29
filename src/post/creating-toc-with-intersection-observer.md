@@ -1,6 +1,7 @@
 ---
 title: 'Creating TOC with Intersection Observer API in React'
 date: '2023-11-11 18:30:00'
+lang: 'en'
 ---
 
 _Disclaimer:_

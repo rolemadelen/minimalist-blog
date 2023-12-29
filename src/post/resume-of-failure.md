@@ -2,6 +2,7 @@
 title: '😃 Résumé of Failure'
 created: '2023-05-10 17:00:00'
 date: '2023-06-20 16:55:00'
+lang: 'en'
 ---
 
 _created: 2023-05-10_

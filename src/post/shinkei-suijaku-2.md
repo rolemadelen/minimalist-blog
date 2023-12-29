@@ -1,6 +1,7 @@
 ---
 title: 'Shinkei Suijaku - Flipping Cards'
 date: '2023-06-13 22:00:00'
+lang: 'en'
 ---
 
 [Previously](./shinkei-suijaku-project-setup), I have implemented the component for the card.

@@ -1,6 +1,7 @@
 ---
 title: "[RoR] How to use partial template"
 date: "2022-01-01 06:00:00"
+lang: 'en'
 ---
 
 # Partial Template

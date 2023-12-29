@@ -1,6 +1,7 @@
 ---
 title: "[C/C++] Arrays"
 date: "2021-10-27 07:00:00"
+lang: 'en'
 ---
 
 # What is an Array?

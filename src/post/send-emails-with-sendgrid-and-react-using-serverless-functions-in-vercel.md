@@ -1,6 +1,7 @@
 ---
 title: 'Build a Contact Form Using Serverless Functions in Vercel'
 date: '2023-09-22 10:00'
+lang: 'en'
 ---
 
 # Install Dependencies

@@ -1,7 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Link from 'next/link'
-import { useAtomValue } from 'jotai'
-import { simpleViewAtom } from './Header'
+import { atom, useAtom } from 'jotai'
+
+export const simpleViewAtom = atom(false)
+export const englishOnlyAtom = atom(false)
 
 interface Post {
   lang: string
@@ -16,7 +18,8 @@ interface Props {
 }
 
 const Posts: React.FC<Props> = ({ posts }) => {
-  const isSimpleView = useAtomValue(simpleViewAtom)
+  const [isEnglishOnly, setIsEnglish] = useAtom(englishOnlyAtom)
+  const [isSimpleView, setIsSimpleView] = useAtom(simpleViewAtom)
   const year = useRef('')
   const month = useRef<null | string>(null)
 
@@ -30,9 +33,8 @@ const Posts: React.FC<Props> = ({ posts }) => {
 
       return (
         <>
-          <div className="my-32 sm:my-20"></div>
           <div
-            className="text-[#505050] absolute top-[-6rem] sm:left-[-6rem] sm:top-[-2.5rem] text-xl sm:text-3xl font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]"
+            className="text-[#505050] sm:absolute top-[-6rem] sm:left-[-6rem] sm:top-[-2.5rem] text-3xl font-semibold sm:font-light tracking-widest sm:rotate-[-90deg] mt-[4rem]  mb-[-1rem] sm:mb-0"
             key={postYear}
           >
             {postYear}
@@ -91,7 +93,14 @@ const Posts: React.FC<Props> = ({ posts }) => {
     return { fyear, fmonth, fdate }
   }
 
-  const displaySimpleView = (slug: string, title: string, date: string) => {
+  const displaySimpleView = (
+    slug: string,
+    title: string,
+    date: string,
+    lang: string
+  ) => {
+    if (isEnglishOnly && lang !== 'en') return
+
     const { fyear, fmonth, fdate } = formatDate(date)
 
     if (!isSimpleView) {
@@ -109,7 +118,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
               <div className="hidden sm:block flex-[0.1] text-[#505050] text-xs">
                 {fdate}
               </div>
-              <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
+              <div className="ml-4 sm:ml-0 whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
                 {title}
               </div>
             </div>
@@ -134,10 +143,39 @@ const Posts: React.FC<Props> = ({ posts }) => {
 
   return (
     <div className="max-w-[36rem] m-auto mb-20 px-6">
-      {posts.map(({ date, slug, title }, i) => {
+      <div className="flex items-center mb-4 justify-end gap-6">
+        <div className="flex item-center">
+          <input
+            className="mr-1"
+            type="checkbox"
+            name="simpleView"
+            id="simpleView"
+            checked={isSimpleView}
+            onChange={() => setIsSimpleView(!isSimpleView)}
+          />
+          <label className="text-gray-500 text-sm" htmlFor="simpleView">
+            Simplified
+          </label>
+        </div>
+        <div className="flex items-center">
+          <input
+            className="mr-1"
+            type="checkbox"
+            name="language"
+            id="language"
+            checked={isEnglishOnly}
+            onChange={() => setIsEnglish(!isEnglishOnly)}
+          />
+          <label className="text-gray-500 text-sm" htmlFor="language">
+            English only
+          </label>
+        </div>
+      </div>
+
+      {posts.map(({ date, slug, title, lang }, i) => {
         return (
           <React.Fragment key={i}>
-            {displaySimpleView(slug, title, date)}
+            {displaySimpleView(slug, title, date, lang)}
           </React.Fragment>
         )
       })}

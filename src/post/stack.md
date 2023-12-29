@@ -1,6 +1,7 @@
 ---
 title: 'What is a Stack?'
 date: '2023-04-05 08:00:00'
+lang: 'en'
 ---
 
 # Stack

@@ -1,6 +1,7 @@
 ---
 title:  "Python Fundamentals"
 date:   "2022-01-30 07:00:00"
+lang: 'ko'
 ---
 
 # 정수형 (Integer)

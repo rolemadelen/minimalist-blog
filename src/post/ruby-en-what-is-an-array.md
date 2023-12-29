@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] What is an Array?'
 date: '2020-08-01 07:00:00'
+lang: 'en'
 ---
 
 # What is an Array?

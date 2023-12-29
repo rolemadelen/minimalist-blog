@@ -1,6 +1,7 @@
 ---
 title: 'Mobs are attacking you (feat. Linked List)'
 date: '2023-07-05 09:00:00'
+lang: 'en'
 ---
 
 # What is a Linked List?

@@ -1,6 +1,7 @@
 ---
 title: 'Mac에서 GPG key 생성하기'
 date: '2022-12-28 05:29:00'
+lang: 'ko'
 ---
 
 먼저 `gnupg`가 있어야한다. [여기](https://www.gnupg.org/download/)에서 다운받거나 `brew`를 사용한다.

@@ -1,6 +1,7 @@
 ---
 title: 'How to install rustp using the fish shell'
 date: '2023-06-15 20:00:00'
+lang: 'en'
 ---
 
 You can install rustup by executing the following command:

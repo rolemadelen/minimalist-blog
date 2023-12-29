@@ -1,6 +1,7 @@
 ---
 title: 'Shinkei Suijaku - Project Setup & Card UI'
 date: '2023-06-12 22:00:00'
+lang: 'en'
 ---
 
 # Shinkei Suijaku (神経衰弱)

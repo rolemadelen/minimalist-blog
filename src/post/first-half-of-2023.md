@@ -1,6 +1,7 @@
 ---
 title: 'First half of 2023'
 date: '2023-07-03 15:52:00'
+lang: 'en'
 ---
 
 # Life

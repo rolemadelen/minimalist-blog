@@ -1,6 +1,7 @@
 ---
 title: 'Error - gpg: signing failed: No pinentry'
 date: '2023-02-05 12:00:00'
+lang: 'ko'
 ---
 
 나는 깃허브에 GPG key를 추가해서 커밋에 서명을 하고 있다.

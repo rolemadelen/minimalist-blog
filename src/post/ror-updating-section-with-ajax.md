@@ -1,6 +1,7 @@
 ---
 title: "[RoR] Updating a section with AJAX"
 date: "2022-01-01 11:00:00"
+lang: 'en'
 ---
 
 I was implementing a search feature for my [toy-project](https://github.com/euisblue/til-archive).

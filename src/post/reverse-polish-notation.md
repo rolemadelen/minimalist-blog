@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] Reverse Polish Notation'
 date: '2020-09-13 07:00:00'
+lang: 'en'
 ---
 
 # Reverse Polish Notation

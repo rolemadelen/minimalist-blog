@@ -1,6 +1,7 @@
 ---
 title: '[Ruby] What is a Binary Search Tree?'
 date: '2020-08-20 07:00:00'
+lang: 'en'
 ---
 
 # What is Binary Search Tree?

@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { useAtomValue } from 'jotai'
-import { simpleViewAtom } from './Header'
 
 interface Props {
   title: string
@@ -9,7 +7,6 @@ interface Props {
 }
 
 const PostHeader: React.FC<Props> = ({ title, date }) => {
-  const isSimpleView = useAtomValue(simpleViewAtom)
   const formattedDate = new Date(date).toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'short',
@@ -23,7 +20,7 @@ const PostHeader: React.FC<Props> = ({ title, date }) => {
       </div>
       <div className="flex justify-between items-center mb-20">
         <div className="text-[#777] w-fit">{formattedDate}</div>
-        <Link href={`/${isSimpleView ? 'simple' : ''}`} title="Back to home">
+        <Link href="/" title="Back to home">
           <div className="border-[1px] w-fit rounded-lg border-gray-300 hover:bg-black hover:border-black hover:text-[#eee] duration-200 flex justify-center items-center px-2">
             ←
           </div>

@@ -1,6 +1,7 @@
 ---
 title: 'Primality Test'
 date: '2023-04-03 06:45:00'
+lang: 'en'
 ---
 
 A prime number is a number that can only be divided by 1 and itself without resulting in a fraction or decimal.

@@ -1,6 +1,7 @@
 ---
 title: 'Collection of Solved Leetcode Problems'
 date: '2023-08-13 08:56'
+lang: 'en'
 ---
 
 Starting from August 12th, I've planned to engage in solving a LeetCode problem daily.

@@ -1,6 +1,7 @@
 ---
 title: 'Sendgrid in Vercel fails to send and email when deployed'
 date: '2023-08-15 11:36:00'
+lang: 'en'
 ---
 
 # SendGrid

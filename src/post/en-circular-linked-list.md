@@ -1,6 +1,7 @@
 ---
 title: 'What is a Circular Linked List?'
 date: '2020-08-13 07:00:00'
+lang: 'en'
 ---
 
 ## What is a Circular Linked List?

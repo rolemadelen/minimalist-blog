@@ -1,6 +1,7 @@
 ---
 title: 'Sort by types?'
 date: '2023-07-05 22:31:00'
+lang: 'en'
 ---
 
 I came across an interesting problem today. Given an array with various values, the task is to extract the data based on their types, regroup them, and return those groups in an array. You can assume that the given array will never be empty. So here's an example.

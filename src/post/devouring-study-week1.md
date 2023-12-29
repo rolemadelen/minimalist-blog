@@ -1,6 +1,7 @@
 ---
 title:  "Devouring Study Week 1: Array & LinkedList"
 date:  "2021-02-28 07:00:00"
+lang: 'ko'
 ---
 
 배열과 연결리스트의 장단점과 연결리스트의 종류를 공부하고, 단일 연결리스트의 의사코드를 살펴봅니다.

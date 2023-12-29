@@ -1,6 +1,7 @@
 ---
 title: 'Selection Sort'
 date: '2020-08-04 17:00:00'
+lang: 'en'
 ---
 
 # Selection Sort

@@ -2,6 +2,7 @@
 title: 'How I Learned to Speak Japanese'
 date: '2023-02-26 18:00:00'
 updated: '2023-05-21 11:00:00'
+lang: 'en'
 ---
 
 # My exposure to Japanese
