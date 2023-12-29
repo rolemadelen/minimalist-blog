@@ -33,6 +33,9 @@ And for the negatives, here's my [resume of failure](./resume-of-failure#h1-11).
 - A very small contribution to [Adorable CSS](https://github.com/developer-1px/adorable-css/pull/76)
 
 # 2024 Goal
+
+- **Secure a Job**
+- Come up with a better portfolio.
 - Dive into the study of UI/UX and Web Design.
   - Start by redesigning existing indie websites, at least once every two months, and implement them using React.
 - Explore Animation and Interaction Design, such as GSAP and Framer. Also the 3D design using three.js
@@ -42,4 +45,3 @@ And for the negatives, here's my [resume of failure](./resume-of-failure#h1-11).
   - Beat Maker but with Taiko
 - Master playing [Shototsu](https://www.youtube.com/watch?v=1V6AayFe7v8) with Shinobue.
 - Reach 100 subscribers on YouTube.
-- **Secure a Job**
