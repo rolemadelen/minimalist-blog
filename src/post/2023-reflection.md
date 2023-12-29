@@ -30,7 +30,7 @@ And for the negatives, here's my [resume of failure](./resume-of-failure#h1-11).
 - Updated the UI of my blog (the one you're currently viewing).
 - Created my [second portfolio](https://www.jiieu.com/).
 - Launched a [programming YouTube channel](https://www.youtube.com/@rolemadelen) in Japanese.
-
+- A very small contribution to [Adorable CSS](https://github.com/developer-1px/adorable-css/pull/76)
 
 # 2024 Goal
 - Dive into the study of UI/UX and Web Design.
