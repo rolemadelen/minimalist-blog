@@ -24,7 +24,7 @@ And for the negatives, here's my [resume of failure](./resume-of-failure#h1-11).
 
 ![job application notion](/images/2023-year-end-reflection/notion-job-application.webp)
 
-- Recognizing the urgency and my misjudgment, [I decided to make a portfolio](./i-decided-to-make-a-portfolio) because I never had one. However, this didn't help much. Maybe there's an issue with my resume? I updated it, but the outcome remaind the same. I began questioning my experience and skills, **wondering if I'm simply not worth hiring**.
+- Recognizing the urgency and my misjudgment, [I decided to make a portfolio](./i-decided-to-make-a-portfolio) because I never had one. However, this didn't help much. Maybe there's an issue with my resume? I updated it, but the outcome remained the same. I began questioning my experience and skills, **wondering if I'm simply not worth hiring**.
 - Started learning new stacks and undertook side projects.
 - Revamped my former [taiko team's website](https://asayake.vercel.app/) using Svelte.
 - Updated the UI of my blog (the one you're currently viewing).
