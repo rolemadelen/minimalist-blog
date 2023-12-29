@@ -147,10 +147,7 @@ $--color-h4: #67a6b4;
       position: relative;
       left: 1rem;
       list-style: disc outside;
-
-      &:last-of-type {
-        margin-bottom: 1rem;
-      }
+      margin-bottom: 0.3rem;
 
       & > ul > li {
         list-style: circle outside;
