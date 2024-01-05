@@ -93,7 +93,7 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta content="Jii Eu" property="og:title" />
+        <meta content="Jii Yoo" property="og:title" />
         <meta content={title} property="og:description" />
         <meta content={title} property="twitter:description" />
       </Head>

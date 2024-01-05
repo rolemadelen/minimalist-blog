@@ -6,11 +6,11 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Jii Eu | Blog</title>
-        <meta content="Jii Eu | Front-End Developer" name="description" />
-        <meta content="Jii Eu" property="og:title" />
+        <title>Jii Yoo | Blog</title>
+        <meta content="Jii Yoo | Front-End Developer" name="description" />
+        <meta content="Jii Yoo" property="og:title" />
         <meta
-          content="Jii Eu | Front-End Developer"
+          content="Jii Yoo | Front-End Developer"
           property="og:description"
         />
         <meta
@@ -24,9 +24,9 @@ const App = ({ Component, pageProps }: AppProps) => {
           content="blog, javascript, front-end, developer, engineer"
         />
 
-        <meta content="Jii Eu" property="twitter:title" />
+        <meta content="Jii Yoo" property="twitter:title" />
         <meta
-          content="Jii Eu | Front-End Developer"
+          content="Jii Yoo | Front-End Developer"
           property="twitter:description"
         />
         <meta

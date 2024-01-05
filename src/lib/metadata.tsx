@@ -21,9 +21,9 @@ type Metadata = {
 
 export const metadata: Metadata = {
   owner: {
-    name: 'Jii Eu',
+    name: 'Jii Yoo',
     role: 'Front-End Engineer',
-    email: 'hello@jiieu.com',
+    email: 'rolemadelen@pm.me',
   },
   work_exp: {
     0: {
@@ -152,8 +152,8 @@ export const metadata: Metadata = {
     },
     linkedin: {
       name: 'LinkedIn',
-      handle: 'jiieu',
-      link: 'https://www.linkedin.com/in/jiieu/',
+      handle: 'jiiyoo',
+      link: 'https://www.linkedin.com/in/jiiyoo/',
     },
     instagram: {
       name: 'Instagram',
