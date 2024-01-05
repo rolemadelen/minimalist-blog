@@ -113,7 +113,7 @@ const About = () => {
                   to know more about me or are interested in discussing
                   potential remote opportunities, please don&apos;t hesitate to
                   reach out to me via email at{' '}
-                  <a href="mailto:hello@jiieu.com">hello@jiieu.com</a>.
+                  <a href="mailto:rolemadelen@pm.me">rolemadelen@pm.me</a>.
                 </p>
               </div>
               <div

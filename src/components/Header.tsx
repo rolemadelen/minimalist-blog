@@ -12,9 +12,6 @@ const Header = () => {
           <li className="text-sm hover:underline text-sky-700">
             <Link href="/about">About</Link>
           </li>
-          <li className="text-sm hover:underline text-sky-700">
-            <Link href="https://www.jiieu.com">Portfolio</Link>
-          </li>
         </ul>
       </nav>
     </header>
