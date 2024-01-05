@@ -25,7 +25,7 @@ const About = () => {
               alt="profile"
             />
             <div>
-              <h1 className="text-5xl leading-tight font-semibold">
+              <h1 className="flex items-center gap-4 text-4xl leading-tight font-semibold">
                 {owner.name}
               </h1>
               <h3 className="text-md mb-4">{owner.role}</h3>

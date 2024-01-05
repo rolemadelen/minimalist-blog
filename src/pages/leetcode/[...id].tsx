@@ -21,7 +21,7 @@ const Post: React.FC<IPost> = ({ post: { title, date, markdown } }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta content="Jii Yoo" property="og:title" />
+        <meta content="Jiwon Yoo" property="og:title" />
         <meta content={title} property="og:description" />
         <meta content={title} property="twitter:description" />
       </Head>

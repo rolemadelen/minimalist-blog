@@ -6,31 +6,31 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Jii Yoo | Blog</title>
-        <meta content="Jii Yoo | Front-End Developer" name="description" />
-        <meta content="Jii Yoo" property="og:title" />
+        <title>Jiwon (Jii) Yoo</title>
+        <meta content="Jiwon Yoo | Front-End Developer" name="description" />
+        <meta content="Jiwon Yoo" property="og:title" />
         <meta
-          content="Jii Yoo | Front-End Developer"
+          content="Jiwon Yoo | Front-End Developer"
           property="og:description"
         />
         <meta
-          content="https://blog.jiieu.com/ogimage.jpg"
+          content="https://blog.imjiwon.com/ogimage.jpg"
           property="og:image"
         />
         <meta content="website" property="og:type" />
-        <meta content="https://blog.jiieu.com" property="og:url" />
+        <meta content="https://blog.imjiwon.com" property="og:url" />
         <meta
           name="keyword"
           content="blog, javascript, front-end, developer, engineer"
         />
 
-        <meta content="Jii Yoo" property="twitter:title" />
+        <meta content="Jiwon Yoo" property="twitter:title" />
         <meta
-          content="Jii Yoo | Front-End Developer"
+          content="Jiwon Yoo | Front-End Developer"
           property="twitter:description"
         />
         <meta
-          content="https://blog.jiieu.com/ogimage.jpg"
+          content="https://blog.imjiwon.com/ogimage.jpg"
           property="twitter:image"
         />
         <meta content="summary_large_image" property="twitter:card" />
