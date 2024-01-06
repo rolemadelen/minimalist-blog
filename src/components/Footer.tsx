@@ -9,9 +9,7 @@ const Footer: React.FC<FooterProps> = ({ pageFrom }) => {
   return (
     <footer className="max-w-[18rem] m-auto flex flex-col items-center mt-5">
       <div className="footer max-w-[18rem] mb-5 m-auto flex justify-center item-center">
-        {pageFrom !== 'blog' && <Link href="/">blog</Link>}
-        {pageFrom !== 'about' && <Link href="/about">about</Link>}
-        <Link href="https://want.jiieu.com">want</Link>
+        © 2024 / JIWON YOO
       </div>
       <span className="puppy mb-16">
         <span className="ear-left">૮</span> • ᴥ •{' '}
