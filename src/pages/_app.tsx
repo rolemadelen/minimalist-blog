@@ -7,10 +7,10 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <title>Jiwon (Jii) Yoo</title>
-        <meta content="Jiwon Yoo | Front-End Developer" name="description" />
-        <meta content="Jiwon Yoo" property="og:title" />
+        <meta content="Jii Yoo | Front-End Developer" name="description" />
+        <meta content="Jii Yoo" property="og:title" />
         <meta
-          content="Jiwon Yoo | Front-End Developer"
+          content="Jii Yoo | Front-End Developer"
           property="og:description"
         />
         <meta
@@ -24,9 +24,9 @@ const App = ({ Component, pageProps }: AppProps) => {
           content="blog, javascript, front-end, developer, engineer"
         />
 
-        <meta content="Jiwon Yoo" property="twitter:title" />
+        <meta content="Jii Yoo" property="twitter:title" />
         <meta
-          content="Jiwon Yoo | Front-End Developer"
+          content="Jii Yoo | Front-End Developer"
           property="twitter:description"
         />
         <meta

@@ -21,7 +21,7 @@ type Metadata = {
 
 export const metadata: Metadata = {
   owner: {
-    name: 'Jiwon (Jii) Yoo',
+    name: 'Jii Yoo',
     role: 'Front-End Engineer',
     email: 'rolemadelen@pm.me',
   },
