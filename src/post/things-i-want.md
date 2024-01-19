@@ -43,4 +43,4 @@ I'm planning to create a similar website called 'Things I Own'. I'm not sure whe
 
 Anyway, you said you want to send me a gift for no reason? Just a second. I'll provide you with a link.
 
-[want.jiieu.com](https://want.jiieu.com)
+[want.jiiyoo.me](https://want.jiiyoo.me)

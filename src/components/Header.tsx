@@ -13,7 +13,7 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li className="text-sm hover:underline text-sky-700">
-            <Link href="https://want.imjiwon.com">Want</Link>
+            <Link href="https://want.jiiyoo.me">Want</Link>
           </li>
         </ul>
       </nav>

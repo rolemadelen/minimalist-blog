@@ -14,11 +14,11 @@ const App = ({ Component, pageProps }: AppProps) => {
           property="og:description"
         />
         <meta
-          content="https://blog.imjiwon.com/ogimage.jpg"
+          content="https://blog.jiiyoo.me/ogimage.jpg"
           property="og:image"
         />
         <meta content="website" property="og:type" />
-        <meta content="https://blog.imjiwon.com" property="og:url" />
+        <meta content="https://blog.jiiyoo.me" property="og:url" />
         <meta
           name="keyword"
           content="blog, javascript, front-end, developer, engineer"
@@ -30,7 +30,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           property="twitter:description"
         />
         <meta
-          content="https://blog.imjiwon.com/ogimage.jpg"
+          content="https://blog.jiiyoo.me/ogimage.jpg"
           property="twitter:image"
         />
         <meta content="summary_large_image" property="twitter:card" />

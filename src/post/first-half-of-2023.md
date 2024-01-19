@@ -40,7 +40,7 @@ I was able to regain my self-esteem and restore my confidence to where it should
 
 Recognizing that my resume, experiences, and projects were rather average,
 I realized that I was just one among many candidates out there.
-Therefore, [I made the decision to create a portfolio](./i-decided-to-make-a-portfolio) and update my [CV](<(https://www.jiieu.com/#/cv)>).
+Therefore, [I made the decision to create a portfolio](./i-decided-to-make-a-portfolio) and updated my CV.
 While I'm unsure if these actions will lead to any changes, I believe that good things will eventually come my way.
 
 # Projects
