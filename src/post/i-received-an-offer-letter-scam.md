@@ -8,7 +8,7 @@ lang: 'en'
 
 Below is a note from HeyOrca!
 
-> _Please note that we will only communicate with our job applicants by using @heyorca.com domains and no-reply@collage.co email. We will never contact applicants from any other email address. We will never ask for money or private information like SIN from potential employees. Be cautious of any unauthorized solicitations. You may view the most current and accurate job postings at HeyOrca by visiting_ [_https://www.heyorca.com/careers_](https://www.heyorca.com/careers)_._
+> _Please note that we will only communicate with our job applicants by using @heyorca.com domains and no-reply@collage.co.email. We will never contact applicants from any other email address. We will never ask for money or private information like SIN from potential employees. Be cautious of any unauthorized solicitations. You may view the most current and accurate job postings at HeyOrca by visiting_ [_https://www.heyorca.com/careers_](https://www.heyorca.com/careers)_._
 
 ---
 
