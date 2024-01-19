@@ -16,7 +16,7 @@ Below is a note from HeyOrca!
 The other day, I received an email from an individual identifying himself as a senior manager from HeyOrca. The email stated that I had previously applied to the company and inquired whether I am still interested in the job position.
 
 
-![](/images/offer-letter-scam/scammer-email-1.png)
+![](/images/offer-letter-scam/scammer-email-1.webp)
 
 I have applied to over 100 companies as a web developer, but I couldn't recall applying to this particular company. I checked my notes where I documented all the companies I had applied to, but there was no record of HeyOrca. However, I lost all records from mid-March to late April while migrating my notes from one place to another, and I thought, "Maybe I did apply before." So, I replied with, "Yes, I'm still interested in the position." 
 
@@ -24,7 +24,7 @@ Now, looking back, I can see this is obviously fake, but at the time, I didn't r
 
 Regardless, a day after expressing my interest in the position, I received another email with a PDF file containing 19 interview questions.
 
-![](/images/offer-letter-scam/scammer-email-2.png)
+![](/images/offer-letter-scam/scammer-email-2.webp)
 
 Here are the questions they asked:
 1. Are you currently employed?
@@ -49,19 +49,19 @@ Here are the questions they asked:
 
 I answered all these questions to the best of my ability and sent them back as a PDF. 
 
-![](/images/offer-letter-scam/scammer-email-3.png)
+![](/images/offer-letter-scam/scammer-email-3.webp)
 
 _"If you are hired at the conclusion of this procedure..."_, I wasn't sure if I read it correctly. Wasn't this just an initial screening interview? Was there no next interview, no face-to-face interaction? I found it a bit peculiar, but I still believed it because, once again, I had never experienced this type of scam ー dumb fuck.
 
 The next day, I received an email saying that I had been hired.
 
-![](/images/offer-letter-scam/scammer-email-4.png)
+![](/images/offer-letter-scam/scammer-email-4.webp)
 
 My gut instinct already sensed that this was not real because I wasn't excited at all. My initial reaction was more like, "this is it?.. hmmm 🤔" Everything seemed a bit suspicious, but I decided to proceed with the process and be cautious, ready to step back if they started asking for money. After all, if this is a scam, their ultimate aim would likely be to extract money from me, right?
 
 So, I accepted the offer, and shortly after, I received my offer letter attached to the email. The offer letter itself had some red flags as well. It had no information about the company. No address, no number, nothing.
 
-![](/images/offer-letter-scam/scammer-email-5.png)
+![](/images/offer-letter-scam/scammer-email-5.webp)
 
 Take a look at the items they said I'm gonna need (to buy, I presume?):
 - 2023 MacBook Pro LapTop M2 Max -  _Sure, I'll take it_
@@ -74,17 +74,17 @@ Once again, everything seemed suspicious, but I decided to proceed until they as
 
 Then, I received a congratulations email. From here, we used Google Chat to communicate.
 
-![](/images/offer-letter-scam/scammer-email-6.png)
+![](/images/offer-letter-scam/scammer-email-6.webp)
 
 ---
 
 Now that I think about it, there were so many weird things. Why am I going over this training with a recruiter? Shouldn't I be interacting with someone from the engineering team? I even asked whether I'll be having a meeting with the dev team, and notice how this person is evading this topic.
 
-![](/images/offer-letter-scam/scammer-1.png)
+![](/images/offer-letter-scam/scammer-1.webp)
 
 Take a look at the next conversation. This is where I fully recognized that it's a scam. 
 
-![](/images/offer-letter-scam/scammer-2.png)
+![](/images/offer-letter-scam/scammer-2.webp)
 
 He did not ask ME to pay for the equipment listed in the earlier email, which was unexpected. Instead, he mentioned sending me a check. The plan was for me to deposit that money into my bank and use it to order the equipment through their accredited vendor. At this point I knew this was a scam, but I wasn't sure about why they were sending me a check.
 
@@ -92,7 +92,7 @@ After some research, I found out that this is another way scammers make money. T
 
 Still the above was just my theory but he proved it by asking me about the daily deposit limit for my mobile banking. This way, he could send a check with the maximum amount of money I could deposit, meaning more money for them.
 
-![](/images/offer-letter-scam/scammer-3.png)
+![](/images/offer-letter-scam/scammer-3.webp)
 
 The moment I asked to have a Zoom call, he stopped responding to me. So, I just blocked him and the email address he used.
 
