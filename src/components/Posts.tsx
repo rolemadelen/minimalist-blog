@@ -109,7 +109,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
           {fyear}
 
           {isNewMonth(+fmonth) && (
-            <div className="mt-8 text-[#505050] mb-2 text-sm font-semibold">
+            <div className="mt-12 text-[#505050] mb-2 text-sm font-semibold">
               {month.current}
             </div>
           )}

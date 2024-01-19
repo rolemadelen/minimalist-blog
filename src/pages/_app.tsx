@@ -6,7 +6,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Jiwon (Jii) Yoo</title>
+        <title>Jii Yoo</title>
         <meta content="Jii Yoo | Front-End Developer" name="description" />
         <meta content="Jii Yoo" property="og:title" />
         <meta

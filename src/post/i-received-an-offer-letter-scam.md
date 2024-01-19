@@ -1,0 +1,115 @@
+---
+title: 'I Received an Offer Letter Scam'
+date: '2024-01-18 07:00:00'
+lang: 'en'
+---
+
+**Disclaimer**: [HeyOrca!](https://www.heyorca.com/) is an actual company located in Canada that has nothing to do with this scam. The person involved is impersonating a recruiter at HeyOrca!.
+
+Below is a note from HeyOrca!
+
+> _Please note that we will only communicate with our job applicants by using @heyorca.com domains and no-reply@collage.co email. We will never contact applicants from any other email address. We will never ask for money or private information like SIN from potential employees. Be cautious of any unauthorized solicitations. You may view the most current and accurate job postings at HeyOrca by visiting_ [_https://www.heyorca.com/careers_](https://www.heyorca.com/careers)_._
+
+---
+
+  
+The other day, I received an email from an individual identifying himself as a senior manager from HeyOrca. The email stated that I had previously applied to the company and inquired whether I am still interested in the job position.
+
+
+![](/images/offer-letter-scam/scammer-email-1.png)
+
+I have applied to over 100 companies as a web developer, but I couldn't recall applying to this particular company. I checked my notes where I documented all the companies I had applied to, but there was no record of HeyOrca. However, I lost all records from mid-March to late April while migrating my notes from one place to another, and I thought, "Maybe I did apply before." So, I replied with, "Yes, I'm still interested in the position." 
+
+Now, looking back, I can see this is obviously fake, but at the time, I didn't realize it because I had never experienced this before—what a fucking dumbass. If this email were legit, there would have been an address for the company, an email, and possibly a phone number instead of just their name, role, and logo.
+
+Regardless, a day after expressing my interest in the position, I received another email with a PDF file containing 19 interview questions.
+
+![](/images/offer-letter-scam/scammer-email-2.png)
+
+Here are the questions they asked:
+1. Are you currently employed?
+2. Can you explain the purpose of the `\<!DOCTYPE\>` declaration in HTML?
+3. What is the box model in CSS, and how does it work?
+4. What is event delegation, and why is it useful?
+5. How does asynchronous programming work in JavaScript? Can you give an example of using Promises?
+6. Describe the component lifecycle in React.
+7. Explain the concept of middleware in Express.js
+8. Compare SQL and NoSQL databases. When would you choose one over the other?
+9. How do you handle authentication in a web application, especially when dealing with APIs?
+10. Have you worked with Git? Explain the basic Git workflow.
+11. What are branching and merging in Git?
+12. Why are testing important in web development, and what types of tests can you perform?
+13. Have you used any testing frameworks or libraries?
+14. How do you handle environment-specific configurations in a web application?
+15. Describe a challenging problem you faced in a previous project and how you resolved it.
+16. How do you stay updated with the latest trends and technologies in web development?
+17. Can you share an example of a new technology or tool you recently learned and applied?
+18. How could your skills and experience add value to our organization?
+19. How much will you request per hour if you are hired?
+
+I answered all these questions to the best of my ability and sent them back as a PDF. 
+
+![](/images/offer-letter-scam/scammer-email-3.png)
+
+_"If you are hired at the conclusion of this procedure..."_, I wasn't sure if I read it correctly. Wasn't this just an initial screening interview? Was there no next interview, no face-to-face interaction? I found it a bit peculiar, but I still believed it because, once again, I had never experienced this type of scam ー dumb fuck.
+
+The next day, I received an email saying that I had been hired.
+
+![](/images/offer-letter-scam/scammer-email-4.png)
+
+My gut instinct already sensed that this was not real because I wasn't excited at all. My initial reaction was more like, "this is it?.. hmmm 🤔" Everything seemed a bit suspicious, but I decided to proceed with the process and be cautious, ready to step back if they started asking for money. After all, if this is a scam, their ultimate aim would likely be to extract money from me, right?
+
+So, I accepted the offer, and shortly after, I received my offer letter attached to the email. The offer letter itself had some red flags as well. It had no information about the company. No address, no number, nothing.
+
+![](/images/offer-letter-scam/scammer-email-5.png)
+
+Take a look at the items they said I'm gonna need (to buy, I presume?):
+- 2023 MacBook Pro LapTop M2 Max -  _Sure, I'll take it_
+- HP LaserJet Pro printer  - _🤨 huh?_
+- Router and networking skills - _what the fuck?_
+- surge protectors - _I mean.. I guess you don't want your engineers' places to burn down due to voltage spikes?_
+- Crimson Editor - _Forcing your engineers to use specific editors? Isn't this editor free anyway?_
+
+Once again, everything seemed suspicious, but I decided to proceed until they asked for money. So, I signed the contract and sent a copy of my ID as they requested in the email (fuck 😡).
+
+Then, I received a congratulations email. From here, we used Google Chat to communicate.
+
+![](/images/offer-letter-scam/scammer-email-6.png)
+
+---
+
+Now that I think about it, there were so many weird things. Why am I going over this training with a recruiter? Shouldn't I be interacting with someone from the engineering team? I even asked whether I'll be having a meeting with the dev team, and notice how this person is evading this topic.
+
+![](/images/offer-letter-scam/scammer-1.png)
+
+Take a look at the next conversation. This is where I fully recognized that it's a scam. 
+
+![](/images/offer-letter-scam/scammer-2.png)
+
+He did not ask ME to pay for the equipment listed in the earlier email, which was unexpected. Instead, he mentioned sending me a check. The plan was for me to deposit that money into my bank and use it to order the equipment through their accredited vendor. At this point I knew this was a scam, but I wasn't sure about why they were sending me a check.
+
+After some research, I found out that this is another way scammers make money. They send fake or stolen checks. If I use this money to buy the equipment, the scammers take that money and disappear. Later, when the banks discover issues with these checks, I would need to pay back all the money I spent using the check because I deposited it into my bank and used it.
+
+Still the above was just my theory but he proved it by asking me about the daily deposit limit for my mobile banking. This way, he could send a check with the maximum amount of money I could deposit, meaning more money for them.
+
+![](/images/offer-letter-scam/scammer-3.png)
+
+The moment I asked to have a Zoom call, he stopped responding to me. So, I just blocked him and the email address he used.
+
+---
+
+Let's summarize things I've lost from this experience:
+- Shared copies of my driver's license, including:
+	- A picture of my face
+	- Date of Birth (DOB)
+	- Home Address
+	- Full name
+- Phone number
+- Email address
+- My hand-written signature
+- $25 ー monthly identity theft & credit monitoring subscription
+
+What did I gain from this experience?
+- A heightened awareness of the darker side of life
+- Strengthened focus on the importance of details
+- $25 monitoring service
