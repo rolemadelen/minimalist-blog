@@ -18,7 +18,7 @@ The other day, I received an email from an individual identifying himself as a s
 
 ![](/images/offer-letter-scam/scammer-email-1.webp)
 
-I have applied to over 100 companies as a web developer, but I couldn't recall applying to this particular company. I checked my notes where I documented all the companies I had applied to, but there was no record of HeyOrca. However, I lost all records from mid-March to late April while migrating my notes from one place to another, and I thought, "Maybe I did apply before." So, I replied with, "Yes, I'm still interested in the position." 
+I have applied to over 100 companies as a web developer, but I couldn't recall applying to this particular company. I checked my notes where I documented all the companies I had applied to, but there was no record of HeyOrca. However, I lost all records from mid-March to late June while migrating my notes from one place to another, and I thought, "Maybe I did apply before." So, I replied with, "Yes, I'm still interested in the position." 
 
 Now, looking back, I can see this is obviously fake, but at the time, I didn't realize it because I had never experienced this before—what a fucking dumbass. If this email were legit, there would have been an address for the company, an email, and possibly a phone number instead of just their name, role, and logo.
 
