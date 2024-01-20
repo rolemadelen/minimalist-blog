@@ -68,7 +68,7 @@ Take a look at the items they said I'm gonna need (to buy, I presume?):
 - HP LaserJet Pro printer  - _🤨 huh?_
 - Router and networking skills - _what the f***?_
 - surge protectors - _I mean.. I guess you don't want your engineers' places to burn down due to voltage spikes?_
-- Crimson Editor - _Forcing your engineers to use specific editors? Isn't this editor free anyway?_
+- Crimson Editor - _I have to use this?_
 
 Once again, everything seemed suspicious, but I decided to proceed until they asked for money. So, I signed the contract and sent a copy of my ID as they requested in the email (f*** 😡).
 
