@@ -20,7 +20,7 @@ The other day, I received an email from an individual identifying himself as a s
 
 I have applied to over 100 companies as a web developer, but I couldn't recall applying to this particular company. I checked my notes where I documented all the companies I had applied to, but there was no record of HeyOrca. However, I lost all records from mid-March to late June while migrating my notes from one place to another, and I thought, "Maybe I did apply before." So, I replied with, "Yes, I'm still interested in the position." 
 
-Now, looking back, I can see this is obviously fake, but at the time, I didn't realize it because I had never experienced this before—what a fucking dumbass. If this email were legit, there would have been an address for the company, an email, and possibly a phone number instead of just their name, role, and logo.
+Now, looking back, I can see this is obviously fake, but at the time, I didn't realize it because I had never experienced this before—what a f***ing dumbass. If this email were legit, there would have been an address for the company, an email, and possibly a phone number instead of just their name, role, and logo.
 
 Regardless, a day after expressing my interest in the position, I received another email with a PDF file containing 19 interview questions.
 
@@ -51,7 +51,7 @@ I answered all these questions to the best of my ability and sent them back as a
 
 ![](/images/offer-letter-scam/scammer-email-3.webp)
 
-_"If you are hired at the conclusion of this procedure..."_, I wasn't sure if I read it correctly. Wasn't this just an initial screening interview? Was there no next interview, no face-to-face interaction? I found it a bit peculiar, but I still believed it because, once again, I had never experienced this type of scam ー dumb fuck.
+_"If you are hired at the conclusion of this procedure..."_, I wasn't sure if I read it correctly. Wasn't this just an initial screening interview? Was there no next interview, no face-to-face interaction? I found it a bit peculiar, but I still believed it because, once again, I had never experienced this type of scam ー dumb f***.
 
 The next day, I received an email saying that I had been hired.
 
@@ -66,11 +66,11 @@ So, I accepted the offer, and shortly after, I received my offer letter attached
 Take a look at the items they said I'm gonna need (to buy, I presume?):
 - 2023 MacBook Pro LapTop M2 Max -  _Sure, I'll take it_
 - HP LaserJet Pro printer  - _🤨 huh?_
-- Router and networking skills - _what the fuck?_
+- Router and networking skills - _what the f***?_
 - surge protectors - _I mean.. I guess you don't want your engineers' places to burn down due to voltage spikes?_
 - Crimson Editor - _Forcing your engineers to use specific editors? Isn't this editor free anyway?_
 
-Once again, everything seemed suspicious, but I decided to proceed until they asked for money. So, I signed the contract and sent a copy of my ID as they requested in the email (fuck 😡).
+Once again, everything seemed suspicious, but I decided to proceed until they asked for money. So, I signed the contract and sent a copy of my ID as they requested in the email (f*** 😡).
 
 Then, I received a congratulations email. From here, we used Google Chat to communicate.
 
