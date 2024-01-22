@@ -1,8 +1,8 @@
 ---
-title: '(238) Product of Array Except Self'
+title: '😾 238. Product of Array Except Self'
 date: '2023-09-11 13:06:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

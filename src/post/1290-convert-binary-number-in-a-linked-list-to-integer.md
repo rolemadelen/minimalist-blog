@@ -1,8 +1,8 @@
 ---
-title: '(1290) Convert Binary Number in a Linked List to Integer'
+title: '🍰 1290. Convert Binary Number in a Linked List to Integer'
 date: '2023-08-21 17:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

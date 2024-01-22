@@ -1,8 +1,8 @@
 ---
-title: '(443) String Compression'
+title: '😾 443. String Compression'
 date: '2023-09-12 06:50:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

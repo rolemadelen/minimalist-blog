@@ -1,8 +1,8 @@
 ---
-title: '(206) Reverse Linked List'
+title: '🍰 206. Reverse Linked List'
 date: '2023-08-20 05:50:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

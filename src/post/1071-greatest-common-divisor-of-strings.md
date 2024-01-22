@@ -1,8 +1,8 @@
 ---
-title: '(1071) Greatest Common Divisor of Strings'
+title: '🍰 1071. Greatest Common Divisor of Strings'
 date: '2023-09-11 13:02:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

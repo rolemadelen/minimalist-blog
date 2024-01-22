@@ -30,8 +30,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
 
 export async function getStaticProps() {
   let posts = getAllPosts()
-  posts = posts.filter((post: Post) => post.type !== 'ps')
-
+  posts = posts.filter((post: Post) => post.type === 'ps')
   return {
     props: {
       posts,

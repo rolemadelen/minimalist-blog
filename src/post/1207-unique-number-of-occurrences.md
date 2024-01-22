@@ -1,8 +1,8 @@
 ---
-title: '(1207) Unique Number of Occurrences'
+title: '🍰 1207. Unique Number of Occurrences'
 date: '2023-09-22 07:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

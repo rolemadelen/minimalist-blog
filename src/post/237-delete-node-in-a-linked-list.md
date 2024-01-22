@@ -1,8 +1,8 @@
 ---
-title: '(237) Delete Node in a Linked List'
+title: '😾 237. Delete Node in a Linked List'
 date: '2023-08-20 05:18:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

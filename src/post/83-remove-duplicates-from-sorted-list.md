@@ -1,8 +1,8 @@
 ---
-title: '(83) Remove Duplicates from Sorted List'
+title: '🍰 83. Remove Duplicates from Sorted List'
 date: '2023-08-15 09:35:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

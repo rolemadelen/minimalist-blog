@@ -1,8 +1,8 @@
 ---
-title: '(23) Merge k Sorted Lists'
+title: '🙀 23. Merge k Sorted Lists'
 date: '2023-08-16 09:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🙀 Hard

@@ -1,8 +1,8 @@
 ---
-title: '(1791) Find Center of Star Graph'
+title: '🍰 1791. Find Center of Star Graph'
 date: '2023-08-26 21:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

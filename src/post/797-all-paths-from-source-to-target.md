@@ -1,8 +1,8 @@
 ---
-title: '(797) All Paths From Source to Target'
+title: '😾 797. All Paths From Source to Target'
 date: '2023-08-31 21:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

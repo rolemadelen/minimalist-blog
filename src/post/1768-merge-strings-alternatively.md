@@ -1,8 +1,8 @@
 ---
-title: '(1768) Merge Strings Alternatively'
+title: '🍰 1768. Merge Strings Alternatively'
 date: '2023-09-11 13:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

@@ -1,8 +1,8 @@
 ---
-title: '(876) Middle of the Linked List'
+title: '🍰 876. Middle of the Linked List'
 date: '2023-08-21 16:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

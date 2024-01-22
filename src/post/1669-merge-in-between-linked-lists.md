@@ -1,8 +1,8 @@
 ---
-title: '(1669) Merge In Between Linked Lists'
+title: '😾 1669. Merge In Between Linked Lists'
 date: '2023-08-23 21:04:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

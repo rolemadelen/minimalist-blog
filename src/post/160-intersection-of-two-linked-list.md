@@ -1,8 +1,8 @@
 ---
-title: '(160) Intersection of Two Linked List'
+title: '🍰 160. Intersection of Two Linked List'
 date: '2023-08-18 06:20:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

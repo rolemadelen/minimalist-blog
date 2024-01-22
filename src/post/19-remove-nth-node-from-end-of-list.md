@@ -1,8 +1,8 @@
 ---
-title: '(19) Remove Nth Node From End of List'
+title: '😾 19. Remove Nth Node From End of List'
 date: '2023-08-13 09:04:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

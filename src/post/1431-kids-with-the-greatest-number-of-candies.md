@@ -1,8 +1,8 @@
 ---
-title: '(1431) Kids With the Greatest Number of Candies'
+title: '🍰 1431. Kids With the Greatest Number of Candies'
 date: '2023-09-11 13:03:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

@@ -1,8 +1,8 @@
 ---
-title: '(392) Is Subsequence'
+title: '🍰 392. Is Subsequence'
 date: '2023-09-14 06:40:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

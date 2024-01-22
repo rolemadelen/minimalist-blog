@@ -1,8 +1,8 @@
 ---
-title: '(643) Maximum Average Subarray I'
+title: '🍰 643. Maximum Average Subarray I'
 date: '2023-09-16 07:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

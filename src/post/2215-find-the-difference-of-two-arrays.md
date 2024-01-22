@@ -1,8 +1,8 @@
 ---
-title: '(2215) Find the Difference of Two Arrays'
+title: '🍰 2215. Find the Difference of Two Arrays'
 date: '2023-09-22 06:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

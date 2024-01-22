@@ -1,8 +1,8 @@
 ---
-title: '(933) Number of Recent Calls'
+title: '🍰 933. Number of Recent Calls'
 date: '2023-09-22 09:15:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

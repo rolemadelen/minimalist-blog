@@ -1,8 +1,8 @@
 ---
-title: '(2) Add Two Numbers'
+title: '😾 2. Add Two Numbers'
 date: '2023-08-12 11:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

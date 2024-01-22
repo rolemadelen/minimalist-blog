@@ -1,8 +1,8 @@
 ---
-title: '(141) Linked List Cycle'
+title: '🍰 141. Linked List Cycle'
 date: '2023-08-15 09:35:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

@@ -1,8 +1,8 @@
 ---
-title: '(345) Reverse Vowels of a String'
+title: '🍰 345. Reverse Vowels of a String'
 date: '2023-09-11 13:05:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

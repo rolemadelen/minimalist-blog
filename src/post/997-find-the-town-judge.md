@@ -1,8 +1,8 @@
 ---
-title: '(997) Find the Town Judge'
+title: '🍰 997. Find the Town Judge'
 date: '2023-08-21 17:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

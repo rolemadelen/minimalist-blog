@@ -1,8 +1,8 @@
 ---
-title: '(133) Clone Graph'
+title: '😾 133. Clone Graph'
 date: '2023-08-29 21:27:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 ### Problem

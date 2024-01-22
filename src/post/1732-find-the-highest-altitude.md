@@ -1,8 +1,8 @@
 ---
-title: '(1732) Find the Highest Altitude'
+title: '🍰 1732. Find the Highest Altitude'
 date: '2023-09-09 22:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

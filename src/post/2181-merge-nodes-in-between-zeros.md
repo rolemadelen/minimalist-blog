@@ -1,8 +1,8 @@
 ---
-title: '(2181) Merge Nodes in Between Zeros'
+title: '😾 2181. Merge Nodes in Between Zeros'
 date: '2023-08-24 22:04:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

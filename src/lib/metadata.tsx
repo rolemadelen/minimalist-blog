@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   owner: {
     name: 'Jii Yoo',
     role: 'Front-End Engineer',
-    email: 'rolemadelen@pm.me',
+    email: 'jiiyoo@pm.me',
   },
   work_exp: {
     0: {
-      year: '2023~',
+      year: '2024',
       icon: '🧑🏻‍💻🇺🇸',
       company: 'Freelance Web Developer',
     },
@@ -146,7 +146,7 @@ export const metadata: Metadata = {
       link: 'https://github.com/rolemadelen',
     },
     twitter: {
-      name: 'Twitter',
+      name: 'X (Twitter)',
       handle: 'rolemadelen',
       link: 'https://twitter.com/rolemadelen',
     },

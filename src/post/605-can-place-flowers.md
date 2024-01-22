@@ -1,8 +1,8 @@
 ---
-title: '(605) Can Place Flowers'
+title: '🍰 605. Can Place Flowers'
 date: '2023-09-11 13:04:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

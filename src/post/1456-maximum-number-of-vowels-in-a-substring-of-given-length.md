@@ -1,8 +1,8 @@
 ---
-title: '(1456) Maximum Number of Vowels in a Substring of Given Length'
+title: '😾 1456. Maximum Number of Vowels in a Substring of Given Length'
 date: '2023-09-17 04:59:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

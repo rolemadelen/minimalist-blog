@@ -1,8 +1,8 @@
 ---
-title: '(151) Reverse Words in a String'
+title: '😾 151. Reverse Words in a String'
 date: '2023-09-11 13:06:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

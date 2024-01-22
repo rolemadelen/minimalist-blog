@@ -1,8 +1,8 @@
 ---
-title: '(21) Merge Two Sorted Lists'
+title: '🍰 21. Merge Two Sorted Lists'
 date: '2023-08-14 10:38:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

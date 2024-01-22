@@ -1,8 +1,8 @@
 ---
-title: '(283) Move Zeroes'
+title: '🍰 283. Move Zeroes'
 date: '2023-09-14 06:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

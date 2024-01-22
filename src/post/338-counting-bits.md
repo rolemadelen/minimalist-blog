@@ -1,8 +1,8 @@
 ---
-title: '(388) Counting Bits'
+title: '🍰 388. Counting Bits'
 date: '2023-09-09 22:00:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

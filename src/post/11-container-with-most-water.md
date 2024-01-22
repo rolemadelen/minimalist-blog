@@ -1,8 +1,8 @@
 ---
-title: '(11) Container With Most Water'
+title: '😾 11. Container With Most Water'
 date: '2023-09-15 06:25:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

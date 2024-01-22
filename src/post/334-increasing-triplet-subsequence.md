@@ -1,8 +1,8 @@
 ---
-title: '(334) Increasing Triplet Subsequence'
+title: '😾 334. Increasing Triplet Subsequence'
 date: '2023-09-12 06:08:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

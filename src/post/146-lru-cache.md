@@ -1,8 +1,8 @@
 ---
-title: '(146) LRU Cache'
+title: '😾 146. LRU Cache'
 date: '2023-08-17 19:50:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

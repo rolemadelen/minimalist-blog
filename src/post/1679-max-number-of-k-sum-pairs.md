@@ -1,8 +1,8 @@
 ---
-title: '(1679) Max Number of K-Sum Pairs'
+title: '😾 1679. Max Number of K-Sum Pairs'
 date: '2023-09-15 06:50:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 😾 Medium

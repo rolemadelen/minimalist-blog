@@ -1,8 +1,8 @@
 ---
-title: '(234) Palindrome Linked List'
+title: '🍰 234. Palindrome Linked List'
 date: '2023-08-19 05:30:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy

@@ -1,8 +1,8 @@
 ---
-title: '(203) Remove Linked List Elements'
+title: '🍰 203. Remove Linked List Elements'
 date: '2023-08-18 06:35:00'
 lang: 'en'
-type: 'note'
+type: 'ps'
 ---
 
 - Difficulty: 🍰 Easy
