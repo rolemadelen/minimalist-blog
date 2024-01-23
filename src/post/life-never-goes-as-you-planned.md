@@ -1,6 +1,8 @@
 ---
 title: 'Life never goes as you planned'
 date: '2023-06-24 17:00:00'
+lang: 'en'
+type: 'log'
 ---
 
 It's been about 3 months, or almost 4 months, since I came back from Japan.

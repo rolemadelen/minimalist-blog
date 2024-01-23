@@ -1,6 +1,7 @@
 ---
 title: 'Tangent Note'
 date: '2023-05-27 09:50:00'
+lang: 'en'
 ---
 
 _Tangent_ is a note-taking system developed by Taylor Hadden. It is implemented with [Svelte](https://svelte.dev/) and [Electron](https://www.electronjs.org/). The text editor is based on a heavily customized version of the [Typewriter](https://github.com/typewriter-editor/typewriter) editor.

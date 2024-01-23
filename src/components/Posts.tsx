@@ -34,7 +34,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
       return (
         <>
           <div
-            className="text-[#505050] sm:absolute top-[-6rem] sm:left-[-6rem] sm:top-[-2.5rem] text-3xl font-semibold sm:font-light tracking-widest sm:rotate-[-90deg] mt-[2.5rem] sm:mt-[4rem] mb-[-2.5rem] sm:mb-0"
+            className="text-[#505050] sm:absolute top-[-6rem] sm:left-[-5rem] sm:top-[-2.5rem] text-2xl font-semibold sm:rotate-[-90deg] mt-[2.5rem] sm:mt-[3.5rem] mb-[-2.5rem] sm:mb-0"
             key={postYear}
           >
             {postYear}

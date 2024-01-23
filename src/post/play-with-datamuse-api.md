@@ -1,6 +1,7 @@
 ---
 title: 'Datamuse API: Creating a Simple Dictionary'
 date: '2023-11-24 15:50:00'
+lang: 'en'
 ---
 
 # Datamuse API

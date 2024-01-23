@@ -1,6 +1,8 @@
 ---
 title: 'Thing about running'
 date: '2023-06-25 18:30:00'
+lang: 'en'
+type: 'log'
 ---
 
 Throughout my childhood, I was a bashful kid who did everything to avoid attention,

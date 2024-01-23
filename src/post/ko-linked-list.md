@@ -1,6 +1,7 @@
 ---
-title: 'Linked List'
+title: '연결 리스트 (Linked List)'
 date: '2023-03-17 09:20:00'
+lang: 'ko'
 ---
 
 ### 연결 리스트(Linked List) 개념
