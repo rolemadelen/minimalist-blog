@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     40: {
       year: '2020.05',
       project: 'Baekjoon Online Judge CLI',
-      link: 'https://github.com/euisblue/euisblue.github.io',
+      link: 'https://github.com/rolemadelen/boj-solvedac',
     },
     50: {
       year: '2016.04',
