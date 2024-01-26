@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       <ProgressBar />
-      <div className="about max-w-[36rem] m-auto px-4">
+      <div className="about max-w-[40rem] m-auto px-4">
         <div className="header">
           <div className="border-b mt-4 mb-8 py-8 flex items-center">
             <Image

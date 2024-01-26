@@ -99,7 +99,7 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
       </Head>
       <ProgressBar />
 
-      <div className="post max-w-[36rem] m-auto px-6 relative">
+      <div className="post max-w-[40rem] m-auto px-6 relative">
         <TOC markdown={markdown} />
         <PostHeader title={title} date={date} />
         <PostContent markdown={markdown} />
