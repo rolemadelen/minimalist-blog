@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react'
+import styles from './ProgressBar.module.scss'
 
 const ProgressBar = () => {
   const ref = useRef<HTMLDivElement>(null)
@@ -28,12 +29,7 @@ const ProgressBar = () => {
     }
   }, [handleScroll])
 
-  return (
-    <div
-      ref={ref}
-      className="progress-bar w-0 fixed top-0 h-[0.3rem] bg-slate-700 z-[999]"
-    ></div>
-  )
+  return <div ref={ref} className={styles.progressBar}></div>
 }
 
 export default ProgressBar

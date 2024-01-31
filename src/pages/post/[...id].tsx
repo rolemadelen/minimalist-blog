@@ -3,11 +3,12 @@ import { GetStaticProps, GetStaticPropsContext } from 'next'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '@/lib/blog'
 import Comment from '@/lib/giscus'
-import ProgressBar from '@/components/ProgressBar'
-import Footer from '@/components/Footer'
+import ProgressBar from '@/components/ProgressBar/ProgressBar'
+import Footer from '@/components/Footer/Footer'
 import TOC from '@/components/TOC'
-import PostHeader from '@/components/PostHeader'
-import PostContent from '@/components/PostContent'
+import PostHeader from '@/components/Post/PostHeader'
+import PostContent from '@/components/Post/PostContent'
+import styles from '@/components/Post/Post.module.scss'
 
 interface Props {
   post: {
@@ -66,27 +67,27 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
 
     const visibleHeadings: HTMLElement[] = []
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          visibleHeadings.forEach((tag) => tag.classList.remove('toc--active'))
-          let toc = document.getElementById(`toc-${entry.target.id}`)
-          visibleHeadings.push(toc as HTMLElement)
-          toc?.classList.add('toc--active')
-          toc?.scrollIntoView(false)
-        }
-      })
-    }, options)
+    // const observer = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       visibleHeadings.forEach((tag) => tag.classList.remove('toc--active'))
+    //       let toc = document.getElementById(`toc-${entry.target.id}`)
+    //       visibleHeadings.push(toc as HTMLElement)
+    //       toc?.classList.add('toc--active')
+    //       toc?.scrollIntoView(false)
+    //     }
+    //   })
+    // }, options)
 
-    headingRefs.current.forEach((hRef) => {
-      if (hRef.current) {
-        observer.observe(hRef.current)
-      }
-    })
+    // headingRefs.current.forEach((hRef) => {
+    //   if (hRef.current) {
+    //     observer.observe(hRef.current)
+    //   }
+    // })
 
-    return () => {
-      observer.disconnect()
-    }
+    // return () => {
+    //   observer.disconnect()
+    // }
   }, [])
 
   return (
@@ -99,12 +100,12 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
       </Head>
       <ProgressBar />
 
-      <div className="post max-w-[40rem] m-auto px-6 relative">
+      <div className={styles.post}>
         <TOC markdown={markdown} />
         <PostHeader title={title} date={date} />
         <PostContent markdown={markdown} />
         <Comment />
-        <Footer pageFrom="post" />
+        <Footer />
       </div>
     </>
   )

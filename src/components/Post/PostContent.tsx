@@ -1,5 +1,6 @@
 import React from 'react'
 import Preview from '@/lib/codeblock'
+import styles from './Post.module.scss'
 
 interface Props {
   markdown: string
@@ -7,7 +8,7 @@ interface Props {
 
 const PostContent: React.FC<Props> = ({ markdown }) => {
   return (
-    <div className="post-content mb-10 pb-10 border-b">
+    <div className={`${styles['post__content']} post-content`}>
       <Preview markdown={markdown} />
     </div>
   )

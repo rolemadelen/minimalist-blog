@@ -228,29 +228,6 @@ h6 {
   }
 }
 
-.puppy {
-  display: block;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    .ear {
-      &-left {
-        transform: translateY(-3px) rotateZ(90deg);
-      }
-
-      &-right {
-        transform: translateY(-3px) rotateZ(-45deg);
-      }
-    }
-  }
-
-  .ear-left,
-  .ear-right {
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
 .about {
   h2 {
     color: #777;

@@ -1,0 +1,32 @@
+@import '/src/styles/func.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 36rem;
+  margin: 0 auto;
+  color: $color-text;
+  font-size: px2rem(14);
+  align-items: center;
+}
+
+.puppy {
+  margin-bottom: 4rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    .puppy__left {
+      transform: translateY(-3px) rotateZ(90deg);
+    }
+
+    .puppy__right {
+      transform: translateY(-3px) rotateZ(-45deg);
+    }
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+  }
+}

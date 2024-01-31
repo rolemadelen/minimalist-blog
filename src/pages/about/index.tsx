@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer'
-import ProgressBar from '@/components/ProgressBar'
+import Footer from '@/components/Footer/Footer'
+import ProgressBar from '@/components/ProgressBar/ProgressBar'
 import { metadata } from '@/lib/metadata'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -238,7 +238,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Footer pageFrom="about" />
+        <Footer />
       </div>
     </>
   )
