@@ -34,9 +34,10 @@
     animation: slideLeft 1s infinite alternate
       cubic-bezier(0.39, 0.575, 0.565, 1);
     @include link-decoration;
+    color: $color-text;
 
     &:hover {
-      color: $color-link;
+      color: $color-red;
     }
   }
 
@@ -44,6 +45,48 @@
     padding-bottom: 4rem;
     margin-bottom: 4rem;
     border-bottom: 1px solid #eee;
+
+    h1,
+    h2,
+    h3 {
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      margin: 3rem 0 0.5rem;
+      font-size: 1.6rem;
+      color: $--color-h1;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 2rem 0 1rem;
+      font-size: 1.4rem;
+      color: $--color-h2;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.2rem;
+      color: $--color-h3;
+    }
+
+    h4 {
+      font-size: 1rem;
+      color: $--color-h4;
+    }
+
+    code,
+    kbd {
+      font-size: 0.8rem;
+      padding: 0.1rem 0.2rem;
+    }
+  }
+
+  a {
+    @include link-decoration;
+    color: $color-blue;
   }
 }
 

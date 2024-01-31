@@ -4,15 +4,7 @@
 
 @import '/public/fonts/Pretendard/static/pretendard.scss';
 @import '/public/fonts/PretendardJP/static/pretendard-jp.scss';
-
-@function px2rem($px) {
-  @return #{$px / 16}rem;
-}
-
-$--color-h1: #03045e;
-$--color-h2: #0077b6;
-$--color-h3: #00b4db;
-$--color-h4: #67a6b4;
+@import './func.scss';
 
 :root {
   max-width: 1920px;
@@ -26,158 +18,119 @@ $--color-h4: #67a6b4;
   background: #009dff33;
 }
 
-.post {
-  h1,
-  h2,
-  h3 {
-    letter-spacing: 0.5px;
+.post-content {
+  table,
+  thead,
+  tr,
+  td,
+  th {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin: 2rem 0;
   }
 
-  h1 {
-    margin: 3rem 0 0.5rem;
-    font-size: 1.6rem;
-    color: $--color-h1;
-    font-weight: 700;
-  }
-
-  h2 {
-    margin: 2rem 0 1rem;
-    font-size: 1.4rem;
-    color: $--color-h2;
-    font-weight: 600;
-  }
-
-  h3 {
-    margin: 2rem 0 0.5rem;
-    font-size: 1.2rem;
-    color: $--color-h3;
-  }
-
-  h4 {
-    font-size: 1rem;
-    color: $--color-h4;
-  }
-
-  code,
-  kbd {
-    font-size: 0.8rem;
-    padding: 0.1rem 0.2rem;
-  }
-
-  &-content {
-    table,
-    thead,
-    tr,
-    td,
-    th {
-      border: 1px solid #eee;
-      padding: 1rem;
-      margin: 2rem 0;
-    }
-
-    blockquote {
-      background-color: #f4f4f4;
-      margin: 2rem 1rem;
-      padding: 0.25rem 0.75rem;
-      color: gray;
-
-      p {
-        margin: 0;
-        line-height: 1.75;
-
-        code,
-        kbd {
-          font-style: italic;
-          background: none;
-        }
-      }
-    }
-
-    hr {
-      margin: 2rem 0;
-    }
-
-    a {
-      text-decoration: underline;
-      text-decoration-color: #d5e5ff;
-      text-decoration-skip-ink: none;
-      text-decoration-thickness: 0.35rem;
-      text-underline-offset: -0.2rem;
-      transition: text-decoration 0.3s;
-    }
-
-    p > code,
-    li > code {
-      background-color: #f0f0f0;
-    }
+  blockquote {
+    background-color: #f4f4f4;
+    margin: 2rem 1rem;
+    padding: 0.25rem 0.75rem;
+    color: gray;
 
     p {
-      text-indent: 0rem;
-      line-height: 1.7;
-      margin-bottom: 1.15rem;
-      margin-top: 1.15rem;
-    }
+      margin: 0;
+      line-height: 1.75;
 
-    img {
-      border: 1px solid #eee;
-      max-width: 80%;
-
-      & ~ em {
-        display: block;
-        text-align: center;
-        font-size: 0.8rem;
-        margin-top: -1.5rem;
-        color: gray;
-
-        a {
-          text-decoration-color: transparent;
-        }
+      code,
+      kbd {
+        font-style: italic;
+        background: none;
       }
     }
+  }
 
-    pre,
-    img {
-      margin: 1rem auto;
+  hr {
+    margin: 2rem 0;
+  }
 
-      & > div {
-        border-radius: 0.5rem;
+  a {
+    text-decoration: underline;
+    text-decoration-color: #d5e5ff;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 0.35rem;
+    text-underline-offset: -0.2rem;
+    transition: text-decoration 0.3s;
+  }
+
+  p > code,
+  li > code {
+    background-color: #f0f0f0;
+  }
+
+  p {
+    text-indent: 0rem;
+    line-height: 1.7;
+    margin-bottom: 1.15rem;
+    margin-top: 1.15rem;
+  }
+
+  img {
+    border: 1px solid #eee;
+    max-width: 80%;
+
+    & ~ em {
+      display: block;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: -1.5rem;
+      color: gray;
+
+      a {
+        text-decoration-color: transparent;
       }
     }
+  }
 
-    ul > li {
-      position: relative;
-      left: 1rem;
-      list-style: disc outside;
-      margin-bottom: 0.3rem;
+  pre,
+  img {
+    margin: 1rem auto;
+
+    & > div {
+      border-radius: 0.5rem;
+    }
+  }
+
+  ul > li {
+    position: relative;
+    left: 1rem;
+    list-style: disc outside;
+    margin-bottom: 0.3rem;
+
+    & > ul > li {
+      list-style: circle outside;
 
       & > ul > li {
-        list-style: circle outside;
-
-        & > ul > li {
-          list-style: square outside;
-        }
+        list-style: square outside;
       }
     }
+  }
 
-    ol:last-of-type {
-      margin-bottom: 1rem;
-    }
+  ol:last-of-type {
+    margin-bottom: 1rem;
+  }
 
-    ol > li {
-      list-style: decimal inside;
+  ol > li {
+    list-style: decimal inside;
+
+    & > ol > li {
+      list-style: lower-roman inside;
 
       & > ol > li {
-        list-style: lower-roman inside;
-
-        & > ol > li {
-          list-style: lower-latin inside;
-        }
+        list-style: lower-latin inside;
       }
     }
+  }
 
-    li {
-      line-height: 1.5;
-    }
+  li {
+    line-height: 1.5;
   }
 }
 
@@ -199,116 +152,31 @@ h6 {
 }
 
 .footnotes {
-  font-size: 0.8rem;
   padding-top: 2rem;
   margin-top: 2rem;
+  font-size: 0.8rem;
+  border-top: 1px solid #eee;
+
   h2 {
     display: none;
   }
-  border-top: 1px solid #eee;
+
   li {
     list-style: roman outside !important;
   }
+
   p {
-    text-indent: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
     line-height: 1.5;
+    text-indent: 0;
   }
+
   a {
     text-decoration-color: transparent;
-  }
-}
 
-.post-list {
-  &:hover {
-    div {
-      color: #333;
+    &.data-footnote-backref {
+      color: $color-red;
     }
   }
-}
-
-.about {
-  h2 {
-    color: #777;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    text-indent: 1rem;
-  }
-
-  .content,
-  .header {
-    a {
-      color: rgb(2 132 199);
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: line-through;
-      }
-    }
-  }
-}
-
-.toc {
-  color: #999;
-
-  &--active {
-    font-size: 0.85rem;
-  }
-  .h1 {
-    &:hover,
-    &.toc--active {
-      color: $--color-h1;
-      font-weight: 700;
-    }
-  }
-
-  .h2 {
-    margin-left: 0.8rem;
-    &:hover,
-    &.toc--active {
-      color: $--color-h2;
-      font-weight: 600;
-    }
-  }
-
-  .h3 {
-    margin-left: 1.6rem;
-    &:hover,
-    &.toc--active {
-      color: $--color-h3;
-    }
-  }
-
-  .h4 {
-    margin-left: 2.4rem;
-    &:hover,
-    &.toc--active {
-      color: $--color-h4;
-    }
-  }
-
-  a.h1,
-  a.h2,
-  a.h3,
-  a.h4 {
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    color: #aaa;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  li {
-    margin: 0.2rem 0;
-  }
-}
-
-.bottom-gradient {
-  mask-image: linear-gradient(180deg, #fff, #fff, transparent);
-  --webkit-mask-image: linear-gradient(180deg, #fff, #fff, transparent);
 }

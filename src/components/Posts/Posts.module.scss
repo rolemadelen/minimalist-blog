@@ -1,0 +1,123 @@
+@import '/src/styles/func.scss';
+
+.posts {
+  max-width: 36rem;
+  padding: 0 px2rem(16);
+  margin: 0 auto 5rem;
+
+  & > div {
+    position: relative;
+  }
+}
+
+.options {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+
+  input:checked {
+    accent-color: $color-red;
+
+    & + label {
+      color: $color-red;
+    }
+  }
+
+  input,
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  label {
+    margin-left: 4px;
+    font-size: px2rem(14);
+    color: $color-gray;
+  }
+}
+
+.date__year + .date__month {
+  @media (max-width: 639px) {
+    margin: px2rem(8) auto;
+  }
+}
+
+.date {
+  &__year {
+    margin: 2.5rem auto 0;
+    color: $color-gray;
+    will-change: transform;
+
+    @media (max-width: 639px) {
+      font-size: px2rem(24);
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    @media (min-width: 640px) {
+      position: absolute;
+      top: -1.8rem;
+      left: -3.5rem;
+      transform: rotate(-90deg);
+    }
+  }
+  &__month {
+    margin: px2rem(32) auto px2rem(4);
+    color: $color-gray;
+    font-size: px2rem(14);
+    font-style: italic;
+  }
+}
+
+.post {
+  display: flex;
+  margin-bottom: px2rem(10);
+  align-items: center;
+
+  &:hover {
+    @include link-decoration;
+    color: $color-link;
+  }
+
+  &__title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1rem;
+  }
+  &__day {
+    font-size: px2rem(14);
+    font-style: italic;
+  }
+}
+
+.simple {
+  &__post {
+    margin-bottom: px2rem(10);
+  }
+
+  &__date {
+    color: #aaa;
+    font-size: px2rem(12);
+  }
+  &__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+
+    &:hover {
+      @include link-decoration;
+      color: $color-link;
+    }
+  }
+}
