@@ -19,7 +19,7 @@ interface Props {
 }
 
 const Posts: React.FC<Props> = ({ posts }) => {
-  const [isPermanentOnly, setIsEnglish] = useAtom(englishOnlyAtom)
+  const [isPublished, setIsEnglish] = useAtom(englishOnlyAtom)
   const [isSimpleView, setIsSimpleView] = useAtom(simpleViewAtom)
   const year = useRef('')
   const month = useRef<null | string>(null)
@@ -97,7 +97,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
     date: string,
     type: string
   ) => {
-    if (isPermanentOnly && type !== 'permanent') return
+    if (isPublished && type !== 'published') return
 
     const { fyear, fmonth, fdate } = formatDate(date)
 
@@ -147,12 +147,12 @@ const Posts: React.FC<Props> = ({ posts }) => {
         <div className={styles.option}>
           <input
             type="checkbox"
-            name="permanent"
-            id="permanent"
-            checked={isPermanentOnly}
-            onChange={() => setIsEnglish(!isPermanentOnly)}
+            name="published"
+            id="published"
+            checked={isPublished}
+            onChange={() => setIsEnglish(!isPublished)}
           />
-          <label htmlFor="permanent">Permanent Notes</label>
+          <label htmlFor="published">Published</label>
         </div>
       </div>
 
