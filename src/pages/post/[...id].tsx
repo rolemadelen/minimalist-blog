@@ -5,7 +5,6 @@ import { getAllPostIds, getPostData } from '@/lib/blog'
 import Comment from '@/lib/giscus'
 import ProgressBar from '@/components/ProgressBar/ProgressBar'
 import Footer from '@/components/Footer/Footer'
-import TOC from '@/components/TOC'
 import PostHeader from '@/components/Post/PostHeader'
 import PostContent from '@/components/Post/PostContent'
 import styles from '@/components/Post/Post.module.scss'
@@ -30,7 +29,6 @@ const Post: React.FC<Props> = ({ post: { title, date, markdown } }) => {
       <ProgressBar />
 
       <div className={styles.post}>
-        <TOC markdown={markdown} />
         <PostHeader title={title} date={date} />
         <PostContent markdown={markdown} />
         <Comment />
