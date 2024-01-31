@@ -1,0 +1,59 @@
+@import '/src/styles/func.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 36rem;
+  padding: 0 px2rem(16);
+  margin: px2rem(80) auto px2rem(64);
+  color: $color-text;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: px2rem(20);
+
+  &__text {
+    text-transform: uppercase;
+    margin-left: 4px;
+  }
+
+  &__cursor {
+    display: inline-block;
+    width: 0.6rem;
+    height: 1rem;
+    margin-left: 4px;
+    border-radius: 1px;
+    background-color: #67baee;
+    animation: cursor 1.25s infinite;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    @include link-decoration;
+
+    li {
+      &:hover {
+        color: $color-link;
+      }
+    }
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

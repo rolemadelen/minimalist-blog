@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import { atom, useAtom } from 'jotai'
+import styles from './Posts.module.scss'
 
 export const simpleViewAtom = atom(false)
 export const englishOnlyAtom = atom(false)
@@ -33,10 +34,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
 
       return (
         <>
-          <div
-            className="text-[#505050] sm:absolute top-[-6rem] sm:left-[-5rem] sm:top-[-2.5rem] text-2xl font-semibold sm:rotate-[-90deg] mt-[2.5rem] sm:mt-[3.5rem] mb-[-2.5rem] sm:mb-0"
-            key={postYear}
-          >
+          <div className={styles['date__year']} key={postYear}>
             {postYear}
           </div>
         </>
@@ -47,18 +45,18 @@ const Posts: React.FC<Props> = ({ posts }) => {
   const isNewMonth = (fmonth: number) => {
     const monthNames = [
       '',
-      'January',
-      'February',
-      'March',
-      'April',
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
       'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
     ]
     let ret = false
     if (monthNames[fmonth] != month.current) {
@@ -105,35 +103,27 @@ const Posts: React.FC<Props> = ({ posts }) => {
 
     if (!isSimpleView) {
       return (
-        <div className="relative">
+        <div>
           {fyear}
 
           {isNewMonth(+fmonth) && (
-            <div className="mt-12 text-[#505050] mb-2 text-sm font-semibold">
-              {month.current}
-            </div>
+            <div className={styles['date__month']}>{month.current}</div>
           )}
           <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
-            <div className="post-list items-center flex text-md mb-2">
-              <div className="hidden sm:block flex-[0.1] text-[#505050] text-xs">
-                {fdate}
-              </div>
-              <div className="ml-4 sm:ml-0 whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
-                {title}
-              </div>
+            <div className={styles.post}>
+              <div className={styles['post__title']}>{title}</div>
+              <div className={styles['post__day']}>{fdate}</div>
             </div>
           </Link>
         </div>
       )
     } else {
       return (
-        <div className="relative">
+        <div className={styles.simple}>
           <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
-            <div className="post-list text-md mb-4">
-              <div className="text-[#777] text-xs">{date.split(' ')[0]}</div>
-              <div className="whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-full">
-                {title}
-              </div>
+            <div className={styles['simple__post']}>
+              <div className={styles['simple__date']}>{date.split(' ')[0]}</div>
+              <div className={styles['simple__title']}>{title}</div>
             </div>
           </Link>
         </div>
@@ -142,33 +132,27 @@ const Posts: React.FC<Props> = ({ posts }) => {
   }
 
   return (
-    <div className="max-w-[36rem] m-auto mb-20 px-6">
-      <div className="flex items-center mb-4 justify-end gap-6">
-        <div className="flex item-center">
+    <main className={styles.posts}>
+      <div className={styles.options}>
+        <div className={styles.option}>
           <input
-            className="mr-1"
             type="checkbox"
             name="simpleView"
             id="simpleView"
             checked={isSimpleView}
             onChange={() => setIsSimpleView(!isSimpleView)}
           />
-          <label className="text-gray-500 text-sm" htmlFor="simpleView">
-            Simplified
-          </label>
+          <label htmlFor="simpleView">Simplified</label>
         </div>
-        <div className="flex items-center">
+        <div className={styles.option}>
           <input
-            className="mr-1"
             type="checkbox"
             name="language"
             id="language"
             checked={isEnglishOnly}
             onChange={() => setIsEnglish(!isEnglishOnly)}
           />
-          <label className="text-gray-500 text-sm" htmlFor="language">
-            English only
-          </label>
+          <label htmlFor="language">English only</label>
         </div>
       </div>
 
@@ -179,7 +163,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
           </React.Fragment>
         )
       })}
-    </div>
+    </main>
   )
 }
 

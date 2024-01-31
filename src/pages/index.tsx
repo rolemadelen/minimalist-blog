@@ -1,7 +1,7 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import ProgressBar from '@/components/ProgressBar'
-import Posts from '@/components/Posts'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+import ProgressBar from '@/components/ProgressBar/ProgressBar'
+import Posts from '@/components/Posts/Posts'
 import { getAllPosts } from '@/lib/blog'
 
 interface Post {
@@ -23,7 +23,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
       <Header />
       <ProgressBar />
       <Posts posts={posts} />
-      <Footer pageFrom="blog" />
+      <Footer />
     </>
   )
 }
