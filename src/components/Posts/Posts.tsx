@@ -7,10 +7,10 @@ export const simpleViewAtom = atom(false)
 export const englishOnlyAtom = atom(false)
 
 interface Post {
-  lang: string
   slug: string
   title: string
   date: string
+  type: string
   lastUpdated?: string
 }
 
@@ -19,7 +19,7 @@ interface Props {
 }
 
 const Posts: React.FC<Props> = ({ posts }) => {
-  const [isEnglishOnly, setIsEnglish] = useAtom(englishOnlyAtom)
+  const [isPermanentOnly, setIsEnglish] = useAtom(englishOnlyAtom)
   const [isSimpleView, setIsSimpleView] = useAtom(simpleViewAtom)
   const year = useRef('')
   const month = useRef<null | string>(null)
@@ -95,9 +95,9 @@ const Posts: React.FC<Props> = ({ posts }) => {
     slug: string,
     title: string,
     date: string,
-    lang: string
+    type: string
   ) => {
-    if (isEnglishOnly && lang !== 'en') return
+    if (isPermanentOnly && type !== 'permanent') return
 
     const { fyear, fmonth, fdate } = formatDate(date)
 
@@ -147,19 +147,19 @@ const Posts: React.FC<Props> = ({ posts }) => {
         <div className={styles.option}>
           <input
             type="checkbox"
-            name="language"
-            id="language"
-            checked={isEnglishOnly}
-            onChange={() => setIsEnglish(!isEnglishOnly)}
+            name="permanent"
+            id="permanent"
+            checked={isPermanentOnly}
+            onChange={() => setIsEnglish(!isPermanentOnly)}
           />
-          <label htmlFor="language">English only</label>
+          <label htmlFor="permanent">Permanent Notes</label>
         </div>
       </div>
 
-      {posts.map(({ date, slug, title, lang }, i) => {
+      {posts.map(({ date, slug, title, type }, i) => {
         return (
           <React.Fragment key={i}>
-            {displaySimpleView(slug, title, date, lang)}
+            {displaySimpleView(slug, title, date, type)}
           </React.Fragment>
         )
       })}

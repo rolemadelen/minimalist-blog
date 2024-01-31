@@ -3,7 +3,7 @@ import React from 'react'
 import remarkGfm from 'remark-gfm'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { vs } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 interface PreviewProps {
   markdown: string
@@ -20,7 +20,7 @@ const Preview: React.FC<PreviewProps> = ({ markdown }) => {
 
     return !inline && match ? (
       <SyntaxHighlighter
-        style={vs}
+        style={vscDarkPlus}
         language={match[1]}
         showLineNumbers={false}
         PreTag="div"

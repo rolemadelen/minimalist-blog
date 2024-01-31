@@ -5,11 +5,10 @@ import Posts from '@/components/Posts/Posts'
 import { getAllPosts } from '@/lib/blog'
 
 interface Post {
-  lang: string
   slug: string
   title: string
   date: string
-  type?: string
+  type: string
   lastUpdated?: string
 }
 
@@ -30,7 +29,6 @@ const Blog: React.FC<Props> = ({ posts }) => {
 
 export async function getStaticProps() {
   let posts = getAllPosts()
-  posts = posts.filter((post: Post) => post.type !== 'ps')
 
   return {
     props: {

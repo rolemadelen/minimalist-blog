@@ -4,11 +4,6 @@ $color-blue: $color-link;
 $color-red: #cd5c6c;
 $color-gray: #666;
 
-$--color-h1: #03045e;
-$--color-h2: #0077b6;
-$--color-h3: #00b4db;
-$--color-h4: #67a6b4;
-
 @function px2rem($px) {
   @return #{$px / 16}rem;
 }
