@@ -20,7 +20,7 @@ const About = () => {
           <a href="https://madelen.vercel.app/" rel="noopener noreferrer">
             <Image
               className={styles['header__logo']}
-              src="/profile.webp"
+              src="/profile.png"
               width={120}
               height={120}
               alt="profile"
