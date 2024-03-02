@@ -17,7 +17,7 @@ const About = () => {
       <ProgressBar />
       <div className={styles.container}>
         <header className={styles.header}>
-          <a href="https://madelen.vercel.app/" rel="noopener noreferrer">
+          <a href="https://blog.madelen.me/" rel="noopener noreferrer">
             <Image
               className={styles['header__logo']}
               src="/profile.png"
@@ -30,7 +30,7 @@ const About = () => {
             <h1 className={styles['header__title']}>{owner.name}</h1>
             <h3 className={styles['header__subtitle']}>{owner.role}</h3>
             <div className={styles['header__contact']}>
-              <a href="https://madelen.vercel.app/" rel="noopener noreferrer">
+              <a href="https://blog.madelen.me/" rel="noopener noreferrer">
                 <Image
                   src={'/blog-logo.png'}
                   width={20}

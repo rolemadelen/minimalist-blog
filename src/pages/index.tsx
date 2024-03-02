@@ -26,11 +26,11 @@ const Blog: React.FC<Props> = ({ posts }) => {
         <meta content="Madelen" property="og:title" />
         <meta content="Madelen | Web Developer" property="og:description" />
         <meta
-          content="https://madelen.vercel.app/ogimage.jpg"
+          content="https://blog.madelen.me/ogimage.jpg"
           property="og:image"
         />
         <meta content="website" property="og:type" />
-        <meta content="https://madelen.vercel.app" property="og:url" />
+        <meta content="https://blog.madelen.me" property="og:url" />
         <meta
           name="keyword"
           content="blog, javascript, front-end, developer, engineer"
@@ -42,7 +42,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
           property="twitter:description"
         />
         <meta
-          content="https://madelen.vercel.app/ogimage.jpg"
+          content="https://blog.madelen.me/ogimage.jpg"
           property="twitter:image"
         />
         <meta content="summary_large_image" property="twitter:card" />
