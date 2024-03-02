@@ -20,7 +20,7 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="https://want.jiiyoo.me">Want</Link>
+            <Link href="https://want.madelen.me">Want</Link>
           </li>
         </ul>
       </nav>

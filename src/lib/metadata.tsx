@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     300: {
       year: '2023.07',
       project: 'Things I Want',
-      link: 'https://want.jiiyoo.me',
+      link: 'https://want.madelen.me',
     },
     400: {
       year: '2023.06',
