@@ -1,0 +1,92 @@
+import React from 'react'
+import Head from 'next/head'
+import { GetStaticProps, GetStaticPropsContext } from 'next'
+
+import Footer from '@/components/Footer/Footer'
+import PostContent from '@/components/Post/PostContent'
+import PostHeader from '@/components/Post/PostHeader'
+import ProgressBar from '@/components/ProgressBar/ProgressBar'
+import styles from '@/components/Post/Post.module.scss'
+
+import Comment from '@/lib/giscus'
+import { createOgImage } from '@/lib/createOgImage'
+import { getAllPostIds, getPostData } from '@/lib/blog'
+
+interface Props {
+  post: {
+    title: string
+    date: string
+    markdown: string
+    type: string
+    tags?: [string]
+  }
+}
+
+const Post: React.FC<Props> = ({
+  post: { title, date, markdown, type, tags = [] },
+}) => {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
+  const ogImage = createOgImage({
+    title,
+    meta: [
+      'Madelen',
+      new Date(date).toLocaleString('en-US', options as any),
+      `>${type}`,
+      ...tags,
+    ].join('・'),
+  })
+  return (
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="836" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:title" content="Madelen" />
+        <meta property="og:description" content={title} />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:card" content="summary_large_image" />
+      </Head>
+      <ProgressBar />
+
+      <div className={styles.post}>
+        <PostHeader title={title} date={date} />
+        <PostContent markdown={markdown} />
+        <Comment />
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+export async function getStaticPaths() {
+  const paths = getAllPostIds()
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export const getStaticProps: GetStaticProps = async ({
+  params,
+}: GetStaticPropsContext) => {
+  if (!params) {
+    return {
+      notFound: true,
+    }
+  }
+
+  const post = await getPostData(params.id as string[])
+  return {
+    props: {
+      post,
+    },
+  }
+}
+
+export default Post
