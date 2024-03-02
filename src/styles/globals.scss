@@ -1,0 +1,199 @@
+@tailwind base;
+
+@import '/public/fonts/Pretendard/static/pretendard.scss';
+@import '/public/fonts/PretendardJP/static/pretendard-jp.scss';
+@import './func.scss';
+
+:root {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  color: #555;
+  font-family: 'Pretendard', 'Pretendard JP', Times, sans-serif;
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #009dff33;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.post-content {
+  table,
+  thead,
+  tr,
+  td,
+  th {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid #eee;
+  }
+
+  blockquote {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    color: #999;
+    border-left: 1px solid #ccc;
+
+    p {
+      margin: 0;
+      line-height: 1.75;
+
+      code,
+      kbd {
+        font-style: italic;
+        background: none;
+      }
+    }
+
+    a {
+      color: #888;
+    }
+  }
+
+  hr {
+    margin: 2rem 0;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: #d5e5ff;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 0.35rem;
+    text-underline-offset: -0.2rem;
+    transition: text-decoration 0.3s;
+  }
+
+  p > code,
+  li > code {
+    background-color: #f0f0f0;
+  }
+
+  p {
+    margin-bottom: 1.15rem;
+    margin-top: 1.15rem;
+    text-indent: 0rem;
+    line-height: 1.7;
+  }
+
+  img {
+    max-width: 80%;
+    border: 1px solid #eee;
+
+    & ~ em {
+      display: block;
+      margin-top: -1.5rem;
+
+      color: gray;
+      font-size: 0.8rem;
+      text-align: center;
+
+      a {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+
+  pre,
+  img {
+    margin: 1rem auto;
+
+    & > div {
+      border-radius: 0.5rem;
+    }
+  }
+
+  ul > li {
+    position: relative;
+    left: 1rem;
+    margin-bottom: 0.3rem;
+
+    list-style: disc outside;
+
+    & > ul > li {
+      list-style: circle outside;
+
+      & > ul > li {
+        list-style: square outside;
+      }
+    }
+  }
+
+  ol:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal inside;
+
+    & > ol > li {
+      list-style: lower-roman inside;
+
+      & > ol > li {
+        list-style: lower-latin inside;
+      }
+    }
+  }
+
+  li {
+    line-height: 1.5;
+  }
+}
+
+.post-content > p:first-child > img {
+  max-width: 100%;
+}
+
+body,
+p,
+blockquote,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: keep-all;
+}
+
+.footnotes {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+
+  font-size: 0.8rem;
+
+  h2 {
+    display: none;
+  }
+
+  li {
+    list-style: roman outside !important;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-indent: 0;
+  }
+
+  a {
+    text-decoration-color: transparent;
+
+    &.data-footnote-backref {
+      color: $color-red;
+    }
+  }
+}
+
+sup > a {
+  color: $color-red !important;
+}
