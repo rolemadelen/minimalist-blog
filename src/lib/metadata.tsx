@@ -59,32 +59,37 @@ export const metadata: Metadata = {
     100: {
       year: '2024.02',
       project: 'YourTrack - Monthly Spotify Highlights',
-      link: 'https://yourtrack.vercel.app/',
+      link: 'https://github.com/rolemadelen/yourtrack',
+    },
+    150: {
+      year: '2023.09',
+      project: 'Portfolio v2.0',
+      link: 'https://github.com/rolemadelen/portfolio_v2',
     },
     200: {
       year: '2023.08',
       project: 'Asayake Taiko Website Renewal',
-      link: 'https://asayake.vercel.app/',
+      link: 'https://github.com/rolemadelen/asayake',
     },
     300: {
       year: '2023.07',
       project: 'Things I Want',
-      link: 'https://want.madelen.me',
+      link: 'https://github.com/rolemadelen/things-i-want',
     },
     400: {
       year: '2023.06',
       project: 'Portfolio v1.0',
-      link: 'https://rolemadelen.github.io/',
+      link: 'https://github.com/rolemadelen/rolemadelen.github.io',
     },
     500: {
       year: '2023.03',
       project: 'Artlog',
-      link: 'https://artlogs.netlify.app/',
+      link: 'https://github.com/rolemadelen/artlog',
     },
     600: {
       year: '2022.07',
       project: 'ghostvatar',
-      link: 'https://ghostvatar.netlify.app/',
+      link: 'https://github.com/rolemadelen/ghost-vatar',
     },
     700: {
       year: '2020.05',
@@ -111,22 +116,22 @@ export const metadata: Metadata = {
     2: {
       year: '2022.05',
       project: 'Next.js - Blog (Sorted by relevance)',
-      link: 'https://mido-blog.vercel.app/',
+      link: 'https://github.com/rolemadelen/blog-v1',
     },
     3: {
       year: '2020.08',
       project: 'Vue.js - Multilingual Blog',
-      link: 'https://old-vue-blog.netlify.app/',
+      link: 'https://github.com/rolemadelen/vue-blog',
     },
     4: {
       year: '2020.03',
       project: 'Next.js - Multilingual Blog',
-      link: 'https://bluelog-b6d3ilsz3-euisblue.vercel.app/',
+      link: 'https://github.com/euisblue/bluelog',
     },
     5: {
       year: '2019.09',
       project: 'Jekyll - Multilingual Blog (modified a theme)',
-      link: 'https://euisblue.github.io/',
+      link: 'https://github.com/euisblue/euisblue.github.io?tab=readme-ov-file',
     },
   },
   education: {
@@ -153,7 +158,7 @@ export const metadata: Metadata = {
     mastodon: {
       name: 'Mastodon',
       handle: 'mrolemadelen@techhub.social',
-      link: 'https://techhub.social/@mrolemadelen',
+      link: 'https://elk.zone/techhub.social/@mrolemadelen',
     },
     instagram: {
       name: 'Instagram',
