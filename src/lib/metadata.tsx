@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   owner: {
     name: 'Madelen',
     role: 'Web Developer (Spec. Front-End)',
-    email: 'rolemadelen@pm.me',
+    email: 'rolemadelen@tuta.io',
   },
   work_exp: {
     0: {
