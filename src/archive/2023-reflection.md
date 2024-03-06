@@ -29,7 +29,7 @@ And for the negatives, here's my [resume of failure](./resume-of-failure#h1-11).
 - Started learning new stacks and undertook side projects.
 - Revamped my former [taiko team's website](https://asayake.vercel.app/) using Svelte.
 - Updated the UI of my blog (the one you're currently viewing).
-- Created my [second portfolio](https://www.jiiyoo.me/).
+- Created my second portfolio.
 - Launched a [programming YouTube channel](https://www.youtube.com/@rolemadelen) in Japanese.
 - A very small contribution to [Adorable CSS](https://github.com/developer-1px/adorable-css/pull/76)
 
