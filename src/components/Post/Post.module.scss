@@ -77,6 +77,14 @@
       font-size: 1rem;
     }
 
+    pre code {
+      white-space: break-spaces !important;
+
+      span {
+        word-break: break-all;
+      }
+    }
+
     code,
     kbd {
       padding: 0.1rem 0.2rem;
