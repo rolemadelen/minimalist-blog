@@ -4,7 +4,8 @@ import { atom, useAtom } from 'jotai'
 import styles from './Posts.module.scss'
 
 export const modeAtom = atom('normal')
-export const typeAtom = atom('published')
+export const techAtom = atom(true)
+export const nonTechAtom = atom(false)
 
 type View = {
   slug: string
@@ -22,7 +23,8 @@ type Props = {
 
 const Posts: React.FC<Props> = ({ posts }) => {
   const [mode, setMode] = useAtom(modeAtom)
-  const [postType, setPostType] = useAtom(typeAtom)
+  const [displayTech, setDisplayTech] = useAtom(techAtom)
+  const [displayNonTech, setDisplayNonTech] = useAtom(nonTechAtom)
 
   const year = useRef('')
   const month = useRef<null | string>(null)
@@ -129,7 +131,8 @@ const Posts: React.FC<Props> = ({ posts }) => {
   }
 
   const viewFactory = (post: Post) => {
-    if (postType === 'published' && post.type !== postType) return
+    if (displayTech && post.type !== 'tech') return
+    if (displayNonTech && post.type !== 'non-tech') return
 
     if (mode === 'simple') {
       return SimpleView(post)
@@ -154,14 +157,28 @@ const Posts: React.FC<Props> = ({ posts }) => {
         <div className={styles.option}>
           <input
             type="checkbox"
-            name="published"
-            id="published"
-            checked={postType === 'published'}
-            onChange={() =>
-              setPostType(postType === 'published' ? '' : 'published')
-            }
+            name="tech"
+            id="tech"
+            checked={displayTech}
+            onChange={() => {
+              setDisplayNonTech(displayTech ? false : displayTech)
+              setDisplayTech(!displayTech)
+            }}
           />
-          <label htmlFor="published">Published</label>
+          <label htmlFor="tech">Tech</label>
+        </div>
+        <div className={styles.option}>
+          <input
+            type="checkbox"
+            name="nontech"
+            id="nontech"
+            checked={displayNonTech}
+            onChange={() => {
+              setDisplayTech(displayNonTech ? false : displayNonTech)
+              setDisplayNonTech(!displayNonTech)
+            }}
+          />
+          <label htmlFor="nontech">Non-Tech</label>
         </div>
       </div>
 
