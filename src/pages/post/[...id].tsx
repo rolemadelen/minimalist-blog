@@ -18,12 +18,13 @@ interface Props {
     date: string
     markdown: string
     type: string
+    note: string
     tags?: [string]
   }
 }
 
 const Post: React.FC<Props> = ({
-  post: { title, date, markdown, type, tags = [] },
+  post: { title, date, markdown, type, note, tags = [] },
 }) => {
   const options = {
     year: 'numeric',
@@ -35,7 +36,7 @@ const Post: React.FC<Props> = ({
     meta: [
       'Madelen',
       new Date(date).toLocaleString('en-US', options as any),
-      `>${type}`,
+      `>${note}`,
       ...tags,
     ].join('・'),
   })
