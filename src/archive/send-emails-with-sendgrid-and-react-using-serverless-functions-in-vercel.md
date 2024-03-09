@@ -6,7 +6,7 @@ lang: 'en'
 
 # Install Dependencies
 
-```sh
+```shell
 $ pnpm install @sendgrid/mail
 ```
 
@@ -137,7 +137,7 @@ I'm going to use [react-hot-toast](https://github.com/timolins/react-hot-toast),
 
 First, install the dependency.
 
-```sh
+```shell
 $ pnpm install react-hot-toast
 ```
 

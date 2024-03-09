@@ -35,7 +35,7 @@ The syntax is `[USER NAME]:[PASSWORD]`.
 The password must be encrypted (_bcrypt, SHA1, or crpyt()_). You can use '[.htpasswd Username & Password Generator](https://davidwalsh.name/web-development-tools)' created by _David Walsh_. 
 
 Or if you have `htpasswd` command:
-```sh
+```shell
  -c : creates a passwd file
 $ htpasswd -c .htpasswd USER_NAME
 
@@ -55,7 +55,7 @@ For Nginx, we need to configure the _nginx.conf_ file.
 
 First we need to create a user:passwd file similar to Apache. I recommend installing `httpd-tools` or `apache2-utils` to use the `htpasswd` command.
 
-```sh
+```shell
  -c : creates a passwd file
 $ htpasswd -c .htpasswd USER_NAME
  NEW PASSWORD: 

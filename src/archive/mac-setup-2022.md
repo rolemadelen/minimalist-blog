@@ -173,7 +173,7 @@ source ~/.zshrc
 
 ## Oh My Zsh Theme + Fonts
 
-```sh
+```shell
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 
@@ -185,7 +185,7 @@ brew install --cask font-hack-nerd-font
 
 Set aliases for `exa`:
 
-```sh
+```shell
 if [[ $(command -v exa) ]]; then
   alias e='exa --icons'
   alias l=e
