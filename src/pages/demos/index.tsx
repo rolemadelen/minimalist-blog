@@ -20,12 +20,13 @@ const Demos = () => {
     demoActiveRef.current = e.currentTarget
     setDemoNumber(demoItem)
 
-    const { y } = document.querySelector('header')?.getBoundingClientRect()
-    console.log(y)
+    const headerRect = document.querySelector('header')?.getBoundingClientRect()
     const { top } = e.currentTarget.getBoundingClientRect()
 
     bulletRef.current &&
-      (bulletRef.current.style.top = `${top + 10 + (y >= 0 ? -60 : 0)}px`)
+      (bulletRef.current.style.top = `${
+        top + 10 + (headerRect!.y >= 0 ? -60 : 0)
+      }px`)
   }
 
   return (

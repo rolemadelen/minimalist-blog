@@ -45,10 +45,7 @@ const About = () => {
               >
                 <Image src={'/x-logo.png'} width={15} height={15} alt="x" />
               </a>
-              <a
-                href="https://techhub.social/@mrolemadelen"
-                rel="noopener noreferrer"
-              >
+              <a href={contacts.mastodon.link} rel="noopener noreferrer">
                 <Image
                   src={'/mastodon-logo.png'}
                   width={22}
