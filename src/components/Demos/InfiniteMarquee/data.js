@@ -23,12 +23,4 @@ export const words = [
   'developer',
   'sketch',
   'frontend ',
-  'creativity',
-  'curious',
-  'interaction',
-  'patience',
-  'ui/ux',
-  'developer',
-  'sketch',
-  'frontend ',
 ]

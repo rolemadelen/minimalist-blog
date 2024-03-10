@@ -2,6 +2,7 @@ import styles from './demos.module.scss'
 import ReelEffect from '@/components/Demos/ReelEffect/ReelEffect'
 import InfiniteMarquee from '@/components/Demos/InfiniteMarquee/InfiniteMarquee'
 import { useRef, useState } from 'react'
+import Link from 'next/link'
 
 const Demos = () => {
   const [demoNumber, setDemoNumber] = useState(-1)
@@ -19,25 +20,36 @@ const Demos = () => {
     demoActiveRef.current = e.currentTarget
     setDemoNumber(demoItem)
 
-    const { y } = e.currentTarget.getBoundingClientRect()
-    bulletRef.current && (bulletRef.current.style.top = `${y + 10}px`)
+    const { y } = document.querySelector('header')?.getBoundingClientRect()
+    console.log(y)
+    const { top } = e.currentTarget.getBoundingClientRect()
+
+    bulletRef.current &&
+      (bulletRef.current.style.top = `${top + 10 + (y >= 0 ? -60 : 0)}px`)
   }
 
   return (
-    <div className={styles.demo}>
-      <aside className={styles.demo__aside}>
-        <span ref={bulletRef} className={styles.demo__bullet}></span>
-        <ul className={styles.demo__list} role="list">
-          <li onClick={(e) => handleDemoItem(e, 0)}>
-            Reel Effect (Slot Machine)
-          </li>
-          <li onClick={(e) => handleDemoItem(e, 1)}>Infinite Marquee</li>
-        </ul>
-      </aside>
-      <main className={styles.demo__main}>
-        {demoNumber == -1 ? 'Demo' : demoList[demoNumber]}
-      </main>
-    </div>
+    <>
+      <header className={styles.demo__header}>
+        <Link href="/">
+          <div className="demo__logo">Madelen</div>
+        </Link>
+      </header>
+      <div className={styles.demo}>
+        <aside className={styles.demo__aside}>
+          <span ref={bulletRef} className={styles.demo__bullet}></span>
+          <ul className={styles.demo__list} role="list">
+            <li onClick={(e) => handleDemoItem(e, 0)}>
+              Reel Effect (Slot Machine)
+            </li>
+            <li onClick={(e) => handleDemoItem(e, 1)}>Infinite Marquee</li>
+          </ul>
+        </aside>
+        <main className={styles.demo__main}>
+          {demoNumber == -1 ? 'Demo' : demoList[demoNumber]}
+        </main>
+      </div>
+    </>
   )
 }
 

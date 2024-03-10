@@ -6,6 +6,16 @@
 
   height: 100svh;
 
+  &__header {
+    display: flex;
+    align-items: center;
+
+    height: px2rem(60);
+    padding-left: 2rem;
+
+    border-bottom: 1px solid $color-lightgray;
+  }
+
   &__aside {
     margin-left: 2rem;
     padding-top: 2rem;
@@ -18,7 +28,7 @@
   &__main {
     margin-left: 2rem;
     padding-top: 2rem;
-    flex: 1;
+    flex: 0.8;
   }
 
   &__list {
