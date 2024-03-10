@@ -1,0 +1,52 @@
+@import '/src/styles/func.scss';
+
+.demo {
+  position: relative;
+  display: flex;
+
+  height: 100svh;
+
+  &__aside {
+    margin-left: 2rem;
+    padding-top: 2rem;
+
+    border-right: 1px solid $color-lightgray;
+
+    flex: 0.2;
+  }
+
+  &__main {
+    margin-left: 2rem;
+    padding-top: 2rem;
+    flex: 1;
+  }
+
+  &__list {
+    li {
+      &:hover {
+        color: $color-blue;
+        cursor: pointer;
+      }
+
+      &.active {
+        color: $color-red2;
+        transition: color 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+    }
+  }
+}
+
+.demo__bullet {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+
+  background-color: $color-red2;
+
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: 1;
+}
