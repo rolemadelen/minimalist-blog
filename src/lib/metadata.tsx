@@ -162,8 +162,8 @@ export const metadata: Metadata = {
     },
     instagram: {
       name: 'Instagram',
-      handle: 'igrolemadelen',
-      link: 'https://www.instagram.com/igrolemadelen',
+      handle: 'irolemadelen',
+      link: 'https://www.instagram.com/irolemadelen',
     },
   },
 }
