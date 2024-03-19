@@ -28,8 +28,12 @@
   }
 
   .date {
+    span {
+      display: block;
+    }
+
     font-size: px2rem(14);
-    color: $color-gray;
+    color: $color-lightgray;
   }
 }
 
