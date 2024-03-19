@@ -58,7 +58,7 @@ const Now = () => {
                 chat gpt to not only check grammars but also to rephrase what I
                 wrote to make it "look" better, which no longer makes it my
                 words{' '}
-                <a href="https://elk.zone/techhub.social/@mrolemadelen/112052013783314073">
+                <a href="https://techhub.social/@mrolemadelen/112052013783314073">
                   (toots)
                 </a>
                 .
@@ -127,7 +127,7 @@ const Now = () => {
           >
             Derek Sivers
           </a>
-          ' now page.
+          ' now page movement.
         </div>
       </section>
       <Footer />
