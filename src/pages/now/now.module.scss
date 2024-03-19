@@ -1,0 +1,70 @@
+@import '/src/styles/func.scss';
+
+.container {
+  max-width: 36rem;
+  padding: 0 px2rem(16);
+  margin: 0 auto;
+
+  color: $color-gray;
+  text-transform: lowercase;
+
+  p {
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+  }
+
+  a {
+    @include link-decoration;
+    color: $color-link;
+  }
+}
+
+.header {
+  align-items: center;
+  margin-bottom: 4rem;
+
+  .title {
+    font-size: px2rem(20);
+  }
+
+  .date {
+    font-size: px2rem(14);
+    color: $color-gray;
+  }
+}
+
+.main {
+  margin-top: 1.5rem;
+
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: px2rem(16);
+  }
+
+  .list {
+    padding-left: 1.5rem;
+
+    list-style-type: 'ー ';
+
+    li::marker {
+      font-size: 12px;
+    }
+
+    li {
+      margin-bottom: px2rem(8);
+    }
+  }
+}
+
+.note {
+  margin-top: 4rem;
+  font-size: px2rem(14);
+
+  a {
+    text-transform: none;
+  }
+}
+
+.section {
+  margin-bottom: 3rem;
+}

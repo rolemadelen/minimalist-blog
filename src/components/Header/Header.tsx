@@ -9,7 +9,7 @@ const Header = () => {
         <Link href="/">
           <h1>
             <span className={styles['logo__mark']}>&gt;$</span>
-            <span className={styles['logo__text']}>Pensieve</span>
+            <span className={styles['logo__text']}>madelen</span>
             <span className={styles['logo__cursor']}></span>
           </h1>
         </Link>
@@ -20,7 +20,16 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="https://want.madelen.me">Want</Link>
+            <Link href="/now">Now</Link>
+          </li>
+          <li>
+            <Link
+              href="https://want.madelen.me"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              Want
+            </Link>
           </li>
         </ul>
       </nav>
