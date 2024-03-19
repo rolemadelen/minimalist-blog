@@ -17,7 +17,8 @@ const Now = () => {
         <div className={styles.header}>
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
-            updated: March 18th, 2024, from my home in Kentucky.
+            <span>published ー 2024-03-18, from KY.</span>
+            <span>updated ー 2024-03-19, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
@@ -54,6 +55,7 @@ const Now = () => {
               </li>
             </ul>
           </div>
+
           <div className={styles.section}>
             <div className={styles.title}>❗️ what I'm not trying to do</div>
             <ul className={styles.list}>
@@ -71,6 +73,16 @@ const Now = () => {
                 <strong>wasting time</strong>: trying to be productive because
                 their are so many things I want to learn!
               </li>
+            </ul>
+          </div>
+
+          <div className={styles.section}>
+            <div className={styles.title}>🧐 my current interests</div>
+            <ul className={styles.list}>
+              <li>productivity</li>
+              <li>Gregg Shorthand</li>
+              <li>Web Design</li>
+              <li>full stack</li>
             </ul>
           </div>
 
