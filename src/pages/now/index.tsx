@@ -3,10 +3,14 @@ import ProgressBar from '@/components/ProgressBar/ProgressBar'
 
 import styles from './now.module.scss'
 import Header from '@/components/Header/Header'
+import Head from 'next/head'
 
 const Now = () => {
   return (
     <>
+      <Head>
+        <link rel="me" href="https://techhub.social/@mrolemadelen" />
+      </Head>
       <Header />
       <ProgressBar />
       <section className={styles.container}>
