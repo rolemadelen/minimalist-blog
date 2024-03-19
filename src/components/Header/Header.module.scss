@@ -14,22 +14,20 @@
 }
 
 .logo {
-  font-size: px2rem(20);
+  font-size: px2rem(18);
 
   &__text {
     margin-left: 4px;
-    text-transform: uppercase;
   }
 
   &__cursor {
     display: inline-block;
-    width: 0.6rem;
-    height: 1rem;
+    width: 0.4rem;
+    height: 0.8rem;
     margin-left: 4px;
 
     background-color: #67baee;
-    border-radius: 1px;
-    animation: cursor 1.25s infinite;
+    animation: cursor 1s infinite;
   }
 }
 
@@ -37,7 +35,7 @@
   &__list {
     display: flex;
     gap: 1.5rem;
-    font-size: 1.2rem;
+    font-size: px2rem(16);
     text-transform: lowercase;
     @include link-decoration;
 
@@ -53,10 +51,10 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-  }
+  // 50% {
+  //   opacity: 1;
+  // }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
