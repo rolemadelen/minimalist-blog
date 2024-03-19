@@ -32,21 +32,6 @@ const About = () => {
             <h1 className={styles['header__title']}>{owner.name}</h1>
             <h3 className={styles['header__subtitle']}>{owner.role}</h3>
             <div className={styles['header__contact']}>
-              <a href="https://blog.madelen.me/" rel="noopener noreferrer">
-                <Image
-                  src={'/blog-logo.png'}
-                  width={20}
-                  height={20}
-                  alt="blog"
-                />
-              </a>
-              <a
-                href={contacts.x.link}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Image src={'/x-logo.png'} width={15} height={15} alt="x" />
-              </a>
               <a
                 href="https://techhub.social/@mrolemadelen"
                 rel="noopener noreferrer"
