@@ -55,27 +55,24 @@
   &__year {
     margin: 2.5rem auto 0;
 
+    font-size: px2rem(20);
     color: $color-gray;
     will-change: transform;
 
-    @media (max-width: 639px) {
-      font-size: px2rem(24);
-      font-style: italic;
-      font-weight: 600;
-    }
-
     @media (min-width: 640px) {
       position: absolute;
-      top: -1.8rem;
+      top: -1.7rem;
       left: -3.5rem;
       transform: rotate(-90deg);
     }
   }
   &__month {
-    margin: px2rem(32) auto px2rem(4);
+    margin: px2rem(32) px2rem(-2) px2rem(4);
     color: $color-gray;
+
+    text-transform: uppercase;
     font-size: px2rem(14);
-    font-style: italic;
+    font-weight: 500;
   }
 }
 

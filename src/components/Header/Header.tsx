@@ -9,7 +9,7 @@ const Header = () => {
         <Link href="/">
           <h1>
             <span className={styles['logo__mark']}>&gt;$</span>
-            <span className={styles['logo__text']}>madelen</span>
+            <span className={styles['logo__text']}>Madelen</span>
             <span className={styles['logo__cursor']}></span>
           </h1>
         </Link>
