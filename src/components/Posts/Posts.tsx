@@ -48,18 +48,18 @@ const Posts: React.FC<Props> = ({ posts }) => {
   const isNewMonth = (m: number) => {
     const months = [
       '',
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
+      'January',
+      'February',
+      'March',
+      'April',
       'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
     ]
 
     let ret = false
@@ -103,7 +103,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
         {fyear}
 
         {isNewMonth(+fmonth) && (
-          <div className={styles['date__month']}>{month.current}</div>
+          <div className={styles['date__month']}> {month.current} </div>
         )}
         <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
           <div className={styles.post}>
