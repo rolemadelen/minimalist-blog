@@ -152,7 +152,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
             checked={mode === 'simple'}
             onChange={() => setMode(mode === 'simple' ? 'normal' : 'simple')}
           />
-          <label htmlFor="simpleView">Simplified</label>
+          <label htmlFor="simpleView">simplified</label>
         </div>
         <div className={styles.option}>
           <input
@@ -165,7 +165,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
               setDisplayTech(!displayTech)
             }}
           />
-          <label htmlFor="tech">Tech</label>
+          <label htmlFor="tech">tech</label>
         </div>
         <div className={styles.option}>
           <input
@@ -178,7 +178,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
               setDisplayNonTech(!displayNonTech)
             }}
           />
-          <label htmlFor="nontech">Non-Tech</label>
+          <label htmlFor="nontech">non-tech</label>
         </div>
       </div>
 

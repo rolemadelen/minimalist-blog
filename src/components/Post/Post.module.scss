@@ -11,7 +11,7 @@
 
   &__title {
     padding-bottom: px2rem(16);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.25;
   }
@@ -78,7 +78,7 @@
     }
 
     pre code {
-      white-space: break-spaces !important;
+      // white-space: break-spaces !important;
 
       span {
         word-break: break-all;

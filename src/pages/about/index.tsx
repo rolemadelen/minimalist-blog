@@ -4,6 +4,7 @@ import { metadata } from '@/lib/metadata'
 import Image from 'next/image'
 import { useState } from 'react'
 import styles from './about.module.scss'
+import Header from '@/components/Header/Header'
 
 const About = () => {
   const [expand, setExpand] = useState(false)
@@ -15,6 +16,7 @@ const About = () => {
   return (
     <>
       <ProgressBar />
+      <Header />
       <div className={styles.container}>
         <header className={styles.header}>
           <a href="https://blog.madelen.me/" rel="noopener noreferrer">
