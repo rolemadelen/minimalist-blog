@@ -150,11 +150,6 @@ export const metadata: Metadata = {
       handle: 'rolemadelen',
       link: 'https://github.com/rolemadelen',
     },
-    x: {
-      name: 'X',
-      handle: 'xrolemadelen',
-      link: 'https://twitter.com/xrolemadelen',
-    },
     mastodon: {
       name: 'Mastodon',
       handle: 'mrolemadelen@techhub.social',
