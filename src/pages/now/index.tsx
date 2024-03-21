@@ -18,7 +18,7 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-03-19, from KY.</span>
+            <span>updated ー 2024-03-21, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
@@ -60,7 +60,7 @@ const Now = () => {
             <div className={styles.title}>❗️ what I'm not trying to do</div>
             <ul className={styles.list}>
               <li>
-                <strong>Relying on chat gpt</strong>: I found myself utilizing
+                <strong>Relying on chat gpt</strong> I found myself utilizing
                 chat gpt to not only check grammars but also to rephrase what I
                 wrote to make it "look" better, which no longer makes it my
                 words{' '}
@@ -77,6 +77,27 @@ const Now = () => {
           </div>
 
           <div className={styles.section}>
+            <div className={styles.title}>📰 events</div>
+            <ul className={styles.list}>
+              <li>
+                <strong>First project in Rust</strong>: Released{' '}
+                <a href="https://github.com/rolemadelen/pomosh">pomosh</a>{' '}
+                (2024-03-20)
+              </li>
+              <li>
+                <strong>
+                  Migrated from X to{' '}
+                  <a href="https://elk.zone/techhub.social/@mrolemadelen">
+                    Mastadon
+                  </a>
+                </strong>
+                : i got tired of negative tweets flowing around my timeline
+                (2024-03-16)
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.section}>
             <div className={styles.title}>🧐 my current interests</div>
             <ul className={styles.list}>
               <li>productivity</li>
@@ -86,24 +107,6 @@ const Now = () => {
             </ul>
           </div>
 
-          <div className={styles.section}>
-            <div className={styles.title}>📰 events</div>
-            <ul className={styles.list}>
-              <li>
-                <strong>
-                  Migrated from X to{' '}
-                  <a href="https://elk.zone/techhub.social/@mrolemadelen">
-                    Mastadon
-                  </a>
-                </strong>
-                : i got tired of negative tweets flowing around my timeline
-                (240316).
-              </li>
-              <li>
-                <strong>trip to korea</strong>: family reunion (240406).
-              </li>
-            </ul>
-          </div>
           <div className={styles.section}>
             <div className={styles.title}>🎵 things on repeat</div>
             <ul className={styles.list}>
