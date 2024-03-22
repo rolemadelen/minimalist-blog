@@ -128,6 +128,14 @@ progress[value] {
         list-style: square outside;
       }
     }
+
+    & > ol > li {
+      list-style: lower-roman outside;
+
+      & > ol > li {
+        list-style: lower-latin outside;
+      }
+    }
   }
 
   ol:last-of-type {
@@ -142,6 +150,14 @@ progress[value] {
 
       & > ol > li {
         list-style: lower-latin inside;
+      }
+    }
+
+    & > ul > li {
+      list-style: circle inside;
+
+      & > ul > li {
+        list-style: square inside;
       }
     }
   }
@@ -201,4 +217,9 @@ h6 {
 
 sup > a {
   color: $color-red !important;
+}
+
+del {
+  text-transform: none;
+  text-decoration: none;
 }
