@@ -22,7 +22,7 @@ const About = () => {
           <a href="https://blog.madelen.me/" rel="noopener noreferrer">
             <Image
               className={styles['header__logo']}
-              src="/profile.png"
+              src="/about-profile.png"
               width={120}
               height={120}
               alt="profile"
