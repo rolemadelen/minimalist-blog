@@ -6,7 +6,6 @@
   margin: 0 auto;
 
   color: $color-gray;
-  text-transform: lowercase;
 
   p {
     margin-bottom: 1rem;
@@ -54,7 +53,7 @@
       font-size: 12px;
     }
 
-    li {
+    & > li {
       margin-bottom: px2rem(8);
     }
   }
