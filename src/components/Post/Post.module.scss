@@ -104,11 +104,6 @@
     @include link-decoration;
     word-break: break-all;
   }
-
-  del {
-    text-transform: none;
-    text-decoration: none;
-  }
 }
 
 @keyframes slideLeft {
