@@ -4,6 +4,7 @@ import ProgressBar from '@/components/ProgressBar/ProgressBar'
 import Posts from '@/components/Posts/Posts'
 import { getAllPosts } from '@/lib/blog'
 import Head from 'next/head'
+import { createOgImage } from '@/lib/createOgImage'
 
 interface Post {
   slug: string
@@ -20,34 +21,30 @@ interface Props {
 }
 
 const Blog: React.FC<Props> = ({ posts }) => {
+  const title = 'Madelen Blog'
+  const ogImage = createOgImage({
+    title,
+    meta: ['Web developer specialized in Frontend'].join('・'),
+  })
+
   return (
     <>
       <Head>
         <title>Madelen</title>
         <meta content="Madelen | Web Developer" name="description" />
-        <meta content="Madelen" property="og:title" />
-        <meta content="Madelen | Web Developer" property="og:description" />
-        <meta
-          content="https://blog.madelen.me/ogimage.jpg"
-          property="og:image"
-        />
-        <meta content="website" property="og:type" />
-        <meta content="https://blog.madelen.me" property="og:url" />
         <meta
           name="keyword"
-          content="blog, javascript, front-end, developer, engineer"
+          content="blog, javascript, frontend, developer, engineer"
         />
-
-        <meta content="Madelen" property="twitter:title" />
-        <meta
-          content="Madelen | Web Developer"
-          property="twitter:description"
-        />
-        <meta
-          content="https://blog.madelen.me/ogimage.jpg"
-          property="twitter:image"
-        />
-        <meta content="summary_large_image" property="twitter:card" />
+        <meta property="og:description" content="Madelen | Web Developer" />
+        <meta property="og:url" content="https://blog.madelen.me" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="836" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:title" content="Madelen" />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
