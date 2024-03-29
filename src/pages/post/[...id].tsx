@@ -15,6 +15,7 @@ import { getAllPostIds, getAllPosts, getPostData } from '@/lib/blog'
 interface Props {
   post: {
     title: string
+    desc: string
     date: string
     markdown: string
     type: string
@@ -26,7 +27,7 @@ interface Props {
 }
 
 const Post: React.FC<Props> = ({
-  post: { title, date, markdown, type, note, tags = [] },
+  post: { title, desc, date, markdown, tags = [''] },
   prevPost,
   nextPost,
 }) => {
@@ -38,9 +39,7 @@ const Post: React.FC<Props> = ({
   const ogImage = createOgImage({
     title,
     meta: [
-      'Madelen',
       new Date(date).toLocaleString('en-US', options as any),
-      `>${note}`,
       ...tags,
     ].join('・'),
   })
@@ -60,7 +59,7 @@ const Post: React.FC<Props> = ({
       <ProgressBar />
 
       <div className={styles.post}>
-        <PostHeader title={title} date={date} />
+        <PostHeader title={title} date={date} desc={desc} tags={tags} />
         <PostContent
           markdown={markdown}
           prevPost={prevPost}

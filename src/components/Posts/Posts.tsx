@@ -11,15 +11,15 @@ export const nonTechAtom = atom(false)
 type View = {
   slug: string
   title: string
+  desc: string
   date: string
-}
-
-type Post = View & {
+  note: string
   type: string
+  tags?: [string]
 }
 
 type Props = {
-  posts: Post[]
+  posts: View[]
 }
 
 const Posts: React.FC<Props> = ({ posts }) => {
@@ -116,27 +116,38 @@ const Posts: React.FC<Props> = ({ posts }) => {
     )
   }
 
-  const SimpleView = ({ slug, title, date }: View) => {
+  const DetailView = ({ slug, title, desc, date, note, tags }: View) => {
     date = date.split(' ')[0]
 
     return (
       <div className={styles.simple}>
         <Link key={`blog-${slug}`} href={`/post/${slug}`} passHref>
-          <div className={styles['simple__post']}>
-            <div className={styles['simple__date']}>{date}</div>
-            <div className={styles['simple__title']}>{title}</div>
+          <div className={styles.simple__post}>
+            <div className={styles.simple__title}>{title}</div>
+            <div className={styles.simple__date}>
+              {date}・{desc}
+            </div>
+            <div className={styles.tags}>
+              {tags &&
+                tags.map((tag) => (
+                  <span className={styles.tag} key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              ・{note} note
+            </div>
           </div>
         </Link>
       </div>
     )
   }
 
-  const viewFactory = (post: Post) => {
+  const viewFactory = (post: View) => {
     if (displayTech && post.type !== 'tech') return
     if (displayNonTech && post.type !== 'non-tech') return
 
-    if (mode === 'simple') {
-      return SimpleView(post)
+    if (mode === 'detail') {
+      return DetailView(post)
     } else {
       return NormalView(post)
     }
@@ -163,12 +174,12 @@ const Posts: React.FC<Props> = ({ posts }) => {
           <div className={styles.option}>
             <input
               type="checkbox"
-              name="simpleView"
-              id="simpleView"
-              checked={mode === 'simple'}
-              onChange={() => setMode(mode === 'simple' ? 'normal' : 'simple')}
+              name="detailView"
+              id="detailView"
+              checked={mode === 'detail'}
+              onChange={() => setMode(mode === 'detail' ? 'normal' : 'detail')}
             />
-            <label htmlFor="simpleView">simplified</label>
+            <label htmlFor="detailView">detail</label>
           </div>
           <div className={styles.option}>
             <input

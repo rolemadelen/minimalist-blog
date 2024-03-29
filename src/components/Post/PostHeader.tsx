@@ -5,9 +5,11 @@ import styles from './Post.module.scss'
 interface Props {
   title: string
   date: string
+  desc: string
+  tags?: [string]
 }
 
-const PostHeader: React.FC<Props> = ({ title, date }) => {
+const PostHeader: React.FC<Props> = ({ title, date, desc, tags }) => {
   const formattedDate = new Date(date).toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'short',
@@ -15,12 +17,12 @@ const PostHeader: React.FC<Props> = ({ title, date }) => {
   })
 
   return (
-    <div className={styles['post__header']}>
-      <h1 className={styles['post__title']}>{title}</h1>
-      <div className={styles['post__wrapper']}>
-        <span className={styles['post__date']}>{formattedDate}</span>
+    <div className={styles.post__header}>
+      <h1 className={styles.post__title}>{title}</h1>
+      <div className={styles.post__wrapper}>
+        <span className={styles.post__date}>{formattedDate}</span>
         <Link href="/" title="Back to home">
-          <span className={styles['post__goback']}>← back</span>
+          <span className={styles.post__goback}>← back</span>
         </Link>
       </div>
     </div>
