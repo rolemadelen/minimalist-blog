@@ -40,7 +40,7 @@ const Now = () => {
         <main className={styles.main}>
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>what I'm doing now</strong>
+              <strong>What I'm doing now</strong>
             </div>
             <ul className={styles.list}>
               <li>
@@ -54,7 +54,7 @@ const Now = () => {
                 </a>{' '}
                 and data structures/algorithms
                 <ul>
-                  <li>• expanding my view as a web developer.</li>
+                  <li>• expanding my view as a web developer</li>
                   <li>
                     • solving programming problems (
                     <a
@@ -72,7 +72,7 @@ const Now = () => {
                     >
                       Leetcode
                     </a>
-                    ) in Rust.
+                    ) in Rust
                   </li>
                 </ul>
               </li>
@@ -85,17 +85,17 @@ const Now = () => {
                 </ul>
               </li>
               <li>
-                wake up at 04:30
+                Wake up at 04:30
                 <ul>
                   <li>• enjoying the silence.</li>
                   <li>
                     • spending couple hours in the morning doing things I want
-                    to do.
+                    to do
                   </li>
                 </ul>
               </li>
               <li>
-                working on a side project for my portfolio
+                Working on a side project
                 <ol>
                   <li>• Project Madelen - React, TypeScript</li>
                   <li>
@@ -129,7 +129,7 @@ const Now = () => {
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>what I'm NOT trying to do</strong>
+              <strong>What I'm NOT trying to do</strong>
             </div>
             <ul className={styles.list}>
               <li>
@@ -142,19 +142,16 @@ const Now = () => {
                     <a href="https://techhub.social/@mrolemadelen/112052013783314073">
                       (toots)
                     </a>
-                    .
                   </li>
                 </ul>
               </li>
               <li>
-                wasting time
+                Doing stupid things
                 <ul>
                   <li>
-                    •{' '}
-                    <i>
-                      Be productive and utilize your time more efficiently. You
-                      have things to do. Wake up.
-                    </i>
+                    • There are some stupid things that I'm doing, that I know
+                    are stupid and wrong, that I colud stop doing, and that I
+                    would stop doing.
                   </li>
                 </ul>
               </li>
@@ -163,7 +160,7 @@ const Now = () => {
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>events</strong>
+              <strong>Events</strong>
             </div>
             <ul className={styles.list}>
               <li>
@@ -192,7 +189,7 @@ const Now = () => {
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>things on repeat</strong>
+              <strong>Things on repeat</strong>
             </div>
             <ul className={styles.list}>
               <li>
