@@ -114,3 +114,10 @@
     transform: translateX(10px);
   }
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}

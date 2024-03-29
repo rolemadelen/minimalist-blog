@@ -10,7 +10,7 @@ import styles from '@/components/Post/Post.module.scss'
 
 import Comment from '@/lib/giscus'
 import { createOgImage } from '@/lib/createOgImage'
-import { getAllPostIds, getPostData } from '@/lib/blog'
+import { getAllPostIds, getAllPosts, getPostData } from '@/lib/blog'
 
 interface Props {
   post: {
@@ -21,10 +21,14 @@ interface Props {
     note: string
     tags?: [string]
   }
+  prevPost?: string | undefined
+  nextPost?: string | undefined
 }
 
 const Post: React.FC<Props> = ({
   post: { title, date, markdown, type, note, tags = [] },
+  prevPost,
+  nextPost,
 }) => {
   const options = {
     year: 'numeric',
@@ -57,7 +61,11 @@ const Post: React.FC<Props> = ({
 
       <div className={styles.post}>
         <PostHeader title={title} date={date} />
-        <PostContent markdown={markdown} />
+        <PostContent
+          markdown={markdown}
+          prevPost={prevPost}
+          nextPost={nextPost}
+        />
         <Comment />
         <Footer />
       </div>
@@ -82,10 +90,20 @@ export const getStaticProps: GetStaticProps = async ({
     }
   }
 
+  let allPosts = getAllPosts().map((post) => post.slug)
+  const index = allPosts.indexOf(params.id[0])
+  let prevIndex = index > 0 ? index - 1 : null
+  let nextIndex = index < allPosts.length - 1 ? index + 1 : null
+
+  const nextPost = prevIndex !== null ? allPosts[prevIndex] : null
+  const prevPost = nextIndex !== null ? allPosts[nextIndex] : null
+
   const post = await getPostData(params.id as string[])
   return {
     props: {
       post,
+      prevPost,
+      nextPost,
     },
   }
 }

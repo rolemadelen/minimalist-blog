@@ -96,6 +96,18 @@ const Now = () => {
                   <li>• Gregg Shorthand Dictionary - Rust, Tesseract OCR</li>
                 </ol>
               </li>
+              <li>
+                <a
+                  href="https://youtube.com/@rolemadelen?si=D8L3Cp4-OYlejBYd"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  YouTube Live
+                </a>
+                <ul>
+                  <li>• doing code/study with me live.</li>
+                </ul>
+              </li>
             </ul>
           </div>
 

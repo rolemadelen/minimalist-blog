@@ -1,7 +1,7 @@
 @import '/src/styles/func.scss';
 
 .posts {
-  max-width: 36rem;
+  max-width: $max-width;
   margin: 0 auto 5rem;
   padding: 0 px2rem(16);
 
@@ -12,10 +12,30 @@
 
 .options {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
-  gap: 1.25rem;
+  margin-bottom: 2rem;
+
+  &_group {
+    display: flex;
+    gap: 1.25rem;
+  }
+}
+
+.accio__note {
+  position: absolute;
+  animation: accio 2s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes accio {
+  0% {
+    margin-left: 5rem;
+    transform: scale(0.1) rotateZ(360deg);
+  }
+  100% {
+    margin-left: 0.5rem;
+    transform: scale(1) rotateZ(0deg);
+  }
 }
 
 .option {
@@ -120,12 +140,4 @@
       color: $color-link;
     }
   }
-}
-
-.note {
-  margin: 3rem auto;
-
-  color: $color-lightgray;
-  font-size: px2rem(14);
-  font-style: italic;
 }

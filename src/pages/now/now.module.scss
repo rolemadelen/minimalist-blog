@@ -1,7 +1,7 @@
 @import '/src/styles/func.scss';
 
 .container {
-  max-width: 36rem;
+  max-width: $max-width;
   padding: 0 px2rem(16);
   margin: 0 auto;
 
@@ -51,6 +51,10 @@
 
     li::marker {
       font-size: 12px;
+    }
+
+    li {
+      margin-bottom: px2rem(4);
     }
 
     & > li {
