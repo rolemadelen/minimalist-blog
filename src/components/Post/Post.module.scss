@@ -116,6 +116,16 @@
 }
 
 .navigation {
+  a {
+    color: $color-text;
+    font-size: px2rem(14);
+    @include link-decoration;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;

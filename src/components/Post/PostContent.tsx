@@ -16,12 +16,12 @@ const PostContent: React.FC<Props> = ({ markdown, prevPost, nextPost }) => {
       <div className={styles.navigation}>
         {prevPost && (
           <Link key={`blog-${prevPost}`} href={`/post/${prevPost}`} passHref>
-            prev post
+            ← prev post
           </Link>
         )}
         {nextPost && (
           <Link key={`blog-${nextPost}`} href={`/post/${nextPost}`} passHref>
-            next post
+            next post →
           </Link>
         )}
       </div>

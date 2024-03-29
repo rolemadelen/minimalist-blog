@@ -8,9 +8,11 @@ import Head from 'next/head'
 interface Post {
   slug: string
   title: string
+  desc: string
   date: string
+  note: string
   type: string
-  lastUpdated?: string
+  tags?: [string]
 }
 
 interface Props {

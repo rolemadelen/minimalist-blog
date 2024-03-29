@@ -14,11 +14,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
   &_group {
     display: flex;
-    gap: 1.25rem;
+    gap: 0.75rem;
   }
 }
 
@@ -76,6 +76,7 @@
     margin: 2.5rem auto 0;
 
     font-size: px2rem(20);
+    font-weight: 100;
     color: $color-gray;
     will-change: transform;
 
@@ -92,7 +93,7 @@
 
     text-transform: uppercase;
     font-size: px2rem(14);
-    font-weight: 500;
+    font-weight: 100;
   }
 }
 
@@ -117,27 +118,49 @@
   &__day {
     font-size: px2rem(14);
     font-style: italic;
+    font-weight: 100;
   }
 }
 
 .simple {
   &__post {
-    margin-bottom: px2rem(10);
+    margin-bottom: px2rem(32);
   }
 
   &__date {
-    color: #aaa;
-    font-size: px2rem(12);
+    color: $color-lightgray;
+    font-size: px2rem(13);
   }
   &__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 1.25rem;
+    font-weight: 600;
+
     flex: 1;
 
     &:hover {
       @include link-decoration;
       color: $color-link;
     }
+  }
+
+  .tags {
+    font-size: 13px;
+    color: $color-lightgray;
+
+    .tag {
+      display: inline-block;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .desc {
+    display: inline-block;
+
+    font-size: 13px;
+    color: $color-lightgray;
+    margin-bottom: 4px;
   }
 }
