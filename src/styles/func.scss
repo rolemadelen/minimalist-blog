@@ -5,6 +5,8 @@ $color-red: #cd5c6c;
 $color-gray: #666;
 $color-lightgray: #999;
 
+$max-width: 40rem;
+
 @function px2rem($px) {
   @return #{$px / 15}rem;
 }

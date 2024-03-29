@@ -1,10 +1,11 @@
 import React, { useRef } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { atom, useAtom } from 'jotai'
 import styles from './Posts.module.scss'
 
 export const modeAtom = atom('normal')
-export const techAtom = atom(true)
+export const techAtom = atom(false)
 export const nonTechAtom = atom(false)
 
 type View = {
@@ -25,7 +26,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
   const [mode, setMode] = useAtom(modeAtom)
   const [displayTech, setDisplayTech] = useAtom(techAtom)
   const [displayNonTech, setDisplayNonTech] = useAtom(nonTechAtom)
-
+  const router = useRouter()
   const year = useRef('')
   const month = useRef<null | string>(null)
 
@@ -141,49 +142,61 @@ const Posts: React.FC<Props> = ({ posts }) => {
     }
   }
 
+  const openRandomPost = () => {
+    const SIZE = posts.length
+    const randomNote = Math.floor(Math.random() * SIZE)
+    let { slug } = posts[randomNote]
+
+    router.push(`/post/${slug}`)
+  }
+
   return (
     <main className={styles.posts}>
       <div className={styles.options}>
-        <div className={styles.option}>
-          <input
-            type="checkbox"
-            name="simpleView"
-            id="simpleView"
-            checked={mode === 'simple'}
-            onChange={() => setMode(mode === 'simple' ? 'normal' : 'simple')}
-          />
-          <label htmlFor="simpleView">simplified</label>
+        <div>
+          <button type="button" onClick={openRandomPost}>
+            accio
+            <span className={styles.accio__note}>📃</span>
+          </button>
         </div>
-        <div className={styles.option}>
-          <input
-            type="checkbox"
-            name="tech"
-            id="tech"
-            checked={displayTech}
-            onChange={() => {
-              setDisplayNonTech(displayTech ? false : displayTech)
-              setDisplayTech(!displayTech)
-            }}
-          />
-          <label htmlFor="tech">tech</label>
+        <div className={styles.options_group}>
+          <div className={styles.option}>
+            <input
+              type="checkbox"
+              name="simpleView"
+              id="simpleView"
+              checked={mode === 'simple'}
+              onChange={() => setMode(mode === 'simple' ? 'normal' : 'simple')}
+            />
+            <label htmlFor="simpleView">simplified</label>
+          </div>
+          <div className={styles.option}>
+            <input
+              type="checkbox"
+              name="tech"
+              id="tech"
+              checked={displayTech}
+              onChange={() => {
+                setDisplayNonTech(displayTech ? false : displayTech)
+                setDisplayTech(!displayTech)
+              }}
+            />
+            <label htmlFor="tech">tech</label>
+          </div>
+          <div className={styles.option}>
+            <input
+              type="checkbox"
+              name="nontech"
+              id="nontech"
+              checked={displayNonTech}
+              onChange={() => {
+                setDisplayTech(displayNonTech ? false : displayNonTech)
+                setDisplayNonTech(!displayNonTech)
+              }}
+            />
+            <label htmlFor="nontech">non-tech</label>
+          </div>
         </div>
-        <div className={styles.option}>
-          <input
-            type="checkbox"
-            name="nontech"
-            id="nontech"
-            checked={displayNonTech}
-            onChange={() => {
-              setDisplayTech(displayNonTech ? false : displayNonTech)
-              setDisplayNonTech(!displayNonTech)
-            }}
-          />
-          <label htmlFor="nontech">non-tech</label>
-        </div>
-      </div>
-
-      <div className={styles.note}>
-        Previous posts (45) are currently undergoing the migration process.
       </div>
 
       {posts.map((data, i) => {

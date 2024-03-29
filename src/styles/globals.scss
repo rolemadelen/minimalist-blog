@@ -121,6 +121,10 @@ progress[value] {
 
     list-style: disc outside;
 
+    & > ol > li {
+      list-style: lower-roman outside;
+    }
+
     & > ul > li {
       list-style: circle outside;
 
@@ -137,6 +141,9 @@ progress[value] {
   ol > li {
     list-style: decimal inside;
 
+    & > ul > li {
+      list-style: circle inside;
+    }
     & > ol > li {
       list-style: lower-roman inside;
 
