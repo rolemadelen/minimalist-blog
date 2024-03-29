@@ -4,11 +4,27 @@ import ProgressBar from '@/components/ProgressBar/ProgressBar'
 import styles from './now.module.scss'
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
+import { createOgImage } from '@/lib/createOgImage'
 
 const Now = () => {
+  const title = "What I'm doing now"
+  const ogImage = createOgImage({
+    title,
+    meta: ['March 28, 2024', '#now-page'].join('・'),
+  })
+
   return (
     <>
       <Head>
+        <title>{title}</title>
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="836" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:title" content="Madelen" />
+        <meta property="og:description" content={title} />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:card" content="summary_large_image" />
         <link rel="me" href="https://techhub.social/@mrolemadelen" />
       </Head>
       <Header />
