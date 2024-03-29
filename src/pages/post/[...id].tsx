@@ -84,14 +84,19 @@ export async function getStaticPaths() {
 export const getStaticProps: GetStaticProps = async ({
   params,
 }: GetStaticPropsContext) => {
+  interface Frontmatter {
+    slug?: string
+    [key: string]: any
+  }
+
   if (!params) {
     return {
       notFound: true,
     }
   }
 
-  let allPosts = getAllPosts().map((post) => post.slug)
-  const index = allPosts.indexOf(params.id[0])
+  let allPosts = getAllPosts().map((post: Frontmatter) => post.slug)
+  const index = params.id && allPosts.indexOf(params.id[0])
   let prevIndex = index > 0 ? index - 1 : null
   let nextIndex = index < allPosts.length - 1 ? index + 1 : null
 
