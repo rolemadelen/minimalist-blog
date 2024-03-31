@@ -1,0 +1,77 @@
+@import '/src/styles/func.scss';
+
+.container {
+  max-width: $max-width;
+  padding: 0 px2rem(16);
+  margin: 0 auto;
+
+  color: $color-gray;
+
+  p {
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+  }
+
+  .link {
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+
+.list {
+  &__item {
+    margin-bottom: 1.5rem;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    span {
+      position: relative;
+      display: inline-block;
+
+      &.product {
+        font-weight: 500;
+      }
+
+      &.date,
+      &.rating,
+      &.review {
+        font-size: 12px;
+      }
+
+      &.date,
+      &.review {
+        color: $color-lightgray;
+      }
+
+      &.rating {
+        display: flex;
+        align-items: center;
+      }
+
+      &.review {
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.title {
+  text-transform: lowercase;
+  color: $color-blue;
+  font-size: 1.25rem;
+}
+
+.stars_rating {
+  position: relative;
+}
+.stars {
+  display: flex;
+}
+.rating {
+  position: absolute;
+  top: 0;
+}
