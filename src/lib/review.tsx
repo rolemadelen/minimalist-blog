@@ -17,7 +17,7 @@ export const reviewed: ReviewData = {
     {
       product: 'QUAKER - Chocolate Rice Crips',
       date: '2024/03/30',
-      review: 'the more you eat, the more sweeter it gets',
+      review: 'the more you eat, the sweeter it gets',
       rating: 4,
       image: 'quaker-chocolate-rice-crisps.png',
     },
