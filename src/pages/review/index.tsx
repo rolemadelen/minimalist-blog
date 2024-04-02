@@ -40,40 +40,43 @@ const Review = () => {
       <section className={styles.container}>
         <ul className={styles.list}>
           {Object.keys(reviewItems).map((key) => (
-            <div key={key}>
+            <div key={key} className={styles.section}>
               <h2 className={styles.title}>{key}</h2>
               {reviewItems[key as keyof ReviewData].map((item: Data) => (
-                <li key={item.product} className={styles.list__item}>
+                <li key={item.name} className={styles.list__item}>
                   <div>
                     {item.link && (
                       <Link href={item.link} className={styles.link}>
                         <span
-                          className={styles.product}
+                          className={styles.name}
                           onMouseEnter={(
                             e: React.MouseEvent<HTMLSpanElement>
                           ) => handleMouseEnter(e, item.image)}
                         >
-                          {item.product}
+                          {item.name}
                         </span>
                       </Link>
                     )}
+
                     {!item.link && (
                       <span
-                        className={styles.product}
+                        className={styles.name}
                         onMouseEnter={(e: React.MouseEvent<HTMLSpanElement>) =>
                           handleMouseEnter(e, item.image)
                         }
                       >
-                        {item.product}
+                        {item.name}
                       </span>
                     )}
                     <span className={styles.rating}>
+                      ({item.rating}) {'★'.repeat(item.rating)}
                       {'☆'.repeat(Math.ceil(5 - item.rating))}
-                      {'★'.repeat(item.rating)}
                     </span>
                   </div>
-                  <span className={styles.date}>{item.date}</span> ﹣{' '}
-                  <span className={styles.review}>{item.review}</span>
+                  <div className={styles.texts}>
+                    <span className={styles.date}>{item.date}</span> ﹣{' '}
+                    <span className={styles.review}>{item.review}</span>
+                  </div>
                 </li>
               ))}
             </div>
