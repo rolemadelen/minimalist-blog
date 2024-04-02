@@ -21,18 +21,18 @@
 
 .list {
   &__item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 
-    & > div {
+    & > div:first-child {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     span {
       position: relative;
-      display: inline-block;
+      display: inline;
 
-      &.product {
+      &.name {
         font-weight: 500;
       }
 
@@ -65,13 +65,10 @@
   font-size: 1.25rem;
 }
 
-.stars_rating {
-  position: relative;
+.section {
+  margin-bottom: 3rem;
 }
-.stars {
-  display: flex;
-}
-.rating {
-  position: absolute;
-  top: 0;
+
+.texts {
+  margin-right: 4rem;
 }
