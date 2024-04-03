@@ -134,7 +134,6 @@ const Posts: React.FC<Props> = ({ posts }) => {
                     {tag}
                   </span>
                 ))}
-              ・{note} note
             </div>
           </div>
         </Link>
