@@ -36,15 +36,45 @@
 .nav {
   &__list {
     display: flex;
-    gap: 1.5rem;
     font-size: px2rem(16);
     text-transform: lowercase;
     @include link-decoration;
 
     li {
-      &:hover {
-        color: $color-link;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+
+      a {
+        display: flex;
+        width: 25px;
+
+        overflow: hidden;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+          width: 80px;
+
+          color: $color-link;
+
+          & > div {
+            transform: translateX(-20px);
+          }
+        }
       }
+
+      div {
+        transform: translateX(6px);
+        margin-right: 2.25rem;
+      }
+
+      // &:hover {
+      //   color: $color-link;
+
+      //   & > div {
+      //     transform: translateX(-15px);
+      //   }
+      // }
     }
   }
 }
