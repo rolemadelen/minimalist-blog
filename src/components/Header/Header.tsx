@@ -17,10 +17,28 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul className={styles['nav__list']}>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">
+              <div>私</div>
+              <div>about</div>
+            </Link>
           </li>
           <li>
-            <Link href="/now">Now</Link>
+            <Link href="/now">
+              <div>今</div>
+              <div>now</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/review">
+              <div>考</div>
+              <div>review</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/diary">
+              <div>字</div>
+              <div>diary</div>
+            </Link>
           </li>
           <li>
             <Link
@@ -28,7 +46,8 @@ const Header = () => {
               target="__blank"
               rel="noopener noreferrer"
             >
-              Want
+              <div>欲</div>
+              <div>want</div>
             </Link>
           </li>
         </ul>

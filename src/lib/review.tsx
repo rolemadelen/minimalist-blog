@@ -9,6 +9,7 @@ export type Data = {
 
 export type ReviewData = {
   snacks: Data[]
+  food: Data[]
   media: Data[]
   movies: Data[]
 }
@@ -21,6 +22,15 @@ export const reviewed: ReviewData = {
       review: 'the more you eat, the sweeter it gets.',
       rating: 3.5,
       image: 'quaker-choco-rice-crisps.png',
+    },
+  ],
+  food: [
+    {
+      name: 'お茶漬け (Ochazuke)',
+      date: '2024/04/04',
+      review: 'The seasoning is well balanced. It tastes perfect.',
+      rating: 4,
+      image: 'ochazuke-normal.webp',
     },
   ],
   media: [
