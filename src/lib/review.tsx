@@ -21,7 +21,7 @@ export const reviewed: ReviewData = {
       date: '2024/03/30',
       review: 'the more you eat, the sweeter it gets.',
       rating: 3.5,
-      image: 'quaker-choco-rice-crisps.png',
+      image: 'quaker-choco-rice-crisps.webp',
     },
   ],
   food: [
@@ -40,7 +40,7 @@ export const reviewed: ReviewData = {
       review: "I didn't know there were so many dramas behind node.js.",
       link: 'https://youtu.be/LB8KwiiUGy0?si=4Fe4CRKDmB_VJqEm',
       rating: 5,
-      image: 'honeypot.jpeg',
+      image: 'honeypot.webp',
     },
   ],
   movies: [
@@ -50,14 +50,14 @@ export const reviewed: ReviewData = {
       review:
         'a glimpse into potential dystopian future resulting from technological singularity.',
       rating: 4,
-      image: 'm3gan.jpeg',
+      image: 'm3gan.webp',
     },
     {
       name: "「Five Nights at Freddy's」 directed by Emma Tammi",
       date: '2024/03/30',
       review: 'Alphonse Elric brainwashed by the yellow bunny to harm others.',
       rating: 3,
-      image: '5nights_at_freddys.jpg',
+      image: '5nights_at_freddys.webp',
     },
   ],
 }
