@@ -28,6 +28,8 @@
 
     .image {
       margin: auto;
+      max-width: 450px;
+      width: 100%;
 
       border-radius: 5px;
       box-shadow: 0 0 5px 0 #e7e7e7;
@@ -40,7 +42,7 @@
   }
 
   .expand {
-    max-height: px2rem(500);
+    max-height: px2rem(1000);
     mask-image: none;
     --webkit-mask-image: none;
   }
