@@ -15,8 +15,7 @@
   max-width: $max-width;
   padding: px2rem(40) px2rem(16);
 
-  color: $color-text;
-  font-weight: 500;
+  color: $color-black;
 
   backdrop-filter: blur(5px) grayscale(1);
   mask-image: linear-gradient(180deg, #fff, #fff, transparent);
@@ -26,11 +25,17 @@
 
   &.scroll {
     font-size: px2rem(20);
+
+    .logo {
+      transform: translateY(-200px);
+    }
   }
 }
 
 .logo {
   font-size: px2rem(18);
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
 
   &__text {
     margin-left: 4px;
@@ -52,9 +57,14 @@
 .nav {
   &__list {
     display: flex;
+
     font-size: px2rem(16);
     text-transform: lowercase;
     @include link-decoration;
+
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
 
     li {
       position: relative;
@@ -83,15 +93,67 @@
         transform: translateX(6px);
         margin-right: 2.25rem;
       }
-
-      // &:hover {
-      //   color: $color-link;
-
-      //   & > div {
-      //     transform: translateX(-15px);
-      //   }
-      // }
     }
+  }
+}
+
+.header.scroll .top {
+  top: px2rem(40);
+
+  &::after {
+    position: absolute;
+    top: px2rem(-15);
+    right: px2rem(-15);
+
+    content: 'thanks ❤️';
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    &::after {
+      position: absolute;
+      top: px2rem(-15);
+      right: px2rem(-15);
+      content: 'get me up!';
+      opacity: 1;
+      transition: opacity 0.3s ease;
+
+      font-size: 0.8rem;
+    }
+    span {
+      transition: all 0.3s ease;
+
+      &.earLeft {
+        transform: translateY(-5px) rotateZ(100deg);
+      }
+      &.face {
+        transform: translate(1px, -2px);
+      }
+      &.earRight {
+        transform: translateY(-5px) rotateZ(-100deg);
+      }
+    }
+  }
+}
+
+.top {
+  position: fixed;
+  top: px2rem(-200);
+
+  font-size: px2rem(18);
+
+  transition: all 0.3s ease-in-out;
+
+  span {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -99,9 +161,6 @@
   0% {
     opacity: 0;
   }
-  // 50% {
-  //   opacity: 1;
-  // }
   100% {
     opacity: 1;
   }

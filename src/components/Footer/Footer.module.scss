@@ -25,26 +25,8 @@
     animation: rightEar 1s infinite;
   }
 
-  &::after {
-    position: absolute;
-    left: 12px;
-    bottom: -20px;
-
-    color: $color-lightgray;
-    content: '(up)';
-  }
-
   &:hover {
     color: $color-blue;
-
-    &::after {
-      position: absolute;
-      left: 14px;
-      bottom: -20px;
-
-      content: 'Go!';
-      color: inherit;
-    }
     cursor: pointer;
 
     .puppy__right {
