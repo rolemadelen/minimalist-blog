@@ -4,6 +4,7 @@
   max-width: $max-width;
   padding: 0 px2rem(16);
   margin: 0 auto;
+  margin-top: calc($top-margin + 40px);
 }
 
 .list {

@@ -2,7 +2,7 @@
 
 .posts {
   max-width: $max-width;
-  margin: 0 auto 5rem;
+  margin: px2rem(120) auto 5rem;
   padding: 0 px2rem(16);
 
   & > div {

@@ -6,6 +6,7 @@ $color-gray: #666;
 $color-lightgray: #999;
 
 $max-width: 40rem;
+$top-margin: 80px;
 
 @function px2rem($px) {
   @return #{$px / 15}rem;
