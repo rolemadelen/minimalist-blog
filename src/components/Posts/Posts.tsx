@@ -165,7 +165,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
       <div className={styles.options}>
         <div>
           <button type="button" onClick={openRandomPost}>
-            accio
+            accio🪄
             <span className={styles.accio__note}>📃</span>
           </button>
         </div>

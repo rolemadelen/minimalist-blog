@@ -14,10 +14,6 @@ const Footer: React.FC = () => {
       <div className={styles['footer__copyright']}>
         © 2024 / {name.toUpperCase()}
       </div>
-      <div className={styles.puppy} onClick={moveToTop}>
-        <span className={styles['puppy__left']}>૮</span> • ᴥ •{' '}
-        <span className={styles['puppy__right']}>ა</span>
-      </div>
     </footer>
   )
 }

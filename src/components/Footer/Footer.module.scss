@@ -6,61 +6,10 @@
   flex-direction: column;
 
   max-width: $max-width;
-  margin: 4rem auto 0;
+  margin: 4rem auto;
   padding-top: 4rem;
 
   color: $color-text;
   border-top: 1px solid #eee;
   font-size: px2rem(14);
-}
-
-.puppy {
-  position: relative;
-  margin-bottom: 4rem;
-
-  &__left {
-    animation: leftEar 0.8s infinite;
-  }
-  &__right {
-    animation: rightEar 1s infinite;
-  }
-
-  &:hover {
-    color: $color-blue;
-    cursor: pointer;
-
-    .puppy__right {
-      transform: translateY(-3px) rotateZ(-45deg);
-    }
-  }
-
-  &__left,
-  &__right {
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-@keyframes leftEar {
-  0% {
-    transform: translateY(0) rotateZ(0);
-  }
-  70% {
-    transform: translateY(-3px) rotateZ(50deg);
-  }
-  100% {
-    transform: translateY(0) rotateZ(0);
-  }
-}
-
-@keyframes rightEar {
-  0% {
-    transform: translateY(0) rotateZ(0);
-  }
-  50% {
-    transform: translateY(-3px) rotateZ(-45deg);
-  }
-  100% {
-    transform: translateY(0) rotateZ(0);
-  }
 }
