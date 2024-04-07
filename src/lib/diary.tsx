@@ -3,5 +3,5 @@ export type Image = {
 }
 
 export const diaryLogs: Image = {
-  date: ['2024-04-04', '2024-04-05'],
+  date: ['2024-04-06', '2024-04-05', '2024-04-04'],
 }
