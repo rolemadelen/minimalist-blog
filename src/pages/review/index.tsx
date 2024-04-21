@@ -65,13 +65,13 @@ const Review = () => {
                           handleMouseEnter(e, item.image)
                         }
                       >
-                        {item.name}
+                        <span className={styles.movie_title}>{item.name} </span>
+                        <span className={styles.movie_director}>
+                          {item.director}
+                        </span>
                       </span>
                     )}
-                    <span className={styles.rating}>
-                      ({item.rating}) {'★'.repeat(item.rating)}
-                      {'☆'.repeat(Math.ceil(5 - item.rating))}
-                    </span>
+                    <span className={styles.rating}>({item.rating}) ★</span>
                   </div>
                   <div className={styles.texts}>
                     <span className={styles.date}>{item.date}</span> ﹣{' '}

@@ -1,5 +1,6 @@
 export type Data = {
   name: string
+  director?: string
   date: string
   review: string
   rating: number
@@ -9,7 +10,6 @@ export type Data = {
 
 export type ReviewData = {
   snacks: Data[]
-  food: Data[]
   media: Data[]
   movies: Data[]
 }
@@ -24,15 +24,6 @@ export const reviewed: ReviewData = {
       image: 'quaker-choco-rice-crisps.webp',
     },
   ],
-  food: [
-    {
-      name: 'お茶漬け (Ochazuke)',
-      date: '2024/04/04',
-      review: 'The seasoning is well balanced. It tastes perfect.',
-      rating: 4,
-      image: 'ochazuke-normal.webp',
-    },
-  ],
   media: [
     {
       name: 'Node.js: The Documentary | An origin story',
@@ -45,16 +36,42 @@ export const reviewed: ReviewData = {
   ],
   movies: [
     {
-      name: '「M3GAN」 directed by Gerald Johnstone',
-      date: '2024/04/01',
+      name: 'Murder on the Orient Express',
+      director: 'Kenneth Branagh',
+      date: '2024/04/20 | Delta Air',
+      review: '살인에 정의가 있는가',
+      rating: 4,
+      image: 'murder-on-the-orient-express.webp',
+    },
+    {
+      name: 'Insidious: The Red Door',
+      director: 'Patrick Wilson',
+      date: '2024/04/20 | Delta Air',
+      review: '현실과 또 다른 세상~ 환상의 디지털 세상~',
+      rating: 2.5,
+      image: 'insidious-the-red-door.webp',
+    },
+    {
+      name: 'Talk To Me',
+      director: 'Danny Philippou, Michael Philippou',
+      date: '2024/04/20 | Delta Air',
+      review: '오늘 우리 귀신 보러 갈까?',
+      rating: 2,
+      image: 'insidious-the-red-door.webp',
+    },
+    {
+      name: 'M3GAN',
+      director: 'Gerald Johnstone',
+      date: '2024/04/01 | KY',
       review:
         'a glimpse into potential dystopian future resulting from technological singularity.',
       rating: 4,
       image: 'm3gan.webp',
     },
     {
-      name: "「Five Nights at Freddy's」 directed by Emma Tammi",
-      date: '2024/03/30',
+      name: "Five Nights at Freddy's",
+      director: 'Emma Tammi',
+      date: '2024/03/30 | KY',
       review: 'Alphonse Elric brainwashed by the yellow bunny to harm others.',
       rating: 3,
       image: '5nights_at_freddys.webp',
