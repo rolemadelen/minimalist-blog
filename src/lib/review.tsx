@@ -57,7 +57,7 @@ export const reviewed: ReviewData = {
       date: '2024/04/20 | Delta Air',
       review: '오늘 우리 귀신 보러 갈까?',
       rating: 2,
-      image: 'insidious-the-red-door.webp',
+      image: 'talktome.webp',
     },
     {
       name: 'M3GAN',
