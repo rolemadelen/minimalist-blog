@@ -21,7 +21,7 @@ type Metadata = {
 
 export const metadata: Metadata = {
   owner: {
-    name: 'Madelen',
+    name: 'Jii Yoo',
     role: 'Web Developer (Spec. Front-End)',
     email: 'rolemadelen@tuta.io',
   },
@@ -56,82 +56,96 @@ export const metadata: Metadata = {
     },
   },
   work: {
+    98: {
+      year: '2024.04',
+      project: 'shigan',
+      desc: ' - CLI Time Tracker (Rust)',
+      link: 'https://github.com/img9417/shigan',
+    },
+    99: {
+      year: '2024.03',
+      project: 'pomosh',
+      desc: ' - CLI Pomodoro Timer (Rust)',
+      link: 'https://github.com/img9417/pomosh',
+    },
     100: {
       year: '2024.02',
-      project: 'YourTrack - Monthly Spotify Highlights',
-      link: 'https://github.com/rolemadelen/yourtrack',
+      project: 'YourTrack',
+      desc: ' - Monthly Spotify Highlights',
+      link: 'https://github.com/img9417/yourtrack',
     },
     150: {
       year: '2023.09',
       project: 'Portfolio v2.0',
-      link: 'https://github.com/rolemadelen/portfolio_v2',
+      link: 'https://github.com/img9417/portfolio_v2',
     },
     200: {
       year: '2023.08',
-      project: 'Asayake Taiko Website Renewal',
-      link: 'https://github.com/rolemadelen/asayake',
+      project: 'Asayake Taiko',
+      desc: ' - Website Renewal',
+      link: 'https://github.com/img9417/asayake',
     },
     300: {
       year: '2023.07',
       project: 'Things I Want',
-      link: 'https://github.com/rolemadelen/things-i-want',
+      link: 'https://github.com/img9417/things-i-want',
     },
     400: {
       year: '2023.06',
       project: 'Portfolio v1.0',
-      link: 'https://github.com/rolemadelen/rolemadelen.github.io',
+      link: 'https://github.com/img9417/img9417.github.io',
     },
     500: {
       year: '2023.03',
       project: 'Artlog',
-      link: 'https://github.com/rolemadelen/artlog',
+      link: 'https://github.com/img9417/artlog',
     },
     600: {
       year: '2022.07',
       project: 'ghostvatar',
-      link: 'https://github.com/rolemadelen/ghost-vatar',
+      link: 'https://github.com/img9417/ghost-vatar',
     },
     700: {
       year: '2020.05',
       project: 'Baekjoon Online Judge CLI',
-      link: 'https://github.com/rolemadelen/boj-solvedac',
+      link: 'https://github.com/img9417/boj-solvedac',
     },
     800: {
       year: '2016.04',
       project: 'TUI Chess',
-      link: 'https://github.com/rolemadelen/chess',
+      link: 'https://github.com/img9417/chess',
     },
   },
   blog: {
     0: {
       year: '2023.06',
       project: 'Next.js - Minimalist Blog (current)',
-      link: 'https://github.com/rolemadelen/minimalist-blog',
+      link: 'https://github.com/img9417/minimalist-blog',
     },
     1: {
       year: '2023.04',
       project: 'Next.js - Zettelkasten Blog',
-      link: 'https://github.com/rolemadelen/blog-v2',
+      link: 'https://github.com/img9417/blog-v2',
     },
     2: {
       year: '2022.05',
       project: 'Next.js - Blog (Sorted by relevance)',
-      link: 'https://github.com/rolemadelen/blog-v1',
+      link: 'https://github.com/img9417/blog-v1',
     },
     3: {
       year: '2020.08',
       project: 'Vue.js - Multilingual Blog',
-      link: 'https://github.com/rolemadelen/vue-blog',
+      link: 'https://github.com/img9417/vue-blog',
     },
     4: {
       year: '2020.03',
       project: 'Next.js - Multilingual Blog',
-      link: 'https://github.com/euisblue/bluelog',
+      link: 'https://github.com/img9417/bluelog',
     },
     5: {
       year: '2019.09',
       project: 'Jekyll - Multilingual Blog (modified a theme)',
-      link: 'https://github.com/euisblue/euisblue.github.io?tab=readme-ov-file',
+      link: 'https://github.com/img9417/euisblue.github.io?tab=readme-ov-file',
     },
   },
   education: {
@@ -147,8 +161,8 @@ export const metadata: Metadata = {
   contacts: {
     github: {
       name: 'GitHub',
-      handle: 'rolemadelen',
-      link: 'https://github.com/rolemadelen',
+      handle: 'img9417',
+      link: 'https://github.com/img9417',
     },
     mastodon: {
       name: 'Mastodon',
@@ -157,8 +171,8 @@ export const metadata: Metadata = {
     },
     instagram: {
       name: 'Instagram',
-      handle: 'irolemadelen',
-      link: 'https://www.instagram.com/irolemadelen',
+      handle: 'drawing_img9417',
+      link: 'https://www.instagram.com/drawing_img9417',
     },
   },
 }

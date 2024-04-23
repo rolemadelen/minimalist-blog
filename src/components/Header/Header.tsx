@@ -30,7 +30,7 @@ const Header = () => {
         <Link href="/">
           <h1>
             <span className={styles['logo__mark']}>&gt;$</span>
-            <span className={styles['logo__text']}>madelen</span>
+            <span className={styles['logo__text']}>IMG9417</span>
             <span className={styles['logo__cursor']}></span>
           </h1>
           <h1></h1>
@@ -58,7 +58,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="https://want.madelen.me"
+              href="https://want.jiiyoo.me"
               target="__blank"
               rel="noopener noreferrer"
             >

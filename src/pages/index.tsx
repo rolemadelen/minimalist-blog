@@ -21,28 +21,28 @@ interface Props {
 }
 
 const Blog: React.FC<Props> = ({ posts }) => {
-  const title = 'Madelen Blog'
+  const title = 'Personal Blog'
   const ogImage = createOgImage({
     title,
-    meta: ['Web developer specialized in Frontend'].join('・'),
+    meta: ['Jii Yoo', 'a web dev interested in productivity'].join('・'),
   })
 
   return (
     <>
       <Head>
-        <title>Madelen</title>
-        <meta content="Madelen | Web Developer" name="description" />
+        <title>Jii - Blog</title>
+        <meta content="Jii | Web Developer" name="description" />
         <meta
           name="keyword"
           content="blog, javascript, frontend, developer, engineer"
         />
-        <meta property="og:description" content="Madelen | Web Developer" />
-        <meta property="og:url" content="https://blog.madelen.me" />
+        <meta property="og:description" content="Jii | Web Developer" />
+        <meta property="og:url" content="https://blog.jiiyoo.me" />
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="836" />
         <meta property="og:image:alt" content={title} />
-        <meta property="og:title" content="Madelen" />
+        <meta property="og:title" content="Jii" />
         <meta property="twitter:description" content={title} />
         <meta property="twitter:card" content="summary_large_image" />
 

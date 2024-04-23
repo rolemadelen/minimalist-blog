@@ -5,8 +5,15 @@ import Image from 'next/image'
 import { useState } from 'react'
 import styles from './about.module.scss'
 import Header from '@/components/Header/Header'
+import { createOgImage } from '@/lib/createOgImage'
+import Head from 'next/head'
 
 const About = () => {
+  const title = 'About Me'
+  const ogImage = createOgImage({
+    title,
+    meta: ['a bit about who I am'].join('・'),
+  })
   const [expand, setExpand] = useState(false)
   const { owner, work_exp, work, blog, education, contacts } = metadata
 
@@ -16,10 +23,42 @@ const About = () => {
   return (
     <>
       <ProgressBar />
+      <Head>
+        <title>Jii - About Me</title>
+        <meta content="Jii | Web Developer" name="description" />
+        <meta
+          name="keyword"
+          content="blog, javascript, frontend, developer, engineer"
+        />
+        <meta property="og:description" content="Jii | Web Developer" />
+        <meta property="og:url" content="https://blog.jiiyoo.me" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="836" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:title" content="Jii" />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:card" content="summary_large_image" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link rel="me" href="https://techhub.social/@mrolemadelen" />
+      </Head>
       <Header />
       <div className={styles.container}>
         <header className={styles.header}>
-          <a href="https://blog.madelen.me/" rel="noopener noreferrer">
+          <a href="https://blog.jiiyoo.me/" rel="noopener noreferrer">
             <Image
               className={styles['header__logo']}
               src="/about-profile.png"
@@ -193,6 +232,7 @@ const About = () => {
                       >
                         {work[key].project}
                       </a>
+                      {work[key].desc}
                     </span>
                   </li>
                 ))}
@@ -227,12 +267,13 @@ const About = () => {
             <ul role="list">
               {Object.keys(contacts).map((key) => (
                 <li key={key}>
+                  {contacts[key].name} /{' '}
                   <a
                     href={contacts[key].link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {contacts[key].name} / @{contacts[key].handle}
+                    @{contacts[key].handle}
                   </a>
                 </li>
               ))}

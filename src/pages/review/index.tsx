@@ -10,7 +10,7 @@ import { ReviewData } from '@/lib/review'
 import Link from 'next/link'
 
 const Review = () => {
-  const title = "Madelen's Review Page"
+  const title = "Jii's Review Page"
   const ogImage = createOgImage({
     title,
     meta: ['#review'].join('・'),
@@ -29,7 +29,7 @@ const Review = () => {
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="836" />
         <meta property="og:image:alt" content={title} />
-        <meta property="og:title" content="Madelen" />
+        <meta property="og:title" content="Jii" />
         <meta property="og:description" content={title} />
         <meta property="twitter:description" content={title} />
         <meta property="twitter:card" content="summary_large_image" />
