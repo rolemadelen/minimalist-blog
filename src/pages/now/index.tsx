@@ -10,7 +10,7 @@ const Now = () => {
   const title = "What I'm doing now"
   const ogImage = createOgImage({
     title,
-    meta: ['March 28, 2024', '#now-page'].join('・'),
+    meta: ['April 23, 2024', '#now-page'].join('・'),
   })
 
   return (
@@ -34,7 +34,7 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-03-28, from KY.</span>
+            <span>updated ー 2024-04-23, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
@@ -43,85 +43,15 @@ const Now = () => {
               <strong>What I'm doing now</strong>
             </div>
             <ul className={styles.list}>
+              <li>100 Days, 100 People Sketch Challenge</li>
+              <li>Wake up by 05:00</li>
+              <li>Thinking about a new side project (하루)</li>
               <li>
-                Learning{' '}
-                <a
-                  href="https://www.rust-lang.org/learn"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Rust
-                </a>{' '}
-                and data structures/algorithms
-                <ul>
-                  <li>• expanding my view as a web developer</li>
-                  <li>
-                    • solving programming problems (
-                    <a
-                      href="https://www.acmicpc.net/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      BOJ
-                    </a>
-                    ,{' '}
-                    <a
-                      href="https://leetcode.com/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      Leetcode
-                    </a>
-                    ) in Rust
-                  </li>
-                </ul>
-              </li>
-              <li>
-                100 Days, 100 People Sketch Challenge
+                Trying to find my own colors
                 <ul>
                   <li>
-                    • trying to spend at least 5 minutes of drawing everyday
+                    • don't become an engineer that can be replaced by AI.
                   </li>
-                </ul>
-              </li>
-              <li>
-                Wake up at 04:30
-                <ul>
-                  <li>• enjoying the silence.</li>
-                  <li>
-                    • spending couple hours in the morning doing things I want
-                    to do
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Working on a side project
-                <ol>
-                  <li>• Project Madelen - React, TypeScript</li>
-                  <li>
-                    <del>• Pomodoro Timer - Rust</del> (completed;{' '}
-                    <a
-                      href="https://github.com/rolemadelen/pomosh"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      pomosh
-                    </a>
-                    )
-                  </li>
-                  <li>• Gregg Shorthand Dictionary - Rust, Tesseract OCR</li>
-                </ol>
-              </li>
-              <li>
-                <a
-                  href="https://youtube.com/@rolemadelen?si=D8L3Cp4-OYlejBYd"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  YouTube Live
-                </a>
-                <ul>
-                  <li>• doing code/study with me live.</li>
                 </ul>
               </li>
             </ul>
@@ -133,17 +63,11 @@ const Now = () => {
             </div>
             <ul className={styles.list}>
               <li>
-                Relying on LLM
-                <ul>
-                  <li>
-                    • I found myself utilizing ChatGPT to not only check
-                    grammars but also to rephrase what I wrote to make it "look"
-                    better, which no longer makes it my words{' '}
-                    <a href="https://techhub.social/@mrolemadelen/112052013783314073">
-                      (toots)
-                    </a>
-                  </li>
-                </ul>
+                Relying on LLM{' '}
+                <a href="https://techhub.social/@mrolemadelen/112052013783314073">
+                  {' '}
+                  (toots)
+                </a>
               </li>
               <li>
                 Doing stupid things
@@ -193,27 +117,21 @@ const Now = () => {
             </div>
             <ul className={styles.list}>
               <li>
-                Alary-Kansion -{' '}
-                <a href="https://open.spotify.com/track/6h3QXG0JYCTdmha9F1Wxzi?si=86432fcea05844ee">
-                  Put it in the cliché
+                IU -{' '}
+                <a href="https://open.spotify.com/track/0UTtK6hregIBOsefavRI26?si=899d64b9cced4ee9">
+                  Holssi
                 </a>
               </li>
               <li>
-                Alary-Kansion -{' '}
-                <a href="https://open.spotify.com/track/3HL22Xvma3Rz2Mu0smqTku?si=14436fb3aef94c5c">
-                  Gibberish
+                (G)I-DLE -{' '}
+                <a href="https://open.spotify.com/track/2vNPGH1x5ZwxTjlvzLCyc2?si=717e5dfe78b64940">
+                  Fate
                 </a>
               </li>
               <li>
-                Audrey Nuna -{' '}
-                <a href="https://open.spotify.com/track/01ukVTKa6DhejzNulpoG2t?si=dab9a3605e074753">
-                  damn right
-                </a>
-              </li>
-              <li>
-                아이유 (IU) -{' '}
-                <a href="https://open.spotify.com/track/0djkJ3iAARXRCbfbwwVc3o?si=f53c210e4b2241cf">
-                  love wins all
+                (G)I-DLE -{' '}
+                <a href="https://open.spotify.com/track/2fJ70dRX7J4jiVxKUQQp7C?si=baa6c4a0a8c74de7">
+                  DUMDi DUMDi
                 </a>
               </li>
             </ul>

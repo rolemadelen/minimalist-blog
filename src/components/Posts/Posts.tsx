@@ -5,7 +5,7 @@ import { atom, useAtom } from 'jotai'
 import styles from './Posts.module.scss'
 
 export const modeAtom = atom('normal')
-export const techAtom = atom(false)
+export const techAtom = atom(true)
 export const nonTechAtom = atom(false)
 
 type View = {
@@ -165,7 +165,7 @@ const Posts: React.FC<Props> = ({ posts }) => {
       <div className={styles.options}>
         <div>
           <button type="button" onClick={openRandomPost}>
-            accio🪄
+            summon🪄
             <span className={styles.accio__note}>📃</span>
           </button>
         </div>

@@ -30,7 +30,7 @@ const Header = () => {
         <Link href="/">
           <h1>
             <span className={styles['logo__mark']}>&gt;$</span>
-            <span className={styles['logo__text']}>Madelen</span>
+            <span className={styles['logo__text']}>madelen</span>
             <span className={styles['logo__cursor']}></span>
           </h1>
           <h1></h1>
@@ -40,26 +40,20 @@ const Header = () => {
         <ul className={styles['nav__list']}>
           <li>
             <Link href="/about">
-              <div>私</div>
+              <div>A</div>
               <div>about</div>
             </Link>
           </li>
           <li>
             <Link href="/now">
-              <div>今</div>
+              <div>N</div>
               <div>now</div>
             </Link>
           </li>
           <li>
             <Link href="/review">
-              <div>考</div>
+              <div>R</div>
               <div>review</div>
-            </Link>
-          </li>
-          <li>
-            <Link href="/diary">
-              <div>字</div>
-              <div>diary</div>
             </Link>
           </li>
           <li>
@@ -68,7 +62,7 @@ const Header = () => {
               target="__blank"
               rel="noopener noreferrer"
             >
-              <div>欲</div>
+              <div>W</div>
               <div>want</div>
             </Link>
           </li>
