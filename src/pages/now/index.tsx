@@ -10,7 +10,7 @@ const Now = () => {
   const title = "What I'm doing now"
   const ogImage = createOgImage({
     title,
-    meta: ['April 23, 2024', '#now-page'].join('・'),
+    meta: ['April 24, 2024', '#now-page'].join('・'),
   })
 
   return (
@@ -34,7 +34,7 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-04-23, from KY.</span>
+            <span>updated ー 2024-04-24, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
@@ -54,6 +54,7 @@ const Now = () => {
                   </li>
                 </ul>
               </li>
+              <li>Cutting off Google from my life.</li>
             </ul>
           </div>
 
@@ -105,6 +106,15 @@ const Now = () => {
                   <li>
                     • I'm back to using Nota.{' '}
                     <a href="./post/2403280523">You want to know why?</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Cutting off Google (2024-04-24)
+                <ul>
+                  <li>• Deleted gmail account and YouTube.</li>
+                  <li>
+                    • Migrating from YouTube to Twitch for the live stream.
                   </li>
                 </ul>
               </li>
