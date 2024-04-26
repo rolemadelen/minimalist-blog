@@ -106,7 +106,9 @@ const Now = () => {
                 <ul>
                   <li>• Deleted gmail account and YouTube.</li>
                   <li>
-                    • Migrating from YouTube to Twitch for the live stream.
+                    • Migrating from YouTube to{' '}
+                    <a href="http://twitch.tv/img9417">Twitch</a> for the live
+                    stream.
                   </li>
                 </ul>
               </li>
