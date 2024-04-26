@@ -166,8 +166,8 @@ export const metadata: Metadata = {
     },
     mastodon: {
       name: 'Mastodon',
-      handle: 'mrolemadelen@techhub.social',
-      link: 'https://elk.zone/techhub.social/@mrolemadelen',
+      handle: 'img9417@mstdn.social',
+      link: 'https://elk.zone/mstdn.social/@img9417',
     },
     instagram: {
       name: 'Instagram',

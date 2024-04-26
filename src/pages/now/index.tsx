@@ -25,7 +25,7 @@ const Now = () => {
         <meta property="og:description" content={title} />
         <meta property="twitter:description" content={title} />
         <meta property="twitter:card" content="summary_large_image" />
-        <link rel="me" href="https://techhub.social/@mrolemadelen" />
+        <link rel="me" href="https://mstdn.social/@img9417" />
       </Head>
       <Header />
       <ProgressBar />
@@ -63,13 +63,7 @@ const Now = () => {
               <strong>What I'm NOT trying to do</strong>
             </div>
             <ul className={styles.list}>
-              <li>
-                Relying on LLM{' '}
-                <a href="https://techhub.social/@mrolemadelen/112052013783314073">
-                  {' '}
-                  (toots)
-                </a>
-              </li>
+              <li>Relying on LLM</li>
               <li>
                 Doing stupid things
                 <ul>
@@ -90,9 +84,7 @@ const Now = () => {
             <ul className={styles.list}>
               <li>
                 Migrated from X to{' '}
-                <a href="https://elk.zone/techhub.social/@mrolemadelen">
-                  Mastadon
-                </a>{' '}
+                <a href="https://elk.zone/mstdn.social/@img9417">Mastadon</a>{' '}
                 (2024-03-16)
                 <ul>
                   <li>

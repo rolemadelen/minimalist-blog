@@ -53,7 +53,7 @@ const About = () => {
           href="/favicon-32x32.png"
           sizes="32x32"
         />
-        <link rel="me" href="https://techhub.social/@mrolemadelen" />
+        <link rel="me" href="https://mstdn.social/@img9417" />
       </Head>
       <Header />
       <div className={styles.container}>
@@ -71,10 +71,7 @@ const About = () => {
             <h1 className={styles['header__title']}>{owner.name}</h1>
             <h3 className={styles['header__subtitle']}>{owner.role}</h3>
             <div className={styles['header__contact']}>
-              <a
-                href="https://techhub.social/@mrolemadelen"
-                rel="noopener noreferrer"
-              >
+              <a href="https://mstdn.social/@img9417" rel="noopener noreferrer">
                 <Image
                   src={'/mastodon-logo.png'}
                   width={22}
