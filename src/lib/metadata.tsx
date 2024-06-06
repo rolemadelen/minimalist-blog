@@ -164,11 +164,6 @@ export const metadata: Metadata = {
       handle: 'img9417',
       link: 'https://github.com/img9417',
     },
-    mastodon: {
-      name: 'Mastodon',
-      handle: 'img9417@mstdn.social',
-      link: 'https://elk.zone/mstdn.social/@img9417',
-    },
     instagram: {
       name: 'Instagram',
       handle: 'drawing_img9417',

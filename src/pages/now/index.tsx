@@ -34,27 +34,30 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-04-24, from KY.</span>
+            <span>updated ー 2024-06-06, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
           <div className={styles.section}>
             <div className={styles.title}>
+              <strong>Current Morning Routines</strong>
+            </div>
+            <ul className={styles.list}>
+              <li>Gregg Shorthand</li>
+              <li>Reading tech articles</li>
+              <li>Evergreen notes</li>
+            </ul>
+          </div>
+
+          <div className={styles.section}>
+            <div className={styles.title}>
               <strong>What I'm doing now</strong>
             </div>
             <ul className={styles.list}>
-              <li>100 Days, 100 People Sketch Challenge</li>
-              <li>Wake up by 05:00</li>
-              <li>Thinking about a new side project (하루)</li>
-              <li>
-                Trying to find my own colors
-                <ul>
-                  <li>
-                    • don't become an engineer that can be replaced by AI.
-                  </li>
-                </ul>
-              </li>
-              <li>Cutting off Google from my life.</li>
+              <li>Udemy - Clean Code JavaScript</li>
+              <li>Re-studying Data structures using C++, Ruby, Rust, and JS</li>
+              <li>Working part time</li>
+              <li>Trying to get a full time job</li>
             </ul>
           </div>
 
@@ -63,79 +66,27 @@ const Now = () => {
               <strong>What I'm NOT trying to do</strong>
             </div>
             <ul className={styles.list}>
-              <li>Relying on LLM</li>
+              <li>Lying on bed during the daytime</li>
               <li>
-                Doing stupid things
-                <ul>
-                  <li>
-                    • There are some stupid things that I'm doing, that I know
-                    are stupid and wrong, that I colud stop doing, and that I
-                    would stop doing.
-                  </li>
-                </ul>
+                Doing stupid things - there are some stupid things that I'm
+                doing, that I know are stupid and wrong, that I colud stop
+                doing, and that I would stop doing.
               </li>
             </ul>
           </div>
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>Events</strong>
+              <strong>Things I'm currently into</strong>
             </div>
             <ul className={styles.list}>
               <li>
-                Migrated from X to{' '}
-                <a href="https://elk.zone/mstdn.social/@img9417">Mastadon</a>{' '}
-                (2024-03-16)
-                <ul>
-                  <li>
-                    • I got tired of negative tweets flowing around my timeline
-                  </li>
-                </ul>
+                App → <a href="https://bear.app/">Bear 2.0</a>
               </li>
               <li>
-                Stopped using Obisidian (2024-03-28)
-                <ul>
-                  <li>
-                    • I'm back to using Nota.{' '}
-                    <a href="./post/2403280523">You want to know why?</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Cutting off Google (2024-04-24)
-                <ul>
-                  <li>• Deleted gmail account and YouTube.</li>
-                  <li>
-                    • Migrating from YouTube to{' '}
-                    <a href="http://twitch.tv/img9417">Twitch</a> for the live
-                    stream.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles.section}>
-            <div className={styles.title}>
-              <strong>Things on repeat</strong>
-            </div>
-            <ul className={styles.list}>
-              <li>
-                IU -{' '}
-                <a href="https://open.spotify.com/track/0UTtK6hregIBOsefavRI26?si=899d64b9cced4ee9">
-                  Holssi
-                </a>
-              </li>
-              <li>
-                (G)I-DLE -{' '}
-                <a href="https://open.spotify.com/track/2vNPGH1x5ZwxTjlvzLCyc2?si=717e5dfe78b64940">
-                  Fate
-                </a>
-              </li>
-              <li>
-                (G)I-DLE -{' '}
-                <a href="https://open.spotify.com/track/2fJ70dRX7J4jiVxKUQQp7C?si=baa6c4a0a8c74de7">
-                  DUMDi DUMDi
+                Music →{' '}
+                <a href="https://open.spotify.com/track/5vVL45nncczKCWS0uIQpzN?si=4467e3d72a2e4db9">
+                  깊은 밤을 날아서 - Lee Moon Sae
                 </a>
               </li>
             </ul>

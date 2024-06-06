@@ -71,14 +71,6 @@ const About = () => {
             <h1 className={styles['header__title']}>{owner.name}</h1>
             <h3 className={styles['header__subtitle']}>{owner.role}</h3>
             <div className={styles['header__contact']}>
-              <a href="https://mstdn.social/@img9417" rel="noopener noreferrer">
-                <Image
-                  src={'/mastodon-logo.png'}
-                  width={22}
-                  height={22}
-                  alt="mastodon"
-                />
-              </a>
               <a
                 href={contacts.github.link}
                 rel="noopener noreferrer"
@@ -98,8 +90,6 @@ const About = () => {
               >
                 <Image src={'/email.png'} width={20} height={20} alt="github" />
               </a>
-
-              {/* <a href={`mailto:${owner.email}`}>{owner.email}</a> */}
             </div>
           </div>
         </header>
