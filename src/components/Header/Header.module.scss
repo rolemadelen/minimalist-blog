@@ -39,8 +39,6 @@
 
   &__text {
     margin-left: 4px;
-
-    text-transform: uppercase;
   }
 
   &__cursor {
@@ -57,44 +55,15 @@
 .nav {
   &__list {
     display: flex;
+    gap: 1rem;
 
     font-size: px2rem(16);
-    @include link-decoration;
 
-    left: 0;
-    transition: transform 0.3s ease-in-out;
-    will-change: transform;
+    li > a {
+      @include link-decoration;
 
-    li {
-      position: relative;
-      display: flex;
-      overflow: hidden;
-
-      a {
-        display: flex;
-        width: 20px;
-
-        overflow: hidden;
-        transition: all 0.15s ease-in-out;
-
-        &:hover {
-          width: 60px;
-
-          color: $color-link;
-
-          & > div:first-child {
-            visibility: hidden;
-          }
-          & > div:last-child {
-            transform: translateX(-30px);
-            // text-align: center;
-          }
-        }
-      }
-
-      div {
-        transform: translateX(5px);
-        margin-right: 2rem;
+      &:hover {
+        color: $color-blue;
       }
     }
   }

@@ -10,7 +10,7 @@ export const createOgImage = ({
     `w_1600,h_836,q_100`,
 
     // Logo?
-    `l_text:Roboto_48:${e('>$ img9417')},co_rgb:ffe4e699,c_fit,w_1300`,
+    `l_text:Roboto_48:${e('>$ rolemadelen')},co_rgb:ffe4e699,c_fit,w_1300`,
     // Positioning
     `fl_layer_apply,g_north_west,x_100,y_100`,
 

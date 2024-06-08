@@ -53,7 +53,6 @@ const About = () => {
           href="/favicon-32x32.png"
           sizes="32x32"
         />
-        <link rel="me" href="https://mstdn.social/@img9417" />
       </Head>
       <Header />
       <div className={styles.container}>

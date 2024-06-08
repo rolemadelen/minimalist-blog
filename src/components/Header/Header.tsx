@@ -30,8 +30,7 @@ const Header = () => {
         <Link href="/">
           <h1>
             <span className={styles['logo__mark']}>&gt;$</span>
-            <span className={styles['logo__text']}>IMG9417</span>
-            <span className={styles['logo__cursor']}></span>
+            <span className={styles['logo__text']}>rolemadelen</span>
           </h1>
           <h1></h1>
         </Link>
@@ -39,22 +38,10 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul className={styles['nav__list']}>
           <li>
-            <Link href="/about">
-              <div>A</div>
-              <div>about</div>
-            </Link>
+            <Link href="/about">about</Link>
           </li>
           <li>
-            <Link href="/now">
-              <div>N</div>
-              <div>now</div>
-            </Link>
-          </li>
-          <li>
-            <Link href="/review">
-              <div>R</div>
-              <div>review</div>
-            </Link>
+            <Link href="/now">now</Link>
           </li>
           <li>
             <Link
@@ -62,8 +49,7 @@ const Header = () => {
               target="__blank"
               rel="noopener noreferrer"
             >
-              <div>W</div>
-              <div>want</div>
+              want
             </Link>
           </li>
         </ul>

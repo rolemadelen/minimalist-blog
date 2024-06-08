@@ -22,8 +22,8 @@ type Metadata = {
 export const metadata: Metadata = {
   owner: {
     name: 'Jii Yoo',
-    role: 'Web Developer (Spec. Front-End)',
-    email: 'rolemadelen@tuta.io',
+    role: 'Frontend Developer',
+    email: 'jiiyoo@tuta.io',
   },
   work_exp: {
     0: {
@@ -60,92 +60,92 @@ export const metadata: Metadata = {
       year: '2024.04',
       project: 'shigan',
       desc: ' - CLI Time Tracker (Rust)',
-      link: 'https://github.com/img9417/shigan',
+      link: 'https://github.com/rolemadelen/shigan',
     },
     99: {
       year: '2024.03',
       project: 'pomosh',
       desc: ' - CLI Pomodoro Timer (Rust)',
-      link: 'https://github.com/img9417/pomosh',
+      link: 'https://github.com/rolemadelen/pomosh',
     },
     100: {
       year: '2024.02',
       project: 'YourTrack',
       desc: ' - Monthly Spotify Highlights',
-      link: 'https://github.com/img9417/yourtrack',
+      link: 'https://github.com/rolemadelen/yourtrack',
     },
     150: {
       year: '2023.09',
       project: 'Portfolio v2.0',
-      link: 'https://github.com/img9417/portfolio_v2',
+      link: 'https://github.com/rolemadelen/portfolio_v2',
     },
     200: {
       year: '2023.08',
       project: 'Asayake Taiko',
       desc: ' - Website Renewal',
-      link: 'https://github.com/img9417/asayake',
+      link: 'https://github.com/rolemadelen/asayake',
     },
     300: {
       year: '2023.07',
       project: 'Things I Want',
-      link: 'https://github.com/img9417/things-i-want',
+      link: 'https://github.com/rolemadelen/things-i-want',
     },
     400: {
       year: '2023.06',
       project: 'Portfolio v1.0',
-      link: 'https://github.com/img9417/img9417.github.io',
+      link: 'https://github.com/rolemadelen/rolemadelen.github.io',
     },
     500: {
       year: '2023.03',
       project: 'Artlog',
-      link: 'https://github.com/img9417/artlog',
+      link: 'https://github.com/rolemadelen/artlog',
     },
     600: {
       year: '2022.07',
       project: 'ghostvatar',
-      link: 'https://github.com/img9417/ghost-vatar',
+      link: 'https://github.com/rolemadelen/ghost-vatar',
     },
     700: {
       year: '2020.05',
       project: 'Baekjoon Online Judge CLI',
-      link: 'https://github.com/img9417/boj-solvedac',
+      link: 'https://github.com/rolemadelen/boj-solvedac',
     },
     800: {
       year: '2016.04',
       project: 'TUI Chess',
-      link: 'https://github.com/img9417/chess',
+      link: 'https://github.com/rolemadelen/chess',
     },
   },
   blog: {
     0: {
       year: '2023.06',
       project: 'Next.js - Minimalist Blog (current)',
-      link: 'https://github.com/img9417/minimalist-blog',
+      link: 'https://github.com/rolemadelen/minimalist-blog',
     },
     1: {
       year: '2023.04',
       project: 'Next.js - Zettelkasten Blog',
-      link: 'https://github.com/img9417/blog-v2',
+      link: 'https://github.com/rolemadelen/blog-v2',
     },
     2: {
       year: '2022.05',
       project: 'Next.js - Blog (Sorted by relevance)',
-      link: 'https://github.com/img9417/blog-v1',
+      link: 'https://github.com/rolemadelen/blog-v1',
     },
     3: {
       year: '2020.08',
       project: 'Vue.js - Multilingual Blog',
-      link: 'https://github.com/img9417/vue-blog',
+      link: 'https://github.com/rolemadelen/vue-blog',
     },
     4: {
       year: '2020.03',
       project: 'Next.js - Multilingual Blog',
-      link: 'https://github.com/img9417/bluelog',
+      link: 'https://github.com/rolemadelen/bluelog',
     },
     5: {
       year: '2019.09',
       project: 'Jekyll - Multilingual Blog (modified a theme)',
-      link: 'https://github.com/img9417/euisblue.github.io?tab=readme-ov-file',
+      link: 'https://github.com/rolemadelen/euisblue.github.io?tab=readme-ov-file',
     },
   },
   education: {
@@ -161,13 +161,13 @@ export const metadata: Metadata = {
   contacts: {
     github: {
       name: 'GitHub',
-      handle: 'img9417',
-      link: 'https://github.com/img9417',
+      handle: 'rolemadelen',
+      link: 'https://github.com/rolemadelen',
     },
     instagram: {
       name: 'Instagram',
-      handle: 'drawing_img9417',
-      link: 'https://www.instagram.com/drawing_img9417',
+      handle: 'madelendraws',
+      link: 'https://www.instagram.com/madelendraws',
     },
   },
 }

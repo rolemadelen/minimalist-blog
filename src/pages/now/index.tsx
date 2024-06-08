@@ -25,7 +25,6 @@ const Now = () => {
         <meta property="og:description" content={title} />
         <meta property="twitter:description" content={title} />
         <meta property="twitter:card" content="summary_large_image" />
-        <link rel="me" href="https://mstdn.social/@img9417" />
       </Head>
       <Header />
       <ProgressBar />
