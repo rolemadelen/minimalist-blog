@@ -33,7 +33,7 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-06-06, from KY.</span>
+            <span>updated ー 2024-06-12, from KY.</span>
           </div>
         </div>
         <main className={styles.main}>
@@ -43,7 +43,7 @@ const Now = () => {
             </div>
             <ul className={styles.list}>
               <li>Gregg Shorthand</li>
-              <li>Reading tech articles</li>
+              <li>Reading</li>
               <li>Evergreen notes</li>
             </ul>
           </div>
@@ -56,7 +56,9 @@ const Now = () => {
               <li>Udemy - Clean Code JavaScript</li>
               <li>Re-studying Data structures using C++, Ruby, Rust, and JS</li>
               <li>Working part time</li>
-              <li>Trying to get a full time job</li>
+              <li>
+                <del>Trying to get a full time job</del> - GOT IT
+              </li>
             </ul>
           </div>
 
@@ -82,10 +84,17 @@ const Now = () => {
               <li>
                 App → <a href="https://bear.app/">Bear 2.0</a>
               </li>
+              <li>Time Management System → 블럭식스</li>
               <li>
                 Music →{' '}
-                <a href="https://open.spotify.com/track/5vVL45nncczKCWS0uIQpzN?si=4467e3d72a2e4db9">
-                  깊은 밤을 날아서 - Lee Moon Sae
+                <a href="https://open.spotify.com/track/6tJrNz6FaKIAN1TeHynDdh?si=f1b3c02f16ff4114">
+                  Kodama (Tree Spirit) - TAIKO PROJECT
+                </a>
+              </li>
+              <li>
+                Reading →{' '}
+                <a href="https://en.wikipedia.org/wiki/Dragon_Raja">
+                  드래곤 라자
                 </a>
               </li>
             </ul>

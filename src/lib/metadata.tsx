@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   work_exp: {
     0: {
-      year: '2024',
+      year: '2024.07~',
       role: '',
-      company: 'Open to Work',
+      company: 'working',
     },
     1: {
       year: '2021-2023',

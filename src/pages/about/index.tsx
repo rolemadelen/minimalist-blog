@@ -136,9 +136,11 @@ const About = () => {
               </p>
               <p>
                 That&apos;s about who I am. If there&apos;s something you want
-                to know more about me or are interested in discussing potential
-                remote opportunities, please don&apos;t hesitate to reach out to
-                me via email at{' '}
+                to know more about me{' '}
+                <del>
+                  or are interested in discussing potential remote opportunities
+                </del>
+                , please don&apos;t hesitate to reach out to me via email at{' '}
                 <a href={`mailto:${owner.email}`}>{owner.email}</a>.
               </p>
             </div>

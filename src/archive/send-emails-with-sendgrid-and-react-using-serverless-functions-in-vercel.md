@@ -25,8 +25,8 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: 'rolemadelen@tuta.io',
-      from: 'rolemadelen@tuta.io',
+      to: 'johndoe@example.com',
+      from: 'johndoe@example.com',
       subject: "You've got a mail!",
       html: '<div>Hello, World!</div>',
     })
@@ -58,8 +58,8 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: 'rolemadelen@tuta.io',
-      from: 'rolemadelen@tuta.io',
+      to: 'johndoe@example.com',
+      from: 'johndoe@example.com',
       subject: `[Portfolio] '${req.body.name}' contacted you!`,
       html: `
       <body>
