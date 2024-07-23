@@ -33,43 +33,62 @@ const Now = () => {
           <h1 className={styles.title}>now</h1>
           <div className={styles.date}>
             <span>published ー 2024-03-18, from KY.</span>
-            <span>updated ー 2024-06-12, from KY.</span>
+            <span>updated ー 2024-07-21, from Blue Bottle Coffee, SD.</span>
+            {/* Blue Bottle Coffee, 3725 Paseo Pl #1060, San Diego, CA 92130 */}
           </div>
         </div>
         <main className={styles.main}>
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>Current Morning Routines</strong>
+              <strong>what am i</strong>
             </div>
             <ul className={styles.list}>
-              <li>Gregg Shorthand</li>
-              <li>Reading</li>
-              <li>Evergreen notes</li>
-            </ul>
-          </div>
-
-          <div className={styles.section}>
-            <div className={styles.title}>
-              <strong>What I'm doing now</strong>
-            </div>
-            <ul className={styles.list}>
-              <li>Udemy - Clean Code JavaScript</li>
-              <li>Re-studying Data structures using C++, Ruby, Rust, and JS</li>
-              <li>Working part time</li>
-              <li>
-                <del>Trying to get a full time job</del> - GOT IT
+              <li>IVI Validation Engineer (2024~)</li>
+              <li className={styles.greyed}>
+                <i>Unemployed (2023-2024)</i>
+              </li>
+              <li className={styles.greyed}>
+                <i>Frontend Engineer(2021-2023)</i>
+              </li>
+              <li className={styles.greyed}>
+                <i>Foreign Language Teacher (2020-2021)</i>
+              </li>
+              <li className={styles.greyed}>
+                <i>Student (~2019)</i>
               </li>
             </ul>
           </div>
+          <div className={styles.section}>
+            <div className={styles.title}>
+              <strong>my morning routines</strong>
+            </div>
+            <ul className={styles.list}>
+              <li>0430 → wake up</li>
+              <li>0430-0530 → TBD (trying this and that, we'll see)</li>
+              <li>0530-0600 → walk & feed my dog</li>
+              <li>0600-0630 → wash up & eat</li>
+              <li>0630 → off to work</li>
+            </ul>
+          </div>
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>What I'm NOT trying to do</strong>
+              <strong>what i'm trying to do</strong>
             </div>
             <ul className={styles.list}>
-              <li>Lying on bed during the daytime</li>
+              <li>get my life settled for the new job and the enviornment</li>
+            </ul>
+          </div>
+
+          <div className={styles.section}>
+            <div className={styles.title}>
+              <strong>what i'm not trying to do</strong>
+            </div>
+            <ul className={styles.list}>
+              <li>lying on bed during the daytime</li>
+              <li>wasting time on sns and youtube</li>
               <li>
-                Doing stupid things - there are some stupid things that I'm
+                doing stupid things - there are some stupid things that I'm
                 doing, that I know are stupid and wrong, that I colud stop
                 doing, and that I would stop doing.
               </li>
@@ -78,23 +97,16 @@ const Now = () => {
 
           <div className={styles.section}>
             <div className={styles.title}>
-              <strong>Things I'm currently into</strong>
+              <strong>things I'm currently into</strong>
             </div>
             <ul className={styles.list}>
               <li>
-                App → <a href="https://bear.app/">Bear 2.0</a>
+                Note App → <a href="https://bear.app/">Bear 2.0</a>
               </li>
-              <li>Time Management System → 블럭식스</li>
               <li>
                 Music →{' '}
-                <a href="https://open.spotify.com/track/6tJrNz6FaKIAN1TeHynDdh?si=f1b3c02f16ff4114">
-                  Kodama (Tree Spirit) - TAIKO PROJECT
-                </a>
-              </li>
-              <li>
-                Reading →{' '}
-                <a href="https://en.wikipedia.org/wiki/Dragon_Raja">
-                  드래곤 라자
+                <a href="https://open.spotify.com/track/294hRgOqnGW2BemqP8D35X?si=a8284ddc0ddc419c">
+                  Klaxon - (G)I-DLE
                 </a>
               </li>
             </ul>
