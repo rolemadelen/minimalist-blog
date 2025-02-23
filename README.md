@@ -16,8 +16,5 @@ This blog features a clean and elegant design, focusing on simplicity and readab
 - Multilingual Blog v2 → https://github.com/rolemadelen/bluelog
 - Blog v1 → https://github.com/rolemadelen/blog-v1
 - Blog v2 → https://github.com/rolemadelen/blog-v2
-- Current blog
-
-### Updated
-
-- 2024.02 - Version '[Zettel](https://github.com/rolemadelen/minimalist-blog/tree/zettel)' (current)
+- Minimalist blog -> this repository
+- Evergreen blog -> https://github.com/rolemadelen/evergreen (**current**)
